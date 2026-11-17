@@ -385,3 +385,20 @@ table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
 .raster-empty p{margin:5px 0 0;color:var(--muted);font-size:10px;line-height:1.65}
 @media(max-width:900px){.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.raster-product-grid{grid-template-columns:minmax(0,1fr)}.raster-products-heading{flex-wrap:wrap}}
+
+
+/* Group optical and thermal previews by acquisition scene */
+.raster-scene-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.raster-scene-card{min-width:0;padding:14px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.raster-scene-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.raster-scene-heading>div{min-width:0}
+.raster-scene-heading>strong,.raster-scene-heading>div>strong{display:block;margin-top:6px;color:var(--text);font:10px var(--mono);overflow-wrap:anywhere}
+.raster-scene-heading>span{flex:none;padding:5px 7px;border:1px solid #64573d;border-radius:4px;color:#e1bd73;font:8px var(--mono);letter-spacing:.06em}
+.raster-product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.raster-product-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:7px;background:#111a15}
+.raster-product-info{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px}
+.raster-product-info>strong{margin:0;font:9px var(--mono)}
+.raster-cog-link{flex:none;color:var(--accent);font:8px var(--mono);text-decoration:none}
+.raster-cog-link:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.raster-scene-card{padding:10px}.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.raster-scene-heading{flex-direction:column}.raster-product-info{align-items:flex-start;flex-direction:column}}
