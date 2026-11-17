@@ -1,0 +1,360 @@
+{
+  "generated_at": "2026-11-17T16:14:13.441147Z",
+  "processing_version": "raster-products/1.0",
+  "processed_count": 12,
+  "products": [
+    {
+      "observation_id": "sentinel-2-l2a:S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454",
+      "source_id": "sentinel-2-l2a",
+      "scene_id": "S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454",
+      "acquired_at": "2026-11-16T07:01:41.025000Z",
+      "processed_at": "2026-11-17T16:13:27.566788Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 99.867,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-2-l2a/S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-2-l2a/S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-2-l2a:S2A_MSIL2A_20261115T065311_R020_T40TFK_20261115T101305",
+      "source_id": "sentinel-2-l2a",
+      "scene_id": "S2A_MSIL2A_20261115T065311_R020_T40TFK_20261115T101305",
+      "acquired_at": "2026-11-15T06:53:11.024000Z",
+      "processed_at": "2026-11-17T16:13:30.252763Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 42.685,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S2A_MSIL2A_20261115T065311_R020_T40TFK_20261115T101305-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-2-l2a/S2A_MSIL2A_20261115T065311_R020_T40TFK_20261115T101305.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "S2A_MSIL2A_20261115T065311_R020_T40TFK_20261115T101305-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-2-l2a/S2A_MSIL2A_20261115T065311_R020_T40TFK_20261115T101305.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
+      "acquired_at": "2026-11-14T02:10:57.377105Z",
+      "processed_at": "2026-11-17T16:13:32.459104Z",
+      "processing_version": "raster-products/1.0",
+      "product": "VV_BACKSCATTER",
+      "units": "dB",
+      "valid_pixel_pct": 100.0,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "VV_BACKSCATTER raster"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc.png",
+          "media_type": "image/png",
+          "title": "VV_BACKSCATTER preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-2-l2a:S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612",
+      "source_id": "sentinel-2-l2a",
+      "scene_id": "S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612",
+      "acquired_at": "2026-11-11T07:01:19.024000Z",
+      "processed_at": "2026-11-17T16:13:39.419466Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 76.591,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-2-l2a/S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-2-l2a/S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
+      "acquired_at": "2026-11-08T14:03:45.065903Z",
+      "processed_at": "2026-11-17T16:13:41.281940Z",
+      "processing_version": "raster-products/1.0",
+      "product": "VV_BACKSCATTER",
+      "units": "dB",
+      "valid_pixel_pct": 100.0,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "VV_BACKSCATTER raster"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc.png",
+          "media_type": "image/png",
+          "title": "VV_BACKSCATTER preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc",
+      "acquired_at": "2026-11-02T02:10:57.858945Z",
+      "processed_at": "2026-11-17T16:13:50.150948Z",
+      "processing_version": "raster-products/1.0",
+      "product": "VV_BACKSCATTER",
+      "units": "dB",
+      "valid_pixel_pct": 100.0,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-1-rtc/S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "VV_BACKSCATTER raster"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-1-rtc/S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc.png",
+          "media_type": "image/png",
+          "title": "VV_BACKSCATTER preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-2-l2a:S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140",
+      "source_id": "sentinel-2-l2a",
+      "scene_id": "S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140",
+      "acquired_at": "2026-11-01T07:00:29.024000Z",
+      "processed_at": "2026-11-17T16:13:55.621063Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 88.342,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-2-l2a/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-2-l2a/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-2-l2a:S2B_MSIL2A_20261029T065009_R020_T40TFK_20261029T122802",
+      "source_id": "sentinel-2-l2a",
+      "scene_id": "S2B_MSIL2A_20261029T065009_R020_T40TFK_20261029T122802",
+      "acquired_at": "2026-10-29T06:50:09.024000Z",
+      "processed_at": "2026-11-17T16:13:58.291394Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 30.465,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S2B_MSIL2A_20261029T065009_R020_T40TFK_20261029T122802-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-2-l2a/S2B_MSIL2A_20261029T065009_R020_T40TFK_20261029T122802.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "S2B_MSIL2A_20261029T065009_R020_T40TFK_20261029T122802-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-2-l2a/S2B_MSIL2A_20261029T065009_R020_T40TFK_20261029T122802.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-2-l2a:S2A_MSIL2A_20261026T065311_R020_T40TFK_20261026T101103",
+      "source_id": "sentinel-2-l2a",
+      "scene_id": "S2A_MSIL2A_20261026T065311_R020_T40TFK_20261026T101103",
+      "acquired_at": "2026-10-26T06:53:11.024000Z",
+      "processed_at": "2026-11-17T16:14:01.029443Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 35.795,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S2A_MSIL2A_20261026T065311_R020_T40TFK_20261026T101103-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-2-l2a/S2A_MSIL2A_20261026T065311_R020_T40TFK_20261026T101103.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "S2A_MSIL2A_20261026T065311_R020_T40TFK_20261026T101103-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-2-l2a/S2A_MSIL2A_20261026T065311_R020_T40TFK_20261026T101103.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "landsat-c2-l2:LC08_L2SP_160032_20261026_02_T1",
+      "source_id": "landsat-c2-l2",
+      "scene_id": "LC08_L2SP_160032_20261026_02_T1",
+      "acquired_at": "2026-10-26T06:42:15.206708Z",
+      "processed_at": "2026-11-17T16:14:05.078486Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 99.984,
+      "resolution_m": 30,
+      "assets": [
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-raster",
+          "role": "cog",
+          "href": "assets/products/landsat-c2-l2/LC08_L2SP_160032_20261026_02_T1.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-preview",
+          "role": "preview",
+          "href": "assets/products/landsat-c2-l2/LC08_L2SP_160032_20261026_02_T1.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "landsat-c2-l2:LC09_L2SP_161032_20261025_02_T1",
+      "source_id": "landsat-c2-l2",
+      "scene_id": "LC09_L2SP_161032_20261025_02_T1",
+      "acquired_at": "2026-10-25T06:48:27.506424Z",
+      "processed_at": "2026-11-17T16:14:09.543008Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 94.394,
+      "resolution_m": 30,
+      "assets": [
+        {
+          "id": "LC09_L2SP_161032_20261025_02_T1-raster",
+          "role": "cog",
+          "href": "assets/products/landsat-c2-l2/LC09_L2SP_161032_20261025_02_T1.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "LC09_L2SP_161032_20261025_02_T1-preview",
+          "role": "preview",
+          "href": "assets/products/landsat-c2-l2/LC09_L2SP_161032_20261025_02_T1.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    },
+    {
+      "observation_id": "sentinel-2-l2a:S2C_MSIL2A_20261024T064931_R020_T40TFK_20261024T101157",
+      "source_id": "sentinel-2-l2a",
+      "scene_id": "S2C_MSIL2A_20261024T064931_R020_T40TFK_20261024T101157",
+      "acquired_at": "2026-10-24T06:49:31.025000Z",
+      "processed_at": "2026-11-17T16:14:13.440961Z",
+      "processing_version": "raster-products/1.0",
+      "product": "MNDWI",
+      "units": "unitless",
+      "valid_pixel_pct": 38.854,
+      "resolution_m": 10,
+      "assets": [
+        {
+          "id": "S2C_MSIL2A_20261024T064931_R020_T40TFK_20261024T101157-raster",
+          "role": "cog",
+          "href": "assets/products/sentinel-2-l2a/S2C_MSIL2A_20261024T064931_R020_T40TFK_20261024T101157.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "MNDWI raster"
+        },
+        {
+          "id": "S2C_MSIL2A_20261024T064931_R020_T40TFK_20261024T101157-preview",
+          "role": "preview",
+          "href": "assets/products/sentinel-2-l2a/S2C_MSIL2A_20261024T064931_R020_T40TFK_20261024T101157.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "scene_id": "S2C_MSIL2A_20261113T065121_R020_T40TFK_20261113T101603",
+      "source_id": "sentinel-2-l2a",
+      "error": "ValueError: Valid AOI pixels 14.9% below threshold 15.0%"
+    },
+    {
+      "scene_id": "LC09_L2SP_160032_20261103_02_T1",
+      "source_id": "landsat-c2-l2",
+      "error": "ValueError: Valid AOI pixels 0.0% below threshold 15.0%"
+    },
+    {
+      "scene_id": "LC08_L2SP_161032_20261102_02_T1",
+      "source_id": "landsat-c2-l2",
+      "error": "ValueError: Valid AOI pixels 0.0% below threshold 15.0%"
+    }
+  ]
+}
