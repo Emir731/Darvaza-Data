@@ -23,42 +23,33 @@ function globe(){
     // Zoom 18 frequently returns provider "not available" placeholder tiles in this
     // remote desert AOI. Start at a native imagery zoom instead of magnifying blanks.
     const map=L.map(detail,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false,attributionControl:true,preferCanvas:true}).setView([crater.lat,crater.lon],15);
-    let tileErrors=0,baseLayer, fallbackTimer, fallbackUsed=false;
+    let tileErrors=0,baseLayer,fallbackTimer,osmTimer,fallbackUsed=false,osmUsed=false;
     const esri=L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{minZoom:3,maxZoom:17,maxNativeZoom:17,attribution:"Imagery © Esri, Maxar, Earthstar Geographics",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
-    const sentinel=L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg",{minZoom:3,maxZoom:17,maxNativeZoom:14,attribution:"Sentinel-2 cloudless mosaic © EOX / ESA",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
+    const sentinel=L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{x}/{y}.jpg",{minZoom:3,maxZoom:17,maxNativeZoom:14,attribution:"Sentinel-2 cloudless mosaic © EOX / ESA",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
     const osm=L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap contributors",crossOrigin:true});
-    const showFallback=()=>{
-      if(fallbackUsed)return;
-      fallbackUsed=true;clearTimeout(fallbackTimer);
+    const showOsm=()=>{
+      if(osmUsed)return;
+      osmUsed=true;clearTimeout(osmTimer);
       if(map.hasLayer(esri))map.removeLayer(esri);
       if(map.hasLayer(sentinel))map.removeLayer(sentinel);
-      detail.dataset.imageryFallback="true";
+      baseLayer=osm.addTo(map);
+      detail.dataset.osmFallback="true";
+      let note=detail.querySelector(".map-source-note");
+      if(!note){note=document.createElement("div");note.className="map-source-note";detail.appendChild(note)}
+      note.textContent="SATELLITE TILES UNAVAILABLE · OPEN MAP FALLBACK";
+    };
+    const showFallback=()=>{
+      if(fallbackUsed||osmUsed)return;
+      fallbackUsed=true;clearTimeout(fallbackTimer);
+      if(map.hasLayer(esri))map.removeLayer(esri);
       baseLayer=sentinel.addTo(map);
-      let fallbackErrors=0;
-      sentinel.on("tileerror",()=>{
-        fallbackErrors++;
-        if(fallbackErrors>=3&&!detail.dataset.osmFallback){
-          detail.dataset.osmFallback="true";
-          if(map.hasLayer(sentinel))map.removeLayer(sentinel);
-          baseLayer=osm.addTo(map);
-          const note=document.createElement("div");
-          note.className="map-source-note";
-          note.textContent="SATELLITE MOSAIC UNAVAILABLE · OPEN MAP VIEW";
-          detail.appendChild(note);
-        }
-      });
-      fallbackTimer=setTimeout(()=>{
-        if(!detail.querySelector(".leaflet-tile-loaded")) {
-          if(map.hasLayer(sentinel))map.removeLayer(sentinel);
-          baseLayer=osm.addTo(map);
-          detail.dataset.osmFallback="true";
-        }
-      },7000);
+      detail.dataset.imageryFallback="true";
+      // Do not trust HTTP 200 alone: some tile providers return a blank placeholder.
+      osmTimer=setTimeout(showOsm,5500);
     };
     baseLayer=esri.addTo(map);
     esri.on("tileerror",()=>{tileErrors++;if(tileErrors>=2)showFallback()});
-    // Also switch when the provider returns a successful but blank placeholder tile.
-    fallbackTimer=setTimeout(showFallback,6500);
+    fallbackTimer=setTimeout(showFallback,5000);
     L.circle([crater.lat,crater.lon],{radius:45,color:"#f2bd56",weight:2,fillColor:"#f2bd56",fillOpacity:.10}).addTo(map);
     L.circleMarker([crater.lat,crater.lon],{radius:5,color:"#101713",weight:2,fillColor:"#f2bd56",fillOpacity:1}).addTo(map).bindTooltip("DARVAZA GAS CRATER",{permanent:true,direction:"top",offset:[0,-8],className:"crater-tooltip"});
     const refresh=()=>{map.invalidateSize({pan:false});if(map.getZoom()>17)map.setZoom(17,{animate:false})};
