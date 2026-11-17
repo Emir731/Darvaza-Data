@@ -37,12 +37,33 @@
     $("scene").textContent = item.scene_id || "—";
     $("processing").textContent = item.processed_at ? (item.processing_version || "Processed") : "Discovery only";
     $("cloud").textContent = item.cloud_cover_pct == null ? "Not reported" : `${item.cloud_cover_pct}%`;
+    const previewRoot = $("scene-preview");
+    if (previewRoot) {
+      previewRoot.replaceChildren();
+      const preview = (item.assets || []).find(a => a.role === "preview" && a.href);
+      if (preview) {
+        const image = document.createElement("img");
+        image.src = new URL(preview.href, manifestUrl).toString();
+        image.alt = `${item.source_id} raster preview from ${fmtDate(item.acquired_at)}`;
+        image.loading = "lazy";
+        const link = document.createElement("a");
+        link.href = image.src; link.target = "_blank"; link.rel = "noreferrer";
+        link.textContent = "OPEN FULL PREVIEW ↗";
+        previewRoot.append(image, link);
+      } else {
+        const note = document.createElement("div");
+        note.className = "preview-empty";
+        note.textContent = "No processed raster preview is published for this catalogue record.";
+        previewRoot.append(note);
+      }
+    }
   }
   async function loadData() {
     const manifestResult = await Promise.allSettled([fetch(manifestUrl)]).then(x => x[0]);
     if (manifestResult.status === "fulfilled" && manifestResult.value.ok) {
       const data = await manifestResult.value.json();
       observations = Array.isArray(data.observations) ? data.observations : [];
+      window.__darvazaAoi = data.aoi || null;
       window.__darvazaProducts = Array.isArray(data.change_products) ? data.change_products : [];
     }
     const select = $("date-select");
