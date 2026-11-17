@@ -2,7 +2,7 @@
   "use strict";
   const AOI = { lat: 40.252, lng: 58.439 };
   const manifestUrl = new URL("./manifest.json", location.href).toString();
-  const nisarUrl = new URL("./regions/darvaza/nisar/index.json", location.href).toString();
+
   const $ = id => document.getElementById(id);
   let observations = [];
   const fmtDate = value => {
@@ -39,10 +39,11 @@
     $("cloud").textContent = item.cloud_cover_pct == null ? "Not reported" : `${item.cloud_cover_pct}%`;
   }
   async function loadData() {
-    const [manifestResult, nisarResult] = await Promise.allSettled([fetch(manifestUrl),fetch(nisarUrl)]);
+    const manifestResult = await Promise.allSettled([fetch(manifestUrl)]).then(x => x[0]);
     if (manifestResult.status === "fulfilled" && manifestResult.value.ok) {
       const data = await manifestResult.value.json();
       observations = Array.isArray(data.observations) ? data.observations : [];
+      window.__darvazaProducts = Array.isArray(data.change_products) ? data.change_products : [];
     }
     const select = $("date-select");
     select.replaceChildren();
@@ -55,13 +56,9 @@
       select.addEventListener("change", () => selectObservation(Number(select.value)));
       selectObservation(0);
     }
-    if (nisarResult.status === "fulfilled" && nisarResult.value.ok) {
-      const data = await nisarResult.value.json();
-      const count = Array.isArray(data.pair_candidates) ? data.pair_candidates.length : 0;
-      $("product-state").textContent = count ? `${count} NISAR repeat-pass catalogue candidate(s). Raster products are not yet processed.` : "NISAR catalogue report available; no compatible repeat-pass pairs were found.";
-    } else {
-      $("product-state").textContent = "NISAR catalogue report has not been published yet.";
-    }
+    const products = Array.isArray(window.__darvazaProducts) ? window.__darvazaProducts : [];
+    const processed = observations.filter(x => Boolean(x.processed_at)).length;
+    $("product-state").textContent = `${processed} processed observation(s); ${products.length} published change product(s). Select a date to inspect the source record.`;
   }
   initGlobe();
   loadData().catch(() => { $("date-state").textContent = "DATA FEED UNAVAILABLE"; });
