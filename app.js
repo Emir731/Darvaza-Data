@@ -1,155 +1,20 @@
-const AOI = { lat: 40.252, lon: 58.439 };
-const MANIFEST_URL = new URL("./manifest.json", window.location.href).toString();
-const SNAPSHOT = { observations: 154, processed: 0, products: 0, activeSources: 3, runs: 5, generatedAt: "2026-11-17T15:20:23.835338Z" };
-const fmt = value => new Intl.NumberFormat("en-US").format(Number(value) || 0);
-const dateFmt = value => {
-  if (!value) return "—";
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? "—" : new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeZone: "UTC" }).format(date);
-};
-const safeText = (value, fallback = "—") => typeof value === "string" && value.trim() ? value : fallback;
-
-function initGlobe() {
-  const root = document.getElementById("map");
-  if (window.Globe) {
-    root.innerHTML = "";
-    const globe = Globe()(root)
-      .globeImageUrl("https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg")
-      .backgroundColor("rgba(0,0,0,0)")
-      .showAtmosphere(true)
-      .atmosphereColor("#9cbd9b")
-      .atmosphereAltitude(0.13)
-      .pointsData([{ lat: AOI.lat, lng: AOI.lon, size: 0.55, color: "#e3ad4d" }])
-      .pointAltitude(0.018)
-      .pointRadius("size")
-      .pointColor("color")
-      .pointLabel(() => "Darvaza gas crater · Turkmenistan")
-      .ringsData([{ lat: AOI.lat, lng: AOI.lon, maxR: 2.2, propagationSpeed: 0, repeatPeriod: 0 }])
-      .ringColor(() => "#e3ad4d")
-      .ringMaxRadius("maxR")
-      .ringPropagationSpeed(0)
-      .ringRepeatPeriod(0);
-    const resize = () => globe.width(root.clientWidth).height(root.clientHeight);
-    resize();
-    window.addEventListener("resize", resize, { passive: true });
-    globe.pointOfView({ lat: AOI.lat, lng: AOI.lon, altitude: 0.72 }, 0);
-    const controls = globe.controls();
-    controls.enabled = false;
-    controls.enableZoom = false;
-    controls.enableRotate = false;
-    controls.enablePan = false;
-    root.dataset.view = "globe";
-    return;
-  }
-  initMapFallback();
-}
-
-function initMapFallback() {
-  if (!window.L) {
-    document.getElementById("map").innerHTML = '<div class="globe-loading">EARTH VIEW UNAVAILABLE · CHECK NETWORK</div>';
-    return;
-  }
-  const map = L.map("map", { zoomControl: false, scrollWheelZoom: false, dragging: false, doubleClickZoom: false, touchZoom: false, boxZoom: false, keyboard: false }).setView([AOI.lat, AOI.lon], 13);
-  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
-    maxZoom: 18,
-    attribution: "Tiles © Esri"
-  }).addTo(map);
-  L.circle([AOI.lat, AOI.lon], { radius: 1800, color: "#e3ad4d", weight: 1, fillColor: "#e3ad4d", fillOpacity: .08 }).addTo(map);
-  L.circleMarker([AOI.lat, AOI.lon], { radius: 5, color: "#111916", weight: 2, fillColor: "#e3ad4d", fillOpacity: 1 }).addTo(map).bindPopup("<strong>Darvaza gas crater</strong><br>Approximate area of interest");
-}
-
-function setText(id, value) {
-  const node = document.getElementById(id);
-  if (node) node.textContent = value;
-}
-
-function renderLatest(observations) {
-  const root = document.getElementById("latest-list");
-  const items = [...observations].sort((a,b) => new Date(b.acquired_at) - new Date(a.acquired_at)).slice(0, 5);
-  if (!items.length) {
-    root.innerHTML = '<div class="empty-state"><i class="ph ph-radar"></i><strong>No observations published</strong><p>The catalogue is empty. The next successful pipeline publication will appear here.</p></div>';
-    return;
-  }
-  root.innerHTML = items.map(item => {
-    const source = safeText(item.source_id, "Unknown source").replaceAll("-", " ").toUpperCase();
-    return '<div class="activity-item"><div class="activity-title">' + source + '</div><div class="activity-meta">' + dateFmt(item.acquired_at) + ' · ' + safeText(item.scene_id) + '</div></div>';
-  }).join("");
-}
-
-function renderObservations(observations) {
-  const body = document.getElementById("observations-body");
-  const rows = [...observations].sort((a,b) => new Date(b.acquired_at) - new Date(a.acquired_at)).slice(0, 12);
-  setText("table-count", fmt(observations.length) + " RECORDS");
-  if (!rows.length) {
-    body.innerHTML = '<tr><td colspan="5"><div class="table-empty">No published observation records yet.</div></td></tr>';
-    return;
-  }
-  body.innerHTML = rows.map(item => {
-    const cloud = item.cloud_cover_pct == null || item.cloud_cover_pct === "" ? "—" : Math.round(Number(item.cloud_cover_pct)) + "%";
-    const isProcessed = Boolean(item.processed_at);
-    return '<tr><td>' + dateFmt(item.acquired_at) + '</td><td>' + safeText(item.source_id).toUpperCase() + '</td><td>' + safeText(item.scene_id) + '</td><td>' + cloud + '</td><td><span class="pill ' + (isProcessed ? "" : "pending") + '">' + (isProcessed ? "PROCESSED" : "DISCOVERY ONLY") + '</span></td></tr>';
-  }).join("");
-}
-
-function renderSources(sources) {
-  const root = document.getElementById("source-grid");
-  if (!Array.isArray(sources) || !sources.length) {
-    root.innerHTML = '<div class="source-empty">No source metadata in the published manifest.</div>';
-    return;
-  }
-  root.innerHTML = sources.map(source => {
-    const count = source.scene_count == null ? "Count not reported" : fmt(source.scene_count) + " catalogue items";
-    const state = safeText(source.status, "unknown").replaceAll("_", " ").toUpperCase();
-    return '<article class="source-card"><div class="source-card-top"><strong>' + safeText(source.name, source.id) + '</strong><i class="ph ph-database" aria-hidden="true"></i></div><p>' + safeText(source.provider) + ' · ' + safeText(source.instrument) + '</p><div class="source-status">' + state + ' / ' + count + '</div></article>';
-  }).join("");
-}
-
-function renderRuns(runs) {
-  const successful = Array.isArray(runs) ? runs.filter(run => run.status === "success").length : 0;
-  setText("metric-runs", fmt(successful));
-}
-
-function applySnapshot() {
-  setText("metric-observations", fmt(SNAPSHOT.observations));
-  setText("metric-processed", fmt(SNAPSHOT.processed));
-  setText("metric-products", fmt(SNAPSHOT.products));
-  setText("metric-sources", fmt(SNAPSHOT.activeSources));
-  setText("metric-runs", fmt(SNAPSHOT.runs));
-  setText("metric-observations-note", "Last published snapshot · " + dateFmt(SNAPSHOT.generatedAt));
-  setText("last-updated", "SNAPSHOT · " + dateFmt(SNAPSHOT.generatedAt).toUpperCase());
-}
-
-async function loadManifest() {
-  applySnapshot();
-  try {
-    const response = await fetch(MANIFEST_URL, { cache: "no-store" });
-    if (!response.ok) throw new Error("Manifest request returned " + response.status);
-    const manifest = await response.json();
-    if (!manifest || !Array.isArray(manifest.observations) || !Array.isArray(manifest.sources)) throw new Error("Manifest schema is not recognized");
-    const observations = manifest.observations;
-    const processed = observations.filter(item => Boolean(item.processed_at)).length;
-    const products = Array.isArray(manifest.change_products) ? manifest.change_products.length : 0;
-    const activeSources = manifest.sources.filter(source => Number(source.scene_count) > 0).length;
-    setText("metric-observations", fmt(observations.length));
-    setText("metric-processed", fmt(processed));
-    setText("metric-products", fmt(products));
-    setText("metric-sources", fmt(activeSources));
-    setText("metric-observations-note", "Catalogue records · " + (manifest.is_sample ? "sample data" : "pipeline manifest"));
-    setText("last-updated", manifest.generated_at ? "UPDATED " + dateFmt(manifest.generated_at).toUpperCase() : "UPDATE TIME UNKNOWN");
-    renderLatest(observations);
-    renderObservations(observations);
-    renderSources(manifest.sources);
-    renderRuns(manifest.pipeline_runs);
-    document.documentElement.dataset.dataStatus = "live";
-  } catch (error) {
-    setText("metric-observations-note", "Showing last published snapshot · feed unavailable");
-    setText("last-updated", "SNAPSHOT · " + dateFmt(SNAPSHOT.generatedAt).toUpperCase());
-    document.documentElement.dataset.dataStatus = "snapshot";
-    console.warn("Darvaza Watch data feed:", error.message);
-  }
-}
-
-const year = document.getElementById("year");
-if (year) year.textContent = new Date().getUTCFullYear();
-initGlobe();
-loadManifest();
+(() => {
+"use strict";
+const AOI={lat:40.252,lon:58.439},DATA_URL=new URL("./manifest.json",location.href).toString(),PAGE_SIZE=15;
+const SNAPSHOT={observations:154,processed:0,products:0,activeSources:3,runs:5,generatedAt:"2026-11-17T15:20:23.835338Z"};
+let all=[],page=1,filters={search:"",source:"all",cloud:"all"};
+const $=id=>document.getElementById(id),fmt=v=>new Intl.NumberFormat("en-US").format(Number(v)||0);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const date=v=>{if(!v)return"—";const d=new Date(v);return isNaN(d)? "—":new Intl.DateTimeFormat("en-GB",{day:"2-digit",month:"short",year:"numeric",timeZone:"UTC"}).format(d)};
+const safeUrl=v=>{try{const u=new URL(v);return["https:","http:"].includes(u.protocol)?u.href:null}catch{return null}};
+function nav(){const b=$("mobile-menu-toggle");b?.addEventListener("click",()=>{let open=document.body.classList.toggle("nav-open");b.setAttribute("aria-expanded",String(open));b.innerHTML=open?'<i class="ph ph-x"></i>':'<i class="ph ph-list"></i>'});document.querySelectorAll(".nav-link").forEach(a=>a.addEventListener("click",()=>{document.body.classList.remove("nav-open");b?.setAttribute("aria-expanded","false");if(b)b.innerHTML='<i class="ph ph-list"></i>';document.querySelectorAll(".nav-link").forEach(n=>n.classList.toggle("active",n===a))}));}
+function globe(){const root=$("map");if(!root)return;if(typeof window.Globe==="function"){try{root.innerHTML="";const g=window.Globe()(root).globeImageUrl("https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg").backgroundColor("rgba(0,0,0,0)").showAtmosphere(true).atmosphereColor("#9cbd9b").atmosphereAltitude(.12).pointsData([{lat:AOI.lat,lng:AOI.lon,size:.48,color:"#e3ad4d"}]).pointAltitude(.012).pointRadius("size").pointColor("color").pointLabel(()=>"Darvaza gas crater · Turkmenistan").ringsData([{lat:AOI.lat,lng:AOI.lon,maxR:1.8}]).ringColor(() =>"#e3ad4d").ringMaxRadius("maxR").ringPropagationSpeed(0).ringRepeatPeriod(0);const resize=()=>g.width(root.clientWidth).height(root.clientHeight);resize();addEventListener("resize",resize,{passive:true});g.pointOfView({lat:AOI.lat,lng:AOI.lon,altitude:.12},0);const controls=g.controls();controls.enabled=false;controls.enableZoom=false;controls.enableRotate=false;controls.enablePan=false;root.dataset.view="locked";return}catch(e){console.warn("Globe fallback:",e)}}if(!window.L){root.innerHTML='<div class="globe-loading">EARTH VIEW UNAVAILABLE · CHECK NETWORK</div>';return}root.innerHTML="";const map=L.map(root,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false}).setView([AOI.lat,AOI.lon],14);L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:18,attribution:"Tiles © Esri"}).addTo(map);L.circle([AOI.lat,AOI.lon],{radius:1500,color:"#d9a441",weight:1,fillColor:"#d9a441",fillOpacity:.08}).addTo(map);L.circleMarker([AOI.lat,AOI.lon],{radius:5,color:"#111916",weight:2,fillColor:"#d9a441",fillOpacity:1}).addTo(map).bindPopup("<strong>Darvaza gas crater</strong><br>Approximate area of interest")}
+function metrics(m){const obs=m.observations||[],sources=m.sources||[],runs=m.pipeline_runs||[];$("metric-observations").textContent=fmt(obs.length);$("metric-processed").textContent=fmt(obs.filter(x=>x.processed_at).length);$("metric-products").textContent=fmt((m.change_products||[]).length);$("metric-sources").textContent=fmt(sources.filter(x=>Number(x.scene_count)>0).length);$("metric-runs").textContent=fmt(runs.filter(x=>x.status==="success").length);$("metric-observations-note").textContent="Catalogue records · "+(m.is_sample?"sample data":"published manifest");$("last-updated").textContent=m.generated_at?"UPDATED "+date(m.generated_at).toUpperCase():"UPDATE TIME UNKNOWN"}
+function latest(){const rows=[...all].sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at)).slice(0,6);$("latest-list").innerHTML=rows.length?rows.map(x=>'<div class="activity-item"><div class="activity-title">'+esc((x.source_id||"unknown").replaceAll("-"," ").toUpperCase())+'</div><div class="activity-meta">'+esc(date(x.acquired_at))+' · '+esc(x.scene_id)+'</div></div>').join(""):'<div class="empty-state"><i class="ph ph-radar"></i><strong>No observations published</strong><p>The catalogue currently contains no scene records.</p></div>'}
+function filtered(){let q=filters.search.trim().toLowerCase();return all.filter(x=>(filters.source==="all"||x.source_id===filters.source)&&(!q||[x.scene_id,x.source_id,x.id].some(v=>String(v||"").toLowerCase().includes(q)))&&(filters.cloud==="all"||(x.cloud_cover_pct!=null&&Number(x.cloud_cover_pct)<=Number(filters.cloud)))).sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at))}
+function table(){const rows=filtered(),pages=Math.max(1,Math.ceil(rows.length/PAGE_SIZE));page=Math.min(page,pages);const slice=rows.slice((page-1)*PAGE_SIZE,page*PAGE_SIZE);$("table-count").textContent=fmt(rows.length)+" / "+fmt(all.length)+" RECORDS";$("page-label").textContent="PAGE "+page+" / "+pages;$("page-prev").disabled=page<=1;$("page-next").disabled=page>=pages;if(!slice.length){$("observations-body").innerHTML='<tr><td colspan="6"><div class="table-empty">No scenes match these filters. Try a broader search.</div></td></tr>';return}$("observations-body").innerHTML=slice.map(x=>{let asset=Array.isArray(x.assets)?x.assets.find(a=>a.role==="thumbnail"&&safeUrl(a.href)):null,scene=esc(x.scene_id||"Unknown scene"),cloud=x.cloud_cover_pct==null?"—":Number(x.cloud_cover_pct).toFixed(1)+"%",resolution=x.resolution_m?esc(x.resolution_m)+" m":"—",link=asset?'<a class="scene-link" href="'+esc(safeUrl(asset.href))+'" target="_blank" rel="noopener noreferrer">'+scene+' ↗</a>':'<span class="scene-link">'+scene+'</span>';return '<tr><td>'+esc(date(x.acquired_at))+'</td><td>'+esc(String(x.source_id||"—").replaceAll("-"," ").toUpperCase())+'</td><td>'+link+'</td><td>'+cloud+'</td><td>'+resolution+'</td><td><span class="pill pending">'+(x.processed_at?"PROCESSED":"DISCOVERY ONLY")+'</span></td></tr>'}).join("")}
+function sources(items){$("source-grid").innerHTML=items.map(x=>'<article class="source-card"><div class="source-card-top"><strong>'+esc(x.name)+'</strong><i class="ph ph-database"></i></div><p>'+esc(x.provider||"Provider not specified")+' · '+esc(x.instrument||"Sensor details unavailable")+'</p><div class="source-status"><span style="color:var(--green)">'+esc(String(x.status||"unknown").toUpperCase())+'</span> · '+fmt(x.scene_count)+' catalogue scenes · '+esc(x.native_resolution_m??"—")+' m</div></article>').join("");const select=$("source-filter"),old=select.value;select.innerHTML='<option value="all">All sources</option>'+items.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.name)+'</option>').join("");select.value=items.some(x=>x.id===old)?old:"all"}
+function bind(){ $("scene-search").addEventListener("input",e=>{filters.search=e.target.value;page=1;table()});$("source-filter").addEventListener("change",e=>{filters.source=e.target.value;page=1;table()});$("cloud-filter").addEventListener("change",e=>{filters.cloud=e.target.value;page=1;table()});$("page-prev").addEventListener("click",()=>{page=Math.max(1,page-1);table()});$("page-next").addEventListener("click",()=>{page++;table()})}
+async function load(){$("metric-observations").textContent=fmt(SNAPSHOT.observations);$("metric-processed").textContent="0";$("metric-products").textContent="0";$("metric-sources").textContent=fmt(SNAPSHOT.activeSources);$("metric-runs").textContent=fmt(SNAPSHOT.runs);$("metric-observations-note").textContent="Last published snapshot · "+date(SNAPSHOT.generatedAt);$("last-updated").textContent="SNAPSHOT · "+date(SNAPSHOT.generatedAt).toUpperCase();try{const r=await fetch(DATA_URL,{cache:"no-store"});if(!r.ok)throw Error("Manifest HTTP "+r.status);const m=await r.json();if(!Array.isArray(m.observations)||!Array.isArray(m.sources))throw Error("Manifest schema mismatch");all=m.observations;metrics(m);latest();sources(m.sources);table();document.documentElement.dataset.dataStatus="live"}catch(e){console.warn("Manifest fallback:",e);$("metric-observations-note").textContent="Showing last published snapshot · feed unavailable";document.documentElement.dataset.dataStatus="snapshot"}}
+const year=$("year");if(year)year.textContent=new Date().getUTCFullYear();nav();bind();globe();load();
+})();
