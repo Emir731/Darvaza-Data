@@ -341,3 +341,24 @@ table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
  .section-title-row .panel-index{white-space:nowrap}
  .table-wrap{max-width:calc(100vw - 60px)}
 }
+
+
+/* Final responsive overrides: match the actual #map DOM selectors */
+#map .map-detail{position:relative;display:block;min-width:0;min-height:300px;height:100%;overflow:hidden}
+#map #crater-satellite{position:absolute;inset:0;display:block;width:100%;height:100%;min-height:0}
+#map .map-detail .leaflet-container{position:absolute;inset:0;width:100%;height:100%;min-height:0}
+#map .map-globe,#map .crater-photo{min-width:0;min-height:0}
+#map .map-globe{position:relative;overflow:hidden}
+#map .crater-photo img{width:100%;height:100%;object-fit:cover}
+#map .map-source-note{z-index:800;max-width:calc(100% - 20px);font-size:9px}
+@media(max-width:700px){
+ #map{height:auto!important;min-height:0;grid-template-columns:minmax(0,1fr);grid-template-rows:300px 145px 190px}
+ #map .map-detail{grid-column:1;grid-row:1;height:300px;min-height:300px}
+ #map .map-globe{grid-column:1;grid-row:2;height:145px}
+ #map .crater-photo{grid-column:1;grid-row:3;height:190px}
+ #map #crater-satellite,#map .map-detail .leaflet-container{height:100%;min-height:0}
+}
+@media(min-width:701px) and (max-width:900px){
+ #map{height:420px;grid-template-columns:minmax(0,1.25fr) minmax(190px,.8fr);grid-template-rows:1fr 1fr}
+ #map .map-detail{grid-row:1 / span 2;min-height:400px}
+}
