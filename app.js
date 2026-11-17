@@ -96,9 +96,8 @@ function globe(){
       earth.dataset.controlsLocked=String(
         !controls.enabled&&!controls.enableZoom&&!controls.enableRotate&&!controls.enablePan
       );
-      earth.dataset.centeredOnDarvaza=String(
-        Math.abs(crater.lat-crater.lat)<1e-9&&Math.abs(crater.lon-crater.lon)<1e-9
-      );
+      earth.dataset.centerLat=String(crater.lat);
+      earth.dataset.centerLon=String(crater.lon);
     }catch(e){
       console.warn("3D globe unavailable; satellite view remains active:",e);
       earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · SATELLITE VIEW ACTIVE</div>';
