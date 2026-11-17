@@ -1,0 +1,28 @@
+name: Darvaza Watch feature checks
+
+on:
+  push:
+    branches: [feature/darvaza-3d-observatory]
+  pull_request:
+    branches: [feature/darvaza-3d-observatory]
+
+permissions:
+  contents: read
+
+jobs:
+  browser-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check dashboard and globe JavaScript syntax
+        run: |
+          node --check app.js
+          node --check globe.js
+      - name: Verify required frontend entry points
+        run: |
+          test -s index.html
+          test -s globe.html
+          test -s app.js
+          test -s globe.js
+          test -s styles.css
+          test -s globe.css
