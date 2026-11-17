@@ -173,8 +173,8 @@ async function renderProducts() {
 function renderChanges(manifest) {
   const root = document.getElementById("change-grid");
   const changes = Array.isArray(manifest.change_products) ? manifest.change_products : [];
+  const skipped = Array.isArray(manifest.change_analysis_skips) ? manifest.change_analysis_skips : [];
   if (!changes.length) {
-    const skipped = Array.isArray(manifest.change_analysis_skips) ? manifest.change_analysis_skips : [];
     root.innerHTML = '<div class="source-empty">No change map passed the minimum evidence checks in this run. The dashboard will not display a comparison based on too few usable pixels.</div>' +
       skipped.map(item => '<article class="warning-item"><strong>' + escapeHtml(safeText(item.source_id) + ' · ' + safeText(item.product)) + '</strong>' +
         escapeHtml(safeText(item.reason)) + '<br><span class="status-warn">Usable pixels: ' + fmt(item.valid_pixel_count) +
