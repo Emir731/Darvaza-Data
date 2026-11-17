@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T16:23:58.846984Z",
+  "generated_at": "2026-11-17T16:27:02.504312Z",
   "processing_version": "raster-products/1.1",
   "processed_count": 14,
   "processed_scene_count": 12,
@@ -9,7 +9,7 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454",
       "acquired_at": "2026-11-16T07:01:41.025000Z",
-      "processed_at": "2026-11-17T16:23:06.353960Z",
+      "processed_at": "2026-11-17T16:25:33.600401Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -37,7 +37,7 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2A_MSIL2A_20261115T065311_R020_T40TFK_20261115T101305",
       "acquired_at": "2026-11-15T06:53:11.024000Z",
-      "processed_at": "2026-11-17T16:23:09.291955Z",
+      "processed_at": "2026-11-17T16:25:37.583602Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -65,7 +65,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
       "acquired_at": "2026-11-14T02:10:57.377105Z",
-      "processed_at": "2026-11-17T16:23:11.506356Z",
+      "processed_at": "2026-11-17T16:25:42.565601Z",
       "processing_version": "raster-products/1.1",
       "product": "VV_BACKSCATTER",
       "units": "dB",
@@ -93,7 +93,7 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612",
       "acquired_at": "2026-11-11T07:01:19.024000Z",
-      "processed_at": "2026-11-17T16:23:18.598008Z",
+      "processed_at": "2026-11-17T16:25:53.707261Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -121,7 +121,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
       "acquired_at": "2026-11-08T14:03:45.065903Z",
-      "processed_at": "2026-11-17T16:23:20.706127Z",
+      "processed_at": "2026-11-17T16:26:00.815830Z",
       "processing_version": "raster-products/1.1",
       "product": "VV_BACKSCATTER",
       "units": "dB",
@@ -149,7 +149,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc",
       "acquired_at": "2026-11-02T02:10:57.858945Z",
-      "processed_at": "2026-11-17T16:23:32.780947Z",
+      "processed_at": "2026-11-17T16:26:19.300040Z",
       "processing_version": "raster-products/1.1",
       "product": "VV_BACKSCATTER",
       "units": "dB",
@@ -177,7 +177,7 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140",
       "acquired_at": "2026-11-01T07:00:29.024000Z",
-      "processed_at": "2026-11-17T16:23:37.792317Z",
+      "processed_at": "2026-11-17T16:26:30.766538Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -205,7 +205,7 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2B_MSIL2A_20261029T065009_R020_T40TFK_20261029T122802",
       "acquired_at": "2026-10-29T06:50:09.024000Z",
-      "processed_at": "2026-11-17T16:23:40.710384Z",
+      "processed_at": "2026-11-17T16:26:34.818853Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -233,7 +233,7 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2A_MSIL2A_20261026T065311_R020_T40TFK_20261026T101103",
       "acquired_at": "2026-10-26T06:53:11.024000Z",
-      "processed_at": "2026-11-17T16:23:43.622525Z",
+      "processed_at": "2026-11-17T16:26:38.824084Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -261,7 +261,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": "2026-11-17T16:23:48.026158Z",
+      "processed_at": "2026-11-17T16:26:45.552298Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -289,7 +289,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": "2026-11-17T16:23:49.021996Z",
+      "processed_at": "2026-11-17T16:26:47.043137Z",
       "processing_version": "raster-products/1.1",
       "product": "SURFACE_TEMPERATURE",
       "units": "K",
@@ -317,7 +317,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_161032_20261025_02_T1",
       "acquired_at": "2026-10-25T06:48:27.506424Z",
-      "processed_at": "2026-11-17T16:23:53.628638Z",
+      "processed_at": "2026-11-17T16:26:53.971440Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -345,7 +345,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_161032_20261025_02_T1",
       "acquired_at": "2026-10-25T06:48:27.506424Z",
-      "processed_at": "2026-11-17T16:23:54.839663Z",
+      "processed_at": "2026-11-17T16:26:55.464370Z",
       "processing_version": "raster-products/1.1",
       "product": "SURFACE_TEMPERATURE",
       "units": "K",
@@ -373,7 +373,7 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2C_MSIL2A_20261024T064931_R020_T40TFK_20261024T101157",
       "acquired_at": "2026-10-24T06:49:31.025000Z",
-      "processed_at": "2026-11-17T16:23:58.846802Z",
+      "processed_at": "2026-11-17T16:27:02.504114Z",
       "processing_version": "raster-products/1.1",
       "product": "MNDWI",
       "units": "unitless",
@@ -397,5 +397,38 @@
       ]
     }
   ],
-  "errors": []
+  "errors": [],
+  "warning_count": 5,
+  "warnings": [
+    {
+      "scene_id": "S2C_MSIL2A_20261113T065121_R020_T40TFK_20261113T101603",
+      "source_id": "sentinel-2-l2a",
+      "product": "MNDWI",
+      "reason": "MNDWI: valid AOI pixels 14.8% below threshold 15.0%"
+    },
+    {
+      "scene_id": "LC09_L2SP_160032_20261103_02_T1",
+      "source_id": "landsat-c2-l2",
+      "product": "MNDWI",
+      "reason": "MNDWI: valid AOI pixels 0.0% below threshold 15.0%"
+    },
+    {
+      "scene_id": "LC09_L2SP_160032_20261103_02_T1",
+      "source_id": "landsat-c2-l2",
+      "product": "SURFACE_TEMPERATURE",
+      "reason": "ValueError: SURFACE_TEMPERATURE: valid AOI pixels 0.0% below threshold 15.0%"
+    },
+    {
+      "scene_id": "LC08_L2SP_161032_20261102_02_T1",
+      "source_id": "landsat-c2-l2",
+      "product": "MNDWI",
+      "reason": "MNDWI: valid AOI pixels 0.0% below threshold 15.0%"
+    },
+    {
+      "scene_id": "LC08_L2SP_161032_20261102_02_T1",
+      "source_id": "landsat-c2-l2",
+      "product": "SURFACE_TEMPERATURE",
+      "reason": "ValueError: SURFACE_TEMPERATURE: valid AOI pixels 0.0% below threshold 15.0%"
+    }
+  ]
 }
