@@ -181,7 +181,7 @@ function renderChanges(manifest) {
         ' / minimum required: ' + fmt(item.required_pixel_count) + '</span></article>').join("");
     return;
   }
-  root.innerHTML = changes.map(change => {
+  const cards = changes.map(change => {
     const preview = (change.assets || []).find(asset => asset.role === "preview");
     const previewUrl = preview ? new URL(preview.href, window.location.href).toString() : "";
     const stats = change.statistics || {};
@@ -200,6 +200,11 @@ function renderChanges(manifest) {
       (previewUrl ? '<a href="' + escapeHtml(previewUrl) + '" target="_blank" rel="noreferrer">Open comparison image ↗</a>' : '') +
       '</article>';
   }).join("");
+  const skippedNotes = skipped.map(item => '<article class="warning-item"><strong>' +
+    escapeHtml(safeText(item.source_id) + ' · ' + safeText(item.product)) + '</strong>' +
+    escapeHtml(safeText(item.reason)) + '<br><span class="status-warn">Usable pixels: ' +
+    fmt(item.valid_pixel_count) + ' / minimum required: ' + fmt(item.required_pixel_count) + '</span></article>').join("");
+  root.innerHTML = cards + skippedNotes;
 }
 
 function renderQuality(manifest) {
