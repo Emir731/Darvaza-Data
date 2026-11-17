@@ -47,10 +47,31 @@ function renderAoi(aoi) {
   if (!map || !window.L || !aoi || !aoi.geometry) return;
   if (aoiLayer) map.removeLayer(aoiLayer);
   aoiLayer = L.geoJSON(aoi.geometry, {
-    style: { color: "#ef765d", weight: 2, fillColor: "#ef765d", fillOpacity: .16 }
+    style: { color: "#d9a441", weight: 2, fillColor: "#d9a441", fillOpacity: .14 }
   }).addTo(map);
   const bounds = aoiLayer.getBounds();
   if (bounds.isValid()) map.fitBounds(bounds.pad(1.8), { maxZoom: 17 });
+}
+
+function initNavigation() {
+  const links = [...document.querySelectorAll('.nav-link[href^="#"]')];
+  if (!("IntersectionObserver" in window) || !links.length) return;
+  const sections = links
+    .map(link => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries
+      .filter(entry => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    links.forEach(link => {
+      const active = link.hash === "#" + visible.target.id;
+      link.classList.toggle("active", active);
+      if (active) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  }, { rootMargin: "-18% 0px -68% 0px", threshold: [0, .15, .35] });
+  sections.forEach(section => observer.observe(section));
 }
 
 function setText(id, value) {
@@ -282,4 +303,5 @@ async function loadManifest() {
 
 document.getElementById("year").textContent = new Date().getUTCFullYear();
 initMap();
+initNavigation();
 loadManifest();
