@@ -57,6 +57,8 @@ function globe(){
     };
     baseLayer=esri.addTo(map);
     esri.on("tileerror",()=>{tileErrors++;if(tileErrors>=2)showFallback()});
+    // Also switch when the provider returns a successful but blank placeholder tile.
+    fallbackTimer=setTimeout(showFallback,6500);
     L.circle([crater.lat,crater.lon],{radius:45,color:"#f2bd56",weight:2,fillColor:"#f2bd56",fillOpacity:.10}).addTo(map);
     L.circleMarker([crater.lat,crater.lon],{radius:5,color:"#101713",weight:2,fillColor:"#f2bd56",fillOpacity:1}).addTo(map).bindTooltip("DARVAZA GAS CRATER",{permanent:true,direction:"top",offset:[0,-8],className:"crater-tooltip"});
     const refresh=()=>{map.invalidateSize({pan:false});if(map.getZoom()>17)map.setZoom(17,{animate:false})};
