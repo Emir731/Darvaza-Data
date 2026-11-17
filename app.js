@@ -8,7 +8,49 @@ const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const date=v=>{if(!v)return"—";const d=new Date(v);return isNaN(d)? "—":new Intl.DateTimeFormat("en-GB",{day:"2-digit",month:"short",year:"numeric",timeZone:"UTC"}).format(d)};
 const safeUrl=v=>{try{const u=new URL(v);return["https:","http:"].includes(u.protocol)?u.href:null}catch{return null}};
 function nav(){const b=$("mobile-menu-toggle");b?.addEventListener("click",()=>{let open=document.body.classList.toggle("nav-open");b.setAttribute("aria-expanded",String(open));b.innerHTML=open?'<i class="ph ph-x"></i>':'<i class="ph ph-list"></i>'});document.querySelectorAll(".nav-link").forEach(a=>a.addEventListener("click",()=>{document.body.classList.remove("nav-open");b?.setAttribute("aria-expanded","false");if(b)b.innerHTML='<i class="ph ph-list"></i>';document.querySelectorAll(".nav-link").forEach(n=>n.classList.toggle("active",n===a))}));}
-function globe(){const root=$("map");if(!root)return;if(typeof window.Globe==="function"){try{root.innerHTML="";const g=window.Globe()(root).globeImageUrl("https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg").backgroundColor("rgba(0,0,0,0)").showAtmosphere(true).atmosphereColor("#9cbd9b").atmosphereAltitude(.12).pointsData([{lat:AOI.lat,lng:AOI.lon,size:.48,color:"#e3ad4d"}]).pointAltitude(.012).pointRadius("size").pointColor("color").pointLabel(()=>"Darvaza gas crater · Turkmenistan").ringsData([{lat:AOI.lat,lng:AOI.lon,maxR:1.8}]).ringColor(() =>"#e3ad4d").ringMaxRadius("maxR").ringPropagationSpeed(0).ringRepeatPeriod(0);const resize=()=>g.width(root.clientWidth).height(root.clientHeight);resize();addEventListener("resize",resize,{passive:true});g.pointOfView({lat:AOI.lat,lng:AOI.lon,altitude:.12},0);const controls=g.controls();controls.enabled=false;controls.enableZoom=false;controls.enableRotate=false;controls.enablePan=false;root.dataset.view="locked";return}catch(e){console.warn("Globe fallback:",e)}}if(!window.L){root.innerHTML='<div class="globe-loading">EARTH VIEW UNAVAILABLE · CHECK NETWORK</div>';return}root.innerHTML="";const map=L.map(root,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false}).setView([AOI.lat,AOI.lon],14);L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:18,attribution:"Tiles © Esri"}).addTo(map);L.circle([AOI.lat,AOI.lon],{radius:1500,color:"#d9a441",weight:1,fillColor:"#d9a441",fillOpacity:.08}).addTo(map);L.circleMarker([AOI.lat,AOI.lon],{radius:5,color:"#111916",weight:2,fillColor:"#d9a441",fillOpacity:1}).addTo(map).bindPopup("<strong>Darvaza gas crater</strong><br>Approximate area of interest")}
+function globe(){
+  const root=$("map");
+  if(!root)return;
+  const crater={lat:40.252647,lon:58.439589};
+  root.innerHTML='<div class="map-visual"><div id="earth-globe" aria-label="3D Earth zooming to Darvaza"></div><div class="globe-tag">3D EARTH · DARVAZA</div></div><div class="map-visual map-detail"><div id="crater-satellite" aria-label="High resolution satellite view of the Darvaza gas crater"></div><div class="satellite-tag"><span class="satellite-live-dot"></span> CRATER SATELLITE DETAIL <span>· ZOOM 18</span></div></div>';
+  root.dataset.view="darvaza-locked";
+  const detail=$("crater-satellite");
+  if(window.L){
+    const map=L.map(detail,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false,attributionControl:true}).setView([crater.lat,crater.lon],18);
+    const tiles=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Imagery © Esri, Maxar, Earthstar Geographics"}).addTo(map);
+    tiles.on("tileerror",()=>{detail.dataset.tileError="true"});
+    L.circle([crater.lat,crater.lon],{radius:35,color:"#f2bd56",weight:2,fillColor:"#f2bd56",fillOpacity:.10}).addTo(map);
+    L.circleMarker([crater.lat,crater.lon],{radius:5,color:"#101713",weight:2,fillColor:"#f2bd56",fillOpacity:1}).addTo(map).bindTooltip("DARVAZA GAS CRATER",{permanent:true,direction:"top",offset:[0,-8],className:"crater-tooltip"});
+    requestAnimationFrame(()=>map.invalidateSize());
+  }else{
+    detail.innerHTML='<div class="globe-loading">SATELLITE MAP UNAVAILABLE · CHECK NETWORK</div>';
+  }
+  const earth=$("earth-globe");
+  if(typeof window.Globe==="function"){
+    try{
+      const g=window.Globe()(earth)
+        .globeImageUrl("https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg")
+        .backgroundColor("rgba(0,0,0,0)")
+        .showAtmosphere(true).atmosphereColor("#9cbd9b").atmosphereAltitude(.13)
+        .pointsData([{lat:crater.lat,lng:crater.lon,size:.42,color:"#f2bd56"}])
+        .pointAltitude(.012).pointRadius("size").pointColor("color")
+        .pointLabel(()=>"Darvaza gas crater · Turkmenistan")
+        .ringsData([{lat:crater.lat,lng:crater.lon,maxR:1.5}])
+        .ringColor(() =>"#f2bd56").ringMaxRadius("maxR").ringPropagationSpeed(0).ringRepeatPeriod(0);
+      const resize=()=>g.width(earth.clientWidth).height(earth.clientHeight);
+      resize();addEventListener("resize",resize,{passive:true});
+      g.pointOfView({lat:crater.lat,lng:crater.lon,altitude:1.65},0);
+      g.pointOfView({lat:crater.lat,lng:crater.lon,altitude:.42},1800);
+      const controls=g.controls();
+      controls.enabled=false;controls.enableZoom=false;controls.enableRotate=false;controls.enablePan=false;
+    }catch(e){
+      console.warn("3D globe unavailable; satellite detail remains active:",e);
+      earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · CRATER DETAIL ACTIVE</div>';
+    }
+  }else{
+    earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · CRATER DETAIL ACTIVE</div>';
+  }
+}
 function metrics(m){const obs=m.observations||[],sources=m.sources||[],runs=m.pipeline_runs||[];$("metric-observations").textContent=fmt(obs.length);$("metric-processed").textContent=fmt(obs.filter(x=>x.processed_at).length);$("metric-products").textContent=fmt((m.change_products||[]).length);$("metric-sources").textContent=fmt(sources.filter(x=>Number(x.scene_count)>0).length);$("metric-runs").textContent=fmt(runs.filter(x=>x.status==="success").length);$("metric-observations-note").textContent="Catalogue records · "+(m.is_sample?"sample data":"published manifest");$("last-updated").textContent=m.generated_at?"UPDATED "+date(m.generated_at).toUpperCase():"UPDATE TIME UNKNOWN"}
 function latest(){const rows=[...all].sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at)).slice(0,6);$("latest-list").innerHTML=rows.length?rows.map(x=>'<div class="activity-item"><div class="activity-title">'+esc((x.source_id||"unknown").replaceAll("-"," ").toUpperCase())+'</div><div class="activity-meta">'+esc(date(x.acquired_at))+' · '+esc(x.scene_id)+'</div></div>').join(""):'<div class="empty-state"><i class="ph ph-radar"></i><strong>No observations published</strong><p>The catalogue currently contains no scene records.</p></div>'}
 function filtered(){let q=filters.search.trim().toLowerCase();return all.filter(x=>(filters.source==="all"||x.source_id===filters.source)&&(!q||[x.scene_id,x.source_id,x.id].some(v=>String(v||"").toLowerCase().includes(q)))&&(filters.cloud==="all"||(x.cloud_cover_pct!=null&&Number(x.cloud_cover_pct)<=Number(filters.cloud)))).sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at))}
