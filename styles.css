@@ -402,3 +402,37 @@ table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
 .raster-cog-link:hover{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:900px){.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.raster-scene-card{padding:10px}.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.raster-scene-heading{flex-direction:column}.raster-product-info{align-items:flex-start;flex-direction:column}}
+
+
+/* Mobile off-canvas navigation: restore links hidden by the compact header rule */
+@media(max-width:900px){
+  .sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:1200;
+    width:270px;
+    height:100vh;
+    min-height:100vh;
+    padding:28px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    overflow-y:auto;
+    border-right:1px solid var(--line);
+    border-bottom:0;
+    background:var(--surface);
+    transform:translateX(-105%);
+    transition:transform .22s ease;
+  }
+  body.nav-open .sidebar{transform:translateX(0)}
+  .sidebar .side-label{display:block}
+  .sidebar .nav-list{display:flex;flex-direction:column;gap:5px;margin-top:12px}
+  .sidebar-bottom{display:block;margin-top:auto}
+  .main-content{margin-left:0}
+}
+@media(max-width:700px){
+  .sidebar{width:min(82vw,290px);height:100dvh;min-height:100dvh}
+  .mobile-menu-toggle{position:relative;z-index:1300}
+}
