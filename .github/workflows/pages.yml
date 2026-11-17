@@ -2,7 +2,7 @@ name: Deploy Darvaza Watch
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/darvaza-3d-observatory]
   workflow_dispatch:
 
 permissions:
