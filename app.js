@@ -99,20 +99,41 @@ function renderSources(sources) {
 
 function renderFireStatus(manifest) {
   const root = document.getElementById("fire-summary");
-  const feeds = (manifest.sources || []).filter(x => ["viirs-375m", "modis-thermal"].includes(x.id));
-  if (!feeds.length) { root.textContent = "No fire-detection feed information was published."; return; }
-  root.innerHTML = feeds.map(feed => {
-    const count = Number(feed.scene_count || 0);
-    const status = safeText(feed.status, "unknown").replaceAll("_", " ");
-    const title = feed.id === "viirs-375m" ? "VIIRS · 375 m pixels" : "MODIS · about 1 km pixels";
-    const explanation = status === "no detections"
-      ? "The feed was checked and returned no detections in the study area during this check. This does not prove the crater was cool or inactive."
-      : status === "not configured" ? "The feed could not be checked because its access key is not configured."
-      : status === "healthy" ? "One or more satellite hotspot records were found. Check the acquisition time and confidence before interpreting them."
-      : "The feed status is " + status + ". See the data-quality notes.";
-    return '<article class="status-card"><strong>' + escapeHtml(title) + '</strong><div class="status-value">' + fmt(count) + '</div><p>' + escapeHtml(explanation) + '</p><p>Last checked: ' + dateFmt(feed.last_checked) + '</p></article>';
-  }).join("");
-  setText("fire-window", "Detection records are collected from the recent FIRMS query window. Satellite overpasses, cloud, smoke and pixel size can affect detection.");
+  const summary = manifest.fire_detection_summary || {};
+  const feeds = summary.feeds || {};
+  const entries = Object.entries(feeds);
+  if (!entries.length) {
+    root.innerHTML = '<div class="source-empty">No recent fire-feed check is recorded. A blank result is not the same as zero detections.</div>';
+  } else {
+    root.innerHTML = entries.map(([feedId, feed]) => {
+      const count = feed.status === "checked" ? Number(feed.detections || 0) : null;
+      const title = feedId.replaceAll("_", " ");
+      const message = feed.status === "checked"
+        ? (count === 0 ? "Checked successfully. No hotspot pixels were reported inside the study boundary during this check." :
+          "Hotspot records were reported. Check their time and confidence before interpreting them.")
+        : feed.status === "not_configured" ? "Not checked: the FIRMS access key is not configured."
+        : "Feed unavailable during this run. No zero-detection conclusion can be made.";
+      return '<article class="status-card"><strong>' + escapeHtml(title) + '</strong>' +
+        '<div class="status-value">' + (count === null ? "—" : fmt(count)) + '</div>' +
+        '<p>' + escapeHtml(message) + '</p><p>Check: ' + escapeHtml(safeText(summary.checked_at, "—")) + '</p></article>';
+    }).join("");
+  }
+  setText("fire-window", "Each check covers the latest 5 days. VIIRS pixels are about 375 m; MODIS pixels are about 1 km. A small or short-lived heat source can be missed.");
+  const historyRoot = document.getElementById("fire-history");
+  fetch(new URL("./fire-detection-history.json", window.location.href), {cache:"no-store"})
+    .then(r => { if (!r.ok) throw new Error("history not published"); return r.json(); })
+    .then(history => {
+      const rows = Object.entries(history.feeds || {});
+      if (!rows.length) { historyRoot.textContent = "No daily history has been saved yet."; return; }
+      historyRoot.innerHTML = '<strong class="history-title">Daily detections saved over time</strong>' +
+        rows.map(([feedId, values]) => {
+          const recent = values.slice(-7).reverse();
+          return '<div class="history-feed"><strong>' + escapeHtml(feedId.replaceAll("_", " ")) + '</strong>' +
+            recent.map(item => '<span>' + escapeHtml(item.date) + ': <b>' + fmt(item.detections) + '</b></span>').join("") +
+            '</div>';
+        }).join("");
+    })
+    .catch(() => { historyRoot.textContent = "Daily history will appear after the next successful scheduled publication."; });
 }
 
 async function renderProducts() {
