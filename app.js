@@ -23,6 +23,11 @@ function globe(){
     // Zoom 18 frequently returns provider "not available" placeholder tiles in this
     // remote desert AOI. Start at a native imagery zoom instead of magnifying blanks.
     const map=L.map(detail,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false,attributionControl:true,preferCanvas:true}).setView([crater.lat,crater.lon],15);
+    detail.dataset.mapLocked=String(
+      !map.dragging.enabled()&&!map.scrollWheelZoom.enabled()&&
+      !map.doubleClickZoom.enabled()&&!map.touchZoom.enabled()&&
+      !map.boxZoom.enabled()&&!map.keyboard.enabled()
+    );
     let esriErrors=0,sentinelErrors=0,esriLoaded=false,sentinelLoaded=false;
     let baseLayer,fallbackTimer,osmTimer,fallbackUsed=false,osmUsed=false;
     const esri=L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{minZoom:3,maxZoom:17,maxNativeZoom:17,attribution:"Imagery © Esri, Maxar, Earthstar Geographics",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
