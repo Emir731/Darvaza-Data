@@ -7,6 +7,9 @@ const dateFmt = (value) => {
   return Number.isNaN(date.getTime()) ? "—" : new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeZone: "UTC" }).format(date);
 };
 const safeText = (value, fallback = "—") => typeof value === "string" && value.trim() ? value : fallback;
+const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, ch => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+}[ch]));
 
 function initMap() {
   if (!window.L) return;
@@ -34,7 +37,7 @@ function renderLatest(observations) {
   }
   root.innerHTML = items.map(item => {
     const source = safeText(item.source_id, "Unknown source").replaceAll("-", " ").toUpperCase();
-    return '<div class="activity-item"><div class="activity-title">' + source + '</div><div class="activity-meta">' + dateFmt(item.acquired_at) + ' · ' + safeText(item.scene_id) + '</div></div>';
+    return '<div class="activity-item"><div class="activity-title">' + escapeHtml(source) + '</div><div class="activity-meta">' + dateFmt(item.acquired_at) + ' · ' + escapeHtml(safeText(item.scene_id)) + '</div></div>';
   }).join("");
 }
 
@@ -47,9 +50,9 @@ function renderObservations(observations) {
     return;
   }
   body.innerHTML = rows.map(item => {
-    const cloud = Number.isFinite(Number(item.cloud_cover_pct)) ? Math.round(Number(item.cloud_cover_pct)) + "%" : "—";
+    const cloud = item.cloud_cover_pct != null && item.cloud_cover_pct !== "" && Number.isFinite(Number(item.cloud_cover_pct)) ? Math.round(Number(item.cloud_cover_pct)) + "%" : "—";
     const isProcessed = Boolean(item.processed_at);
-    return '<tr><td>' + dateFmt(item.acquired_at) + '</td><td>' + safeText(item.source_id).toUpperCase() + '</td><td>' + safeText(item.scene_id) + '</td><td>' + cloud + '</td><td><span class="pill ' + (isProcessed ? '' : 'pending') + '">' + (isProcessed ? 'PROCESSED' : 'DISCOVERY ONLY') + '</span></td></tr>';
+    return '<tr><td>' + dateFmt(item.acquired_at) + '</td><td>' + escapeHtml(safeText(item.source_id).toUpperCase()) + '</td><td>' + escapeHtml(safeText(item.scene_id)) + '</td><td>' + cloud + '</td><td><span class="pill ' + (isProcessed ? '' : 'pending') + '">' + (isProcessed ? 'PROCESSED' : 'DISCOVERY ONLY') + '</span></td></tr>';
   }).join("");
 }
 
@@ -62,7 +65,7 @@ function renderSources(sources) {
   root.innerHTML = sources.map(source => {
     const count = source.scene_count == null ? "Count not reported" : fmt(source.scene_count) + " catalogue items";
     const state = safeText(source.status, "unknown").replaceAll("_", " ").toUpperCase();
-    return '<article class="source-card"><div class="source-card-top"><strong>' + safeText(source.name, source.id) + '</strong><i class="ph ph-database" aria-hidden="true"></i></div><p>' + safeText(source.provider) + ' · ' + safeText(source.instrument) + '</p><div class="source-status">' + state + ' / ' + count + '</div></article>';
+    return '<article class="source-card"><div class="source-card-top"><strong>' + escapeHtml(safeText(source.name, source.id)) + '</strong><i class="ph ph-database" aria-hidden="true"></i></div><p>' + escapeHtml(safeText(source.provider)) + ' · ' + escapeHtml(safeText(source.instrument)) + '</p><div class="source-status">' + escapeHtml(state) + ' / ' + count + '</div></article>';
   }).join("");
 }
 
