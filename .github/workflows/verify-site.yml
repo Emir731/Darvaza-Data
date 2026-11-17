@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - feature/landsat-products-ui
+      - main
   workflow_dispatch:
 
 permissions:
@@ -37,5 +38,24 @@ jobs:
         run: |
           for pass in 1 2 3 4 5; do
             echo "Browser verification pass ${pass}/5"
+            node tests/site-smoke.mjs
+          done
+      - name: Verify deployed GitHub Pages five times
+        if: ${{ github.ref == 'refs/heads/main' }}
+        env:
+          BASE_URL: https://emir731.github.io/Darvaza-Data/
+        run: |
+          for attempt in $(seq 1 36); do
+            if curl --fail --silent "$BASE_URL" > /dev/null; then
+              break
+            fi
+            if [ "$attempt" -eq 36 ]; then
+              echo "GitHub Pages did not become available."
+              exit 1
+            fi
+            sleep 10
+          done
+          for pass in 1 2 3 4 5; do
+            echo "Live website verification pass ${pass}/5"
             node tests/site-smoke.mjs
           done
