@@ -58,7 +58,31 @@
     }
     const products = Array.isArray(window.__darvazaProducts) ? window.__darvazaProducts : [];
     const processed = observations.filter(x => Boolean(x.processed_at)).length;
-    $("product-state").textContent = `${processed} processed observation(s); ${products.length} published change product(s). Select a date to inspect the source record.`;
+    $("product-state").textContent = `${processed} processed observation(s); ${products.length} published change product(s).`;
+    const productRoot = $("product-list");
+    if (productRoot) {
+      productRoot.replaceChildren();
+      products.forEach(product => {
+        const card = document.createElement("article");
+        card.className = "product-card";
+        const heading = document.createElement("strong");
+        heading.textContent = `${product.source_id} · ${product.product}`;
+        const dates = document.createElement("p");
+        dates.textContent = `${fmtDate(product.from_date)} → ${fmtDate(product.to_date)}`;
+        const caveat = document.createElement("small");
+        caveat.textContent = product.caveat || "Experimental pixel-value difference; interpret with care.";
+        card.append(heading, dates, caveat);
+        const preview = (product.assets || []).find(a => a.role === "preview");
+        if (preview) {
+          const link = document.createElement("a");
+          link.href = preview.href; link.target = "_blank"; link.rel = "noreferrer";
+          link.textContent = "OPEN CHANGE PREVIEW ↗";
+          card.append(link);
+        }
+        productRoot.append(card);
+      });
+      if (!products.length) productRoot.textContent = "No valid same-sensor before/after pair is available yet.";
+    }
   }
   initGlobe();
   loadData().catch(() => { $("date-state").textContent = "DATA FEED UNAVAILABLE"; });
