@@ -233,3 +233,208 @@ button,a,select{touch-action:manipulation}
  .method-warning{gap:9px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Observatory refresh */
+:root {
+  --bg: #0d1511;
+  --surface: #151f19;
+  --surface-2: #1c2921;
+  --line: #344238;
+  --text: #edf1e9;
+  --muted: #a3afa4;
+  --dim: #78877b;
+  --accent: #d9a441;
+  --green: #a8c6a2;
+  --radius: 10px;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 75% 0%, rgba(74, 100, 69, 0.12), transparent 38%),
+    var(--bg);
+}
+
+.sidebar {
+  background: #121c16;
+  border-right-color: #29382e;
+}
+
+.brand-mark {
+  border-color: #586b58;
+  background: #1b2a20;
+}
+
+.nav-link {
+  border-radius: 7px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.nav-link:hover {
+  background: #202e24;
+  color: var(--text);
+}
+
+.nav-link.active {
+  border: 1px solid #59694d;
+  border-left: 2px solid var(--accent);
+  background: #263328;
+  padding-left: 9px;
+}
+
+.main-content {
+  max-width: 1700px;
+}
+
+.topbar {
+  border-bottom-color: #2d3a30;
+}
+
+.page-intro {
+  padding-top: 54px;
+  padding-bottom: 38px;
+}
+
+h1 {
+  font-size: clamp(38px, 4.2vw, 62px);
+  line-height: 1.02;
+  letter-spacing: -0.065em;
+}
+
+h1 span {
+  color: #a9b9a6;
+}
+
+.metric-card,
+.panel,
+.method-card {
+  border-radius: 10px;
+  border-color: #35443a;
+  background: linear-gradient(145deg, #19251d, #141e18);
+}
+
+.metric-card {
+  position: relative;
+  min-height: 136px;
+  padding: 19px;
+  overflow: hidden;
+}
+
+.metric-card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 2px;
+  background: var(--accent);
+  content: '';
+  opacity: 0.75;
+}
+
+.metric-value {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.panel {
+  padding: 22px;
+}
+
+.panel-heading h2,
+.method-card h2 {
+  font-size: 21px;
+  letter-spacing: -0.045em;
+}
+
+#map {
+  border-color: #3b4b3d;
+  border-radius: 8px;
+}
+
+.map-mode,
+select {
+  border-radius: 7px;
+}
+
+.map-mode.active {
+  background: #354331;
+}
+
+.source-card,
+.status-card,
+.product-card-ui,
+.glossary-grid article {
+  border-radius: 8px;
+  background: #1b2920;
+  border-color: #35443a;
+}
+
+.method-card {
+  padding: 24px;
+}
+
+.method-warning {
+  background: #19241c;
+}
+
+.footer {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    background: rgba(18, 28, 22, 0.98);
+    backdrop-filter: blur(14px);
+    border-bottom-color: #344238;
+  }
+
+  .brand {
+    margin-bottom: 9px;
+  }
+
+  .nav-list {
+    padding-bottom: 7px;
+  }
+
+  .nav-link {
+    border: 1px solid #2e3b32;
+    border-radius: 7px;
+    background: #19251d;
+  }
+
+  .nav-link.active {
+    border-color: #59694d;
+  }
+
+  .main-content {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .page-intro {
+    padding-top: 30px;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+
+  .metric-card {
+    min-height: 116px;
+    padding: 13px;
+  }
+
+  .metric-value {
+    font-size: 29px;
+  }
+
+  .footer {
+    row-gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: none;
+  }
+}
