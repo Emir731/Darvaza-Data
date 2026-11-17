@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-17T15:20:23.835338Z",
+  "generated_at": "2026-11-17T19:53:06.249419+00:00",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -637,17 +637,22 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T19:51:39.200614+00:00",
+      "processing_version": "landsat-mndwi/0.1",
       "cloud_cover_pct": 0.17,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 95.94,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from the MNDWI calculation."
+        },
+        {
+          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
         }
       ],
       "assets": [
@@ -657,13 +662,27 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_160032_20261026_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "Exploratory MNDWI preview \u00b7 2026-10-26"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 exploratory MNDWI"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
         "run_id": "44113122981",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-mndwi/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20261026_02_T1"
         ],
@@ -673,7 +692,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
+        "published_at": "2026-11-17T19:51:39.200614+00:00"
       }
     },
     {
@@ -1869,17 +1888,22 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20260924_02_T1",
       "acquired_at": "2026-09-24T06:42:09.785283Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T19:51:39.200614+00:00",
+      "processing_version": "landsat-mndwi/0.1",
       "cloud_cover_pct": 0.0,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from the MNDWI calculation."
+        },
+        {
+          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
         }
       ],
       "assets": [
@@ -1889,13 +1913,27 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_160032_20260924_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "Exploratory MNDWI preview \u00b7 2026-09-24"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 exploratory MNDWI"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
         "run_id": "44113122981",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-mndwi/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260924_02_T1"
         ],
@@ -1905,7 +1943,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
+        "published_at": "2026-11-17T19:51:39.200614+00:00"
       }
     },
     {
@@ -4113,17 +4151,22 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260730_02_T1",
       "acquired_at": "2026-07-30T06:41:58.010309Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T19:51:39.200614+00:00",
+      "processing_version": "landsat-mndwi/0.1",
       "cloud_cover_pct": 0.01,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from the MNDWI calculation."
+        },
+        {
+          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
         }
       ],
       "assets": [
@@ -4133,13 +4176,27 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC09_L2SP_160032_20260730_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "Exploratory MNDWI preview \u00b7 2026-07-30"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 exploratory MNDWI"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
         "run_id": "44113122981",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-mndwi/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260730_02_T1"
         ],
@@ -4149,7 +4206,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
+        "published_at": "2026-11-17T19:51:39.200614+00:00"
       }
     },
     {
@@ -5477,17 +5534,22 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_161032_20260627_02_T1",
       "acquired_at": "2026-06-27T06:47:42.556031Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T19:51:39.200614+00:00",
+      "processing_version": "landsat-mndwi/0.1",
       "cloud_cover_pct": 0.99,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 95.61,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from the MNDWI calculation."
+        },
+        {
+          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
         }
       ],
       "assets": [
@@ -5497,13 +5559,27 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_161032_20260627_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "Exploratory MNDWI preview \u00b7 2026-06-27"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 exploratory MNDWI"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
         "run_id": "44113122981",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-mndwi/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260627_02_T1"
         ],
@@ -5513,7 +5589,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
+        "published_at": "2026-11-17T19:51:39.200614+00:00"
       }
     },
     {
@@ -6665,17 +6741,22 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260527_02_T1",
       "acquired_at": "2026-05-27T06:41:29.758858Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T19:51:39.200614+00:00",
+      "processing_version": "landsat-mndwi/0.1",
       "cloud_cover_pct": 0.01,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from the MNDWI calculation."
+        },
+        {
+          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
         }
       ],
       "assets": [
@@ -6685,13 +6766,27 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC09_L2SP_160032_20260527_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "Exploratory MNDWI preview \u00b7 2026-05-27"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 exploratory MNDWI"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
         "run_id": "44113122981",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-mndwi/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260527_02_T1"
         ],
@@ -6701,7 +6796,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
+        "published_at": "2026-11-17T19:51:39.200614+00:00"
       }
     },
     {
@@ -6943,6 +7038,24 @@
       "scenes_published": 0,
       "processing_version": "firms-discovery/0.1",
       "errors": []
+    },
+    {
+      "id": "landsat-mndwi-20261117T195306.249419+0000",
+      "source_id": "landsat-c2-l2",
+      "started_at": "2026-11-17T19:51:39.200614+00:00",
+      "finished_at": "2026-11-17T19:53:06.249419+00:00",
+      "status": "partial",
+      "stage_reached": "raster_processing",
+      "scenes_discovered": 6,
+      "scenes_published": 5,
+      "processing_version": "landsat-mndwi/0.1",
+      "errors": [
+        {
+          "stage": "raster_processing",
+          "message": "ValueError: Insufficient valid pixels after QA screening: 10.09%",
+          "scene_id": "LC09_L2SP_160032_20260831_02_T1"
+        }
+      ]
     }
   ],
   "time_series": {
