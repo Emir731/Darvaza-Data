@@ -14,10 +14,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Check dashboard and globe JavaScript syntax
         run: |
           node --check app.js
           node --check globe.js
+      - name: Install browser test dependencies
+        run: |
+          npm init -y
+          npm install --no-save @playwright/test
+          npx playwright install --with-deps chromium
+      - name: Start static website
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/darvaza-http.log 2>&1 &
+          for i in $(seq 1 20); do
+            curl -fsS http://127.0.0.1:4173/index.html >/dev/null && break
+            sleep 1
+          done
+      - name: Run five desktop and five mobile passes for dashboard and Planet View
+        run: npx playwright test tests/responsive.spec.cjs --reporter=line
       - name: Verify required frontend entry points
         run: |
           test -s index.html
