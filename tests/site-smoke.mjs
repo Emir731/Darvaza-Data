@@ -13,6 +13,28 @@ try {
     const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
     const pageErrors = [];
     page.on("pageerror", error => pageErrors.push(error.message));
+    if (baseUrl.startsWith("http://127.0.0.1")) {
+      await page.route("**/manifest.json", async route => {
+        const live = await page.request.get("https://emir731.github.io/Darvaza-Data/manifest.json");
+        if (!live.ok()) {
+          await route.fulfill({ status: live.status(), body: await live.text() });
+          return;
+        }
+        const manifest = await live.json();
+        for (const observation of manifest.observations || []) {
+          for (const asset of observation.assets || []) {
+            if (typeof asset.href === "string" && asset.href.startsWith("assets/")) {
+              asset.href = "https://emir731.github.io/Darvaza-Data/" + asset.href;
+            }
+          }
+        }
+        await route.fulfill({
+          status: 200,
+          contentType: "application/json",
+          body: JSON.stringify(manifest),
+        });
+      });
+    }
     const response = await page.goto(baseUrl, { waitUntil: "domcontentloaded" });
     if (!response || response.status() !== 200) failures.push(`${viewport.name}: page did not return HTTP 200`);
     await page.waitForSelector("#map", { timeout: 10000 });
@@ -33,6 +55,9 @@ try {
       mapLocked: document.querySelector("#crater-satellite")?.dataset.mapLocked === "true",
       globeRoot: !!document.querySelector("#earth-globe"),
       rasterRoot: !!document.querySelector("#raster-products"),
+      rasterScenes: document.querySelectorAll(".raster-scene-card").length,
+      rasterPreviews: document.querySelectorAll(".raster-scene-card .raster-preview-link img").length,
+      rasterLoaded: [...document.querySelectorAll(".raster-scene-card .raster-preview-link img")].filter(img => img.complete && img.naturalWidth > 0).length,
       dataStatus: document.documentElement.dataset.dataStatus || "",
       mobileButtonVisible: !!document.querySelector("#mobile-menu-toggle") && getComputedStyle(document.querySelector("#mobile-menu-toggle")).display !== "none",
     }));
@@ -43,6 +68,9 @@ try {
     if (!state.leaflet) failures.push(`${viewport.name}: Leaflet map root missing`);
     if (!state.mapLocked) failures.push(`${viewport.name}: satellite map interaction lock is not active`);
     if (!state.globeRoot || !state.rasterRoot) failures.push(`${viewport.name}: expected observatory components missing`);
+    if (state.rasterScenes < 5) failures.push(`${viewport.name}: expected at least five processed scene cards, found ${state.rasterScenes}`);
+    if (state.rasterPreviews < 20) failures.push(`${viewport.name}: expected at least twenty raster previews, found ${state.rasterPreviews}`);
+    if (state.rasterLoaded < 20) failures.push(`${viewport.name}: raster preview assets did not all load (${state.rasterLoaded}/20)`);
     if (state.dataStatus !== "live") failures.push(`${viewport.name}: manifest state is ${state.dataStatus}`);
     if (viewport.name === "mobile" && !state.mobileButtonVisible) failures.push("mobile: navigation toggle is not visible");
     if (pageErrors.length) failures.push(`${viewport.name}: runtime errors: ${pageErrors.join("; ")}`);
