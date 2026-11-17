@@ -11,16 +11,28 @@ const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, ch => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 }[ch]));
 
+let map;
+let aoiLayer;
+
 function initMap() {
   if (!window.L) return;
-  const map = L.map("map", { scrollWheelZoom: false, zoomControl: true }).setView([AOI.lat, AOI.lon], 11);
+  map = L.map("map", { scrollWheelZoom: false, zoomControl: true }).setView([AOI.lat, AOI.lon], 16);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
-  L.circle([AOI.lat, AOI.lon], { radius: 2500, color: "#d9a441", weight: 1, fillColor: "#d9a441", fillOpacity: .08 }).addTo(map);
   L.circleMarker([AOI.lat, AOI.lon], { radius: 5, color: "#111916", weight: 2, fillColor: "#d9a441", fillOpacity: 1 }).addTo(map)
-    .bindPopup("<strong>Darvaza gas crater</strong><br>Approximate area of interest");
+    .bindPopup("<strong>Darvaza gas crater</strong><br>User-provided crater polygon");
+}
+
+function renderAoi(aoi) {
+  if (!map || !window.L || !aoi || !aoi.geometry) return;
+  if (aoiLayer) map.removeLayer(aoiLayer);
+  aoiLayer = L.geoJSON(aoi.geometry, {
+    style: { color: "#ef765d", weight: 2, fillColor: "#ef765d", fillOpacity: .16 }
+  }).addTo(map);
+  const bounds = aoiLayer.getBounds();
+  if (bounds.isValid()) map.fitBounds(bounds.pad(1.8), { maxZoom: 17 });
 }
 
 function setText(id, value) {
@@ -75,6 +87,7 @@ async function loadManifest() {
     if (!response.ok) throw new Error("Manifest not published");
     const manifest = await response.json();
     if (!manifest || !Array.isArray(manifest.observations) || !Array.isArray(manifest.sources)) throw new Error("Manifest schema is not recognized");
+    renderAoi(manifest.aoi);
     const observations = manifest.observations;
     const processed = observations.filter(x => Boolean(x.processed_at)).length;
     const products = Array.isArray(manifest.change_products) ? manifest.change_products.length : 0;
