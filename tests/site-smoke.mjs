@@ -44,6 +44,12 @@ try {
     await page.waitForFunction(() => document.documentElement.dataset.dataStatus === "live", null, { timeout: 20000 }).catch(() => {
       failures.push(`${viewport.name}: public manifest did not load`);
     });
+    await page.waitForFunction(() => {
+      const images = [...document.querySelectorAll(".raster-scene-card .raster-preview-link img")];
+      return images.length >= 20 && images.every(img => img.complete && img.naturalWidth > 0);
+    }, null, { timeout: 30000 }).catch(() => {
+      failures.push(`${viewport.name}: published raster preview images did not all load`);
+    });
     const state = await page.evaluate(() => ({
       title: document.title,
       h1: document.querySelector("h1")?.textContent?.trim() || "",
