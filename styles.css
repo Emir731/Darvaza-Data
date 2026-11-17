@@ -298,3 +298,46 @@ table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
 @media(min-width:701px) and (max-width:900px){
   #map{height:420px;grid-template-columns:minmax(0,1.25fr) minmax(190px,.8fr)}
 }
+
+
+/* Map reliability and responsive layout hardening */
+.map-visual{position:relative;min-width:0;overflow:hidden}
+.map-detail{height:clamp(300px,42vw,520px);min-height:300px}
+#crater-satellite{position:absolute;inset:0;width:100%;height:100%;background:#26352e}
+#crater-satellite .leaflet-container{width:100%;height:100%;background:#26352e}
+.map-source-note{position:absolute;z-index:700;left:12px;bottom:42px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:rgba(17,25,22,.92);color:var(--muted);font:9px var(--mono);letter-spacing:.06em;pointer-events:none}
+.analysis-status{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;margin:0 0 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface-2)}
+.analysis-status-dot{width:8px;height:8px;margin-top:5px;border-radius:50%;background:var(--accent);flex:none}
+.analysis-status strong{display:block;font:10px var(--mono);letter-spacing:.08em;color:var(--accent)}
+.analysis-status p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.55}
+.analysis-grid,.source-grid,.metrics-grid,.content-grid{min-width:0}
+.analysis-card,.source-card,.metric-card{min-width:0;overflow-wrap:anywhere}
+@media(max-width:900px){
+ .main-content{padding-left:24px;padding-right:24px}
+ .content-grid{grid-template-columns:minmax(0,1fr)}
+ .metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .map-detail{height:clamp(300px,58vw,430px)}
+}
+@media(max-width:600px){
+ .main-content{margin-left:0;padding:0 14px 24px}
+ .topbar{height:56px}
+ .topbar-right{gap:7px;font-size:8px}
+ .topbar-divider{display:none}
+ .page-intro{padding:30px 0 24px}
+ .intro-row{align-items:flex-start;flex-direction:column}
+ .location-stamp{min-width:0;width:100%}
+ .metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .metric-card{padding:13px;min-height:112px}
+ .metric-value{font-size:28px}
+ .panel{padding:14px}
+ .panel-heading{gap:8px}
+ .panel-heading h2{font-size:18px}
+ .map-detail{height:320px;min-height:320px}
+ .map-caption{flex-direction:column;gap:5px}
+ .analysis-grid{grid-template-columns:minmax(0,1fr)}
+ .analysis-card{padding:14px}
+ .analysis-status{padding:12px}
+ .section-title-row{gap:10px;align-items:flex-start}
+ .section-title-row .panel-index{white-space:nowrap}
+ .table-wrap{max-width:calc(100vw - 60px)}
+}
