@@ -12,7 +12,9 @@ const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, ch => ({
 }[ch]));
 
 let map;
-let aoiLayer;\nlet streetLayer;\nlet imageryLayer;
+let aoiLayer;
+let streetLayer;
+let imageryLayer;
 
 function initMap() {
   if (!window.L) return;
