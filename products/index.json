@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T17:18:09.680437Z",
+  "generated_at": "2026-11-17T17:19:29.468155Z",
   "processing_version": "raster-products/1.2",
-  "processed_count": 12,
+  "processed_count": 16,
   "processed_scene_count": 12,
   "products": [
     {
@@ -9,12 +9,17 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454",
       "acquired_at": "2026-11-16T07:01:41.025000Z",
-      "processed_at": "2026-11-17T17:17:33.556256Z",
+      "processed_at": "2026-11-17T17:18:47.178665Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 20,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S2C_MSIL2A_20261116T070141_R063_T40TFK_20261116T102454_mndwi-raster",
@@ -37,12 +42,17 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
       "acquired_at": "2026-11-14T02:10:57.377105Z",
-      "processed_at": "2026-11-17T17:17:35.332493Z",
+      "processed_at": "2026-11-17T17:18:48.887376Z",
       "processing_version": "raster-products/1.2",
       "product": "VV_BACKSCATTER",
       "units": "dB",
       "valid_pixel_pct": 100.0,
       "resolution_m": 10,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc_vv_backscatter-raster",
@@ -65,12 +75,17 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
       "acquired_at": "2026-11-08T14:03:45.065903Z",
-      "processed_at": "2026-11-17T17:17:38.571023Z",
+      "processed_at": "2026-11-17T17:18:52.198820Z",
       "processing_version": "raster-products/1.2",
       "product": "VV_BACKSCATTER",
       "units": "dB",
       "valid_pixel_pct": 100.0,
       "resolution_m": 10,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc_vv_backscatter-raster",
@@ -93,12 +108,17 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc",
       "acquired_at": "2026-11-02T02:10:57.858945Z",
-      "processed_at": "2026-11-17T17:17:45.877073Z",
+      "processed_at": "2026-11-17T17:19:01.272901Z",
       "processing_version": "raster-products/1.2",
       "product": "VV_BACKSCATTER",
       "units": "dB",
       "valid_pixel_pct": 100.0,
       "resolution_m": 10,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc_vv_backscatter-raster",
@@ -121,12 +141,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": "2026-11-17T17:17:51.447688Z",
+      "processed_at": "2026-11-17T17:19:07.107965Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 30,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "LC08_L2SP_160032_20261026_02_T1_mndwi-raster",
@@ -145,16 +170,54 @@
       ]
     },
     {
+      "observation_id": "landsat-c2-l2:LC08_L2SP_160032_20261026_02_T1",
+      "source_id": "landsat-c2-l2",
+      "scene_id": "LC08_L2SP_160032_20261026_02_T1",
+      "acquired_at": "2026-10-26T06:42:15.206708Z",
+      "processed_at": "2026-11-17T17:19:08.186651Z",
+      "processing_version": "raster-products/1.2",
+      "product": "SURFACE_TEMPERATURE",
+      "units": "K",
+      "valid_pixel_pct": 100.0,
+      "resolution_m": 100,
+      "quality": {
+        "st_qa_status": "not_available_from_catalogue",
+        "interpretation": "Land surface temperature; not fire temperature or a direct crater-core temperature measurement",
+        "uncertainty_screen": "ST_QA <= 3.0 K when supplied; project QC threshold, not an official USGS threshold"
+      },
+      "assets": [
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1_surface_temperature-raster",
+          "role": "cog",
+          "href": "assets/products/landsat-c2-l2/LC08_L2SP_160032_20261026_02_T1_surface_temperature.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SURFACE_TEMPERATURE raster"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1_surface_temperature-preview",
+          "role": "preview",
+          "href": "assets/products/landsat-c2-l2/LC08_L2SP_160032_20261026_02_T1_surface_temperature.png",
+          "media_type": "image/png",
+          "title": "SURFACE_TEMPERATURE preview"
+        }
+      ]
+    },
+    {
       "observation_id": "landsat-c2-l2:LC09_L2SP_161032_20261025_02_T1",
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_161032_20261025_02_T1",
       "acquired_at": "2026-10-25T06:48:27.506424Z",
-      "processed_at": "2026-11-17T17:17:54.603096Z",
+      "processed_at": "2026-11-17T17:19:11.371609Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 30,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "LC09_L2SP_161032_20261025_02_T1_mndwi-raster",
@@ -173,16 +236,54 @@
       ]
     },
     {
+      "observation_id": "landsat-c2-l2:LC09_L2SP_161032_20261025_02_T1",
+      "source_id": "landsat-c2-l2",
+      "scene_id": "LC09_L2SP_161032_20261025_02_T1",
+      "acquired_at": "2026-10-25T06:48:27.506424Z",
+      "processed_at": "2026-11-17T17:19:12.331533Z",
+      "processing_version": "raster-products/1.2",
+      "product": "SURFACE_TEMPERATURE",
+      "units": "K",
+      "valid_pixel_pct": 100.0,
+      "resolution_m": 100,
+      "quality": {
+        "st_qa_status": "not_available_from_catalogue",
+        "interpretation": "Land surface temperature; not fire temperature or a direct crater-core temperature measurement",
+        "uncertainty_screen": "ST_QA <= 3.0 K when supplied; project QC threshold, not an official USGS threshold"
+      },
+      "assets": [
+        {
+          "id": "LC09_L2SP_161032_20261025_02_T1_surface_temperature-raster",
+          "role": "cog",
+          "href": "assets/products/landsat-c2-l2/LC09_L2SP_161032_20261025_02_T1_surface_temperature.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SURFACE_TEMPERATURE raster"
+        },
+        {
+          "id": "LC09_L2SP_161032_20261025_02_T1_surface_temperature-preview",
+          "role": "preview",
+          "href": "assets/products/landsat-c2-l2/LC09_L2SP_161032_20261025_02_T1_surface_temperature.png",
+          "media_type": "image/png",
+          "title": "SURFACE_TEMPERATURE preview"
+        }
+      ]
+    },
+    {
       "observation_id": "sentinel-2-l2a:S2B_MSIL2A_20261022T065929_R063_T40TFK_20261022T105309",
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2B_MSIL2A_20261022T065929_R063_T40TFK_20261022T105309",
       "acquired_at": "2026-10-22T06:59:29.025000Z",
-      "processed_at": "2026-11-17T17:17:57.254516Z",
+      "processed_at": "2026-11-17T17:19:15.053958Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 20,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S2B_MSIL2A_20261022T065929_R063_T40TFK_20261022T105309_mndwi-raster",
@@ -205,12 +306,17 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
       "acquired_at": "2026-10-21T02:10:58.054364Z",
-      "processed_at": "2026-11-17T17:17:57.925660Z",
+      "processed_at": "2026-11-17T17:19:15.745546Z",
       "processing_version": "raster-products/1.2",
       "product": "VV_BACKSCATTER",
       "units": "dB",
       "valid_pixel_pct": 100.0,
       "resolution_m": 10,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc_vv_backscatter-raster",
@@ -233,12 +339,17 @@
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2A_MSIL2A_20261019T070311_R063_T40TFK_20261019T103003",
       "acquired_at": "2026-10-19T07:03:11.024000Z",
-      "processed_at": "2026-11-17T17:18:00.541551Z",
+      "processed_at": "2026-11-17T17:19:18.440741Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 20,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S2A_MSIL2A_20261019T070311_R063_T40TFK_20261019T103003_mndwi-raster",
@@ -261,12 +372,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20261018_02_T1",
       "acquired_at": "2026-10-18T06:42:19.078064Z",
-      "processed_at": "2026-11-17T17:18:03.895094Z",
+      "processed_at": "2026-11-17T17:19:21.627972Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 30,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "LC09_L2SP_160032_20261018_02_T1_mndwi-raster",
@@ -285,16 +401,54 @@
       ]
     },
     {
+      "observation_id": "landsat-c2-l2:LC09_L2SP_160032_20261018_02_T1",
+      "source_id": "landsat-c2-l2",
+      "scene_id": "LC09_L2SP_160032_20261018_02_T1",
+      "acquired_at": "2026-10-18T06:42:19.078064Z",
+      "processed_at": "2026-11-17T17:19:22.561573Z",
+      "processing_version": "raster-products/1.2",
+      "product": "SURFACE_TEMPERATURE",
+      "units": "K",
+      "valid_pixel_pct": 100.0,
+      "resolution_m": 100,
+      "quality": {
+        "st_qa_status": "not_available_from_catalogue",
+        "interpretation": "Land surface temperature; not fire temperature or a direct crater-core temperature measurement",
+        "uncertainty_screen": "ST_QA <= 3.0 K when supplied; project QC threshold, not an official USGS threshold"
+      },
+      "assets": [
+        {
+          "id": "LC09_L2SP_160032_20261018_02_T1_surface_temperature-raster",
+          "role": "cog",
+          "href": "assets/products/landsat-c2-l2/LC09_L2SP_160032_20261018_02_T1_surface_temperature.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SURFACE_TEMPERATURE raster"
+        },
+        {
+          "id": "LC09_L2SP_160032_20261018_02_T1_surface_temperature-preview",
+          "role": "preview",
+          "href": "assets/products/landsat-c2-l2/LC09_L2SP_160032_20261018_02_T1_surface_temperature.png",
+          "media_type": "image/png",
+          "title": "SURFACE_TEMPERATURE preview"
+        }
+      ]
+    },
+    {
       "observation_id": "sentinel-2-l2a:S2C_MSIL2A_20261017T065901_R063_T40TFK_20261017T102507",
       "source_id": "sentinel-2-l2a",
       "scene_id": "S2C_MSIL2A_20261017T065901_R063_T40TFK_20261017T102507",
       "acquired_at": "2026-10-17T06:59:01.025000Z",
-      "processed_at": "2026-11-17T17:18:06.506805Z",
+      "processed_at": "2026-11-17T17:19:25.295794Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 20,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "S2C_MSIL2A_20261017T065901_R063_T40TFK_20261017T102507_mndwi-raster",
@@ -317,12 +471,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_161032_20261017_02_T1",
       "acquired_at": "2026-10-17T06:48:24.117744Z",
-      "processed_at": "2026-11-17T17:18:09.680251Z",
+      "processed_at": "2026-11-17T17:19:28.567240Z",
       "processing_version": "raster-products/1.2",
       "product": "MNDWI",
       "units": "unitless",
       "valid_pixel_pct": 100.0,
       "resolution_m": 30,
+      "quality": {
+        "st_qa_status": null,
+        "interpretation": null,
+        "uncertainty_screen": null
+      },
       "assets": [
         {
           "id": "LC08_L2SP_161032_20261017_02_T1_mndwi-raster",
@@ -339,10 +498,43 @@
           "title": "MNDWI preview"
         }
       ]
+    },
+    {
+      "observation_id": "landsat-c2-l2:LC08_L2SP_161032_20261017_02_T1",
+      "source_id": "landsat-c2-l2",
+      "scene_id": "LC08_L2SP_161032_20261017_02_T1",
+      "acquired_at": "2026-10-17T06:48:24.117744Z",
+      "processed_at": "2026-11-17T17:19:29.467927Z",
+      "processing_version": "raster-products/1.2",
+      "product": "SURFACE_TEMPERATURE",
+      "units": "K",
+      "valid_pixel_pct": 100.0,
+      "resolution_m": 100,
+      "quality": {
+        "st_qa_status": "not_available_from_catalogue",
+        "interpretation": "Land surface temperature; not fire temperature or a direct crater-core temperature measurement",
+        "uncertainty_screen": "ST_QA <= 3.0 K when supplied; project QC threshold, not an official USGS threshold"
+      },
+      "assets": [
+        {
+          "id": "LC08_L2SP_161032_20261017_02_T1_surface_temperature-raster",
+          "role": "cog",
+          "href": "assets/products/landsat-c2-l2/LC08_L2SP_161032_20261017_02_T1_surface_temperature.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SURFACE_TEMPERATURE raster"
+        },
+        {
+          "id": "LC08_L2SP_161032_20261017_02_T1_surface_temperature-preview",
+          "role": "preview",
+          "href": "assets/products/landsat-c2-l2/LC08_L2SP_161032_20261017_02_T1_surface_temperature.png",
+          "media_type": "image/png",
+          "title": "SURFACE_TEMPERATURE preview"
+        }
+      ]
     }
   ],
   "errors": [],
-  "warning_count": 10,
+  "warning_count": 6,
   "warnings": [
     {
       "scene_id": "S2B_MSIL2A_20261111T070119_R063_T40TFK_20261111T105612",
@@ -360,7 +552,7 @@
       "scene_id": "LC09_L2SP_160032_20261103_02_T1",
       "source_id": "landsat-c2-l2",
       "product": "SURFACE_TEMPERATURE",
-      "reason": "Required thermal asset(s) unavailable: st_qa"
+      "reason": "ValueError: SURFACE_TEMPERATURE: valid AOI pixels 0.0% below threshold 15.0%; thermal source coverage=100.0%; clear QA coverage=0.0%; ST_QA uncertainty band unavailable; uncertainty was not sc"
     },
     {
       "scene_id": "LC08_L2SP_161032_20261102_02_T1",
@@ -372,37 +564,13 @@
       "scene_id": "LC08_L2SP_161032_20261102_02_T1",
       "source_id": "landsat-c2-l2",
       "product": "SURFACE_TEMPERATURE",
-      "reason": "Required thermal asset(s) unavailable: st_qa"
+      "reason": "ValueError: SURFACE_TEMPERATURE: valid AOI pixels 0.0% below threshold 15.0%; thermal source coverage=100.0%; clear QA coverage=0.0%; ST_QA uncertainty band unavailable; uncertainty was not sc"
     },
     {
       "scene_id": "S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140",
       "source_id": "sentinel-2-l2a",
       "product": "MNDWI",
       "reason": "MNDWI: valid AOI pixels 0.0% below threshold 15.0%; source-data coverage inside boundary=100.0%; clear-pixel coverage after SCL mask=0.0%. Low source coverage suggests scene-edge/nodata overlap; low clear coverage suggests cloud, shadow, snow or invalid SCL classes."
-    },
-    {
-      "scene_id": "LC08_L2SP_160032_20261026_02_T1",
-      "source_id": "landsat-c2-l2",
-      "product": "SURFACE_TEMPERATURE",
-      "reason": "Required thermal asset(s) unavailable: st_qa"
-    },
-    {
-      "scene_id": "LC09_L2SP_161032_20261025_02_T1",
-      "source_id": "landsat-c2-l2",
-      "product": "SURFACE_TEMPERATURE",
-      "reason": "Required thermal asset(s) unavailable: st_qa"
-    },
-    {
-      "scene_id": "LC09_L2SP_160032_20261018_02_T1",
-      "source_id": "landsat-c2-l2",
-      "product": "SURFACE_TEMPERATURE",
-      "reason": "Required thermal asset(s) unavailable: st_qa"
-    },
-    {
-      "scene_id": "LC08_L2SP_161032_20261017_02_T1",
-      "source_id": "landsat-c2-l2",
-      "product": "SURFACE_TEMPERATURE",
-      "reason": "Required thermal asset(s) unavailable: st_qa"
     }
   ]
 }
