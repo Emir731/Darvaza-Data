@@ -23,6 +23,10 @@ jobs:
     steps:
       - name: Check out website and data
         uses: actions/checkout@v4
+      - name: Validate browser JavaScript
+        run: |
+          node --check app.js
+          node --check globe.js
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
