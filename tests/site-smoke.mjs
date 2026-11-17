@@ -27,7 +27,8 @@ try {
       mapHeight: document.querySelector("#map")?.getBoundingClientRect().height || 0,
       viewportWidth: window.innerWidth,
       documentWidth: document.documentElement.scrollWidth,
-      leaflet: !!document.querySelector("#crater-satellite .leaflet-container"),
+      leaflet: !!document.querySelector("#crater-satellite.leaflet-container"),
+      mapLocked: document.querySelector("#crater-satellite")?.dataset.mapLocked === "true",
       globeRoot: !!document.querySelector("#earth-globe"),
       rasterRoot: !!document.querySelector("#raster-products"),
       dataStatus: document.documentElement.dataset.dataStatus || "",
@@ -37,6 +38,8 @@ try {
     if (!state.h1) failures.push(`${viewport.name}: main heading missing`);
     if (state.mapWidth < 250 || state.mapHeight < 100) failures.push(`${viewport.name}: map container has invalid dimensions`);
     if (state.documentWidth > state.viewportWidth + 2) failures.push(`${viewport.name}: horizontal page overflow (${state.documentWidth}px > ${state.viewportWidth}px)`);
+    if (!state.leaflet) failures.push(`${viewport.name}: Leaflet map root missing`);
+    if (!state.mapLocked) failures.push(`${viewport.name}: satellite map interaction lock is not active`);
     if (!state.globeRoot || !state.rasterRoot) failures.push(`${viewport.name}: expected observatory components missing`);
     if (state.dataStatus !== "live") failures.push(`${viewport.name}: manifest state is ${state.dataStatus}`);
     if (viewport.name === "mobile" && !state.mobileButtonVisible) failures.push("mobile: navigation toggle is not visible");
