@@ -27,6 +27,9 @@
         <a class="nav-link" href="#observations"><i class="ph ph-satellite"></i><span>Observations</span></a>
         <a class="nav-link" href="#map-section"><i class="ph ph-map-trifold"></i><span>Map & area</span></a>
         <a class="nav-link" href="#sources"><i class="ph ph-database"></i><span>Data sources</span></a>
+        <a class="nav-link" href="#fire-watch"><i class="ph ph-fire"></i><span>Fire detections</span></a>
+        <a class="nav-link" href="#products"><i class="ph ph-images"></i><span>Satellite images</span></a>
+        <a class="nav-link" href="#quality"><i class="ph ph-shield-check"></i><span>Data quality</span></a>
         <a class="nav-link" href="#method"><i class="ph ph-flask"></i><span>Methodology</span></a>
       </nav>
       <div class="sidebar-bottom">
@@ -47,27 +50,32 @@
         <div class="intro-row">
           <div>
             <h1>Darvaza<br><span>Environmental Watch</span></h1>
-            <p class="intro-copy">A satellite-based view of environmental change around the Darvaza gas crater in the Karakum Desert.</p>
+            <p class="intro-copy">See what satellites are observing around the Darvaza gas crater. Explore images, heat signals and changes over time — with clear notes about what the data can and cannot tell us.</p>
           </div>
           <div class="location-stamp"><i class="ph ph-map-pin"></i><div><strong>40.252° N</strong><span>58.439° E · TURKMENISTAN</span></div></div>
         </div>
       </section>
 
       <section class="metrics-grid" aria-label="Observation summary">
-        <article class="metric-card"><div class="metric-top"><span>CATALOGUE OBSERVATIONS</span><i class="ph ph-satellite"></i></div><div class="metric-value" id="metric-observations">—</div><div class="metric-foot" id="metric-observations-note">Waiting for published manifest</div></article>
-        <article class="metric-card"><div class="metric-top"><span>PROCESSED SCENES</span><i class="ph ph-check-circle"></i></div><div class="metric-value" id="metric-processed">—</div><div class="metric-foot">Quality-screened raster products</div></article>
-        <article class="metric-card"><div class="metric-top"><span>CHANGE PRODUCTS</span><i class="ph ph-chart-line"></i></div><div class="metric-value" id="metric-products">—</div><div class="metric-foot">Experimental pixel differences</div></article>
-        <article class="metric-card"><div class="metric-top"><span>ACTIVE DATA SOURCES</span><i class="ph ph-stack"></i></div><div class="metric-value" id="metric-sources">—</div><div class="metric-foot">Catalogue connections reporting data</div></article>
+        <article class="metric-card"><div class="metric-top"><span>SCENES FOUND</span><i class="ph ph-satellite"></i></div><div class="metric-value" id="metric-observations">—</div><div class="metric-foot" id="metric-observations-note">Waiting for published manifest</div></article>
+        <article class="metric-card"><div class="metric-top"><span>SCENES ANALYSED</span><i class="ph ph-check-circle"></i></div><div class="metric-value" id="metric-processed">—</div><div class="metric-foot">Satellite images processed for this area</div></article>
+        <article class="metric-card"><div class="metric-top"><span>COMPARISON MAPS</span><i class="ph ph-chart-line"></i></div><div class="metric-value" id="metric-products">—</div><div class="metric-foot">Early image comparisons — not final proof</div></article>
+        <article class="metric-card"><div class="metric-top"><span>WORKING DATA SOURCES</span><i class="ph ph-stack"></i></div><div class="metric-value" id="metric-sources">—</div><div class="metric-foot">Satellites and data feeds</div></article>
       </section>
 
       <section class="content-grid" id="map-section">
         <article class="panel map-panel">
-          <div class="panel-heading"><div><div class="eyebrow">GEOGRAPHIC CONTEXT</div><h2>Area of interest</h2></div><span class="panel-index">01 / MAP</span></div>
+          <div class="panel-heading"><div><div class="eyebrow">GEOGRAPHIC CONTEXT</div><h2>Study area</h2></div><span class="panel-index">01 / MAP</span></div>
           <div id="map" role="img" aria-label="Map centered on the Darvaza gas crater in Turkmenistan"></div>
-          <div class="map-caption"><span><i class="ph ph-crosshair"></i> DARVAZA GAS CRATER</span><span class="mono">WGS84 · 40.252 / 58.439</span></div>
+          <div class="map-caption"><span><i class="ph ph-crosshair"></i> DARVAZA STUDY AREA</span><span class="mono">USER-DRAWN OUTLINE</span></div>
+          <div class="map-controls" aria-label="Map background">
+            <button type="button" id="map-street" class="map-mode active">Street map</button>
+            <button type="button" id="map-satellite" class="map-mode">Satellite image</button>
+          </div>
+          <p class="map-help">The outline is the study boundary supplied by the project owner. It has not yet been checked by a field survey.</p>
         </article>
         <article class="panel activity-panel">
-          <div class="panel-heading"><div><div class="eyebrow">OBSERVATION RECORD</div><h2>Latest activity</h2></div><span class="panel-index">02 / FEED</span></div>
+          <div class="panel-heading"><div><div class="eyebrow">OBSERVATION RECORD</div><h2>Latest satellite updates</h2></div><span class="panel-index">02 / FEED</span></div>
           <div id="latest-list" class="latest-list">
             <div class="empty-state"><i class="ph ph-radar"></i><strong>Data feed not connected</strong><p>The dashboard will populate when the pipeline publishes manifest.json to this repository.</p></div>
           </div>
@@ -76,23 +84,40 @@
       </section>
 
       <section class="panel observations-panel" id="observations">
-        <div class="panel-heading observations-heading"><div><div class="eyebrow">SATELLITE CATALOGUE</div><h2>Recent observations</h2><p class="section-description">Scene metadata discovered for the Darvaza area. Catalogue records are not processed imagery.</p></div><span class="panel-index">03 / DATA</span></div>
+        <div class="panel-heading observations-heading"><div><div class="eyebrow">SATELLITE CATALOGUE</div><h2>Recent satellite passes</h2><p class="section-description">A scene is a satellite pass. “Found” means the satellite collected data nearby; it does not always mean the crater itself is visible in that image.</p></div><span class="panel-index">03 / DATA</span></div>
         <div class="table-wrap">
-          <table><thead><tr><th>ACQUISITION</th><th>SOURCE</th><th>SCENE ID</th><th>CLOUD</th><th>PROCESSING</th></tr></thead><tbody id="observations-body"><tr><td colspan="5"><div class="table-empty">No published observation records yet.</div></td></tr></tbody></table>
+          <table><thead><tr><th>DATE</th><th>SATELLITE</th><th>IMAGE ID</th><th>CLOUD COVER</th><th>STATUS</th></tr></thead><tbody id="observations-body"><tr><td colspan="5"><div class="table-empty">No published observation records yet.</div></td></tr></tbody></table>
         </div>
         <div class="table-footer"><span id="table-count">0 RECORDS</span><span>Times shown in UTC</span></div>
       </section>
 
       <section class="panel sources-panel" id="sources">
-        <div class="panel-heading"><div><div class="eyebrow">DATA INFRASTRUCTURE</div><h2>Source network</h2><p class="section-description">Each source is identified by its sensor, provider and current pipeline state.</p></div><span class="panel-index">04 / SOURCES</span></div>
+        <div class="panel-heading"><div><div class="eyebrow">DATA INFRASTRUCTURE</div><h2>Where the data comes from</h2><p class="section-description">Each source is identified by its sensor, provider and current pipeline state.</p></div><span class="panel-index">04 / SOURCES</span></div>
         <div id="source-grid" class="source-grid">
           <div class="source-empty">Source status will appear after the first manifest is published.</div>
         </div>
       </section>
 
+      <section class="panel data-panel" id="fire-watch">
+        <div class="panel-heading"><div><div class="eyebrow">HOTSPOT MONITORING</div><h2>Fire and heat detections</h2><p class="section-description">VIIRS and MODIS satellites look for unusually hot pixels. A detection is a clue, not a direct reading of the crater's temperature. No detection does not prove there is no heat.</p></div><span class="panel-index">05 / SIGNALS</span></div>
+        <div id="fire-summary" class="status-grid"><div class="source-empty">Loading recent detection status…</div></div>
+        <p class="map-help" id="fire-window">The feed's checked time window will appear here.</p>
+      </section>
+
+      <section class="panel data-panel" id="products">
+        <div class="panel-heading"><div><div class="eyebrow">PROCESSED SATELLITE DATA</div><h2>Satellite image products</h2><p class="section-description">These are measurements calculated from satellite images. Each card shows its pixel size and how much of the study area had usable data.</p></div><span class="panel-index">06 / IMAGERY</span></div>
+        <div id="product-grid" class="product-grid"><div class="source-empty">Loading image products…</div></div>
+      </section>
+
+      <section class="panel data-panel" id="quality">
+        <div class="panel-heading"><div><div class="eyebrow">HOW MUCH CAN WE TRUST?</div><h2>Data quality and validation</h2><p class="section-description">We separate processed data from independently checked results. Missing pixels are not filled with guesses.</p></div><span class="panel-index">07 / QUALITY</span></div>
+        <div id="quality-summary" class="quality-summary"></div>
+        <div id="warning-list" class="warning-list"><div class="source-empty">Loading processing notes…</div></div>
+      </section>
+
       <section class="method-grid" id="method">
-        <article class="method-card"><div class="eyebrow">SCIENTIFIC INTEGRITY</div><h2>Discovery is not analysis.</h2><p>Satellite catalogue records identify available scenes. They do not establish environmental change. Processing, cloud and shadow screening, co-registration, uncertainty estimation and independent validation are required before publishing change metrics.</p><a href="https://github.com/Emir731/Darvaza-Pipeline" target="_blank" rel="noreferrer" class="text-link">Read pipeline methodology <i class="ph ph-arrow-up-right"></i></a></article>
-        <article class="method-card method-warning"><div class="warning-icon"><i class="ph ph-info"></i></div><div><div class="eyebrow">THERMAL DATA INTERPRETATION</div><h3>Land-surface temperature is not flame temperature.</h3><p>Landsat ST_B10 provides a 30 m land-surface-temperature estimate in Kelvin where valid data exist. It does not directly measure the flame, subsurface gas or crater-core temperature. FIRMS VIIRS/MODIS detections are coarse-resolution hotspot points, not calibrated crater-temperature measurements.</p></div></article>
+        <article class="method-card"><div class="eyebrow">SCIENTIFIC INTEGRITY</div><h2>Finding an image is not the same as proving a change.</h2><p>Satellite catalogue records identify available scenes. They do not establish environmental change. Processing, cloud and shadow screening, co-registration, uncertainty estimation and independent validation are required before publishing change metrics.</p><a href="https://github.com/Emir731/Darvaza-Pipeline" target="_blank" rel="noreferrer" class="text-link">Read pipeline methodology <i class="ph ph-arrow-up-right"></i></a></article>
+        <article class="method-card method-warning"><div class="warning-icon"><i class="ph ph-info"></i></div><div><div class="eyebrow">THERMAL DATA INTERPRETATION</div><h3>Land-surface temperature is not flame temperature.</h3><p>Landsat ST_B10 estimates the temperature of the ground surface. Its thermal detail is about 100 m here, even when the file is displayed on a finer grid. It does not directly measure the flame, subsurface gas or crater-core temperature. FIRMS VIIRS/MODIS detections are coarse-resolution hotspot points, not calibrated crater-temperature measurements.</p></div></article>
       </section>
 
       <footer class="footer"><span>© <span id="year"></span> DARVAZA WATCH</span><span>OPEN DATA · REPRODUCIBLE METHODS · TURKMENISTAN</span><a href="https://github.com/Emir731/Darvaza-Pipeline" target="_blank" rel="noreferrer">SOURCE CODE <i class="ph ph-arrow-up-right"></i></a></footer>
