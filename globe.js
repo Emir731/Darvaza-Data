@@ -22,6 +22,7 @@
       .pointLabel(d => d.name)
       .ringsData([{lat:AOI.lat,lng:AOI.lng,maxR:3.2, propagationSpeed:.7, repeatPeriod:1800}])
       .ringColor(() => t => `rgba(239,118,93,${1-t})`).ringMaxRadius("maxR").ringPropagationSpeed("propagationSpeed").ringRepeatPeriod("repeatPeriod");
+    window.__darvazaGlobe = globe;
     globe.pointOfView({lat:AOI.lat,lng:AOI.lng,altitude:1.8},1200);
     globe.controls().autoRotate = true;
     globe.controls().autoRotateSpeed = .28;
@@ -111,6 +112,21 @@
       const data = await manifestResult.value.json();
       observations = Array.isArray(data.observations) ? data.observations : [];
       window.__darvazaAoi = data.aoi || null;
+      if (window.__darvazaGlobe && data.aoi && data.aoi.geometry) {
+        const feature = {
+          type: "Feature",
+          properties: { name: data.aoi.name || "Darvaza Gas Crater" },
+          geometry: data.aoi.geometry
+        };
+        window.__darvazaGlobe
+          .polygonsData([feature])
+          .polygonGeoJsonGeometry(d => d.geometry)
+          .polygonAltitude(0.008)
+          .polygonCapColor(() => "rgba(239,118,93,0.28)")
+          .polygonSideColor(() => "rgba(239,118,93,0.08)")
+          .polygonStrokeColor(() => "#ef765d")
+          .polygonLabel(d => d.properties.name);
+      }
       window.__darvazaProducts = Array.isArray(data.change_products) ? data.change_products : [];
     }
     const select = $("date-select");
