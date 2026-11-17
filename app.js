@@ -11,19 +11,40 @@ function nav(){const b=$("mobile-menu-toggle");b?.addEventListener("click",()=>{
 function globe(){
   const root=$("map");
   if(!root)return;
-  const crater={lat:40.252647,lon:58.439589};
-  root.innerHTML='<div class="map-visual"><div id="earth-globe" aria-label="3D Earth zooming to Darvaza"></div><div class="globe-tag">3D EARTH · DARVAZA</div></div><div class="map-visual map-detail"><div id="crater-satellite" aria-label="High resolution satellite view of the Darvaza gas crater"></div><div class="satellite-tag"><span class="satellite-live-dot"></span> CRATER SATELLITE DETAIL <span>· ZOOM 18</span></div></div>';
+  // Verified crater location (not the nearby village or camera viewpoint).
+  const crater={lat:40.25258,lon:58.43933};
+  root.innerHTML=
+    '<div class="map-visual map-detail"><div id="crater-satellite" aria-label="Satellite imagery centred on the Darvaza gas crater"></div><div class="satellite-tag"><span class="satellite-live-dot"></span> DARVAZA · SATELLITE VIEW <span>40.25258 N / 58.43933 E</span></div></div>'+
+    '<div class="map-visual map-globe"><div id="earth-globe" aria-label="3D Earth context view focused on Darvaza"></div><div class="globe-tag">3D EARTH · LOCKED TO DARVAZA</div></div>'+
+    '<figure class="map-visual crater-photo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Darvaza_Gas_Crater_%2842435082502%29.jpg/1280px-Darvaza_Gas_Crater_%2842435082502%29.jpg" alt="Darvaza gas crater burning at night, photographed in 2018" loading="lazy" referrerpolicy="no-referrer"><figcaption>CRATER REFERENCE · FIELD PHOTOGRAPH · 2018 <a href="https://commons.wikimedia.org/wiki/File:Darvaza_Gas_Crater_(42435082502).jpg" target="_blank" rel="noopener noreferrer">John Pavelka · CC BY 2.0</a></figcaption></figure>';
   root.dataset.view="darvaza-locked";
   const detail=$("crater-satellite");
   if(window.L){
-    const map=L.map(detail,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false,attributionControl:true}).setView([crater.lat,crater.lon],18);
-    const tiles=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Imagery © Esri, Maxar, Earthstar Geographics"}).addTo(map);
-    tiles.on("tileerror",()=>{detail.dataset.tileError="true"});
-    L.circle([crater.lat,crater.lon],{radius:35,color:"#f2bd56",weight:2,fillColor:"#f2bd56",fillOpacity:.10}).addTo(map);
+    const map=L.map(detail,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false,attributionControl:true,preferCanvas:true}).setView([crater.lat,crater.lon],18);
+    let tileErrors=0,baseLayer;
+    const esri=L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Imagery © Esri, Maxar, Earthstar Geographics",crossOrigin:true});
+    const sentinel=L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg",{maxZoom:18,maxNativeZoom:14,attribution:"Sentinel-2 cloudless mosaic © EOX / ESA",crossOrigin:true});
+    baseLayer=esri.addTo(map);
+    esri.on("tileerror",()=>{
+      tileErrors++;
+      if(tileErrors>=3&&!detail.dataset.fallbackTried){
+        detail.dataset.fallbackTried="true";
+        map.removeLayer(esri);
+        baseLayer=sentinel.addTo(map);
+      }
+    });
+    sentinel.on("tileerror",()=>{detail.dataset.imageryError="true"});
+    L.circle([crater.lat,crater.lon],{radius:45,color:"#f2bd56",weight:2,fillColor:"#f2bd56",fillOpacity:.10}).addTo(map);
     L.circleMarker([crater.lat,crater.lon],{radius:5,color:"#101713",weight:2,fillColor:"#f2bd56",fillOpacity:1}).addTo(map).bindTooltip("DARVAZA GAS CRATER",{permanent:true,direction:"top",offset:[0,-8],className:"crater-tooltip"});
-    requestAnimationFrame(()=>map.invalidateSize());
+    const refresh=()=>map.invalidateSize({pan:false});
+    requestAnimationFrame(refresh);
+    setTimeout(refresh,250);
+    setTimeout(refresh,900);
+    if(typeof ResizeObserver!=="undefined"){const ro=new ResizeObserver(refresh);ro.observe(root);ro.observe(detail)}
+    addEventListener("resize",refresh,{passive:true});
+    addEventListener("orientationchange",()=>setTimeout(refresh,250),{passive:true});
   }else{
-    detail.innerHTML='<div class="globe-loading">SATELLITE MAP UNAVAILABLE · CHECK NETWORK</div>';
+    detail.innerHTML='<div class="globe-loading">SATELLITE MAP LIBRARY UNAVAILABLE · SEE CRATER PHOTO BELOW</div>';
   }
   const earth=$("earth-globe");
   if(typeof window.Globe==="function"){
@@ -39,16 +60,16 @@ function globe(){
         .ringColor(() =>"#f2bd56").ringMaxRadius("maxR").ringPropagationSpeed(0).ringRepeatPeriod(0);
       const resize=()=>g.width(earth.clientWidth).height(earth.clientHeight);
       resize();addEventListener("resize",resize,{passive:true});
-      g.pointOfView({lat:crater.lat,lng:crater.lon,altitude:1.65},0);
-      g.pointOfView({lat:crater.lat,lng:crater.lon,altitude:.42},1800);
+      g.pointOfView({lat:crater.lat,lng:crater.lon,altitude:1.8},0);
+      g.pointOfView({lat:crater.lat,lng:crater.lon,altitude:.38},2200);
       const controls=g.controls();
       controls.enabled=false;controls.enableZoom=false;controls.enableRotate=false;controls.enablePan=false;
     }catch(e){
-      console.warn("3D globe unavailable; satellite detail remains active:",e);
-      earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · CRATER DETAIL ACTIVE</div>';
+      console.warn("3D globe unavailable; satellite view remains active:",e);
+      earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · SATELLITE VIEW ACTIVE</div>';
     }
   }else{
-    earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · CRATER DETAIL ACTIVE</div>';
+    earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · SATELLITE VIEW ACTIVE</div>';
   }
 }
 function metrics(m){const obs=m.observations||[],sources=m.sources||[],runs=m.pipeline_runs||[];$("metric-observations").textContent=fmt(obs.length);$("metric-processed").textContent=fmt(obs.filter(x=>x.processed_at).length);$("metric-products").textContent=fmt((m.change_products||[]).length);$("metric-sources").textContent=fmt(sources.filter(x=>Number(x.scene_count)>0).length);$("metric-runs").textContent=fmt(runs.filter(x=>x.status==="success").length);$("metric-observations-note").textContent="Catalogue records · "+(m.is_sample?"sample data":"published manifest");$("last-updated").textContent=m.generated_at?"UPDATED "+date(m.generated_at).toUpperCase():"UPDATE TIME UNKNOWN"}
