@@ -29,6 +29,7 @@
         <a class="nav-link" href="#sources"><i class="ph ph-database"></i><span>Data sources</span></a>
         <a class="nav-link" href="#fire-watch"><i class="ph ph-fire"></i><span>Fire detections</span></a>
         <a class="nav-link" href="#products"><i class="ph ph-images"></i><span>Satellite images</span></a>
+        <a class="nav-link" href="#change-analysis"><i class="ph ph-chart-line-up"></i><span>Change analysis</span></a>
         <a class="nav-link" href="#quality"><i class="ph ph-shield-check"></i><span>Data quality</span></a>
         <a class="nav-link" href="#method"><i class="ph ph-flask"></i><span>Methodology</span></a>
       </nav>
@@ -110,9 +111,15 @@
         <div id="product-grid" class="product-grid"><div class="source-empty">Loading image products…</div></div>
       </section>
 
+      <section class="panel data-panel" id="change-analysis">
+        <div class="panel-heading"><div><div class="eyebrow">BEFORE / AFTER</div><h2>Surface change comparisons</h2><p class="section-description">These maps compare matching satellite products from different dates. A difference can be caused by real change, image conditions or alignment error, so treat it as a lead for investigation — not proof.</p></div><span class="panel-index">07 / CHANGE</span></div>
+        <div id="change-grid" class="product-grid"><div class="source-empty">Loading comparable image pairs…</div></div>
+      </section>
+
       <section class="panel data-panel" id="quality">
-        <div class="panel-heading"><div><div class="eyebrow">HOW MUCH CAN WE TRUST?</div><h2>Data quality and validation</h2><p class="section-description">We separate processed data from independently checked results. Missing pixels are not filled with guesses.</p></div><span class="panel-index">07 / QUALITY</span></div>
-        <div id="quality-summary" class="quality-summary"></div>
+        <div class="panel-heading"><div><div class="eyebrow">HOW MUCH CAN WE TRUST?</div><h2>Data quality and validation</h2><p class="section-description">We separate processed data from independently checked results. Missing pixels are not filled with guesses.</p></div><span class="panel-index">08 / QUALITY</span></div>
+        <div id="quality-summary" class="quality-summary" aria-live="polite"></div>
+        <p class="map-help"><a href="./docs/SCIENTIFIC_VALIDATION.md" target="_blank" rel="noreferrer">Read the full scientific validation protocol ↗</a></p>
         <div id="warning-list" class="warning-list"><div class="source-empty">Loading processing notes…</div></div>
       </section>
 
