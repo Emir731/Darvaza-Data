@@ -73,6 +73,8 @@
     controls.enableRotate = false;
     controls.enablePan = false;
     controls.enableZoom = true;
+    controls.minDistance = 1.18;
+    controls.maxDistance = 2.25;
     controls.zoomSpeed = 0.7;
     controls.enableDamping = true;
     controls.dampingFactor = 0.08;
