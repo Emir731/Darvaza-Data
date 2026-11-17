@@ -50,6 +50,12 @@ try {
     await page.waitForFunction(() => document.documentElement.dataset.dataStatus === "live", null, { timeout: 20000 }).catch(() => {
       failures.push(`${viewport.name}: public manifest did not load`);
     });
+    // The UI intentionally lazy-loads previews; make them eager in the test so every published URL is checked.
+    await page.evaluate(() => {
+      for (const img of document.querySelectorAll(".raster-scene-card .raster-preview-link img")) {
+        img.loading = "eager";
+      }
+    });
     await page.waitForFunction(() => {
       const images = [...document.querySelectorAll(".raster-scene-card .raster-preview-link img")];
       return images.length >= 20 && images.every(img => img.complete && img.naturalWidth > 0);
