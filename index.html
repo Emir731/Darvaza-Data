@@ -31,6 +31,7 @@
         <a class="nav-link" href="#products"><i class="ph ph-images"></i><span>Satellite images</span></a>
         <a class="nav-link" href="#change-analysis"><i class="ph ph-chart-line-up"></i><span>Change analysis</span></a>
         <a class="nav-link" href="#quality"><i class="ph ph-shield-check"></i><span>Data quality</span></a>
+        <a class="nav-link" href="#guide"><i class="ph ph-book-open-text"></i><span>Quick guide</span></a>
         <a class="nav-link" href="#method"><i class="ph ph-flask"></i><span>Methodology</span></a>
       </nav>
       <div class="sidebar-bottom">
@@ -121,6 +122,18 @@
         <div id="quality-summary" class="quality-summary" aria-live="polite"></div>
         <p class="map-help"><a href="https://github.com/Emir731/Darvaza-Pipeline/blob/feature/darvaza-nisar-observatory/docs/SCIENTIFIC_VALIDATION.md" target="_blank" rel="noreferrer">Read the full scientific validation protocol ↗</a></p>
         <div id="warning-list" class="warning-list"><div class="source-empty">Loading processing notes…</div></div>
+      </section>
+
+      <section class="panel data-panel" id="guide">
+        <div class="panel-heading"><div><div class="eyebrow">A SIMPLE GUIDE</div><h2>What do the satellite terms mean?</h2><p class="section-description">You do not need a remote-sensing background to explore this dashboard.</p></div><span class="panel-index">09 / GUIDE</span></div>
+        <div class="glossary-grid">
+          <article><strong>Satellite pass</strong><p>A satellite image collected at a particular date and time. It may cover the wider region without clearly showing the crater.</p></article>
+          <article><strong>Pixel size</strong><p>The approximate ground area represented by one image cell. A smaller number usually means more spatial detail, but not necessarily more accuracy.</p></article>
+          <article><strong>Surface temperature</strong><p>An estimate of the ground surface temperature. It is not the temperature of the flames or the inside of the crater.</p></article>
+          <article><strong>Hotspot detection</strong><p>A satellite has identified an unusually warm pixel. It is a signal to investigate, not proof of a fire or a thermometer reading.</p></article>
+          <article><strong>Radar backscatter</strong><p>The strength of the radar signal returned from the ground. It can change with surface roughness, moisture and viewing geometry.</p></article>
+          <article><strong>Water index (MNDWI)</strong><p>A calculation from reflected light that can help highlight water-related surface patterns. It is not a direct measurement of water depth.</p></article>
+        </div>
       </section>
 
       <section class="method-grid" id="method">
