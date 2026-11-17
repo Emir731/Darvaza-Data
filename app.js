@@ -228,9 +228,19 @@ function renderQuality(manifest) {
         warningRoot.innerHTML = '<div class="warning-item"><strong>No processing warnings in the latest run</strong>This means the processing checks passed; it is not the same as independent scientific validation.</div>';
         return;
       }
+      const explainWarning = warning => {
+        const reason = safeText(warning.reason || warning.error).replace(/^ValueError:\\s*/, "");
+        if (/clear-pixel coverage after (QA|SCL) mask=0\\.0%/i.test(reason)) {
+          return "The satellite image covered the study area, but cloud, shadow or other quality checks left no usable pixels. The product was safely skipped.";
+        }
+        if (/ST_QA uncertainty band unavailable/i.test(reason)) {
+          return "The temperature uncertainty layer was not available for this scene. The image is not treated as independently uncertainty-screened.";
+        }
+        return reason;
+      };
       warningRoot.innerHTML = [...warnings.map(w => ({...w,kind:"Skipped product"})), ...errors.map(e => ({...e,kind:"Processing error"}))]
         .map(w => '<div class="warning-item"><strong>' + escapeHtml(w.kind + " · " + safeText(w.source_id) + " · " + safeText(w.product || w.scene_id)) +
-          '</strong>' + escapeHtml(safeText(w.scene_id)) + '<br>' + escapeHtml(safeText(w.reason || w.error)) +
+          '</strong>' + escapeHtml(safeText(w.scene_id)) + '<br>' + escapeHtml(explainWarning(w)) +
           '<br><span class="status-warn">This scene was not used for that product; no missing values were invented.</span></div>').join("");
     })
     .catch(() => { warningRoot.innerHTML = '<div class="warning-item">The latest processing notes could not be loaded.</div>'; });
