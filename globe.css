@@ -3,3 +3,5 @@
 .product-list{display:grid;gap:10px;margin-top:12px}.product-card{border:1px solid var(--line);padding:12px;background:#0a1118}.product-card strong{font-size:11px;color:var(--text);text-transform:uppercase}.product-card p,.product-card small{display:block;color:var(--muted);font-size:10px;line-height:1.6}.product-card a{display:inline-block;margin-top:8px;color:var(--blue);font:10px var(--mono);text-decoration:none}
 
 .scene-preview{margin-top:16px;border:1px solid var(--line);background:#080d12;padding:10px}.scene-preview img{display:block;width:100%;height:auto;max-height:260px;object-fit:contain}.scene-preview a{display:inline-block;margin-top:9px;color:var(--blue);font:10px var(--mono);text-decoration:none}.preview-empty{color:var(--muted);font-size:10px;line-height:1.7;padding:10px 2px}
+
+.preview-quality{display:block;margin-top:9px;color:var(--muted);font:9px var(--mono);line-height:1.6}
