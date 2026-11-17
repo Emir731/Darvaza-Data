@@ -170,13 +170,45 @@ async function renderProducts() {
   }
 }
 
+function renderChanges(manifest) {
+  const root = document.getElementById("change-grid");
+  const changes = Array.isArray(manifest.change_products) ? manifest.change_products : [];
+  if (!changes.length) {
+    root.innerHTML = '<div class="source-empty">No pair currently meets the same-sensor, same-product and same-grid checks. This is better than displaying an unreliable comparison.</div>';
+    return;
+  }
+  root.innerHTML = changes.map(change => {
+    const preview = (change.assets || []).find(asset => asset.role === "preview");
+    const previewUrl = preview ? new URL(preview.href, window.location.href).toString() : "";
+    const stats = change.statistics || {};
+    const unit = safeText(change.units, "product units");
+    const statisticText = [
+      "Median difference: " + safeText(stats.median, "—") + " " + unit,
+      "Mean absolute difference: " + safeText(stats.mean_absolute_change, "—") + " " + unit,
+      "95th percentile absolute difference: " + safeText(stats.p95_absolute_change, "—") + " " + unit
+    ].join(" · ");
+    return '<article class="product-card-ui"><strong>' + escapeHtml(safeText(change.product)) + ' · before / after</strong>' +
+      (previewUrl ? '<img loading="lazy" src="' + escapeHtml(previewUrl) + '" alt="Exploratory change map for ' + escapeHtml(safeText(change.product)) + '">' : '') +
+      '<p>' + escapeHtml(safeText(change.source_id)) + ' · ' + dateFmt(change.from_date) + ' → ' + dateFmt(change.to_date) + '</p>' +
+      '<p>' + escapeHtml(statisticText) + '</p>' +
+      '<p>Common valid pixels: ' + fmt(change.valid_pixel_pct) + '%</p>' +
+      '<p class="status-warn">Exploratory only · co-registration and independent reference checks are not complete.</p>' +
+      (previewUrl ? '<a href="' + escapeHtml(previewUrl) + '" target="_blank" rel="noreferrer">Open comparison image ↗</a>' : '') +
+      '</article>';
+  }).join("");
+}
+
 function renderQuality(manifest) {
   const root = document.getElementById("quality-summary");
   const warningRoot = document.getElementById("warning-list");
   const products = manifest.change_products || [];
-  root.innerHTML = '<span class="quality-chip">Boundary: project-drawn, not surveyed</span>' +
-    '<span class="quality-chip">Temperature: not independently validated yet</span>' +
-    '<span class="quality-chip">Change maps: exploratory comparisons</span>' +
+  const validation = manifest.scientific_validation || {};
+  const temperatureStatus = validation.temperature && validation.temperature.status || "not_independently_validated";
+  const boundaryStatus = validation.boundary && validation.boundary.status || "visual_review_only";
+  const changeStatus = validation.change_detection && validation.change_detection.status || "exploratory_only";
+  root.innerHTML = '<span class="quality-chip">Boundary: ' + escapeHtml(boundaryStatus.replaceAll("_", " ")) + '</span>' +
+    '<span class="quality-chip">Temperature: ' + escapeHtml(temperatureStatus.replaceAll("_", " ")) + '</span>' +
+    '<span class="quality-chip">Change analysis: ' + escapeHtml(changeStatus.replaceAll("_", " ")) + '</span>' +
     '<span class="quality-chip">' + fmt(products.length) + ' comparison maps published</span>';
   fetch(new URL("./products/index.json", window.location.href), {cache:"no-store"})
     .then(r => { if (!r.ok) throw new Error("index unavailable"); return r.json(); })
@@ -216,6 +248,7 @@ async function loadManifest() {
     renderObservations(observations);
     renderSources(manifest.sources);
     renderFireStatus(manifest);
+    renderChanges(manifest);
     await renderProducts();
     renderQuality(manifest);
   } catch (error) {
