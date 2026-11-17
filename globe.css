@@ -34,6 +34,10 @@ body {
   letter-spacing: 0.12em;
 }
 
+.top > span {
+  display: none;
+}
+
 .top a {
   color: var(--text);
   text-decoration: none;
