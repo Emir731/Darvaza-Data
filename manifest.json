@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-17T20:01:42.844854Z",
+  "generated_at": "2026-11-17T20:02:08.234772+00:00",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -637,17 +637,37 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.17,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 95.94,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
+        },
+        {
+          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
+        },
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
+        {
+          "code": "ST_QA_SCREENED",
+          "severity": "info",
+          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
+        },
+        {
+          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
+          "severity": "warning",
+          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
         }
       ],
       "assets": [
@@ -657,13 +677,69 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_160032_20261026_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-ndvi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_preview.png",
+          "media_type": "image/png",
+          "title": "NDVI preview \u00b7 2026-10-26"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-ndvi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_preview.png",
+          "media_type": "image/png",
+          "title": "NDMI preview \u00b7 2026-10-26"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview \u00b7 2026-10-26"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-lst-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_preview.png",
+          "media_type": "image/png",
+          "title": "Land surface temperature preview \u00b7 2026-10-26"
+        },
+        {
+          "id": "LC08_L2SP_160032_20261026_02_T1-lst-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "e26015123068cbd32050cd1840735630f0c331d9",
         "run_id": "44164805943",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC08_L2SP_160032_20261026_02_T1"
         ],
@@ -673,8 +749,10 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
-      }
+        "published_at": "2026-11-17T20:00:18.047294+00:00"
+      },
+      "optical_valid_pixel_pct": 95.94,
+      "thermal_valid_pixel_pct": 95.94
     },
     {
       "id": "landsat-c2-l2:LC09_L2SP_161032_20261025_02_T1",
@@ -1869,17 +1947,37 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20260924_02_T1",
       "acquired_at": "2026-09-24T06:42:09.785283Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.0,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
+        },
+        {
+          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
+        },
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
+        {
+          "code": "ST_QA_SCREENED",
+          "severity": "info",
+          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
+        },
+        {
+          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
+          "severity": "warning",
+          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
         }
       ],
       "assets": [
@@ -1889,13 +1987,69 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_160032_20260924_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-ndvi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_preview.png",
+          "media_type": "image/png",
+          "title": "NDVI preview \u00b7 2026-09-24"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-ndvi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_preview.png",
+          "media_type": "image/png",
+          "title": "NDMI preview \u00b7 2026-09-24"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview \u00b7 2026-09-24"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-lst-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_preview.png",
+          "media_type": "image/png",
+          "title": "Land surface temperature preview \u00b7 2026-09-24"
+        },
+        {
+          "id": "LC08_L2SP_160032_20260924_02_T1-lst-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "e26015123068cbd32050cd1840735630f0c331d9",
         "run_id": "44164805943",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260924_02_T1"
         ],
@@ -1905,8 +2059,10 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
-      }
+        "published_at": "2026-11-17T20:00:18.047294+00:00"
+      },
+      "optical_valid_pixel_pct": 96.04,
+      "thermal_valid_pixel_pct": 96.02
     },
     {
       "id": "landsat-c2-l2:LC09_L2SP_161032_20260923_02_T1",
@@ -4113,17 +4269,37 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260730_02_T1",
       "acquired_at": "2026-07-30T06:41:58.010309Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
+        },
+        {
+          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
+        },
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
+        {
+          "code": "ST_QA_SCREENED",
+          "severity": "info",
+          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
+        },
+        {
+          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
+          "severity": "warning",
+          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
         }
       ],
       "assets": [
@@ -4133,13 +4309,69 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC09_L2SP_160032_20260730_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-ndvi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_preview.png",
+          "media_type": "image/png",
+          "title": "NDVI preview \u00b7 2026-07-30"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-ndvi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_preview.png",
+          "media_type": "image/png",
+          "title": "NDMI preview \u00b7 2026-07-30"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview \u00b7 2026-07-30"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-lst-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_preview.png",
+          "media_type": "image/png",
+          "title": "Land surface temperature preview \u00b7 2026-07-30"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260730_02_T1-lst-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "e26015123068cbd32050cd1840735630f0c331d9",
         "run_id": "44164805943",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260730_02_T1"
         ],
@@ -4149,8 +4381,10 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
-      }
+        "published_at": "2026-11-17T20:00:18.047294+00:00"
+      },
+      "optical_valid_pixel_pct": 96.04,
+      "thermal_valid_pixel_pct": 96.02
     },
     {
       "id": "sentinel-2-l2a:S2C_MSIL2A_20260729T065621_N0512_R063_T40TFK_20260729T123254",
@@ -5477,17 +5711,37 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_161032_20260627_02_T1",
       "acquired_at": "2026-06-27T06:47:42.556031Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.99,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 95.61,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
+        },
+        {
+          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
+        },
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
+        {
+          "code": "ST_QA_SCREENED",
+          "severity": "info",
+          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
+        },
+        {
+          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
+          "severity": "warning",
+          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
         }
       ],
       "assets": [
@@ -5497,13 +5751,69 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_161032_20260627_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-ndvi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_preview.png",
+          "media_type": "image/png",
+          "title": "NDVI preview \u00b7 2026-06-27"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-ndvi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_preview.png",
+          "media_type": "image/png",
+          "title": "NDMI preview \u00b7 2026-06-27"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview \u00b7 2026-06-27"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-lst-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_preview.png",
+          "media_type": "image/png",
+          "title": "Land surface temperature preview \u00b7 2026-06-27"
+        },
+        {
+          "id": "LC08_L2SP_161032_20260627_02_T1-lst-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "e26015123068cbd32050cd1840735630f0c331d9",
         "run_id": "44164805943",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260627_02_T1"
         ],
@@ -5513,8 +5823,10 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
-      }
+        "published_at": "2026-11-17T20:00:18.047294+00:00"
+      },
+      "optical_valid_pixel_pct": 95.61,
+      "thermal_valid_pixel_pct": 94.31
     },
     {
       "id": "sentinel-2-l2a:S2C_MSIL2A_20260626T064621_N0512_R020_T40TFK_20260626T112015",
@@ -6665,17 +6977,37 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260527_02_T1",
       "acquired_at": "2026-05-27T06:41:29.758858Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
+      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
-      "valid_pixel_pct": null,
+      "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "DISCOVERY_ONLY",
+          "code": "QA_PIXEL_SCREENED",
           "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
+          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
+        },
+        {
+          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
+          "severity": "warning",
+          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
+        },
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
+        {
+          "code": "ST_QA_SCREENED",
+          "severity": "info",
+          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
+        },
+        {
+          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
+          "severity": "warning",
+          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
         }
       ],
       "assets": [
@@ -6685,13 +7017,69 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC09_L2SP_160032_20260527_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-ndvi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_preview.png",
+          "media_type": "image/png",
+          "title": "NDVI preview \u00b7 2026-05-27"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-ndvi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_preview.png",
+          "media_type": "image/png",
+          "title": "NDMI preview \u00b7 2026-05-27"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_preview.png",
+          "media_type": "image/png",
+          "title": "MNDWI preview \u00b7 2026-05-27"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-lst-preview",
+          "role": "preview",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_preview.png",
+          "media_type": "image/png",
+          "title": "Land surface temperature preview \u00b7 2026-05-27"
+        },
+        {
+          "id": "LC09_L2SP_160032_20260527_02_T1-lst-cog",
+          "role": "cog",
+          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_cog.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "e26015123068cbd32050cd1840735630f0c331d9",
         "run_id": "44164805943",
-        "processing_version": "catalogue-discovery/0.1",
+        "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260527_02_T1"
         ],
@@ -6701,8 +7089,10 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": null
-      }
+        "published_at": "2026-11-17T20:00:18.047294+00:00"
+      },
+      "optical_valid_pixel_pct": 96.04,
+      "thermal_valid_pixel_pct": 96.02
     },
     {
       "id": "landsat-c2-l2:LC08_L2SP_161032_20260526_02_T1",
@@ -6943,6 +7333,24 @@
       "scenes_published": 0,
       "processing_version": "firms-discovery/0.1",
       "errors": []
+    },
+    {
+      "id": "landsat-environmental-20261117T200208.234772+0000",
+      "source_id": "landsat-c2-l2",
+      "started_at": "2026-11-17T20:00:18.047294+00:00",
+      "finished_at": "2026-11-17T20:02:08.234772+00:00",
+      "status": "partial",
+      "stage_reached": "raster_processing",
+      "scenes_discovered": 6,
+      "scenes_published": 5,
+      "processing_version": "landsat-environmental/0.2",
+      "errors": [
+        {
+          "stage": "raster_processing",
+          "message": "RuntimeError: No optical or thermal product passed quality screening",
+          "scene_id": "LC09_L2SP_160032_20260831_02_T1"
+        }
+      ]
     }
   ],
   "time_series": {
