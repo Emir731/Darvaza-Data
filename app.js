@@ -155,7 +155,8 @@ async function renderProducts() {
         product.product === "SURFACE_TEMPERATURE" ? "Ground-surface temperature" :
         product.product === "VV_BACKSCATTER" ? "Radar reflection strength" : product.product;
       const detail = product.product === "SURFACE_TEMPERATURE"
-        ? "Kelvin · roughly 100 m thermal detail · not flame temperature"
+        ? "Kelvin · roughly 100 m thermal detail · not flame temperature" +
+          (product.quality && product.quality.st_qa_status === "not_available_from_catalogue" ? " · uncertainty band unavailable" : "")
         : escapeHtml(product.units || "—") + " · " + fmt(product.resolution_m) + " m pixels";
       return '<article class="product-card-ui"><strong>' + escapeHtml(label) + '</strong>' +
         (previewUrl ? '<img loading="lazy" src="' + escapeHtml(previewUrl) + '" alt="' + escapeHtml(label + " preview") + '">' : '') +
