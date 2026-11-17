@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "feeds": {
+    "VIIRS_SNPP_NRT": [
+      {
+        "date": "2026-11-13",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-14",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-15",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-16",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-17",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      }
+    ],
+    "VIIRS_NOAA20_NRT": [
+      {
+        "date": "2026-11-13",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-14",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-15",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-16",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-17",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      }
+    ],
+    "VIIRS_NOAA21_NRT": [
+      {
+        "date": "2026-11-13",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-14",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-15",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-16",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-17",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      }
+    ],
+    "MODIS_NRT": [
+      {
+        "date": "2026-11-13",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-14",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-15",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-16",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      },
+      {
+        "date": "2026-11-17",
+        "checked_at": "2026-11-17T17:14:47.559444Z",
+        "detections": 0,
+        "status": "checked"
+      }
+    ]
+  },
+  "updated_at": "2026-11-17T17:15:50.111963Z"
+}
