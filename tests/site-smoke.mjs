@@ -14,7 +14,7 @@ try {
     const response = await page.goto("http://127.0.0.1:8000/", { waitUntil: "domcontentloaded" });
     if (!response || response.status() !== 200) failures.push(`${viewport.name}: page did not return HTTP 200`);
     await page.waitForSelector("#map", { timeout: 10000 });
-    await page.waitForFunction(() => window.L && document.querySelector("#crater-satellite .leaflet-container"), null, { timeout: 20000 }).catch(() => {
+    await page.waitForFunction(() => window.L && document.querySelector("#crater-satellite.leaflet-container"), null, { timeout: 20000 }).catch(() => {
       failures.push(`${viewport.name}: Leaflet map did not initialize`);
     });
     await page.waitForFunction(() => document.documentElement.dataset.dataStatus === "live", null, { timeout: 20000 }).catch(() => {
