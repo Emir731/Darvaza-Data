@@ -25,7 +25,7 @@ function globe(){
     const map=L.map(detail,{zoomControl:false,scrollWheelZoom:false,dragging:false,doubleClickZoom:false,touchZoom:false,boxZoom:false,keyboard:false,attributionControl:true,preferCanvas:true}).setView([crater.lat,crater.lon],15);
     let tileErrors=0,baseLayer,fallbackTimer,osmTimer,fallbackUsed=false,osmUsed=false;
     const esri=L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{minZoom:3,maxZoom:17,maxNativeZoom:17,attribution:"Imagery © Esri, Maxar, Earthstar Geographics",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
-    const sentinel=L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{x}/{y}.jpg",{minZoom:3,maxZoom:17,maxNativeZoom:14,attribution:"Sentinel-2 cloudless mosaic © EOX / ESA",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
+    const sentinel=L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg",{minZoom:3,maxZoom:17,maxNativeZoom:14,attribution:"Sentinel-2 cloudless mosaic © EOX / ESA",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
     const osm=L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap contributors",crossOrigin:true});
     const showOsm=()=>{
       if(osmUsed)return;
