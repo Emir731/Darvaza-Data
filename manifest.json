@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-17T19:59:15.153705+00:00",
+  "generated_at": "2026-11-17T20:00:29.606357Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -31,7 +31,7 @@
       "auth_method": "Public STAC catalogue; scene downloads may require provider access",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-17T15:20:17.930810Z",
+      "last_checked": "2026-11-17T20:00:22.507834Z",
       "last_successful_acquisition": "2026-11-03T06:42:17.945372Z",
       "scene_count": 42,
       "native_resolution_m": 30
@@ -47,7 +47,7 @@
       "auth_method": "Copernicus Data Space STAC catalogue; product download may require OAuth2",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-17T15:20:19.377577Z",
+      "last_checked": "2026-11-17T20:00:23.763756Z",
       "last_successful_acquisition": "2026-11-14T02:10:44.877881Z",
       "scene_count": 30,
       "native_resolution_m": 10
@@ -63,7 +63,7 @@
       "auth_method": "Copernicus Data Space STAC catalogue; product download may require OAuth2",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-17T15:20:20.500586Z",
+      "last_checked": "2026-11-17T20:00:25.761162Z",
       "last_successful_acquisition": "2026-11-16T07:01:41.025000Z",
       "scene_count": 82,
       "native_resolution_m": 10
@@ -79,7 +79,7 @@
       "auth_method": "NASA FIRMS MAP_KEY (optional hotspot feed)",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-17T15:20:17.930576Z",
+      "last_checked": "2026-11-17T20:00:22.507596Z",
       "last_successful_acquisition": null,
       "scene_count": 0,
       "native_resolution_m": 375,
@@ -96,7 +96,7 @@
       "auth_method": "NASA FIRMS MAP_KEY (optional hotspot feed)",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-17T15:20:17.930576Z",
+      "last_checked": "2026-11-17T20:00:22.507596Z",
       "last_successful_acquisition": null,
       "scene_count": 0,
       "native_resolution_m": 1000,
@@ -133,8 +133,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261116T070141_N0513_R063_T40TFK_20261116T102454"
@@ -177,8 +177,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261115T065311_N0513_R020_T40TFK_20261115T101305"
@@ -221,8 +221,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_904C_COG"
@@ -265,8 +265,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261113T065121_N0513_R020_T40TFK_20261113T101603"
@@ -309,8 +309,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261111T070119_N0513_R063_T40TFK_20261111T105612"
@@ -353,8 +353,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_3D1F_COG"
@@ -397,8 +397,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20261103_02_T1"
@@ -441,8 +441,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20261102_02_T1"
@@ -485,8 +485,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_7720_COG"
@@ -529,8 +529,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261101T070029_N0513_R063_T40TFK_20261101T235140"
@@ -573,8 +573,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261029T065009_N0513_R020_T40TFK_20261029T122802"
@@ -617,8 +617,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261026T065311_N0513_R020_T40TFK_20261026T101103"
@@ -637,42 +637,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": "2026-11-17T19:57:25.110197+00:00",
-      "processing_version": "landsat-environmental/0.2",
+      "processed_at": null,
+      "processing_version": "catalogue-discovery/0.1",
       "cloud_cover_pct": 0.17,
-      "valid_pixel_pct": 95.94,
+      "valid_pixel_pct": null,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
-        },
-        {
-          "code": "QA_PIXEL_SCREENED",
+          "code": "DISCOVERY_ONLY",
           "severity": "info",
-          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
-        },
-        {
-          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
-        },
-        {
-          "code": "MNDWI_IS_WATER_INDEX",
-          "severity": "info",
-          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
-        },
-        {
-          "code": "ST_QA_SCREENED",
-          "severity": "info",
-          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
-        },
-        {
-          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
-          "severity": "warning",
-          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
+          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
         }
       ],
       "assets": [
@@ -682,69 +657,13 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_160032_20261026_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-ndvi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_preview.png",
-          "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-10-26"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-ndvi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_preview.png",
-          "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-10-26"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_preview.png",
-          "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-10-26"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-lst-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_preview.png",
-          "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-10-26"
-        },
-        {
-          "id": "LC08_L2SP_160032_20261026_02_T1-lst-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
-        "processing_version": "landsat-environmental/0.2",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
+        "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20261026_02_T1"
         ],
@@ -754,10 +673,8 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T19:57:25.110197+00:00"
-      },
-      "optical_valid_pixel_pct": 95.94,
-      "thermal_valid_pixel_pct": 95.94
+        "published_at": null
+      }
     },
     {
       "id": "landsat-c2-l2:LC09_L2SP_161032_20261025_02_T1",
@@ -788,8 +705,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20261025_02_T1"
@@ -832,8 +749,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261024T064931_N0513_R020_T40TFK_20261024T101157"
@@ -876,8 +793,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261022T065929_N0513_R063_T40TFK_20261022T105309"
@@ -920,8 +837,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_8D29_COG"
@@ -964,8 +881,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261019T070311_N0513_R063_T40TFK_20261019T103003"
@@ -1008,8 +925,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261019T064909_N0513_R020_T40TFK_20261019T091334"
@@ -1052,8 +969,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20261018_02_T1"
@@ -1096,8 +1013,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261017T065901_N0513_R063_T40TFK_20261017T102507"
@@ -1140,8 +1057,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20261017_02_T1"
@@ -1184,8 +1101,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_C288_COG"
@@ -1228,8 +1145,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261014T064831_N0513_R020_T40TFK_20261014T103303"
@@ -1272,8 +1189,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261012T065819_N0513_R063_T40TFK_20261012T110756"
@@ -1316,8 +1233,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20261010_02_T1"
@@ -1360,8 +1277,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20261009_02_T1"
@@ -1404,8 +1321,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261009T064759_N0513_R020_T40TFK_20261009T104607"
@@ -1448,8 +1365,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261009T021045_20261009T021110_004932_0094B6_B90B_COG"
@@ -1492,8 +1409,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261006T065321_N0513_R020_T40TFK_20261006T101404"
@@ -1536,8 +1453,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261004T064721_N0513_R020_T40TFK_20261004T111111"
@@ -1580,8 +1497,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261003T140332_20261003T140357_004852_0091E7_9270_COG"
@@ -1624,8 +1541,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261002T065719_N0513_R063_T40TFK_20261002T111547"
@@ -1668,8 +1585,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20261002_02_T1"
@@ -1712,8 +1629,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20261001_02_T1"
@@ -1756,8 +1673,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260929T070321_N0513_R063_T40TFK_20260929T103026"
@@ -1800,8 +1717,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260929T064629_N0513_R020_T40TFK_20260929T104806"
@@ -1844,8 +1761,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260927T065641_N0513_R063_T40TFK_20260927T121710"
@@ -1888,8 +1805,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_B672_COG"
@@ -1932,8 +1849,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260924T064621_N0513_R020_T40TFK_20260924T111508"
@@ -1952,42 +1869,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20260924_02_T1",
       "acquired_at": "2026-09-24T06:42:09.785283Z",
-      "processed_at": "2026-11-17T19:57:25.110197+00:00",
-      "processing_version": "landsat-environmental/0.2",
+      "processed_at": null,
+      "processing_version": "catalogue-discovery/0.1",
       "cloud_cover_pct": 0.0,
-      "valid_pixel_pct": 96.04,
+      "valid_pixel_pct": null,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
-        },
-        {
-          "code": "QA_PIXEL_SCREENED",
+          "code": "DISCOVERY_ONLY",
           "severity": "info",
-          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
-        },
-        {
-          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
-        },
-        {
-          "code": "MNDWI_IS_WATER_INDEX",
-          "severity": "info",
-          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
-        },
-        {
-          "code": "ST_QA_SCREENED",
-          "severity": "info",
-          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
-        },
-        {
-          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
-          "severity": "warning",
-          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
+          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
         }
       ],
       "assets": [
@@ -1997,69 +1889,13 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_160032_20260924_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-ndvi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_preview.png",
-          "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-09-24"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-ndvi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_preview.png",
-          "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-09-24"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_preview.png",
-          "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-09-24"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-lst-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_preview.png",
-          "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-09-24"
-        },
-        {
-          "id": "LC08_L2SP_160032_20260924_02_T1-lst-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
-        "processing_version": "landsat-environmental/0.2",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
+        "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260924_02_T1"
         ],
@@ -2069,10 +1905,8 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T19:57:25.110197+00:00"
-      },
-      "optical_valid_pixel_pct": 96.04,
-      "thermal_valid_pixel_pct": 96.02
+        "published_at": null
+      }
     },
     {
       "id": "landsat-c2-l2:LC09_L2SP_161032_20260923_02_T1",
@@ -2103,8 +1937,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260923_02_T1"
@@ -2147,8 +1981,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260922T065619_N0513_R063_T40TFK_20260922T110351"
@@ -2191,8 +2025,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_0704_COG"
@@ -2235,8 +2069,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260919T064619_N0512_R020_T40TFK_20260919T104621"
@@ -2279,8 +2113,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260917T065621_N0512_R063_T40TFK_20260917T121802"
@@ -2323,8 +2157,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260916T065321_N0512_R020_T40TFK_20260916T102207"
@@ -2367,8 +2201,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260916_02_T1"
@@ -2411,8 +2245,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260915_02_T1"
@@ -2455,8 +2289,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260915T021045_20260915T021110_004582_008887_5D5C_COG"
@@ -2499,8 +2333,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260914T064621_N0512_R020_T40TFK_20260914T111315"
@@ -2543,8 +2377,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260912T065619_N0512_R063_T40TFK_20260912T105456"
@@ -2587,8 +2421,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260909T140332_20260909T140357_004502_0085CE_7246_COG"
@@ -2631,8 +2465,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260909T070321_N0512_R063_T40TFK_20260909T102513"
@@ -2675,8 +2509,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260909T064619_N0512_R020_T40TFK_20260909T091307"
@@ -2719,8 +2553,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260908_02_T1"
@@ -2763,8 +2597,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260907T065621_N0512_R063_T40TFK_20260907T121721"
@@ -2807,8 +2641,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260907_02_T1"
@@ -2851,8 +2685,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260904T064621_N0512_R020_T40TFK_20260904T115810"
@@ -2895,8 +2729,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260903T021044_20260903T021109_004407_00827C_F1DC_COG"
@@ -2939,8 +2773,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260902T065619_N0512_R063_T40TFK_20260902T110715"
@@ -2983,8 +2817,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260831_02_T1"
@@ -3027,8 +2861,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260830_02_T1"
@@ -3071,8 +2905,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260830T064619_N0512_R020_T40TFK_20260830T101828"
@@ -3115,8 +2949,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_ADAB_COG"
@@ -3159,8 +2993,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260828T065621_N0512_R063_T40TFK_20260828T121314"
@@ -3203,8 +3037,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260827T065321_N0512_R020_T40TFK_20260827T120805"
@@ -3247,8 +3081,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260825T064621_N0512_R020_T40TFK_20260825T115811"
@@ -3291,8 +3125,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260823T065619_N0512_R063_T40TFK_20260823T105748"
@@ -3335,8 +3169,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260823_02_T1"
@@ -3379,8 +3213,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260822_02_T1"
@@ -3423,8 +3257,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_5192_COG"
@@ -3467,8 +3301,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260820T070321_N0512_R063_T40TFK_20260820T122211"
@@ -3511,8 +3345,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260820T064619_N0512_R020_T40TFK_20260820T103927"
@@ -3555,8 +3389,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260818T065621_N0512_R063_T40TFK_20260818T120810"
@@ -3599,8 +3433,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260816T140331_20260816T140356_004152_007989_3F07_COG"
@@ -3643,8 +3477,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260815T064621_N0512_R020_T40TFK_20260815T111308"
@@ -3687,8 +3521,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260815_02_T1"
@@ -3731,8 +3565,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260814_02_T1"
@@ -3775,8 +3609,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260813T065619_N0512_R063_T40TFK_20260813T105532"
@@ -3819,8 +3653,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260810T064619_N0512_R020_T40TFK_20260810T101826"
@@ -3863,8 +3697,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260810T021044_20260810T021109_004057_00763F_0B0C_COG"
@@ -3907,8 +3741,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260808T065621_N0512_R063_T40TFK_20260808T121319"
@@ -3951,8 +3785,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260807T065321_N0512_R020_T40TFK_20260807T120617"
@@ -3995,8 +3829,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260807_02_T1"
@@ -4039,8 +3873,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260806_02_T1"
@@ -4083,8 +3917,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260805T064621_N0512_R020_T40TFK_20260805T115315"
@@ -4127,8 +3961,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260804T140331_20260804T140356_003977_007383_5C37_COG"
@@ -4171,8 +4005,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260803T065619_N0512_R063_T40TFK_20260803T105654"
@@ -4215,8 +4049,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260731T070321_N0512_R063_T40TFK_20260731T121810"
@@ -4259,8 +4093,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260731T064629_N0512_R020_T40TFK_20260731T104009"
@@ -4279,42 +4113,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260730_02_T1",
       "acquired_at": "2026-07-30T06:41:58.010309Z",
-      "processed_at": "2026-11-17T19:57:25.110197+00:00",
-      "processing_version": "landsat-environmental/0.2",
+      "processed_at": null,
+      "processing_version": "catalogue-discovery/0.1",
       "cloud_cover_pct": 0.01,
-      "valid_pixel_pct": 96.04,
+      "valid_pixel_pct": null,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
-        },
-        {
-          "code": "QA_PIXEL_SCREENED",
+          "code": "DISCOVERY_ONLY",
           "severity": "info",
-          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
-        },
-        {
-          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
-        },
-        {
-          "code": "MNDWI_IS_WATER_INDEX",
-          "severity": "info",
-          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
-        },
-        {
-          "code": "ST_QA_SCREENED",
-          "severity": "info",
-          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
-        },
-        {
-          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
-          "severity": "warning",
-          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
+          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
         }
       ],
       "assets": [
@@ -4324,69 +4133,13 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC09_L2SP_160032_20260730_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-ndvi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_preview.png",
-          "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-07-30"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-ndvi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_preview.png",
-          "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-07-30"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_preview.png",
-          "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-07-30"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-lst-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_preview.png",
-          "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-07-30"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260730_02_T1-lst-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
-        "processing_version": "landsat-environmental/0.2",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
+        "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260730_02_T1"
         ],
@@ -4396,10 +4149,8 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T19:57:25.110197+00:00"
-      },
-      "optical_valid_pixel_pct": 96.04,
-      "thermal_valid_pixel_pct": 96.02
+        "published_at": null
+      }
     },
     {
       "id": "sentinel-2-l2a:S2C_MSIL2A_20260729T065621_N0512_R063_T40TFK_20260729T123254",
@@ -4430,8 +4181,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260729T065621_N0512_R063_T40TFK_20260729T123254"
@@ -4474,8 +4225,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260729_02_T1"
@@ -4518,8 +4269,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_27A4_COG"
@@ -4562,8 +4313,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260726T064631_N0512_R020_T40TFK_20260726T115609"
@@ -4606,8 +4357,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260724T065619_N0512_R063_T40TFK_20260724T102301"
@@ -4650,8 +4401,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_3BCD_COG"
@@ -4694,8 +4445,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260722_02_T1"
@@ -4738,8 +4489,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260721_02_T1"
@@ -4782,8 +4533,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260719T065621_N0512_R063_T40TFK_20260719T121212"
@@ -4826,8 +4577,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260718T065321_N0512_R020_T40TFK_20260718T101758"
@@ -4870,8 +4621,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260717T021042_20260717T021107_003707_006A28_5543_COG"
@@ -4914,8 +4665,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260716T064621_N0512_R020_T40TFK_20260716T115112"
@@ -4958,8 +4709,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260714T065619_N0512_R063_T40TFK_20260714T102330"
@@ -5002,8 +4753,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260714_02_T1"
@@ -5046,8 +4797,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260713_02_T1"
@@ -5090,8 +4841,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260711T140329_20260711T140354_003627_006763_090E_COG"
@@ -5134,8 +4885,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260711T064619_N0512_R020_T40TFK_20260711T104126"
@@ -5178,8 +4929,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260709T065621_N0512_R063_T40TFK_20260709T121514"
@@ -5222,8 +4973,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260708T065321_N0512_R020_T40TFK_20260708T101104"
@@ -5266,8 +5017,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260706T064621_N0512_R020_T40TFK_20260706T115722"
@@ -5310,8 +5061,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260706_02_T1"
@@ -5354,8 +5105,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260705_02_T1"
@@ -5398,8 +5149,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260705T021041_20260705T021106_003532_006437_9F40_COG"
@@ -5442,8 +5193,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260704T065619_N0512_R063_T40TFK_20260704T105318"
@@ -5486,8 +5237,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260701T070321_N0512_R063_T40TFK_20260701T102716"
@@ -5530,8 +5281,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260701T064619_N0512_R020_T40TFK_20260701T104133"
@@ -5574,8 +5325,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_6A12_COG"
@@ -5618,8 +5369,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260629T065621_N0512_R063_T40TFK_20260629T120609"
@@ -5662,8 +5413,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260628_02_T1"
@@ -5706,8 +5457,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_D043_COG"
@@ -5726,42 +5477,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_161032_20260627_02_T1",
       "acquired_at": "2026-06-27T06:47:42.556031Z",
-      "processed_at": "2026-11-17T19:57:25.110197+00:00",
-      "processing_version": "landsat-environmental/0.2",
+      "processed_at": null,
+      "processing_version": "catalogue-discovery/0.1",
       "cloud_cover_pct": 0.99,
-      "valid_pixel_pct": 95.61,
+      "valid_pixel_pct": null,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
-        },
-        {
-          "code": "QA_PIXEL_SCREENED",
+          "code": "DISCOVERY_ONLY",
           "severity": "info",
-          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
-        },
-        {
-          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
-        },
-        {
-          "code": "MNDWI_IS_WATER_INDEX",
-          "severity": "info",
-          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
-        },
-        {
-          "code": "ST_QA_SCREENED",
-          "severity": "info",
-          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
-        },
-        {
-          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
-          "severity": "warning",
-          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
+          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
         }
       ],
       "assets": [
@@ -5771,69 +5497,13 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC08_L2SP_161032_20260627_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-ndvi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_preview.png",
-          "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-06-27"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-ndvi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_preview.png",
-          "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-06-27"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_preview.png",
-          "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-06-27"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-lst-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_preview.png",
-          "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-06-27"
-        },
-        {
-          "id": "LC08_L2SP_161032_20260627_02_T1-lst-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
-        "processing_version": "landsat-environmental/0.2",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
+        "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260627_02_T1"
         ],
@@ -5843,10 +5513,8 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T19:57:25.110197+00:00"
-      },
-      "optical_valid_pixel_pct": 95.61,
-      "thermal_valid_pixel_pct": 94.31
+        "published_at": null
+      }
     },
     {
       "id": "sentinel-2-l2a:S2C_MSIL2A_20260626T064621_N0512_R020_T40TFK_20260626T112015",
@@ -5877,8 +5545,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260626T064621_N0512_R020_T40TFK_20260626T112015"
@@ -5921,8 +5589,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260624T065619_N0512_R063_T40TFK_20260624T105220"
@@ -5965,8 +5633,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260622T140409_20260622T140434_065083_083414_A5ED_COG"
@@ -6009,8 +5677,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260621T064619_N0512_R020_T40TFK_20260621T104118"
@@ -6053,8 +5721,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260620_02_T1"
@@ -6097,8 +5765,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260619T065621_N0512_R063_T40TFK_20260619T121510"
@@ -6141,8 +5809,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260619_02_T1"
@@ -6185,8 +5853,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260618T065321_N0512_R020_T40TFK_20260618T121104"
@@ -6229,8 +5897,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260616T064621_N0512_R020_T40TFK_20260616T111116"
@@ -6273,8 +5941,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260616T021122_20260616T021147_064988_0830B7_A6D7_COG"
@@ -6317,8 +5985,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260614T065619_N0512_R063_T40TFK_20260614T105546"
@@ -6361,8 +6029,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260612_02_T1"
@@ -6405,8 +6073,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260611T070321_N0512_R063_T40TFK_20260611T103619"
@@ -6449,8 +6117,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260611_02_T1"
@@ -6493,8 +6161,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260611T064619_N0512_R020_T40TFK_20260611T104324"
@@ -6537,8 +6205,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260610T140409_20260610T140434_064908_082DED_2916_COG"
@@ -6581,8 +6249,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260609T065621_N0512_R063_T40TFK_20260609T145128"
@@ -6625,8 +6293,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260606T064621_N0512_R020_T40TFK_20260606T115910"
@@ -6669,8 +6337,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260604T065619_N0512_R063_T40TFK_20260604T105400"
@@ -6713,8 +6381,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260604_02_T1"
@@ -6757,8 +6425,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260604T021123_20260604T021148_064813_082AA5_C91E_COG"
@@ -6801,8 +6469,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260603_02_T1"
@@ -6845,8 +6513,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260601T064619_N0512_R020_T40TFK_20260601T101901"
@@ -6889,8 +6557,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260529T140410_20260529T140435_064733_0827CC_C3EC_COG"
@@ -6933,8 +6601,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260529T065321_N0512_R020_T40TFK_20260529T101809"
@@ -6977,8 +6645,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260527T064621_N0512_R020_T40TFK_20260527T115611"
@@ -6997,42 +6665,17 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260527_02_T1",
       "acquired_at": "2026-05-27T06:41:29.758858Z",
-      "processed_at": "2026-11-17T19:57:25.110197+00:00",
-      "processing_version": "landsat-environmental/0.2",
+      "processed_at": null,
+      "processing_version": "catalogue-discovery/0.1",
       "cloud_cover_pct": 0.01,
-      "valid_pixel_pct": 96.04,
+      "valid_pixel_pct": null,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
         {
-          "code": "MNDWI_EXPLORATORY_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "Exploratory spectral index only; not a crater boundary, temperature estimate, or validated change measurement."
-        },
-        {
-          "code": "QA_PIXEL_SCREENED",
+          "code": "DISCOVERY_ONLY",
           "severity": "info",
-          "message": "Landsat Collection 2 QA_PIXEL bits 0-5 were excluded from optical-index calculations."
-        },
-        {
-          "code": "EXPLORATORY_INDICES_NOT_VALIDATED",
-          "severity": "warning",
-          "message": "NDVI, NDMI and MNDWI are exploratory spectral indices, not crater-boundary or validated change measurements."
-        },
-        {
-          "code": "MNDWI_IS_WATER_INDEX",
-          "severity": "info",
-          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
-        },
-        {
-          "code": "ST_QA_SCREENED",
-          "severity": "info",
-          "message": "Landsat surface-temperature pixels were filtered using ST_QA uncertainty at or below 5 K and QA_PIXEL cloud/shadow flags."
-        },
-        {
-          "code": "LAND_SURFACE_TEMP_NOT_FIRE_TEMP",
-          "severity": "warning",
-          "message": "Landsat ST_B10 estimates land-surface temperature at 30 m grid spacing; it is not flame temperature or crater-core temperature."
+          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
         }
       ],
       "assets": [
@@ -7042,69 +6685,13 @@
           "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=landsat-c2-l2&item=LC09_L2SP_160032_20260527_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma%20RGB%202.7,%20saturation%201.5,%20sigmoidal%20RGB%2015%200.55&format=png",
           "media_type": "image/png",
           "title": "Catalogue thumbnail (rendered_preview)"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-ndvi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_preview.png",
-          "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-05-27"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-ndvi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_preview.png",
-          "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-05-27"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_preview.png",
-          "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-05-27"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-lst-preview",
-          "role": "preview",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_preview.png",
-          "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-05-27"
-        },
-        {
-          "id": "LC09_L2SP_160032_20260527_02_T1-lst-cog",
-          "role": "cog",
-          "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_cog.tif",
-          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
-        "processing_version": "landsat-environmental/0.2",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
+        "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260527_02_T1"
         ],
@@ -7114,10 +6701,8 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T19:57:25.110197+00:00"
-      },
-      "optical_valid_pixel_pct": 96.04,
-      "thermal_valid_pixel_pct": 96.02
+        "published_at": null
+      }
     },
     {
       "id": "landsat-c2-l2:LC08_L2SP_161032_20260526_02_T1",
@@ -7148,8 +6733,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260526_02_T1"
@@ -7192,8 +6777,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_EB8E_COG"
@@ -7236,8 +6821,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260522T070321_N0512_R063_T40TFK_20260522T102408"
@@ -7280,8 +6865,8 @@
       ],
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "8190cb88f669c6afafe897bcda2f5f149d207a0c",
-        "run_id": "44113122981",
+        "commit_sha": "1fd7ae95d01486196a947850d85815aa6bd82fd5",
+        "run_id": "44164573421",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260522T064619_N0512_R020_T40TFK_20260522T104043"
@@ -7300,10 +6885,10 @@
   "change_products": [],
   "pipeline_runs": [
     {
-      "id": "landsat-c2-l2-20261117T152017Z",
+      "id": "landsat-c2-l2-20261117T200022Z",
       "source_id": "landsat-c2-l2",
-      "started_at": "2026-11-17T15:20:17.930810Z",
-      "finished_at": "2026-11-17T15:20:19.377557Z",
+      "started_at": "2026-11-17T20:00:22.507834Z",
+      "finished_at": "2026-11-17T20:00:23.763737Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 42,
@@ -7312,10 +6897,10 @@
       "errors": []
     },
     {
-      "id": "sentinel-1-grd-20261117T152019Z",
+      "id": "sentinel-1-grd-20261117T200023Z",
       "source_id": "sentinel-1-grd",
-      "started_at": "2026-11-17T15:20:19.377577Z",
-      "finished_at": "2026-11-17T15:20:20.500570Z",
+      "started_at": "2026-11-17T20:00:23.763756Z",
+      "finished_at": "2026-11-17T20:00:25.761149Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 30,
@@ -7324,10 +6909,10 @@
       "errors": []
     },
     {
-      "id": "sentinel-2-l2a-20261117T152020Z",
+      "id": "sentinel-2-l2a-20261117T200025Z",
       "source_id": "sentinel-2-l2a",
-      "started_at": "2026-11-17T15:20:20.500586Z",
-      "finished_at": "2026-11-17T15:20:22.945806Z",
+      "started_at": "2026-11-17T20:00:25.761162Z",
+      "finished_at": "2026-11-17T20:00:28.518435Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 82,
@@ -7336,10 +6921,10 @@
       "errors": []
     },
     {
-      "id": "viirs-375m-firms-20261117T152022Z",
+      "id": "viirs-375m-firms-20261117T200028Z",
       "source_id": "viirs-375m",
-      "started_at": "2026-11-17T15:20:22.945823Z",
-      "finished_at": "2026-11-17T15:20:23.835276Z",
+      "started_at": "2026-11-17T20:00:28.518450Z",
+      "finished_at": "2026-11-17T20:00:29.606298Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 0,
@@ -7348,52 +6933,16 @@
       "errors": []
     },
     {
-      "id": "modis-thermal-firms-20261117T152022Z",
+      "id": "modis-thermal-firms-20261117T200028Z",
       "source_id": "modis-thermal",
-      "started_at": "2026-11-17T15:20:22.945823Z",
-      "finished_at": "2026-11-17T15:20:23.835306Z",
+      "started_at": "2026-11-17T20:00:28.518450Z",
+      "finished_at": "2026-11-17T20:00:29.606329Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 0,
       "scenes_published": 0,
       "processing_version": "firms-discovery/0.1",
       "errors": []
-    },
-    {
-      "id": "landsat-mndwi-20261117T195306.249419+0000",
-      "source_id": "landsat-c2-l2",
-      "started_at": "2026-11-17T19:51:39.200614+00:00",
-      "finished_at": "2026-11-17T19:53:06.249419+00:00",
-      "status": "partial",
-      "stage_reached": "raster_processing",
-      "scenes_discovered": 6,
-      "scenes_published": 5,
-      "processing_version": "landsat-mndwi/0.1",
-      "errors": [
-        {
-          "stage": "raster_processing",
-          "message": "ValueError: Insufficient valid pixels after QA screening: 10.09%",
-          "scene_id": "LC09_L2SP_160032_20260831_02_T1"
-        }
-      ]
-    },
-    {
-      "id": "landsat-environmental-20261117T195915.153705+0000",
-      "source_id": "landsat-c2-l2",
-      "started_at": "2026-11-17T19:57:25.110197+00:00",
-      "finished_at": "2026-11-17T19:59:15.153705+00:00",
-      "status": "partial",
-      "stage_reached": "raster_processing",
-      "scenes_discovered": 6,
-      "scenes_published": 5,
-      "processing_version": "landsat-environmental/0.2",
-      "errors": [
-        {
-          "stage": "raster_processing",
-          "message": "RuntimeError: No optical or thermal product passed quality screening",
-          "scene_id": "LC09_L2SP_160032_20260831_02_T1"
-        }
-      ]
     }
   ],
   "time_series": {
