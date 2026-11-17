@@ -1,0 +1,41 @@
+name: Verify Darvaza Watch responsive website
+
+on:
+  push:
+    branches:
+      - feature/landsat-products-ui
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start local static website
+        run: |
+          python3 -m http.server 8000 > /tmp/darvaza-site.log 2>&1 &
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://127.0.0.1:8000/ > /dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/darvaza-site.log
+          exit 1
+      - name: Run responsive browser checks five times
+        run: |
+          for pass in 1 2 3 4 5; do
+            echo "Browser verification pass ${pass}/5"
+            node tests/site-smoke.mjs
+          done
