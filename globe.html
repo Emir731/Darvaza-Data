@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080d12">
+  <title>Darvaza Watch — Orbital Observatory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./globe.css">
+</head>
+<body>
+  <header class="top"><a href="./index.html" class="brand">DARVAZA <b>WATCH</b></a><span>EARTH OBSERVATION / TURKMENISTAN</span><a href="https://github.com/Emir731/Darvaza-Pipeline">PIPELINE ↗</a></header>
+  <main>
+    <section class="intro"><div class="eyebrow">NISAR · LANDSAT · SENTINEL</div><h1>THE CRATER<br><em>IN CONTEXT.</em></h1><p>Explore the Darvaza study area on a three-dimensional Earth. Select an acquisition date to inspect available catalogue records and published analysis.</p></section>
+    <section class="workspace">
+      <div class="globe-panel"><div class="panel-top"><span>01 / PLANET VIEW</span><span id="globe-status">INITIALISING GLOBE</span></div><div id="globe" aria-label="Interactive 3D Earth globe"></div><div class="coordinates">40.252° N&nbsp;&nbsp; 58.439° E <span>· DARVAZA, TURKMENISTAN</span></div></div>
+      <aside class="side-panel">
+        <div class="panel-top">02 / OBSERVATION HISTORY</div><label for="date-select">ACQUISITION DATE</label><select id="date-select"><option value="">Loading catalogue…</option></select>
+        <div class="selected-date" id="selected-date">—</div><div class="data-state" id="date-state">Waiting for data manifest</div>
+        <div class="rule"></div><h2>OBSERVATION DETAILS</h2><dl><dt>SENSOR</dt><dd id="sensor">—</dd><dt>SCENE ID</dt><dd id="scene">—</dd><dt>PROCESSING</dt><dd id="processing">—</dd><dt>CLOUD COVER</dt><dd id="cloud">—</dd></dl>
+        <div class="rule"></div><h2>ANALYSIS PRODUCTS</h2><div class="product-state" id="product-state">No validated before/after products have been published.</div><div class="caveat">Catalogue availability does not mean a raster has been processed. No crater-temperature or environmental-change claim is inferred from a scene record.</div>
+        <a class="back-link" href="./index.html">← BACK TO DASHBOARD</a>
+      </aside>
+    </section>
+    <footer>OPEN DATA · REPRODUCIBLE METHODS · DARVAZA, TURKMENISTAN</footer>
+  </main>
+  <script src="https://unpkg.com/globe.gl"></script><script src="./globe.js"></script>
+</body></html>
