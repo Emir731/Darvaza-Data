@@ -17,7 +17,9 @@ concurrency:
 jobs:
   deploy:
     environment:
-      name: github-pages
+      # Use a dedicated preview environment so the feature branch is not
+      # blocked by a default-branch-only rule on the repository's github-pages environment.
+      name: darvaza-watch-preview
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
