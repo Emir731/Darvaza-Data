@@ -1,19 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#080d12">
-  <title>Darvaza Watch — Orbital Observatory</title>
+  <meta name="description" content="Explore the Darvaza study area on a fixed, zoom-only 3D Earth globe.">
+  <title>Darvaza Watch — Planet View</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./globe.css">
 </head>
 <body>
   <header class="top"><a href="./index.html" class="brand">DARVAZA <b>WATCH</b></a><span>EARTH OBSERVATION / TURKMENISTAN</span><a href="https://github.com/Emir731/Darvaza-Pipeline">PIPELINE ↗</a></header>
   <main>
-    <section class="intro"><div class="eyebrow">LANDSAT · SENTINEL-1 · SENTINEL-2 · VIIRS</div><h1>THE CRATER<br><em>IN CONTEXT.</em></h1><p>Explore the Darvaza study area on a three-dimensional Earth. Select an acquisition date to inspect processed satellite observations and published change products.</p></section>
+    <section class="intro"><div class="eyebrow">LANDSAT · SENTINEL-1 · SENTINEL-2 · VIIRS</div><h1>THE CRATER<br><em>IN CONTEXT.</em></h1><p>Explore the Darvaza study area on a three-dimensional Earth. The globe remains locked on Darvaza; zoom in or out to inspect its surroundings. Select an acquisition date to inspect processed satellite observations.</p></section>
     <section class="workspace">
-      <div class="globe-panel"><div class="panel-top"><span>01 / PLANET VIEW</span><span id="globe-status">INITIALISING GLOBE</span></div><div id="globe" aria-label="Interactive 3D Earth globe"></div><div class="coordinates">40.252° N&nbsp;&nbsp; 58.439° E <span>· DARVAZA, TURKMENISTAN</span></div></div>
+      <div class="globe-panel"><div class="panel-top"><span>01 / PLANET VIEW</span><span id="globe-status">LOCKING TO DARVAZA…</span></div>
+        <div class="globe-stage"><div id="globe" aria-label="Three-dimensional Earth centered on Darvaza. Rotation and panning are disabled; zoom is enabled."></div>
+          <div class="globe-zoom" role="group" aria-label="Globe zoom controls"><button type="button" id="globe-zoom-in" aria-label="Zoom in" title="Zoom in">+</button><button type="button" id="globe-zoom-out" aria-label="Zoom out" title="Zoom out">−</button></div>
+        </div>
+        <div class="coordinates">40.252° N&nbsp;&nbsp; 58.439° E <span>· DARVAZA, TURKMENISTAN</span></div>
+        <p class="interaction-note">POSITION LOCKED · DRAG ROTATION DISABLED · PINCH / WHEEL / BUTTONS TO ZOOM</p>
+      </div>
       <aside class="side-panel">
         <div class="panel-top">02 / OBSERVATION HISTORY</div><label for="date-select">ACQUISITION DATE</label><select id="date-select"><option value="">Loading catalogue…</option></select>
         <div class="selected-date" id="selected-date">—</div><div class="data-state" id="date-state">Waiting for data manifest</div>
