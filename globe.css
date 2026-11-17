@@ -18,3 +18,6 @@
 @media(max-width:850px){main{padding:24px 14px calc(20px + var(--safe-bottom))}.workspace{grid-template-columns:minmax(0,1fr)}.globe-panel{padding:13px}.side-panel{padding:15px}#globe{height:clamp(300px,72vw,460px);min-height:300px}.top{height:54px;padding:0 14px}.top>span{display:none}.intro{margin-bottom:20px}.intro p{font-size:12px}.panel-top{font-size:9px}}
 @media(max-width:480px){main{padding:18px 10px calc(18px + var(--safe-bottom))}.top{padding:0 10px}.top a:last-child{font-size:9px}h1{font-size:clamp(43px,13vw,60px)}#globe{height:340px;min-height:300px}.globe-zoom{right:9px;bottom:10px}.globe-zoom button{width:44px;height:44px}.coordinates{font-size:9px;line-height:1.7}.panel-top{flex-wrap:wrap}.side-panel{padding:13px}dl{grid-template-columns:88px minmax(0,1fr);gap:10px 8px}}
 @media(prefers-reduced-motion:reduce){.globe-zoom button{transition:none}}
+
+/* OrbitControls owns pointer gestures so two-finger pinch zoom works on mobile. */
+#globe{touch-action:none}
