@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-17T20:02:08.234772+00:00",
+  "generated_at": "2026-11-17T20:05:05.743110+00:00",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -637,13 +637,18 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processed_at": "2026-11-17T20:03:02.659895+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.17,
       "valid_pixel_pct": 95.94,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
         {
           "code": "QA_PIXEL_SCREENED",
           "severity": "info",
@@ -749,7 +754,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T20:00:18.047294+00:00"
+        "published_at": "2026-11-17T20:03:02.659895+00:00"
       },
       "optical_valid_pixel_pct": 95.94,
       "thermal_valid_pixel_pct": 95.94
@@ -1947,13 +1952,18 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20260924_02_T1",
       "acquired_at": "2026-09-24T06:42:09.785283Z",
-      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processed_at": "2026-11-17T20:03:02.659895+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.0,
       "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
         {
           "code": "QA_PIXEL_SCREENED",
           "severity": "info",
@@ -2059,7 +2069,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T20:00:18.047294+00:00"
+        "published_at": "2026-11-17T20:03:02.659895+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
       "thermal_valid_pixel_pct": 96.02
@@ -4269,13 +4279,18 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260730_02_T1",
       "acquired_at": "2026-07-30T06:41:58.010309Z",
-      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processed_at": "2026-11-17T20:03:02.659895+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
       "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
         {
           "code": "QA_PIXEL_SCREENED",
           "severity": "info",
@@ -4381,7 +4396,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T20:00:18.047294+00:00"
+        "published_at": "2026-11-17T20:03:02.659895+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
       "thermal_valid_pixel_pct": 96.02
@@ -5711,13 +5726,18 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_161032_20260627_02_T1",
       "acquired_at": "2026-06-27T06:47:42.556031Z",
-      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processed_at": "2026-11-17T20:03:02.659895+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.99,
       "valid_pixel_pct": 95.61,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
         {
           "code": "QA_PIXEL_SCREENED",
           "severity": "info",
@@ -5823,7 +5843,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T20:00:18.047294+00:00"
+        "published_at": "2026-11-17T20:03:02.659895+00:00"
       },
       "optical_valid_pixel_pct": 95.61,
       "thermal_valid_pixel_pct": 94.31
@@ -6977,13 +6997,18 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260527_02_T1",
       "acquired_at": "2026-05-27T06:41:29.758858Z",
-      "processed_at": "2026-11-17T20:00:18.047294+00:00",
+      "processed_at": "2026-11-17T20:03:02.659895+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
       "valid_pixel_pct": 96.04,
       "crs": "EPSG:32640",
       "resolution_m": 30,
       "quality_flags": [
+        {
+          "code": "MNDWI_IS_WATER_INDEX",
+          "severity": "info",
+          "message": "MNDWI is a water index and is not interpreted as a crater segmentation result."
+        },
         {
           "code": "QA_PIXEL_SCREENED",
           "severity": "info",
@@ -7089,7 +7114,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-17T20:00:18.047294+00:00"
+        "published_at": "2026-11-17T20:03:02.659895+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
       "thermal_valid_pixel_pct": 96.02
@@ -7339,6 +7364,24 @@
       "source_id": "landsat-c2-l2",
       "started_at": "2026-11-17T20:00:18.047294+00:00",
       "finished_at": "2026-11-17T20:02:08.234772+00:00",
+      "status": "partial",
+      "stage_reached": "raster_processing",
+      "scenes_discovered": 6,
+      "scenes_published": 5,
+      "processing_version": "landsat-environmental/0.2",
+      "errors": [
+        {
+          "stage": "raster_processing",
+          "message": "RuntimeError: No optical or thermal product passed quality screening",
+          "scene_id": "LC09_L2SP_160032_20260831_02_T1"
+        }
+      ]
+    },
+    {
+      "id": "landsat-environmental-20261117T200505.743110+0000",
+      "source_id": "landsat-c2-l2",
+      "started_at": "2026-11-17T20:03:02.659895+00:00",
+      "finished_at": "2026-11-17T20:05:05.743110+00:00",
       "status": "partial",
       "stage_reached": "raster_processing",
       "scenes_discovered": 6,
