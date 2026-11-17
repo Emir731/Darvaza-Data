@@ -6,7 +6,7 @@
   const $ = id => document.getElementById(id);
   let data = [];
   let globe = null;
-  let altitude = 1.8;
+  let altitude = 0.32;
 
   const fmtDate = value => {
     if (!value) return '—';
@@ -20,7 +20,7 @@
 
   function setZoom(value) {
     if (!globe) return;
-    altitude = Math.max(0.45, Math.min(5.5, value));
+    altitude = Math.max(0.18, Math.min(1.25, value));
     globe.pointOfView({
       lat: aoi.lat,
       lng: aoi.lng,
@@ -45,22 +45,21 @@
       .pointsData([{
         lat: aoi.lat,
         lng: aoi.lng,
-        size: 0.5,
-        color: '#ef765d',
+        color: '#d9a441',
         name: 'Darvaza gas crater'
       }])
-      .pointAltitude('size')
-      .pointRadius(0.25)
+      .pointAltitude(0.006)
+      .pointRadius(0.12)
       .pointColor('color')
       .pointLabel(point => point.name)
       .ringsData([{
         lat: aoi.lat,
         lng: aoi.lng,
-        maxR: 3.2,
+        maxR: 1.8,
         speed: 0.7,
         repeat: 1800
       }])
-      .ringColor(() => time => `rgba(239,118,93,${1 - time})`)
+      .ringColor(() => time => `rgba(217,164,65,${1 - time})`)
       .ringMaxRadius('maxR')
       .ringPropagationSpeed('speed')
       .ringRepeatPeriod('repeat');
@@ -201,9 +200,9 @@
       globe.polygonsData([feature])
         .polygonGeoJsonGeometry(row => row.geometry)
         .polygonAltitude(0.008)
-        .polygonCapColor(() => 'rgba(239,118,93,0.28)')
-        .polygonSideColor(() => 'rgba(239,118,93,0.08)')
-        .polygonStrokeColor(() => '#ef765d')
+        .polygonCapColor(() => 'rgba(217,164,65,0.16)')
+        .polygonSideColor(() => 'rgba(217,164,65,0.04)')
+        .polygonStrokeColor(() => '#d9a441')
         .polygonLabel(row => row.properties.name);
     }
 
