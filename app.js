@@ -174,7 +174,11 @@ function renderChanges(manifest) {
   const root = document.getElementById("change-grid");
   const changes = Array.isArray(manifest.change_products) ? manifest.change_products : [];
   if (!changes.length) {
-    root.innerHTML = '<div class="source-empty">No pair currently meets the same-sensor, same-product and same-grid checks. This is better than displaying an unreliable comparison.</div>';
+    const skipped = Array.isArray(manifest.change_analysis_skips) ? manifest.change_analysis_skips : [];
+    root.innerHTML = '<div class="source-empty">No change map passed the minimum evidence checks in this run. The dashboard will not display a comparison based on too few usable pixels.</div>' +
+      skipped.map(item => '<article class="warning-item"><strong>' + escapeHtml(safeText(item.source_id) + ' · ' + safeText(item.product)) + '</strong>' +
+        escapeHtml(safeText(item.reason)) + '<br><span class="status-warn">Usable pixels: ' + fmt(item.valid_pixel_count) +
+        ' / minimum required: ' + fmt(item.required_pixel_count) + '</span></article>').join("");
     return;
   }
   root.innerHTML = changes.map(change => {
@@ -191,7 +195,7 @@ function renderChanges(manifest) {
       (previewUrl ? '<img loading="lazy" src="' + escapeHtml(previewUrl) + '" alt="Exploratory change map for ' + escapeHtml(safeText(change.product)) + '">' : '') +
       '<p>' + escapeHtml(safeText(change.source_id)) + ' · ' + dateFmt(change.from_date) + ' → ' + dateFmt(change.to_date) + '</p>' +
       '<p>' + escapeHtml(statisticText) + '</p>' +
-      '<p>Common valid pixels: ' + fmt(change.valid_pixel_pct) + '%</p>' +
+      '<p>Common valid pixels: ' + fmt(change.valid_pixel_pct) + '% (' + fmt(change.valid_pixel_count) + ' pixels; minimum ' + fmt(change.required_pixel_count) + ')</p>' +
       '<p class="status-warn">Exploratory only · co-registration and independent reference checks are not complete.</p>' +
       (previewUrl ? '<a href="' + escapeHtml(previewUrl) + '" target="_blank" rel="noreferrer">Open comparison image ↗</a>' : '') +
       '</article>';
