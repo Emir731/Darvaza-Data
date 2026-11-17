@@ -1,5 +1,7 @@
 import { chromium } from "playwright";
 
+const baseUrl = process.env.BASE_URL || "http://127.0.0.1:8000/";
+
 const browser = await chromium.launch({ headless: true });
 const failures = [];
 try {
@@ -11,7 +13,7 @@ try {
     const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
     const pageErrors = [];
     page.on("pageerror", error => pageErrors.push(error.message));
-    const response = await page.goto("http://127.0.0.1:8000/", { waitUntil: "domcontentloaded" });
+    const response = await page.goto(baseUrl, { waitUntil: "domcontentloaded" });
     if (!response || response.status() !== 200) failures.push(`${viewport.name}: page did not return HTTP 200`);
     await page.waitForSelector("#map", { timeout: 10000 });
     await page.waitForFunction(() => window.L && document.querySelector("#crater-satellite.leaflet-container"), null, { timeout: 20000 }).catch(() => {
