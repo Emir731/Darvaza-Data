@@ -362,3 +362,77 @@ table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
  #map{height:420px;grid-template-columns:minmax(0,1.25fr) minmax(190px,.8fr);grid-template-rows:1fr 1fr}
  #map .map-detail{grid-row:1 / span 2;min-height:400px}
 }
+
+
+/* Published Landsat raster products */
+.raster-products{margin-top:16px;min-width:0}
+.raster-products-heading{display:flex;justify-content:space-between;gap:12px;margin-bottom:10px;color:var(--dim);font:9px var(--mono);letter-spacing:.08em}
+.raster-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.raster-product-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.raster-preview-link{display:block;background:#0c1510;overflow:hidden}
+.raster-preview-link img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;transition:transform .2s ease}
+.raster-preview-link:hover img{transform:scale(1.025)}
+.raster-product-info{padding:12px}
+.raster-product-date{color:var(--accent);font:9px var(--mono);letter-spacing:.05em}
+.raster-product-info>strong{display:block;margin-top:7px;color:var(--text);font:10px var(--mono);overflow-wrap:anywhere}
+.raster-product-actions{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.raster-product-actions a{color:var(--accent);font:9px var(--mono);text-decoration:none}
+.raster-product-actions span{color:var(--dim);font:8px var(--mono)}
+.raster-disclaimer{margin:12px 0 0;color:var(--muted);font-size:10px;line-height:1.65}
+.raster-empty{display:flex;align-items:flex-start;gap:12px;padding:18px;border:1px dashed var(--line);border-radius:8px;background:var(--surface)}
+.raster-empty>i{flex:none;color:var(--accent);font-size:20px}
+.raster-empty strong{display:block;color:var(--text);font-size:11px}
+.raster-empty p{margin:5px 0 0;color:var(--muted);font-size:10px;line-height:1.65}
+@media(max-width:900px){.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.raster-product-grid{grid-template-columns:minmax(0,1fr)}.raster-products-heading{flex-wrap:wrap}}
+
+
+/* Group optical and thermal previews by acquisition scene */
+.raster-scene-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.raster-scene-card{min-width:0;padding:14px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.raster-scene-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.raster-scene-heading>div{min-width:0}
+.raster-scene-heading>strong,.raster-scene-heading>div>strong{display:block;margin-top:6px;color:var(--text);font:10px var(--mono);overflow-wrap:anywhere}
+.raster-scene-heading>span{flex:none;padding:5px 7px;border:1px solid #64573d;border-radius:4px;color:#e1bd73;font:8px var(--mono);letter-spacing:.06em}
+.raster-product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.raster-product-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:7px;background:#111a15}
+.raster-product-info{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px}
+.raster-product-info>strong{margin:0;font:9px var(--mono)}
+.raster-cog-link{flex:none;color:var(--accent);font:8px var(--mono);text-decoration:none}
+.raster-cog-link:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.raster-scene-card{padding:10px}.raster-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.raster-scene-heading{flex-direction:column}.raster-product-info{align-items:flex-start;flex-direction:column}}
+
+
+/* Mobile off-canvas navigation: restore links hidden by the compact header rule */
+@media(max-width:900px){
+  .sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:1200;
+    width:270px;
+    height:100vh;
+    min-height:100vh;
+    padding:28px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    overflow-y:auto;
+    border-right:1px solid var(--line);
+    border-bottom:0;
+    background:var(--surface);
+    transform:translateX(-105%);
+    transition:transform .22s ease;
+  }
+  body.nav-open .sidebar{transform:translateX(0)}
+  .sidebar .side-label{display:block}
+  .sidebar .nav-list{display:flex;flex-direction:column;gap:5px;margin-top:12px}
+  .sidebar-bottom{display:block;margin-top:auto}
+  .main-content{margin-left:0}
+}
+@media(max-width:700px){
+  .sidebar{width:min(82vw,290px);height:100dvh;min-height:100dvh}
+  .mobile-menu-toggle{position:relative;z-index:1300}
+}
