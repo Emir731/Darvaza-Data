@@ -100,22 +100,42 @@ function metrics(m){const obs=m.observations||[],sources=m.sources||[],runs=m.pi
 function renderRasterProducts(m){
  const root=$("raster-products"),status=$("analysis-status");
  if(!root)return;
- const products=(m.observations||[])
-  .filter(x=>x.processed_at&&String(x.processing_version||"").startsWith("landsat-mndwi/"))
-  .map(x=>({observation:x,preview:(x.assets||[]).find(a=>a.role==="preview"),cog:(x.assets||[]).find(a=>a.role==="cog")}))
-  .filter(x=>x.preview&&assetUrl(x.preview.href))
+ const scenes=(m.observations||[])
+  .filter(x=>x.processed_at&&String(x.processing_version||"").startsWith("landsat-environmental/"))
+  .map(observation=>({
+   observation,
+   previews:(observation.assets||[]).filter(a=>a.role==="preview"&&assetUrl(a.href)),
+   cogs:(observation.assets||[]).filter(a=>a.role==="cog"&&assetUrl(a.href))
+  }))
+  .filter(x=>x.previews.length)
   .sort((a,b)=>new Date(b.observation.acquired_at)-new Date(a.observation.acquired_at));
- if(!products.length){
-  root.innerHTML='<div class="raster-empty"><i class="ph ph-image"></i><div><strong>No processed raster products published</strong><p>Catalogue records are available, but no matching raster preview and COG have been published to the public manifest yet.</p></div></div>';
+ if(!scenes.length){
+  root.innerHTML='<div class="raster-empty"><i class="ph ph-image"></i><div><strong>No processed raster products published</strong><p>Catalogue records are available, but no matching optical-index or land-surface-temperature rasters are linked to the public manifest yet.</p></div></div>';
   if(status)status.innerHTML='<span class="analysis-status-dot"></span><div><strong>CATALOGUE AVAILABLE · NO RASTER PRODUCTS PUBLISHED</strong><p>Scene metadata is available. No published raster products are currently linked to this website.</p></div>';
   return;
  }
- if(status)status.innerHTML='<span class="analysis-status-dot"></span><div><strong>EXPLORATORY RASTERS PUBLISHED · VALIDATION PENDING</strong><p>'+fmt(products.length)+' Landsat MNDWI products are available. They are exploratory spectral indices, not validated environmental measurements.</p></div>';
- root.innerHTML='<div class="raster-products-heading"><span>'+fmt(products.length)+' EXPLORATORY PRODUCTS</span><span>LANDSAT C2 L2 · MNDWI</span></div><div class="raster-product-grid">'+products.map(({observation,preview,cog})=>{
-  const previewHref=assetUrl(preview.href),cogHref=cog?assetUrl(cog.href):null;
-  const valid=observation.valid_pixel_pct==null?"—":Number(observation.valid_pixel_pct).toFixed(1)+"%";
-  return '<article class="raster-product-card"><a class="raster-preview-link" href="'+esc(previewHref)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(previewHref)+'" loading="lazy" alt="Exploratory MNDWI raster preview for '+esc(observation.scene_id)+'"></a><div class="raster-product-info"><div class="raster-product-date">'+esc(date(observation.acquired_at))+' · '+valid+' VALID PIXELS</div><strong>'+esc(observation.scene_id)+'</strong><div class="raster-product-actions">'+(cogHref?'<a href="'+esc(cogHref)+'" target="_blank" rel="noopener noreferrer">OPEN COG <i class="ph ph-arrow-up-right"></i></a>':'')+'<span>EXPLORATORY · NOT VALIDATED</span></div></div></article>';
- }).join("")+'</div><p class="raster-disclaimer">MNDWI is a spectral water index. These products are not crater-boundary measurements, thermal readings, or validated surface-change estimates.</p>';
+ if(status)status.innerHTML='<span class="analysis-status-dot"></span><div><strong>EXPLORATORY RASTERS PUBLISHED · VALIDATION PENDING</strong><p>'+fmt(scenes.length)+' Landsat scenes have optical-index and/or land-surface-temperature products. They are exploratory and not validated crater measurements.</p></div>';
+ const lstScenes=scenes.filter(x=>x.previews.some(a=>a.id.includes('-lst-preview'))).length;
+ const thermalCard=document.querySelector(".analysis-card");
+ if(thermalCard&&lstScenes){
+  const empty=thermalCard.querySelector(".analysis-empty");
+  const foot=thermalCard.querySelector(".analysis-foot");
+  if(empty)empty.innerHTML='<i class="ph ph-thermometer"></i><strong>Exploratory land-surface temperature available</strong><p>Landsat ST_B10 products are shown below. They represent surface temperature on a 30 m grid, not flame or crater-core temperature. VIIRS/MODIS hotspot observations remain separate.</p>';
+  if(foot)foot.textContent="LANDSAT ST_B10 · LAND-SURFACE TEMPERATURE";
+ }
+ root.innerHTML='<div class="raster-products-heading"><span>'+fmt(scenes.length)+' PROCESSED SCENES</span><span>LANDSAT C2 L2 · OPTICAL + THERMAL</span></div><div class="raster-scene-grid">'+scenes.map(({observation,previews,cogs})=>{
+  const optical=observation.optical_valid_pixel_pct??observation.valid_pixel_pct;
+  const thermal=observation.thermal_valid_pixel_pct;
+  const metric='OPTICAL VALID: '+(optical==null?'—':Number(optical).toFixed(1)+'%')+' · THERMAL VALID: '+(thermal==null?'—':Number(thermal).toFixed(1)+'%');
+  const previewCards=previews.map(preview=>{
+   const cogId=preview.id.replace(/-preview$/,'-cog');
+   const cog=cogs.find(a=>a.id===cogId);
+   const href=assetUrl(preview.href),cogHref=cog?assetUrl(cog.href):null;
+   const label=String(preview.title||preview.id).replace(/ preview.*$/i,'');
+   return '<article class="raster-product-card"><a class="raster-preview-link" href="'+esc(href)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(href)+'" loading="lazy" alt="'+esc(label)+' preview for '+esc(observation.scene_id)+'"></a><div class="raster-product-info"><strong>'+esc(label)+'</strong>'+(cogHref?'<a class="raster-cog-link" href="'+esc(cogHref)+'" target="_blank" rel="noopener noreferrer">OPEN COG <i class="ph ph-arrow-up-right"></i></a>':'')+'</div></article>';
+  }).join("");
+  return '<article class="raster-scene-card"><div class="raster-scene-heading"><div><div class="raster-product-date">'+esc(date(observation.acquired_at))+' · '+esc(metric)+'</div><strong>'+esc(observation.scene_id)+'</strong></div><span>EXPLORATORY</span></div><div class="raster-product-grid">'+previewCards+'</div></article>';
+ }).join("")+'</div><p class="raster-disclaimer">NDVI and NDMI describe spectral vegetation/moisture context; MNDWI is a water index. Landsat ST_B10 is land-surface temperature, not flame or crater-core temperature. None of these products alone establishes crater-boundary change.</p>';
 }
 function latest(){const rows=[...all].sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at)).slice(0,6);$("latest-list").innerHTML=rows.length?rows.map(x=>'<div class="activity-item"><div class="activity-title">'+esc((x.source_id||"unknown").replaceAll("-"," ").toUpperCase())+'</div><div class="activity-meta">'+esc(date(x.acquired_at))+' · '+esc(x.scene_id)+'</div></div>').join(""):'<div class="empty-state"><i class="ph ph-radar"></i><strong>No observations published</strong><p>The catalogue currently contains no scene records.</p></div>'}
 function filtered(){let q=filters.search.trim().toLowerCase();return all.filter(x=>(filters.source==="all"||x.source_id===filters.source)&&(!q||[x.scene_id,x.source_id,x.id].some(v=>String(v||"").toLowerCase().includes(q)))&&(filters.cloud==="all"||(x.cloud_cover_pct!=null&&Number(x.cloud_cover_pct)<=Number(filters.cloud)))).sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at))}
