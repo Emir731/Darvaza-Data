@@ -438,3 +438,315 @@ select {
     transition: none;
   }
 }
+
+
+/* Final interface polish */
+:root {
+  --surface-raised: #1b2921;
+  --line-soft: rgba(164, 185, 165, .14);
+  --accent-soft: rgba(217, 164, 65, .12);
+  --content-width: 1660px;
+}
+
+::selection {
+  color: #101710;
+  background: #d9a441;
+}
+
+.sidebar {
+  box-shadow: 12px 0 36px rgba(0, 0, 0, .12);
+}
+
+.brand-mark {
+  box-shadow: inset 0 0 0 4px rgba(217, 164, 65, .05);
+}
+
+.nav-link {
+  position: relative;
+  min-height: 42px;
+  transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.nav-link.active {
+  color: #f2f4ed;
+  background: linear-gradient(90deg, rgba(217, 164, 65, .14), rgba(217, 164, 65, .025));
+}
+
+.nav-link.active i {
+  color: var(--accent);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background: rgba(13, 21, 17, .88);
+  backdrop-filter: blur(16px);
+}
+
+.page-intro {
+  position: relative;
+}
+
+.intro-row > div:first-child {
+  max-width: 760px;
+}
+
+.intro-copy {
+  max-width: 610px;
+  line-height: 1.8;
+}
+
+.location-stamp {
+  background: linear-gradient(145deg, rgba(217, 164, 65, .07), rgba(217, 164, 65, .015));
+  border-color: rgba(217, 164, 65, .24);
+}
+
+.metric-card {
+  transition: border-color 160ms ease, background 160ms ease;
+}
+
+.metric-card:hover,
+.source-card:hover,
+.status-card:hover,
+.product-card-ui:hover,
+.glossary-grid article:hover {
+  border-color: rgba(217, 164, 65, .42);
+}
+
+.metric-top i {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: rgba(217, 164, 65, .06);
+}
+
+.metric-foot {
+  line-height: 1.55;
+}
+
+.panel {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .09);
+}
+
+.panel-heading {
+  align-items: flex-start;
+}
+
+.panel-heading h2 {
+  line-height: 1.3;
+}
+
+.section-description {
+  max-width: 650px;
+  line-height: 1.75;
+}
+
+#map {
+  overflow: hidden;
+}
+
+.map-mode {
+  transition: color 150ms ease, border-color 150ms ease, background 150ms ease;
+}
+
+.map-mode.active {
+  box-shadow: inset 0 0 0 1px rgba(217, 164, 65, .18);
+}
+
+.activity-item {
+  position: relative;
+  padding-left: 16px;
+}
+
+.activity-item::before {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  content: '';
+}
+
+.source-card,
+.status-card,
+.product-card-ui,
+.glossary-grid article {
+  transition: border-color 160ms ease, background 160ms ease;
+}
+
+.product-card-ui img {
+  border: 1px solid var(--line-soft);
+}
+
+.table-wrap tbody tr:hover {
+  background: rgba(168, 198, 162, .045);
+}
+
+.table-wrap td {
+  line-height: 1.5;
+}
+
+.text-link,
+.github-link,
+.footer a,
+.product-card-ui a {
+  transition: color 150ms ease;
+}
+
+.text-link:hover,
+.github-link:hover,
+.footer a:hover,
+.product-card-ui a:hover {
+  color: #f0c46d;
+}
+
+.warning-item {
+  border-left-color: var(--accent);
+  border-radius: 0 7px 7px 0;
+}
+
+.quality-chip {
+  background: rgba(168, 198, 162, .035);
+}
+
+#observations,
+#sources,
+#fire-watch,
+#products,
+#change-analysis,
+#quality,
+#guide,
+#method,
+#map-section {
+  scroll-margin-top: 86px;
+}
+
+@media (min-width: 701px) {
+  .sidebar {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .nav-list {
+    gap: 4px;
+  }
+
+  .main-content {
+    max-width: var(--content-width);
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    padding: 10px 12px 8px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
+  }
+
+  .brand {
+    margin-bottom: 8px;
+  }
+
+  .nav-list {
+    gap: 7px;
+    padding: 2px 0 7px;
+    scrollbar-width: none;
+  }
+
+  .nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    min-height: 38px;
+    border-radius: 7px;
+  }
+
+  .nav-link.active {
+    border-color: rgba(217, 164, 65, .42);
+  }
+
+  .topbar {
+    top: 102px;
+  }
+
+  .page-intro {
+    padding-top: 27px;
+  }
+
+  .metrics-grid {
+    gap: 9px;
+  }
+
+  .metric-card {
+    min-height: 116px;
+  }
+
+  .panel {
+    box-shadow: none;
+  }
+
+  #observations,
+  #sources,
+  #fire-watch,
+  #products,
+  #change-analysis,
+  #quality,
+  #guide,
+  #method,
+  #map-section {
+    scroll-margin-top: 158px;
+  }
+
+  .map-caption {
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 420px) {
+  .topbar {
+    top: 100px;
+  }
+
+  .topbar-right {
+    max-width: 62%;
+  }
+
+  .intro-copy {
+    font-size: 12px;
+  }
+
+  .metric-card {
+    padding: 12px 11px;
+  }
+
+  .metric-top i {
+    width: 26px;
+    height: 26px;
+  }
+
+  .metric-value {
+    font-size: 27px;
+  }
+
+  .panel-heading h2 {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .metric-card,
+  .source-card,
+  .status-card,
+  .product-card-ui,
+  .glossary-grid article,
+  .map-mode {
+    transition: none;
+  }
+}
