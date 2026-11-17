@@ -750,3 +750,102 @@ select {
     transition: none;
   }
 }
+
+
+/* Design lab resource cards */
+.design-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+.design-resource-card {
+  display: flex;
+  min-width: 0;
+  min-height: 230px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 19px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1b2921, #141e18);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+.design-resource-card:hover {
+  border-color: rgba(217, 164, 65, .5);
+  background: #1c2b22;
+  transform: translateY(-2px);
+}
+.design-resource-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: rgba(217, 164, 65, .08);
+  color: var(--accent);
+  font-size: 21px;
+}
+.design-resource-meta {
+  color: var(--dim);
+  font: 9px var(--mono);
+  letter-spacing: .08em;
+}
+.design-resource-card strong {
+  margin-top: 8px;
+  font-size: 16px;
+}
+.design-resource-copy {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.design-resource-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+}
+.design-lab-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 15px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.65;
+}
+.design-lab-note i {
+  flex: none;
+  color: var(--accent);
+}
+#design-lab {
+  scroll-margin-top: 86px;
+}
+@media (max-width: 900px) {
+  .design-resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .design-resource-grid {
+    grid-template-columns: 1fr;
+  }
+  .design-resource-card {
+    min-height: 205px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .design-resource-card {
+    transition: none;
+  }
+}
