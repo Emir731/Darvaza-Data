@@ -41,6 +41,12 @@ try {
     await page.waitForFunction(() => window.L && document.querySelector("#crater-satellite.leaflet-container"), null, { timeout: 20000 }).catch(() => {
       failures.push(`${viewport.name}: Leaflet map did not initialize`);
     });
+    await page.waitForFunction(() => {
+      const tiles = [...document.querySelectorAll("#crater-satellite img.leaflet-tile")];
+      return tiles.some(tile => tile.complete && tile.naturalWidth > 0);
+    }, null, { timeout: 30000 }).catch(() => {
+      failures.push(`${viewport.name}: no satellite or fallback map tile loaded`);
+    });
     await page.waitForFunction(() => document.documentElement.dataset.dataStatus === "live", null, { timeout: 20000 }).catch(() => {
       failures.push(`${viewport.name}: public manifest did not load`);
     });
@@ -60,6 +66,10 @@ try {
       leaflet: !!document.querySelector("#crater-satellite.leaflet-container"),
       mapLocked: document.querySelector("#crater-satellite")?.dataset.mapLocked === "true",
       globeRoot: !!document.querySelector("#earth-globe"),
+      globeLocked: document.querySelector("#earth-globe")?.dataset.controlsLocked === "true",
+      globeLat: Number(document.querySelector("#earth-globe")?.dataset.centerLat),
+      globeLon: Number(document.querySelector("#earth-globe")?.dataset.centerLon),
+      mapTilesLoaded: [...document.querySelectorAll("#crater-satellite img.leaflet-tile")].filter(tile => tile.complete && tile.naturalWidth > 0).length,
       rasterRoot: !!document.querySelector("#raster-products"),
       rasterScenes: document.querySelectorAll(".raster-scene-card").length,
       rasterPreviews: document.querySelectorAll(".raster-scene-card .raster-preview-link img").length,
@@ -72,8 +82,11 @@ try {
     if (state.mapWidth < 250 || state.mapHeight < 100) failures.push(`${viewport.name}: map container has invalid dimensions`);
     if (state.documentWidth > state.viewportWidth + 2) failures.push(`${viewport.name}: horizontal page overflow (${state.documentWidth}px > ${state.viewportWidth}px)`);
     if (!state.leaflet) failures.push(`${viewport.name}: Leaflet map root missing`);
+    if (state.mapTilesLoaded < 1) failures.push(`${viewport.name}: no map tiles loaded`);
     if (!state.mapLocked) failures.push(`${viewport.name}: satellite map interaction lock is not active`);
     if (!state.globeRoot || !state.rasterRoot) failures.push(`${viewport.name}: expected observatory components missing`);
+    if (!state.globeLocked) failures.push(`${viewport.name}: 3D globe controls are not locked`);
+    if (Math.abs(state.globeLat - 40.25258) > 0.0001 || Math.abs(state.globeLon - 58.43933) > 0.0001) failures.push(`${viewport.name}: globe is not centered on Darvaza`);
     if (state.rasterScenes < 5) failures.push(`${viewport.name}: expected at least five processed scene cards, found ${state.rasterScenes}`);
     if (state.rasterPreviews < 20) failures.push(`${viewport.name}: expected at least twenty raster previews, found ${state.rasterPreviews}`);
     if (state.rasterLoaded < 20) failures.push(`${viewport.name}: raster preview assets did not all load (${state.rasterLoaded}/20)`);
