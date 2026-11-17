@@ -4,31 +4,31 @@
     "VIIRS_SNPP_NRT": [
       {
         "date": "2026-11-13",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-14",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-15",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-16",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-17",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       }
@@ -36,31 +36,31 @@
     "VIIRS_NOAA20_NRT": [
       {
         "date": "2026-11-13",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-14",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-15",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-16",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-17",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       }
@@ -68,31 +68,31 @@
     "VIIRS_NOAA21_NRT": [
       {
         "date": "2026-11-13",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-14",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-15",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-16",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-17",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       }
@@ -100,35 +100,35 @@
     "MODIS_NRT": [
       {
         "date": "2026-11-13",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-14",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-15",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-16",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       },
       {
         "date": "2026-11-17",
-        "checked_at": "2026-11-17T17:32:52.413127Z",
+        "checked_at": "2026-11-17T17:34:09.894680Z",
         "detections": 0,
         "status": "checked"
       }
     ]
   },
-  "updated_at": "2026-11-17T17:33:48.507379Z"
+  "updated_at": "2026-11-17T17:35:09.327826Z"
 }
