@@ -33,6 +33,7 @@
     window.__darvazaGlobe = globeInstance;
     globeInstance.pointOfView({lat:AOI.lat,lng:AOI.lng,altitude:zoomAltitude},0);
     const controls = globeInstance.controls();
+    window.__darvazaGlobeControls = controls;
     controls.autoRotate = false;
     controls.enableRotate = false;
     controls.enablePan = false;
