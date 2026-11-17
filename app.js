@@ -26,7 +26,7 @@ function globe(){
     let esriErrors=0,sentinelErrors=0,esriLoaded=false,sentinelLoaded=false;
     let baseLayer,fallbackTimer,osmTimer,fallbackUsed=false,osmUsed=false;
     const esri=L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{minZoom:3,maxZoom:17,maxNativeZoom:17,attribution:"Imagery © Esri, Maxar, Earthstar Geographics",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
-    const sentinel=L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{x}/{y}.jpg",{minZoom:3,maxZoom:17,maxNativeZoom:14,attribution:"Sentinel-2 cloudless mosaic © EOX / ESA",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
+    const sentinel=L.tileLayer("https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg",{minZoom:3,maxZoom:17,maxNativeZoom:14,attribution:"Sentinel-2 cloudless mosaic © EOX / ESA",crossOrigin:true,updateWhenIdle:true,keepBuffer:2});
     const osm=L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap contributors",crossOrigin:true});
     const sourceNote=message=>{
       let note=detail.querySelector(".map-source-note");
@@ -98,7 +98,7 @@ function globe(){
 }
 function metrics(m){const obs=m.observations||[],sources=m.sources||[],runs=m.pipeline_runs||[];$("metric-observations").textContent=fmt(obs.length);$("metric-processed").textContent=fmt(obs.filter(x=>x.processed_at).length);$("metric-products").textContent=fmt((m.change_products||[]).length);$("metric-sources").textContent=fmt(sources.filter(x=>Number(x.scene_count)>0).length);$("metric-runs").textContent=fmt(runs.filter(x=>x.status==="success").length);$("metric-observations-note").textContent="Catalogue records · "+(m.is_sample?"sample data":"published manifest");$("last-updated").textContent=m.generated_at?"UPDATED "+date(m.generated_at).toUpperCase():"UPDATE TIME UNKNOWN"}
 function renderRasterProducts(m){
- const root=$("raster-products");
+ const root=$("raster-products"),status=$("analysis-status");
  if(!root)return;
  const products=(m.observations||[])
   .filter(x=>x.processed_at&&String(x.processing_version||"").startsWith("landsat-mndwi/"))
@@ -106,9 +106,11 @@ function renderRasterProducts(m){
   .filter(x=>x.preview&&assetUrl(x.preview.href))
   .sort((a,b)=>new Date(b.observation.acquired_at)-new Date(a.observation.acquired_at));
  if(!products.length){
-  root.innerHTML='<div class="raster-empty"><i class="ph ph-image"></i><div><strong>No processed raster products published</strong><p>Once the pipeline completes and publishes raster outputs, previews and COG downloads will appear here. Catalogue records alone are not processed imagery.</p></div></div>';
+  root.innerHTML='<div class="raster-empty"><i class="ph ph-image"></i><div><strong>No processed raster products published</strong><p>Catalogue records are available, but no matching raster preview and COG have been published to the public manifest yet.</p></div></div>';
+  if(status)status.innerHTML='<span class="analysis-status-dot"></span><div><strong>CATALOGUE AVAILABLE · NO RASTER PRODUCTS PUBLISHED</strong><p>Scene metadata is available. No published raster products are currently linked to this website.</p></div>';
   return;
  }
+ if(status)status.innerHTML='<span class="analysis-status-dot"></span><div><strong>EXPLORATORY RASTERS PUBLISHED · VALIDATION PENDING</strong><p>'+fmt(products.length)+' Landsat MNDWI products are available. They are exploratory spectral indices, not validated environmental measurements.</p></div>';
  root.innerHTML='<div class="raster-products-heading"><span>'+fmt(products.length)+' EXPLORATORY PRODUCTS</span><span>LANDSAT C2 L2 · MNDWI</span></div><div class="raster-product-grid">'+products.map(({observation,preview,cog})=>{
   const previewHref=assetUrl(preview.href),cogHref=cog?assetUrl(cog.href):null;
   const valid=observation.valid_pixel_pct==null?"—":Number(observation.valid_pixel_pct).toFixed(1)+"%";
