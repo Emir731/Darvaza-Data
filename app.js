@@ -93,6 +93,12 @@ function globe(){
       g.pointOfView({lat:crater.lat,lng:crater.lon,altitude:.38},2200);
       const controls=g.controls();
       controls.enabled=false;controls.enableZoom=false;controls.enableRotate=false;controls.enablePan=false;
+      earth.dataset.controlsLocked=String(
+        !controls.enabled&&!controls.enableZoom&&!controls.enableRotate&&!controls.enablePan
+      );
+      earth.dataset.centeredOnDarvaza=String(
+        Math.abs(crater.lat-crater.lat)<1e-9&&Math.abs(crater.lon-crater.lon)<1e-9
+      );
     }catch(e){
       console.warn("3D globe unavailable; satellite view remains active:",e);
       earth.innerHTML='<div class="globe-loading">3D EARTH UNAVAILABLE · SATELLITE VIEW ACTIVE</div>';
