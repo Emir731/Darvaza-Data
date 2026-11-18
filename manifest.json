@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T17:30:23.512753Z",
+  "generated_at": "2026-11-18T17:31:23.238049+00:00",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -742,7 +742,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": "2026-11-18T17:23:22.294041+00:00",
+      "processed_at": "2026-11-18T17:28:26.729535+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.17,
       "valid_pixel_pct": 95.94,
@@ -788,56 +788,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview · 2026-10-26"
+          "title": "NDVI preview \u00b7 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDVI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview · 2026-10-26"
+          "title": "NDMI preview \u00b7 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDMI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview · 2026-10-26"
+          "title": "MNDWI preview \u00b7 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · MNDWI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview · 2026-10-26"
+          "title": "Land surface temperature preview \u00b7 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
@@ -854,10 +854,22 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T17:23:22.294041+00:00"
+        "published_at": "2026-11-18T17:28:26.729535+00:00"
       },
       "optical_valid_pixel_pct": 95.94,
-      "thermal_valid_pixel_pct": 95.94
+      "thermal_valid_pixel_pct": 95.94,
+      "surface_temperature_c": {
+        "min": 20.8,
+        "p10": 22.88,
+        "median": 23.59,
+        "mean": 23.65,
+        "p90": 24.53,
+        "max": 30.71,
+        "valid_pixel_count": 50307,
+        "units": "\u00b0C",
+        "measurement": "land_surface_temperature",
+        "interpretation": "AOI pixel distribution; not flame or crater-core temperature"
+      }
     },
     {
       "id": "landsat-c2-l2:LC09_L2SP_161032_20261025_02_T1",
@@ -2140,7 +2152,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20260924_02_T1",
       "acquired_at": "2026-09-24T06:42:09.785283Z",
-      "processed_at": "2026-11-18T17:23:22.294041+00:00",
+      "processed_at": "2026-11-18T17:28:26.729535+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.0,
       "valid_pixel_pct": 96.04,
@@ -2186,56 +2198,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview · 2026-09-24"
+          "title": "NDVI preview \u00b7 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDVI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview · 2026-09-24"
+          "title": "NDMI preview \u00b7 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDMI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview · 2026-09-24"
+          "title": "MNDWI preview \u00b7 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · MNDWI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview · 2026-09-24"
+          "title": "Land surface temperature preview \u00b7 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
@@ -2252,10 +2264,22 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T17:23:22.294041+00:00"
+        "published_at": "2026-11-18T17:28:26.729535+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
-      "thermal_valid_pixel_pct": 96.02
+      "thermal_valid_pixel_pct": 96.02,
+      "surface_temperature_c": {
+        "min": 40.02,
+        "p10": 42.38,
+        "median": 43.3,
+        "mean": 43.27,
+        "p90": 44.11,
+        "max": 45.58,
+        "valid_pixel_count": 50351,
+        "units": "\u00b0C",
+        "measurement": "land_surface_temperature",
+        "interpretation": "AOI pixel distribution; not flame or crater-core temperature"
+      }
     },
     {
       "id": "landsat-c2-l2:LC09_L2SP_161032_20260923_02_T1",
@@ -4726,7 +4750,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260730_02_T1",
       "acquired_at": "2026-07-30T06:41:58.010309Z",
-      "processed_at": "2026-11-18T17:23:22.294041+00:00",
+      "processed_at": "2026-11-18T17:28:26.729535+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
       "valid_pixel_pct": 96.04,
@@ -4772,56 +4796,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview · 2026-07-30"
+          "title": "NDVI preview \u00b7 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDVI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview · 2026-07-30"
+          "title": "NDMI preview \u00b7 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDMI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview · 2026-07-30"
+          "title": "MNDWI preview \u00b7 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · MNDWI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview · 2026-07-30"
+          "title": "Land surface temperature preview \u00b7 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
@@ -4838,10 +4862,22 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T17:23:22.294041+00:00"
+        "published_at": "2026-11-18T17:28:26.729535+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
-      "thermal_valid_pixel_pct": 96.02
+      "thermal_valid_pixel_pct": 96.02,
+      "surface_temperature_c": {
+        "min": 58.55,
+        "p10": 60.84,
+        "median": 62.05,
+        "mean": 61.99,
+        "p90": 63.06,
+        "max": 65.05,
+        "valid_pixel_count": 50351,
+        "units": "\u00b0C",
+        "measurement": "land_surface_temperature",
+        "interpretation": "AOI pixel distribution; not flame or crater-core temperature"
+      }
     },
     {
       "id": "sentinel-2-l2a:S2C_MSIL2A_20260729T065621_N0512_R063_T40TFK_20260729T123254",
@@ -6300,7 +6336,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_161032_20260627_02_T1",
       "acquired_at": "2026-06-27T06:47:42.556031Z",
-      "processed_at": "2026-11-18T17:23:22.294041+00:00",
+      "processed_at": "2026-11-18T17:28:26.729535+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.99,
       "valid_pixel_pct": 95.61,
@@ -6346,56 +6382,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview · 2026-06-27"
+          "title": "NDVI preview \u00b7 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDVI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview · 2026-06-27"
+          "title": "NDMI preview \u00b7 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDMI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview · 2026-06-27"
+          "title": "MNDWI preview \u00b7 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · MNDWI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview · 2026-06-27"
+          "title": "Land surface temperature preview \u00b7 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
@@ -6412,10 +6448,22 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T17:23:22.294041+00:00"
+        "published_at": "2026-11-18T17:28:26.729535+00:00"
       },
       "optical_valid_pixel_pct": 95.61,
-      "thermal_valid_pixel_pct": 94.31
+      "thermal_valid_pixel_pct": 94.31,
+      "surface_temperature_c": {
+        "min": 36.33,
+        "p10": 55.94,
+        "median": 58.5,
+        "mean": 58.1,
+        "p90": 59.97,
+        "max": 62.43,
+        "valid_pixel_count": 49451,
+        "units": "\u00b0C",
+        "measurement": "land_surface_temperature",
+        "interpretation": "AOI pixel distribution; not flame or crater-core temperature"
+      }
     },
     {
       "id": "sentinel-2-l2a:S2C_MSIL2A_20260626T064621_N0512_R020_T40TFK_20260626T112015",
@@ -7786,7 +7834,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260527_02_T1",
       "acquired_at": "2026-05-27T06:41:29.758858Z",
-      "processed_at": "2026-11-18T17:23:22.294041+00:00",
+      "processed_at": "2026-11-18T17:28:26.729535+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
       "valid_pixel_pct": 96.04,
@@ -7832,56 +7880,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview · 2026-05-27"
+          "title": "NDVI preview \u00b7 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDVI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview · 2026-05-27"
+          "title": "NDMI preview \u00b7 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · NDMI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview · 2026-05-27"
+          "title": "MNDWI preview \u00b7 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · MNDWI"
+          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview · 2026-05-27"
+          "title": "Land surface temperature preview \u00b7 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
         }
       ],
       "provenance": {
@@ -7898,10 +7946,22 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T17:23:22.294041+00:00"
+        "published_at": "2026-11-18T17:28:26.729535+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
-      "thermal_valid_pixel_pct": 96.02
+      "thermal_valid_pixel_pct": 96.02,
+      "surface_temperature_c": {
+        "min": 39.7,
+        "p10": 41.62,
+        "median": 43.15,
+        "mean": 43.18,
+        "p90": 44.79,
+        "max": 47.18,
+        "valid_pixel_count": 50351,
+        "units": "\u00b0C",
+        "measurement": "land_surface_temperature",
+        "interpretation": "AOI pixel distribution; not flame or crater-core temperature"
+      }
     },
     {
       "id": "landsat-c2-l2:LC08_L2SP_161032_20260526_02_T1",
@@ -9116,7 +9176,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9125,45 +9185,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0062,
-            "median_delta": 0.008,
-            "positive_change_pct": 94.43,
-            "negative_change_pct": 5.57,
-            "positive_change_area_km2": 8.7489,
-            "negative_change_area_km2": 0.5157
+            "pixel_count": 2500,
+            "mean_delta": 0.0074,
+            "median_delta": 0.0071,
+            "positive_change_pct": 97.16,
+            "negative_change_pct": 2.84,
+            "positive_change_area_km2": 2.1861,
+            "negative_change_area_km2": 0.0639
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0097,
-            "median_delta": 0.0102,
-            "positive_change_pct": 97.71,
-            "negative_change_pct": 2.29,
-            "positive_change_area_km2": 11.4624,
-            "negative_change_area_km2": 0.2682
+            "pixel_count": 2450,
+            "mean_delta": 0.0087,
+            "median_delta": 0.0092,
+            "positive_change_pct": 95.96,
+            "negative_change_pct": 4.04,
+            "positive_change_area_km2": 2.1159,
+            "negative_change_area_km2": 0.0891
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": 0.0061,
-            "median_delta": 0.0088,
-            "positive_change_pct": 91.98,
-            "negative_change_pct": 8.02,
-            "positive_change_area_km2": 11.7792,
-            "negative_change_area_km2": 1.0269
+            "pixel_count": 2500,
+            "mean_delta": -0.0005,
+            "median_delta": 0.0078,
+            "positive_change_pct": 81.4,
+            "negative_change_pct": 18.6,
+            "positive_change_area_km2": 1.8315,
+            "negative_change_area_km2": 0.4185
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0075,
-            "median_delta": 0.0079,
-            "positive_change_pct": 97.3,
-            "negative_change_pct": 2.7,
-            "positive_change_area_km2": 11.0088,
-            "negative_change_area_km2": 0.3051
+            "pixel_count": 2550,
+            "mean_delta": 0.0082,
+            "median_delta": 0.008,
+            "positive_change_pct": 99.1,
+            "negative_change_pct": 0.9,
+            "positive_change_area_km2": 2.2743,
+            "negative_change_area_km2": 0.0207
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_ndvi_before.tif",
@@ -9188,7 +9249,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_ndmi",
@@ -9201,7 +9262,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9210,45 +9271,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0033,
+            "pixel_count": 2500,
+            "mean_delta": 0.0,
             "median_delta": -0.0,
-            "positive_change_pct": 49.79,
-            "negative_change_pct": 50.21,
-            "positive_change_area_km2": 4.6125,
-            "negative_change_area_km2": 4.6521
+            "positive_change_pct": 49.2,
+            "negative_change_pct": 50.8,
+            "positive_change_area_km2": 1.107,
+            "negative_change_area_km2": 1.143
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0001,
-            "median_delta": -0.0005,
-            "positive_change_pct": 43.21,
-            "negative_change_pct": 56.79,
-            "positive_change_area_km2": 5.0688,
-            "negative_change_area_km2": 6.6618
+            "pixel_count": 2450,
+            "mean_delta": -0.0008,
+            "median_delta": -0.0009,
+            "positive_change_pct": 40.98,
+            "negative_change_pct": 59.02,
+            "positive_change_area_km2": 0.9036,
+            "negative_change_area_km2": 1.3014
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": 0.0053,
-            "median_delta": 0.0002,
-            "positive_change_pct": 51.71,
-            "negative_change_pct": 48.29,
-            "positive_change_area_km2": 6.6222,
-            "negative_change_area_km2": 6.1839
+            "pixel_count": 2500,
+            "mean_delta": 0.0143,
+            "median_delta": -0.0002,
+            "positive_change_pct": 49.12,
+            "negative_change_pct": 50.88,
+            "positive_change_area_km2": 1.1052,
+            "negative_change_area_km2": 1.1448
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0007,
-            "median_delta": -0.0014,
-            "positive_change_pct": 35.94,
-            "negative_change_pct": 64.06,
-            "positive_change_area_km2": 4.0662,
-            "negative_change_area_km2": 7.2477
+            "pixel_count": 2550,
+            "mean_delta": -0.0014,
+            "median_delta": -0.0024,
+            "positive_change_pct": 30.78,
+            "negative_change_pct": 69.22,
+            "positive_change_area_km2": 0.7065,
+            "negative_change_area_km2": 1.5885
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_ndmi_before.tif",
@@ -9273,7 +9335,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_mndwi",
@@ -9286,7 +9348,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9295,45 +9357,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": -0.0027,
-            "median_delta": -0.0098,
-            "positive_change_pct": 9.32,
-            "negative_change_pct": 90.68,
-            "positive_change_area_km2": 0.8631,
-            "negative_change_area_km2": 8.4015
+            "pixel_count": 2500,
+            "mean_delta": -0.0087,
+            "median_delta": -0.0092,
+            "positive_change_pct": 4.28,
+            "negative_change_pct": 95.72,
+            "positive_change_area_km2": 0.0963,
+            "negative_change_area_km2": 2.1537
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0115,
-            "median_delta": -0.0129,
-            "positive_change_pct": 3.68,
-            "negative_change_pct": 96.32,
-            "positive_change_area_km2": 0.4311,
-            "negative_change_area_km2": 11.2995
+            "pixel_count": 2450,
+            "mean_delta": -0.0103,
+            "median_delta": -0.0114,
+            "positive_change_pct": 5.27,
+            "negative_change_pct": 94.73,
+            "positive_change_area_km2": 0.1161,
+            "negative_change_area_km2": 2.0889
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0003,
-            "median_delta": -0.0108,
-            "positive_change_pct": 13.3,
-            "negative_change_pct": 86.7,
-            "positive_change_area_km2": 1.7037,
-            "negative_change_area_km2": 11.1024
+            "pixel_count": 2500,
+            "mean_delta": 0.0179,
+            "median_delta": -0.0101,
+            "positive_change_pct": 28.12,
+            "negative_change_pct": 71.88,
+            "positive_change_area_km2": 0.6327,
+            "negative_change_area_km2": 1.6173
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": -0.0075,
-            "median_delta": -0.011,
-            "positive_change_pct": 4.78,
-            "negative_change_pct": 95.22,
-            "positive_change_area_km2": 0.5409,
-            "negative_change_area_km2": 10.773
+            "pixel_count": 2550,
+            "mean_delta": -0.0107,
+            "median_delta": -0.0116,
+            "positive_change_pct": 2.43,
+            "negative_change_pct": 97.57,
+            "positive_change_area_km2": 0.0558,
+            "negative_change_area_km2": 2.2392
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_mndwi_before.tif",
@@ -9358,7 +9421,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_lst",
@@ -9371,7 +9434,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9379,46 +9442,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 95.12,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 9790,
-            "mean_delta": 14.2122,
-            "median_delta": 14.5693,
-            "positive_change_pct": 99.7,
-            "negative_change_pct": 0.3,
-            "positive_change_area_km2": 8.7849,
-            "negative_change_area_km2": 0.0261
-          },
-          "east": {
-            "pixel_count": 13034,
-            "mean_delta": 15.8172,
-            "median_delta": 15.8348,
+            "pixel_count": 2491,
+            "mean_delta": 14.75,
+            "median_delta": 14.6676,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.7306,
+            "positive_change_area_km2": 2.2419,
+            "negative_change_area_km2": 0.0
+          },
+          "east": {
+            "pixel_count": 2450,
+            "mean_delta": 14.9954,
+            "median_delta": 15.1508,
+            "positive_change_pct": 100.0,
+            "negative_change_pct": 0.0,
+            "positive_change_area_km2": 2.205,
             "negative_change_area_km2": 0.0
           },
           "south": {
-            "pixel_count": 14047,
-            "mean_delta": 14.8912,
-            "median_delta": 15.6622,
-            "positive_change_pct": 99.62,
-            "negative_change_pct": 0.38,
-            "positive_change_area_km2": 12.5937,
-            "negative_change_area_km2": 0.0486
+            "pixel_count": 2500,
+            "mean_delta": 12.2049,
+            "median_delta": 13.053,
+            "positive_change_pct": 99.4,
+            "negative_change_pct": 0.6,
+            "positive_change_area_km2": 2.2365,
+            "negative_change_area_km2": 0.0135
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 14.6218,
-            "median_delta": 14.5975,
+            "pixel_count": 2550,
+            "mean_delta": 13.8944,
+            "median_delta": 14.1369,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.3139,
+            "positive_change_area_km2": 2.295,
             "negative_change_area_km2": 0.0
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_lst_before.tif",
@@ -9443,7 +9507,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndvi",
@@ -9456,7 +9520,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9465,45 +9529,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": -0.0058,
-            "median_delta": -0.0079,
-            "positive_change_pct": 5.61,
-            "negative_change_pct": 94.39,
-            "positive_change_area_km2": 0.5193,
-            "negative_change_area_km2": 8.7453
+            "pixel_count": 2500,
+            "mean_delta": -0.007,
+            "median_delta": -0.0074,
+            "positive_change_pct": 1.68,
+            "negative_change_pct": 98.32,
+            "positive_change_area_km2": 0.0378,
+            "negative_change_area_km2": 2.2122
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0061,
-            "median_delta": -0.0066,
-            "positive_change_pct": 4.69,
-            "negative_change_pct": 95.31,
-            "positive_change_area_km2": 0.5499,
-            "negative_change_area_km2": 11.1807
+            "pixel_count": 2450,
+            "mean_delta": -0.0059,
+            "median_delta": -0.0061,
+            "positive_change_pct": 2.86,
+            "negative_change_pct": 97.14,
+            "positive_change_area_km2": 0.063,
+            "negative_change_area_km2": 2.142
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0039,
-            "median_delta": -0.0072,
-            "positive_change_pct": 8.76,
-            "negative_change_pct": 91.24,
-            "positive_change_area_km2": 1.1223,
-            "negative_change_area_km2": 11.6838
+            "pixel_count": 2500,
+            "mean_delta": 0.0023,
+            "median_delta": -0.0059,
+            "positive_change_pct": 19.6,
+            "negative_change_pct": 80.4,
+            "positive_change_area_km2": 0.441,
+            "negative_change_area_km2": 1.809
           },
           "west": {
-            "pixel_count": 12571,
+            "pixel_count": 2550,
             "mean_delta": -0.0071,
-            "median_delta": -0.0084,
-            "positive_change_pct": 2.78,
-            "negative_change_pct": 97.22,
-            "positive_change_area_km2": 0.315,
-            "negative_change_area_km2": 10.9989
+            "median_delta": -0.0075,
+            "positive_change_pct": 1.29,
+            "negative_change_pct": 98.71,
+            "positive_change_area_km2": 0.0297,
+            "negative_change_area_km2": 2.2653
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_ndvi_before.tif",
@@ -9528,7 +9593,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndmi",
@@ -9541,7 +9606,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9550,45 +9615,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0006,
-            "median_delta": 0.0037,
-            "positive_change_pct": 82.94,
-            "negative_change_pct": 17.06,
-            "positive_change_area_km2": 7.6842,
-            "negative_change_area_km2": 1.5804
+            "pixel_count": 2500,
+            "mean_delta": 0.0036,
+            "median_delta": 0.0032,
+            "positive_change_pct": 89.52,
+            "negative_change_pct": 10.48,
+            "positive_change_area_km2": 2.0142,
+            "negative_change_area_km2": 0.2358
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0046,
-            "median_delta": 0.0051,
-            "positive_change_pct": 89.86,
-            "negative_change_pct": 10.14,
-            "positive_change_area_km2": 10.5408,
-            "negative_change_area_km2": 1.1898
+            "pixel_count": 2450,
+            "mean_delta": 0.0048,
+            "median_delta": 0.0046,
+            "positive_change_pct": 91.63,
+            "negative_change_pct": 8.37,
+            "positive_change_area_km2": 2.0205,
+            "negative_change_area_km2": 0.1845
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0014,
-            "median_delta": 0.0037,
-            "positive_change_pct": 79.75,
-            "negative_change_pct": 20.25,
-            "positive_change_area_km2": 10.2123,
-            "negative_change_area_km2": 2.5938
+            "pixel_count": 2500,
+            "mean_delta": -0.0113,
+            "median_delta": 0.0028,
+            "positive_change_pct": 62.88,
+            "negative_change_pct": 37.12,
+            "positive_change_area_km2": 1.4148,
+            "negative_change_area_km2": 0.8352
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0027,
-            "median_delta": 0.0042,
-            "positive_change_pct": 88.54,
-            "negative_change_pct": 11.46,
-            "positive_change_area_km2": 10.017,
-            "negative_change_area_km2": 1.2969
+            "pixel_count": 2550,
+            "mean_delta": 0.0039,
+            "median_delta": 0.004,
+            "positive_change_pct": 92.55,
+            "negative_change_pct": 7.45,
+            "positive_change_area_km2": 2.124,
+            "negative_change_area_km2": 0.171
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_ndmi_before.tif",
@@ -9613,7 +9679,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_mndwi",
@@ -9626,7 +9692,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9635,45 +9701,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0022,
-            "median_delta": 0.0093,
-            "positive_change_pct": 87.65,
-            "negative_change_pct": 12.35,
-            "positive_change_area_km2": 8.1207,
-            "negative_change_area_km2": 1.1439
+            "pixel_count": 2500,
+            "mean_delta": 0.0066,
+            "median_delta": 0.0072,
+            "positive_change_pct": 92.08,
+            "negative_change_pct": 7.92,
+            "positive_change_area_km2": 2.0718,
+            "negative_change_area_km2": 0.1782
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0088,
-            "median_delta": 0.01,
-            "positive_change_pct": 92.67,
-            "negative_change_pct": 7.33,
-            "positive_change_area_km2": 10.8702,
-            "negative_change_area_km2": 0.8604
+            "pixel_count": 2450,
+            "mean_delta": 0.0061,
+            "median_delta": 0.0068,
+            "positive_change_pct": 91.8,
+            "negative_change_pct": 8.2,
+            "positive_change_area_km2": 2.0241,
+            "negative_change_area_km2": 0.1809
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0025,
-            "median_delta": 0.0082,
-            "positive_change_pct": 83.62,
-            "negative_change_pct": 16.38,
-            "positive_change_area_km2": 10.7091,
-            "negative_change_area_km2": 2.097
+            "pixel_count": 2500,
+            "mean_delta": -0.0216,
+            "median_delta": 0.0056,
+            "positive_change_pct": 67.04,
+            "negative_change_pct": 32.96,
+            "positive_change_area_km2": 1.5084,
+            "negative_change_area_km2": 0.7416
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0066,
-            "median_delta": 0.0102,
-            "positive_change_pct": 93.04,
-            "negative_change_pct": 6.96,
-            "positive_change_area_km2": 10.5264,
-            "negative_change_area_km2": 0.7875
+            "pixel_count": 2550,
+            "mean_delta": 0.0069,
+            "median_delta": 0.0075,
+            "positive_change_pct": 92.59,
+            "negative_change_pct": 7.41,
+            "positive_change_area_km2": 2.1249,
+            "negative_change_area_km2": 0.1701
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_mndwi_before.tif",
@@ -9698,7 +9765,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_lst",
@@ -9711,7 +9778,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9719,46 +9786,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 95.12,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 9790,
-            "mean_delta": 3.9522,
-            "median_delta": 3.506,
+            "pixel_count": 2491,
+            "mean_delta": 3.2824,
+            "median_delta": 3.2702,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 8.811,
+            "positive_change_area_km2": 2.2419,
             "negative_change_area_km2": 0.0
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 3.3041,
-            "median_delta": 3.2488,
+            "pixel_count": 2450,
+            "mean_delta": 3.7827,
+            "median_delta": 3.8248,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.7306,
+            "positive_change_area_km2": 2.205,
             "negative_change_area_km2": 0.0
           },
           "south": {
-            "pixel_count": 14047,
-            "mean_delta": 4.3621,
-            "median_delta": 3.7581,
+            "pixel_count": 2500,
+            "mean_delta": 6.1606,
+            "median_delta": 5.2522,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 12.6423,
+            "positive_change_area_km2": 2.25,
             "negative_change_area_km2": 0.0
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 3.9282,
-            "median_delta": 3.8812,
+            "pixel_count": 2550,
+            "mean_delta": 4.4358,
+            "median_delta": 4.2405,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.3139,
+            "positive_change_area_km2": 2.295,
             "negative_change_area_km2": 0.0
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_lst_before.tif",
@@ -9783,7 +9851,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndvi",
@@ -9796,7 +9864,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9805,45 +9873,46 @@
       "common_valid_pixel_pct": 96.87,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": -0.0003,
-            "median_delta": -0.0003,
-            "positive_change_pct": 44.97,
-            "negative_change_pct": 55.03,
-            "positive_change_area_km2": 4.2561,
-            "negative_change_area_km2": 5.2074
+            "pixel_count": 2500,
+            "mean_delta": -0.0005,
+            "median_delta": -0.0004,
+            "positive_change_pct": 42.36,
+            "negative_change_pct": 57.64,
+            "positive_change_area_km2": 0.9531,
+            "negative_change_area_km2": 1.2969
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0004,
-            "median_delta": -0.0005,
-            "positive_change_pct": 40.41,
-            "negative_change_pct": 59.59,
-            "positive_change_area_km2": 4.7403,
-            "negative_change_area_km2": 6.9903
+            "pixel_count": 2450,
+            "mean_delta": -0.0008,
+            "median_delta": -0.0009,
+            "positive_change_pct": 34.94,
+            "negative_change_pct": 65.06,
+            "positive_change_area_km2": 0.7704,
+            "negative_change_area_km2": 1.4346
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -0.0011,
+            "pixel_count": 2500,
+            "mean_delta": -0.0009,
             "median_delta": -0.001,
-            "positive_change_pct": 29.74,
-            "negative_change_pct": 70.26,
-            "positive_change_area_km2": 3.8088,
-            "negative_change_area_km2": 8.9991
+            "positive_change_pct": 28.4,
+            "negative_change_pct": 71.6,
+            "positive_change_area_km2": 0.639,
+            "negative_change_area_km2": 1.611
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": -0.0001,
-            "median_delta": -0.0001,
-            "positive_change_pct": 48.11,
-            "negative_change_pct": 51.89,
-            "positive_change_area_km2": 5.4432,
-            "negative_change_area_km2": 5.8707
+            "pixel_count": 2550,
+            "mean_delta": 0.0001,
+            "median_delta": 0.0001,
+            "positive_change_pct": 52.08,
+            "negative_change_pct": 47.92,
+            "positive_change_area_km2": 1.1952,
+            "negative_change_area_km2": 1.0998
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_ndvi_before.tif",
@@ -9868,7 +9937,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndmi",
@@ -9881,7 +9950,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9890,45 +9959,46 @@
       "common_valid_pixel_pct": 96.87,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": 0.0015,
-            "median_delta": 0.0018,
-            "positive_change_pct": 70.01,
-            "negative_change_pct": 29.99,
-            "positive_change_area_km2": 6.6258,
-            "negative_change_area_km2": 2.8377
+            "pixel_count": 2500,
+            "mean_delta": 0.0007,
+            "median_delta": 0.0011,
+            "positive_change_pct": 63.96,
+            "negative_change_pct": 36.04,
+            "positive_change_area_km2": 1.4391,
+            "negative_change_area_km2": 0.8109
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0029,
-            "median_delta": 0.0031,
-            "positive_change_pct": 86.3,
-            "negative_change_pct": 13.7,
-            "positive_change_area_km2": 10.1232,
-            "negative_change_area_km2": 1.6074
+            "pixel_count": 2450,
+            "mean_delta": 0.0022,
+            "median_delta": 0.0028,
+            "positive_change_pct": 77.35,
+            "negative_change_pct": 22.65,
+            "positive_change_area_km2": 1.7055,
+            "negative_change_area_km2": 0.4995
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0019,
-            "median_delta": 0.0021,
-            "positive_change_pct": 77.42,
-            "negative_change_pct": 22.58,
-            "positive_change_area_km2": 9.9162,
-            "negative_change_area_km2": 2.8917
+            "pixel_count": 2500,
+            "mean_delta": 0.0022,
+            "median_delta": 0.0024,
+            "positive_change_pct": 78.92,
+            "negative_change_pct": 21.08,
+            "positive_change_area_km2": 1.7757,
+            "negative_change_area_km2": 0.4743
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0008,
-            "median_delta": 0.001,
-            "positive_change_pct": 61.43,
-            "negative_change_pct": 38.57,
-            "positive_change_area_km2": 6.9498,
-            "negative_change_area_km2": 4.3641
+            "pixel_count": 2550,
+            "mean_delta": 0.0014,
+            "median_delta": 0.0014,
+            "positive_change_pct": 65.69,
+            "negative_change_pct": 34.31,
+            "positive_change_area_km2": 1.5075,
+            "negative_change_area_km2": 0.7875
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_ndmi_before.tif",
@@ -9953,7 +10023,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_mndwi",
@@ -9966,7 +10036,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9975,45 +10045,46 @@
       "common_valid_pixel_pct": 96.87,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": 0.0044,
+            "pixel_count": 2500,
+            "mean_delta": 0.0046,
             "median_delta": 0.0047,
-            "positive_change_pct": 81.0,
-            "negative_change_pct": 19.0,
-            "positive_change_area_km2": 7.6653,
-            "negative_change_area_km2": 1.7982
+            "positive_change_pct": 82.64,
+            "negative_change_pct": 17.36,
+            "positive_change_area_km2": 1.8594,
+            "negative_change_area_km2": 0.3906
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0048,
-            "median_delta": 0.005,
-            "positive_change_pct": 89.73,
-            "negative_change_pct": 10.27,
-            "positive_change_area_km2": 10.5264,
-            "negative_change_area_km2": 1.2042
+            "pixel_count": 2450,
+            "mean_delta": 0.0049,
+            "median_delta": 0.0057,
+            "positive_change_pct": 83.39,
+            "negative_change_pct": 16.61,
+            "positive_change_area_km2": 1.8387,
+            "negative_change_area_km2": 0.3663
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0055,
-            "median_delta": 0.0058,
-            "positive_change_pct": 91.64,
-            "negative_change_pct": 8.36,
-            "positive_change_area_km2": 11.7369,
-            "negative_change_area_km2": 1.071
+            "pixel_count": 2500,
+            "mean_delta": 0.0064,
+            "median_delta": 0.0067,
+            "positive_change_pct": 93.56,
+            "negative_change_pct": 6.44,
+            "positive_change_area_km2": 2.1051,
+            "negative_change_area_km2": 0.1449
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.003,
-            "median_delta": 0.0032,
-            "positive_change_pct": 75.97,
-            "negative_change_pct": 24.03,
-            "positive_change_area_km2": 8.595,
-            "negative_change_area_km2": 2.7189
+            "pixel_count": 2550,
+            "mean_delta": 0.0034,
+            "median_delta": 0.0039,
+            "positive_change_pct": 76.98,
+            "negative_change_pct": 23.02,
+            "positive_change_area_km2": 1.7667,
+            "negative_change_area_km2": 0.5283
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_mndwi_before.tif",
@@ -10038,7 +10109,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_lst",
@@ -10051,7 +10122,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10059,46 +10130,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 96.85,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10506,
-            "mean_delta": -18.8036,
-            "median_delta": -18.923,
+            "pixel_count": 2491,
+            "mean_delta": -18.5965,
+            "median_delta": -18.7308,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 9.4554
+            "negative_change_area_km2": 2.2419
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -18.6289,
-            "median_delta": -18.6223,
+            "pixel_count": 2450,
+            "mean_delta": -18.7866,
+            "median_delta": -18.8346,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.7306
+            "negative_change_area_km2": 2.205
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -18.6341,
-            "median_delta": -18.6282,
+            "pixel_count": 2500,
+            "mean_delta": -18.6249,
+            "median_delta": -18.6184,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 12.8079
+            "negative_change_area_km2": 2.25
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": -18.8572,
-            "median_delta": -18.7863,
+            "pixel_count": 2550,
+            "mean_delta": -18.8311,
+            "median_delta": -18.6923,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.3139
+            "negative_change_area_km2": 2.295
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_lst_before.tif",
@@ -10123,7 +10195,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndvi",
@@ -10136,7 +10208,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10145,45 +10217,46 @@
       "common_valid_pixel_pct": 96.79,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
+            "pixel_count": 2500,
             "mean_delta": -0.0029,
-            "median_delta": -0.0027,
-            "positive_change_pct": 8.38,
-            "negative_change_pct": 91.62,
-            "positive_change_area_km2": 0.7929,
-            "negative_change_area_km2": 8.6706
+            "median_delta": -0.0025,
+            "positive_change_pct": 10.96,
+            "negative_change_pct": 89.04,
+            "positive_change_area_km2": 0.2466,
+            "negative_change_area_km2": 2.0034
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0033,
-            "median_delta": -0.0032,
-            "positive_change_pct": 10.76,
-            "negative_change_pct": 89.24,
-            "positive_change_area_km2": 1.2618,
-            "negative_change_area_km2": 10.4688
+            "pixel_count": 2450,
+            "mean_delta": -0.0023,
+            "median_delta": -0.0019,
+            "positive_change_pct": 24.78,
+            "negative_change_pct": 75.22,
+            "positive_change_area_km2": 0.5463,
+            "negative_change_area_km2": 1.6587
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -0.0024,
-            "median_delta": -0.0022,
-            "positive_change_pct": 13.48,
-            "negative_change_pct": 86.52,
-            "positive_change_area_km2": 1.7271,
-            "negative_change_area_km2": 11.0808
+            "pixel_count": 2500,
+            "mean_delta": -0.0012,
+            "median_delta": -0.0011,
+            "positive_change_pct": 29.52,
+            "negative_change_pct": 70.48,
+            "positive_change_area_km2": 0.6642,
+            "negative_change_area_km2": 1.5858
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": -0.0023,
-            "median_delta": -0.0021,
-            "positive_change_pct": 11.13,
-            "negative_change_pct": 88.87,
-            "positive_change_area_km2": 1.2555,
-            "negative_change_area_km2": 10.0215
+            "pixel_count": 2550,
+            "mean_delta": -0.0014,
+            "median_delta": -0.0012,
+            "positive_change_pct": 24.43,
+            "negative_change_pct": 75.57,
+            "positive_change_area_km2": 0.5607,
+            "negative_change_area_km2": 1.7343
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_ndvi_before.tif",
@@ -10208,7 +10281,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndmi",
@@ -10221,7 +10294,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10230,45 +10303,46 @@
       "common_valid_pixel_pct": 96.79,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
+            "pixel_count": 2500,
             "mean_delta": 0.0026,
-            "median_delta": 0.0027,
-            "positive_change_pct": 87.22,
-            "negative_change_pct": 12.78,
-            "positive_change_area_km2": 8.2539,
-            "negative_change_area_km2": 1.2096
+            "median_delta": 0.0026,
+            "positive_change_pct": 87.12,
+            "negative_change_pct": 12.88,
+            "positive_change_area_km2": 1.9602,
+            "negative_change_area_km2": 0.2898
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0025,
-            "median_delta": 0.0026,
-            "positive_change_pct": 88.03,
-            "negative_change_pct": 11.97,
-            "positive_change_area_km2": 10.3266,
-            "negative_change_area_km2": 1.404
+            "pixel_count": 2450,
+            "mean_delta": 0.0015,
+            "median_delta": 0.0017,
+            "positive_change_pct": 74.9,
+            "negative_change_pct": 25.1,
+            "positive_change_area_km2": 1.6515,
+            "negative_change_area_km2": 0.5535
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0011,
-            "median_delta": 0.0013,
-            "positive_change_pct": 73.27,
-            "negative_change_pct": 26.73,
-            "positive_change_area_km2": 9.3843,
-            "negative_change_area_km2": 3.4236
+            "pixel_count": 2500,
+            "mean_delta": 0.0009,
+            "median_delta": 0.0011,
+            "positive_change_pct": 69.76,
+            "negative_change_pct": 30.24,
+            "positive_change_area_km2": 1.5696,
+            "negative_change_area_km2": 0.6804
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": 0.0018,
-            "median_delta": 0.002,
-            "positive_change_pct": 78.53,
-            "negative_change_pct": 21.47,
-            "positive_change_area_km2": 8.856,
-            "negative_change_area_km2": 2.421
+            "pixel_count": 2550,
+            "mean_delta": 0.0012,
+            "median_delta": 0.0013,
+            "positive_change_pct": 71.06,
+            "negative_change_pct": 28.94,
+            "positive_change_area_km2": 1.6308,
+            "negative_change_area_km2": 0.6642
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_ndmi_before.tif",
@@ -10293,7 +10367,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_mndwi",
@@ -10306,7 +10380,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10315,45 +10389,46 @@
       "common_valid_pixel_pct": 96.79,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": 0.0067,
-            "median_delta": 0.0067,
-            "positive_change_pct": 94.55,
-            "negative_change_pct": 5.45,
-            "positive_change_area_km2": 8.9478,
-            "negative_change_area_km2": 0.5157
+            "pixel_count": 2500,
+            "mean_delta": 0.007,
+            "median_delta": 0.0062,
+            "positive_change_pct": 92.96,
+            "negative_change_pct": 7.04,
+            "positive_change_area_km2": 2.0916,
+            "negative_change_area_km2": 0.1584
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0069,
-            "median_delta": 0.0069,
-            "positive_change_pct": 92.99,
-            "negative_change_pct": 7.01,
-            "positive_change_area_km2": 10.908,
-            "negative_change_area_km2": 0.8226
+            "pixel_count": 2450,
+            "mean_delta": 0.0046,
+            "median_delta": 0.0041,
+            "positive_change_pct": 77.96,
+            "negative_change_pct": 22.04,
+            "positive_change_area_km2": 1.719,
+            "negative_change_area_km2": 0.486
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0039,
-            "median_delta": 0.0044,
-            "positive_change_pct": 83.99,
-            "negative_change_pct": 16.01,
-            "positive_change_area_km2": 10.7577,
-            "negative_change_area_km2": 2.0502
+            "pixel_count": 2500,
+            "mean_delta": 0.0018,
+            "median_delta": 0.0022,
+            "positive_change_pct": 66.6,
+            "negative_change_pct": 33.4,
+            "positive_change_area_km2": 1.4985,
+            "negative_change_area_km2": 0.7515
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": 0.0046,
-            "median_delta": 0.0047,
-            "positive_change_pct": 89.69,
-            "negative_change_pct": 10.31,
-            "positive_change_area_km2": 10.1142,
-            "negative_change_area_km2": 1.1628
+            "pixel_count": 2550,
+            "mean_delta": 0.0027,
+            "median_delta": 0.0029,
+            "positive_change_pct": 77.53,
+            "negative_change_pct": 22.47,
+            "positive_change_area_km2": 1.7793,
+            "negative_change_area_km2": 0.5157
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_mndwi_before.tif",
@@ -10378,7 +10453,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_lst",
@@ -10391,7 +10466,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10399,46 +10474,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 96.77,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10506,
-            "mean_delta": -19.9646,
-            "median_delta": -20.0057,
+            "pixel_count": 2491,
+            "mean_delta": -19.782,
+            "median_delta": -19.8057,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 9.4554
+            "negative_change_area_km2": 2.2419
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -19.9077,
-            "median_delta": -19.963,
+            "pixel_count": 2450,
+            "mean_delta": -19.4549,
+            "median_delta": -19.4011,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.7306
+            "negative_change_area_km2": 2.205
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -19.1127,
-            "median_delta": -19.1777,
+            "pixel_count": 2500,
+            "mean_delta": -18.9977,
+            "median_delta": -19.1008,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 12.8079
+            "negative_change_area_km2": 2.25
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": -19.6221,
-            "median_delta": -19.6109,
+            "pixel_count": 2550,
+            "mean_delta": -19.6814,
+            "median_delta": -19.6613,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.277
+            "negative_change_area_km2": 2.295
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_lst_before.tif",
@@ -10463,7 +10539,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     }
   ],
   "change_products": [
@@ -10478,7 +10554,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10487,45 +10563,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0062,
-            "median_delta": 0.008,
-            "positive_change_pct": 94.43,
-            "negative_change_pct": 5.57,
-            "positive_change_area_km2": 8.7489,
-            "negative_change_area_km2": 0.5157
+            "pixel_count": 2500,
+            "mean_delta": 0.0074,
+            "median_delta": 0.0071,
+            "positive_change_pct": 97.16,
+            "negative_change_pct": 2.84,
+            "positive_change_area_km2": 2.1861,
+            "negative_change_area_km2": 0.0639
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0097,
-            "median_delta": 0.0102,
-            "positive_change_pct": 97.71,
-            "negative_change_pct": 2.29,
-            "positive_change_area_km2": 11.4624,
-            "negative_change_area_km2": 0.2682
+            "pixel_count": 2450,
+            "mean_delta": 0.0087,
+            "median_delta": 0.0092,
+            "positive_change_pct": 95.96,
+            "negative_change_pct": 4.04,
+            "positive_change_area_km2": 2.1159,
+            "negative_change_area_km2": 0.0891
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": 0.0061,
-            "median_delta": 0.0088,
-            "positive_change_pct": 91.98,
-            "negative_change_pct": 8.02,
-            "positive_change_area_km2": 11.7792,
-            "negative_change_area_km2": 1.0269
+            "pixel_count": 2500,
+            "mean_delta": -0.0005,
+            "median_delta": 0.0078,
+            "positive_change_pct": 81.4,
+            "negative_change_pct": 18.6,
+            "positive_change_area_km2": 1.8315,
+            "negative_change_area_km2": 0.4185
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0075,
-            "median_delta": 0.0079,
-            "positive_change_pct": 97.3,
-            "negative_change_pct": 2.7,
-            "positive_change_area_km2": 11.0088,
-            "negative_change_area_km2": 0.3051
+            "pixel_count": 2550,
+            "mean_delta": 0.0082,
+            "median_delta": 0.008,
+            "positive_change_pct": 99.1,
+            "negative_change_pct": 0.9,
+            "positive_change_area_km2": 2.2743,
+            "negative_change_area_km2": 0.0207
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_ndvi_before.tif",
@@ -10550,7 +10627,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_ndmi",
@@ -10563,7 +10640,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10572,45 +10649,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0033,
+            "pixel_count": 2500,
+            "mean_delta": 0.0,
             "median_delta": -0.0,
-            "positive_change_pct": 49.79,
-            "negative_change_pct": 50.21,
-            "positive_change_area_km2": 4.6125,
-            "negative_change_area_km2": 4.6521
+            "positive_change_pct": 49.2,
+            "negative_change_pct": 50.8,
+            "positive_change_area_km2": 1.107,
+            "negative_change_area_km2": 1.143
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0001,
-            "median_delta": -0.0005,
-            "positive_change_pct": 43.21,
-            "negative_change_pct": 56.79,
-            "positive_change_area_km2": 5.0688,
-            "negative_change_area_km2": 6.6618
+            "pixel_count": 2450,
+            "mean_delta": -0.0008,
+            "median_delta": -0.0009,
+            "positive_change_pct": 40.98,
+            "negative_change_pct": 59.02,
+            "positive_change_area_km2": 0.9036,
+            "negative_change_area_km2": 1.3014
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": 0.0053,
-            "median_delta": 0.0002,
-            "positive_change_pct": 51.71,
-            "negative_change_pct": 48.29,
-            "positive_change_area_km2": 6.6222,
-            "negative_change_area_km2": 6.1839
+            "pixel_count": 2500,
+            "mean_delta": 0.0143,
+            "median_delta": -0.0002,
+            "positive_change_pct": 49.12,
+            "negative_change_pct": 50.88,
+            "positive_change_area_km2": 1.1052,
+            "negative_change_area_km2": 1.1448
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0007,
-            "median_delta": -0.0014,
-            "positive_change_pct": 35.94,
-            "negative_change_pct": 64.06,
-            "positive_change_area_km2": 4.0662,
-            "negative_change_area_km2": 7.2477
+            "pixel_count": 2550,
+            "mean_delta": -0.0014,
+            "median_delta": -0.0024,
+            "positive_change_pct": 30.78,
+            "negative_change_pct": 69.22,
+            "positive_change_area_km2": 0.7065,
+            "negative_change_area_km2": 1.5885
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_ndmi_before.tif",
@@ -10635,7 +10713,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_mndwi",
@@ -10648,7 +10726,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10657,45 +10735,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": -0.0027,
-            "median_delta": -0.0098,
-            "positive_change_pct": 9.32,
-            "negative_change_pct": 90.68,
-            "positive_change_area_km2": 0.8631,
-            "negative_change_area_km2": 8.4015
+            "pixel_count": 2500,
+            "mean_delta": -0.0087,
+            "median_delta": -0.0092,
+            "positive_change_pct": 4.28,
+            "negative_change_pct": 95.72,
+            "positive_change_area_km2": 0.0963,
+            "negative_change_area_km2": 2.1537
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0115,
-            "median_delta": -0.0129,
-            "positive_change_pct": 3.68,
-            "negative_change_pct": 96.32,
-            "positive_change_area_km2": 0.4311,
-            "negative_change_area_km2": 11.2995
+            "pixel_count": 2450,
+            "mean_delta": -0.0103,
+            "median_delta": -0.0114,
+            "positive_change_pct": 5.27,
+            "negative_change_pct": 94.73,
+            "positive_change_area_km2": 0.1161,
+            "negative_change_area_km2": 2.0889
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0003,
-            "median_delta": -0.0108,
-            "positive_change_pct": 13.3,
-            "negative_change_pct": 86.7,
-            "positive_change_area_km2": 1.7037,
-            "negative_change_area_km2": 11.1024
+            "pixel_count": 2500,
+            "mean_delta": 0.0179,
+            "median_delta": -0.0101,
+            "positive_change_pct": 28.12,
+            "negative_change_pct": 71.88,
+            "positive_change_area_km2": 0.6327,
+            "negative_change_area_km2": 1.6173
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": -0.0075,
-            "median_delta": -0.011,
-            "positive_change_pct": 4.78,
-            "negative_change_pct": 95.22,
-            "positive_change_area_km2": 0.5409,
-            "negative_change_area_km2": 10.773
+            "pixel_count": 2550,
+            "mean_delta": -0.0107,
+            "median_delta": -0.0116,
+            "positive_change_pct": 2.43,
+            "negative_change_pct": 97.57,
+            "positive_change_area_km2": 0.0558,
+            "negative_change_area_km2": 2.2392
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_mndwi_before.tif",
@@ -10720,7 +10799,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_lst",
@@ -10733,7 +10812,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10741,46 +10820,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 95.12,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 9790,
-            "mean_delta": 14.2122,
-            "median_delta": 14.5693,
-            "positive_change_pct": 99.7,
-            "negative_change_pct": 0.3,
-            "positive_change_area_km2": 8.7849,
-            "negative_change_area_km2": 0.0261
-          },
-          "east": {
-            "pixel_count": 13034,
-            "mean_delta": 15.8172,
-            "median_delta": 15.8348,
+            "pixel_count": 2491,
+            "mean_delta": 14.75,
+            "median_delta": 14.6676,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.7306,
+            "positive_change_area_km2": 2.2419,
+            "negative_change_area_km2": 0.0
+          },
+          "east": {
+            "pixel_count": 2450,
+            "mean_delta": 14.9954,
+            "median_delta": 15.1508,
+            "positive_change_pct": 100.0,
+            "negative_change_pct": 0.0,
+            "positive_change_area_km2": 2.205,
             "negative_change_area_km2": 0.0
           },
           "south": {
-            "pixel_count": 14047,
-            "mean_delta": 14.8912,
-            "median_delta": 15.6622,
-            "positive_change_pct": 99.62,
-            "negative_change_pct": 0.38,
-            "positive_change_area_km2": 12.5937,
-            "negative_change_area_km2": 0.0486
+            "pixel_count": 2500,
+            "mean_delta": 12.2049,
+            "median_delta": 13.053,
+            "positive_change_pct": 99.4,
+            "negative_change_pct": 0.6,
+            "positive_change_area_km2": 2.2365,
+            "negative_change_area_km2": 0.0135
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 14.6218,
-            "median_delta": 14.5975,
+            "pixel_count": 2550,
+            "mean_delta": 13.8944,
+            "median_delta": 14.1369,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.3139,
+            "positive_change_area_km2": 2.295,
             "negative_change_area_km2": 0.0
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-05-27_2026-06-27_lst_before.tif",
@@ -10805,7 +10885,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndvi",
@@ -10818,7 +10898,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10827,45 +10907,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": -0.0058,
-            "median_delta": -0.0079,
-            "positive_change_pct": 5.61,
-            "negative_change_pct": 94.39,
-            "positive_change_area_km2": 0.5193,
-            "negative_change_area_km2": 8.7453
+            "pixel_count": 2500,
+            "mean_delta": -0.007,
+            "median_delta": -0.0074,
+            "positive_change_pct": 1.68,
+            "negative_change_pct": 98.32,
+            "positive_change_area_km2": 0.0378,
+            "negative_change_area_km2": 2.2122
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0061,
-            "median_delta": -0.0066,
-            "positive_change_pct": 4.69,
-            "negative_change_pct": 95.31,
-            "positive_change_area_km2": 0.5499,
-            "negative_change_area_km2": 11.1807
+            "pixel_count": 2450,
+            "mean_delta": -0.0059,
+            "median_delta": -0.0061,
+            "positive_change_pct": 2.86,
+            "negative_change_pct": 97.14,
+            "positive_change_area_km2": 0.063,
+            "negative_change_area_km2": 2.142
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0039,
-            "median_delta": -0.0072,
-            "positive_change_pct": 8.76,
-            "negative_change_pct": 91.24,
-            "positive_change_area_km2": 1.1223,
-            "negative_change_area_km2": 11.6838
+            "pixel_count": 2500,
+            "mean_delta": 0.0023,
+            "median_delta": -0.0059,
+            "positive_change_pct": 19.6,
+            "negative_change_pct": 80.4,
+            "positive_change_area_km2": 0.441,
+            "negative_change_area_km2": 1.809
           },
           "west": {
-            "pixel_count": 12571,
+            "pixel_count": 2550,
             "mean_delta": -0.0071,
-            "median_delta": -0.0084,
-            "positive_change_pct": 2.78,
-            "negative_change_pct": 97.22,
-            "positive_change_area_km2": 0.315,
-            "negative_change_area_km2": 10.9989
+            "median_delta": -0.0075,
+            "positive_change_pct": 1.29,
+            "negative_change_pct": 98.71,
+            "positive_change_area_km2": 0.0297,
+            "negative_change_area_km2": 2.2653
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_ndvi_before.tif",
@@ -10890,7 +10971,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndmi",
@@ -10903,7 +10984,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10912,45 +10993,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0006,
-            "median_delta": 0.0037,
-            "positive_change_pct": 82.94,
-            "negative_change_pct": 17.06,
-            "positive_change_area_km2": 7.6842,
-            "negative_change_area_km2": 1.5804
+            "pixel_count": 2500,
+            "mean_delta": 0.0036,
+            "median_delta": 0.0032,
+            "positive_change_pct": 89.52,
+            "negative_change_pct": 10.48,
+            "positive_change_area_km2": 2.0142,
+            "negative_change_area_km2": 0.2358
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0046,
-            "median_delta": 0.0051,
-            "positive_change_pct": 89.86,
-            "negative_change_pct": 10.14,
-            "positive_change_area_km2": 10.5408,
-            "negative_change_area_km2": 1.1898
+            "pixel_count": 2450,
+            "mean_delta": 0.0048,
+            "median_delta": 0.0046,
+            "positive_change_pct": 91.63,
+            "negative_change_pct": 8.37,
+            "positive_change_area_km2": 2.0205,
+            "negative_change_area_km2": 0.1845
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0014,
-            "median_delta": 0.0037,
-            "positive_change_pct": 79.75,
-            "negative_change_pct": 20.25,
-            "positive_change_area_km2": 10.2123,
-            "negative_change_area_km2": 2.5938
+            "pixel_count": 2500,
+            "mean_delta": -0.0113,
+            "median_delta": 0.0028,
+            "positive_change_pct": 62.88,
+            "negative_change_pct": 37.12,
+            "positive_change_area_km2": 1.4148,
+            "negative_change_area_km2": 0.8352
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0027,
-            "median_delta": 0.0042,
-            "positive_change_pct": 88.54,
-            "negative_change_pct": 11.46,
-            "positive_change_area_km2": 10.017,
-            "negative_change_area_km2": 1.2969
+            "pixel_count": 2550,
+            "mean_delta": 0.0039,
+            "median_delta": 0.004,
+            "positive_change_pct": 92.55,
+            "negative_change_pct": 7.45,
+            "positive_change_area_km2": 2.124,
+            "negative_change_area_km2": 0.171
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_ndmi_before.tif",
@@ -10975,7 +11057,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_mndwi",
@@ -10988,7 +11070,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10997,45 +11079,46 @@
       "common_valid_pixel_pct": 96.44,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10294,
-            "mean_delta": 0.0022,
-            "median_delta": 0.0093,
-            "positive_change_pct": 87.65,
-            "negative_change_pct": 12.35,
-            "positive_change_area_km2": 8.1207,
-            "negative_change_area_km2": 1.1439
+            "pixel_count": 2500,
+            "mean_delta": 0.0066,
+            "median_delta": 0.0072,
+            "positive_change_pct": 92.08,
+            "negative_change_pct": 7.92,
+            "positive_change_area_km2": 2.0718,
+            "negative_change_area_km2": 0.1782
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0088,
-            "median_delta": 0.01,
-            "positive_change_pct": 92.67,
-            "negative_change_pct": 7.33,
-            "positive_change_area_km2": 10.8702,
-            "negative_change_area_km2": 0.8604
+            "pixel_count": 2450,
+            "mean_delta": 0.0061,
+            "median_delta": 0.0068,
+            "positive_change_pct": 91.8,
+            "negative_change_pct": 8.2,
+            "positive_change_area_km2": 2.0241,
+            "negative_change_area_km2": 0.1809
           },
           "south": {
-            "pixel_count": 14229,
-            "mean_delta": -0.0025,
-            "median_delta": 0.0082,
-            "positive_change_pct": 83.62,
-            "negative_change_pct": 16.38,
-            "positive_change_area_km2": 10.7091,
-            "negative_change_area_km2": 2.097
+            "pixel_count": 2500,
+            "mean_delta": -0.0216,
+            "median_delta": 0.0056,
+            "positive_change_pct": 67.04,
+            "negative_change_pct": 32.96,
+            "positive_change_area_km2": 1.5084,
+            "negative_change_area_km2": 0.7416
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0066,
-            "median_delta": 0.0102,
-            "positive_change_pct": 93.04,
-            "negative_change_pct": 6.96,
-            "positive_change_area_km2": 10.5264,
-            "negative_change_area_km2": 0.7875
+            "pixel_count": 2550,
+            "mean_delta": 0.0069,
+            "median_delta": 0.0075,
+            "positive_change_pct": 92.59,
+            "negative_change_pct": 7.41,
+            "positive_change_area_km2": 2.1249,
+            "negative_change_area_km2": 0.1701
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_mndwi_before.tif",
@@ -11060,7 +11143,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_lst",
@@ -11073,7 +11156,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11081,46 +11164,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 95.12,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 9790,
-            "mean_delta": 3.9522,
-            "median_delta": 3.506,
+            "pixel_count": 2491,
+            "mean_delta": 3.2824,
+            "median_delta": 3.2702,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 8.811,
+            "positive_change_area_km2": 2.2419,
             "negative_change_area_km2": 0.0
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 3.3041,
-            "median_delta": 3.2488,
+            "pixel_count": 2450,
+            "mean_delta": 3.7827,
+            "median_delta": 3.8248,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.7306,
+            "positive_change_area_km2": 2.205,
             "negative_change_area_km2": 0.0
           },
           "south": {
-            "pixel_count": 14047,
-            "mean_delta": 4.3621,
-            "median_delta": 3.7581,
+            "pixel_count": 2500,
+            "mean_delta": 6.1606,
+            "median_delta": 5.2522,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 12.6423,
+            "positive_change_area_km2": 2.25,
             "negative_change_area_km2": 0.0
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 3.9282,
-            "median_delta": 3.8812,
+            "pixel_count": 2550,
+            "mean_delta": 4.4358,
+            "median_delta": 4.2405,
             "positive_change_pct": 100.0,
             "negative_change_pct": 0.0,
-            "positive_change_area_km2": 11.3139,
+            "positive_change_area_km2": 2.295,
             "negative_change_area_km2": 0.0
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-06-27_2026-07-30_lst_before.tif",
@@ -11145,7 +11229,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndvi",
@@ -11158,7 +11242,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11167,45 +11251,46 @@
       "common_valid_pixel_pct": 96.87,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": -0.0003,
-            "median_delta": -0.0003,
-            "positive_change_pct": 44.97,
-            "negative_change_pct": 55.03,
-            "positive_change_area_km2": 4.2561,
-            "negative_change_area_km2": 5.2074
+            "pixel_count": 2500,
+            "mean_delta": -0.0005,
+            "median_delta": -0.0004,
+            "positive_change_pct": 42.36,
+            "negative_change_pct": 57.64,
+            "positive_change_area_km2": 0.9531,
+            "negative_change_area_km2": 1.2969
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0004,
-            "median_delta": -0.0005,
-            "positive_change_pct": 40.41,
-            "negative_change_pct": 59.59,
-            "positive_change_area_km2": 4.7403,
-            "negative_change_area_km2": 6.9903
+            "pixel_count": 2450,
+            "mean_delta": -0.0008,
+            "median_delta": -0.0009,
+            "positive_change_pct": 34.94,
+            "negative_change_pct": 65.06,
+            "positive_change_area_km2": 0.7704,
+            "negative_change_area_km2": 1.4346
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -0.0011,
+            "pixel_count": 2500,
+            "mean_delta": -0.0009,
             "median_delta": -0.001,
-            "positive_change_pct": 29.74,
-            "negative_change_pct": 70.26,
-            "positive_change_area_km2": 3.8088,
-            "negative_change_area_km2": 8.9991
+            "positive_change_pct": 28.4,
+            "negative_change_pct": 71.6,
+            "positive_change_area_km2": 0.639,
+            "negative_change_area_km2": 1.611
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": -0.0001,
-            "median_delta": -0.0001,
-            "positive_change_pct": 48.11,
-            "negative_change_pct": 51.89,
-            "positive_change_area_km2": 5.4432,
-            "negative_change_area_km2": 5.8707
+            "pixel_count": 2550,
+            "mean_delta": 0.0001,
+            "median_delta": 0.0001,
+            "positive_change_pct": 52.08,
+            "negative_change_pct": 47.92,
+            "positive_change_area_km2": 1.1952,
+            "negative_change_area_km2": 1.0998
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_ndvi_before.tif",
@@ -11230,7 +11315,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndmi",
@@ -11243,7 +11328,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11252,45 +11337,46 @@
       "common_valid_pixel_pct": 96.87,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": 0.0015,
-            "median_delta": 0.0018,
-            "positive_change_pct": 70.01,
-            "negative_change_pct": 29.99,
-            "positive_change_area_km2": 6.6258,
-            "negative_change_area_km2": 2.8377
+            "pixel_count": 2500,
+            "mean_delta": 0.0007,
+            "median_delta": 0.0011,
+            "positive_change_pct": 63.96,
+            "negative_change_pct": 36.04,
+            "positive_change_area_km2": 1.4391,
+            "negative_change_area_km2": 0.8109
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0029,
-            "median_delta": 0.0031,
-            "positive_change_pct": 86.3,
-            "negative_change_pct": 13.7,
-            "positive_change_area_km2": 10.1232,
-            "negative_change_area_km2": 1.6074
+            "pixel_count": 2450,
+            "mean_delta": 0.0022,
+            "median_delta": 0.0028,
+            "positive_change_pct": 77.35,
+            "negative_change_pct": 22.65,
+            "positive_change_area_km2": 1.7055,
+            "negative_change_area_km2": 0.4995
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0019,
-            "median_delta": 0.0021,
-            "positive_change_pct": 77.42,
-            "negative_change_pct": 22.58,
-            "positive_change_area_km2": 9.9162,
-            "negative_change_area_km2": 2.8917
+            "pixel_count": 2500,
+            "mean_delta": 0.0022,
+            "median_delta": 0.0024,
+            "positive_change_pct": 78.92,
+            "negative_change_pct": 21.08,
+            "positive_change_area_km2": 1.7757,
+            "negative_change_area_km2": 0.4743
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.0008,
-            "median_delta": 0.001,
-            "positive_change_pct": 61.43,
-            "negative_change_pct": 38.57,
-            "positive_change_area_km2": 6.9498,
-            "negative_change_area_km2": 4.3641
+            "pixel_count": 2550,
+            "mean_delta": 0.0014,
+            "median_delta": 0.0014,
+            "positive_change_pct": 65.69,
+            "negative_change_pct": 34.31,
+            "positive_change_area_km2": 1.5075,
+            "negative_change_area_km2": 0.7875
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_ndmi_before.tif",
@@ -11315,7 +11401,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_mndwi",
@@ -11328,7 +11414,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11337,45 +11423,46 @@
       "common_valid_pixel_pct": 96.87,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": 0.0044,
+            "pixel_count": 2500,
+            "mean_delta": 0.0046,
             "median_delta": 0.0047,
-            "positive_change_pct": 81.0,
-            "negative_change_pct": 19.0,
-            "positive_change_area_km2": 7.6653,
-            "negative_change_area_km2": 1.7982
+            "positive_change_pct": 82.64,
+            "negative_change_pct": 17.36,
+            "positive_change_area_km2": 1.8594,
+            "negative_change_area_km2": 0.3906
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0048,
-            "median_delta": 0.005,
-            "positive_change_pct": 89.73,
-            "negative_change_pct": 10.27,
-            "positive_change_area_km2": 10.5264,
-            "negative_change_area_km2": 1.2042
+            "pixel_count": 2450,
+            "mean_delta": 0.0049,
+            "median_delta": 0.0057,
+            "positive_change_pct": 83.39,
+            "negative_change_pct": 16.61,
+            "positive_change_area_km2": 1.8387,
+            "negative_change_area_km2": 0.3663
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0055,
-            "median_delta": 0.0058,
-            "positive_change_pct": 91.64,
-            "negative_change_pct": 8.36,
-            "positive_change_area_km2": 11.7369,
-            "negative_change_area_km2": 1.071
+            "pixel_count": 2500,
+            "mean_delta": 0.0064,
+            "median_delta": 0.0067,
+            "positive_change_pct": 93.56,
+            "negative_change_pct": 6.44,
+            "positive_change_area_km2": 2.1051,
+            "negative_change_area_km2": 0.1449
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": 0.003,
-            "median_delta": 0.0032,
-            "positive_change_pct": 75.97,
-            "negative_change_pct": 24.03,
-            "positive_change_area_km2": 8.595,
-            "negative_change_area_km2": 2.7189
+            "pixel_count": 2550,
+            "mean_delta": 0.0034,
+            "median_delta": 0.0039,
+            "positive_change_pct": 76.98,
+            "negative_change_pct": 23.02,
+            "positive_change_area_km2": 1.7667,
+            "negative_change_area_km2": 0.5283
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_mndwi_before.tif",
@@ -11400,7 +11487,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_lst",
@@ -11413,7 +11500,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11421,46 +11508,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 96.85,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10506,
-            "mean_delta": -18.8036,
-            "median_delta": -18.923,
+            "pixel_count": 2491,
+            "mean_delta": -18.5965,
+            "median_delta": -18.7308,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 9.4554
+            "negative_change_area_km2": 2.2419
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -18.6289,
-            "median_delta": -18.6223,
+            "pixel_count": 2450,
+            "mean_delta": -18.7866,
+            "median_delta": -18.8346,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.7306
+            "negative_change_area_km2": 2.205
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -18.6341,
-            "median_delta": -18.6282,
+            "pixel_count": 2500,
+            "mean_delta": -18.6249,
+            "median_delta": -18.6184,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 12.8079
+            "negative_change_area_km2": 2.25
           },
           "west": {
-            "pixel_count": 12571,
-            "mean_delta": -18.8572,
-            "median_delta": -18.7863,
+            "pixel_count": 2550,
+            "mean_delta": -18.8311,
+            "median_delta": -18.6923,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.3139
+            "negative_change_area_km2": 2.295
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-07-30_2026-09-24_lst_before.tif",
@@ -11485,7 +11573,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndvi",
@@ -11498,7 +11586,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11507,45 +11595,46 @@
       "common_valid_pixel_pct": 96.79,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
+            "pixel_count": 2500,
             "mean_delta": -0.0029,
-            "median_delta": -0.0027,
-            "positive_change_pct": 8.38,
-            "negative_change_pct": 91.62,
-            "positive_change_area_km2": 0.7929,
-            "negative_change_area_km2": 8.6706
+            "median_delta": -0.0025,
+            "positive_change_pct": 10.96,
+            "negative_change_pct": 89.04,
+            "positive_change_area_km2": 0.2466,
+            "negative_change_area_km2": 2.0034
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -0.0033,
-            "median_delta": -0.0032,
-            "positive_change_pct": 10.76,
-            "negative_change_pct": 89.24,
-            "positive_change_area_km2": 1.2618,
-            "negative_change_area_km2": 10.4688
+            "pixel_count": 2450,
+            "mean_delta": -0.0023,
+            "median_delta": -0.0019,
+            "positive_change_pct": 24.78,
+            "negative_change_pct": 75.22,
+            "positive_change_area_km2": 0.5463,
+            "negative_change_area_km2": 1.6587
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -0.0024,
-            "median_delta": -0.0022,
-            "positive_change_pct": 13.48,
-            "negative_change_pct": 86.52,
-            "positive_change_area_km2": 1.7271,
-            "negative_change_area_km2": 11.0808
+            "pixel_count": 2500,
+            "mean_delta": -0.0012,
+            "median_delta": -0.0011,
+            "positive_change_pct": 29.52,
+            "negative_change_pct": 70.48,
+            "positive_change_area_km2": 0.6642,
+            "negative_change_area_km2": 1.5858
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": -0.0023,
-            "median_delta": -0.0021,
-            "positive_change_pct": 11.13,
-            "negative_change_pct": 88.87,
-            "positive_change_area_km2": 1.2555,
-            "negative_change_area_km2": 10.0215
+            "pixel_count": 2550,
+            "mean_delta": -0.0014,
+            "median_delta": -0.0012,
+            "positive_change_pct": 24.43,
+            "negative_change_pct": 75.57,
+            "positive_change_area_km2": 0.5607,
+            "negative_change_area_km2": 1.7343
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_ndvi_before.tif",
@@ -11570,7 +11659,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndmi",
@@ -11583,7 +11672,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11592,45 +11681,46 @@
       "common_valid_pixel_pct": 96.79,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
+            "pixel_count": 2500,
             "mean_delta": 0.0026,
-            "median_delta": 0.0027,
-            "positive_change_pct": 87.22,
-            "negative_change_pct": 12.78,
-            "positive_change_area_km2": 8.2539,
-            "negative_change_area_km2": 1.2096
+            "median_delta": 0.0026,
+            "positive_change_pct": 87.12,
+            "negative_change_pct": 12.88,
+            "positive_change_area_km2": 1.9602,
+            "negative_change_area_km2": 0.2898
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0025,
-            "median_delta": 0.0026,
-            "positive_change_pct": 88.03,
-            "negative_change_pct": 11.97,
-            "positive_change_area_km2": 10.3266,
-            "negative_change_area_km2": 1.404
+            "pixel_count": 2450,
+            "mean_delta": 0.0015,
+            "median_delta": 0.0017,
+            "positive_change_pct": 74.9,
+            "negative_change_pct": 25.1,
+            "positive_change_area_km2": 1.6515,
+            "negative_change_area_km2": 0.5535
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0011,
-            "median_delta": 0.0013,
-            "positive_change_pct": 73.27,
-            "negative_change_pct": 26.73,
-            "positive_change_area_km2": 9.3843,
-            "negative_change_area_km2": 3.4236
+            "pixel_count": 2500,
+            "mean_delta": 0.0009,
+            "median_delta": 0.0011,
+            "positive_change_pct": 69.76,
+            "negative_change_pct": 30.24,
+            "positive_change_area_km2": 1.5696,
+            "negative_change_area_km2": 0.6804
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": 0.0018,
-            "median_delta": 0.002,
-            "positive_change_pct": 78.53,
-            "negative_change_pct": 21.47,
-            "positive_change_area_km2": 8.856,
-            "negative_change_area_km2": 2.421
+            "pixel_count": 2550,
+            "mean_delta": 0.0012,
+            "median_delta": 0.0013,
+            "positive_change_pct": 71.06,
+            "negative_change_pct": 28.94,
+            "positive_change_area_km2": 1.6308,
+            "negative_change_area_km2": 0.6642
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_ndmi_before.tif",
@@ -11655,7 +11745,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_mndwi",
@@ -11668,7 +11758,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11677,45 +11767,46 @@
       "common_valid_pixel_pct": 96.79,
       "spatial_change_summary": {
         "units": "index",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10515,
-            "mean_delta": 0.0067,
-            "median_delta": 0.0067,
-            "positive_change_pct": 94.55,
-            "negative_change_pct": 5.45,
-            "positive_change_area_km2": 8.9478,
-            "negative_change_area_km2": 0.5157
+            "pixel_count": 2500,
+            "mean_delta": 0.007,
+            "median_delta": 0.0062,
+            "positive_change_pct": 92.96,
+            "negative_change_pct": 7.04,
+            "positive_change_area_km2": 2.0916,
+            "negative_change_area_km2": 0.1584
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": 0.0069,
-            "median_delta": 0.0069,
-            "positive_change_pct": 92.99,
-            "negative_change_pct": 7.01,
-            "positive_change_area_km2": 10.908,
-            "negative_change_area_km2": 0.8226
+            "pixel_count": 2450,
+            "mean_delta": 0.0046,
+            "median_delta": 0.0041,
+            "positive_change_pct": 77.96,
+            "negative_change_pct": 22.04,
+            "positive_change_area_km2": 1.719,
+            "negative_change_area_km2": 0.486
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": 0.0039,
-            "median_delta": 0.0044,
-            "positive_change_pct": 83.99,
-            "negative_change_pct": 16.01,
-            "positive_change_area_km2": 10.7577,
-            "negative_change_area_km2": 2.0502
+            "pixel_count": 2500,
+            "mean_delta": 0.0018,
+            "median_delta": 0.0022,
+            "positive_change_pct": 66.6,
+            "negative_change_pct": 33.4,
+            "positive_change_area_km2": 1.4985,
+            "negative_change_area_km2": 0.7515
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": 0.0046,
-            "median_delta": 0.0047,
-            "positive_change_pct": 89.69,
-            "negative_change_pct": 10.31,
-            "positive_change_area_km2": 10.1142,
-            "negative_change_area_km2": 1.1628
+            "pixel_count": 2550,
+            "mean_delta": 0.0027,
+            "median_delta": 0.0029,
+            "positive_change_pct": 77.53,
+            "negative_change_pct": 22.47,
+            "positive_change_area_km2": 1.7793,
+            "negative_change_area_km2": 0.5157
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_mndwi_before.tif",
@@ -11740,7 +11831,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_lst",
@@ -11753,7 +11844,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
+      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -11761,46 +11852,47 @@
       "preview_crater_crop_applied": true,
       "common_valid_pixel_pct": 96.77,
       "spatial_change_summary": {
-        "units": "°C",
+        "units": "\u00b0C",
+        "spatial_extent": "3 km x 3 km window centred on Darvaza crater",
         "sectors": {
           "north": {
-            "pixel_count": 10506,
-            "mean_delta": -19.9646,
-            "median_delta": -20.0057,
+            "pixel_count": 2491,
+            "mean_delta": -19.782,
+            "median_delta": -19.8057,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 9.4554
+            "negative_change_area_km2": 2.2419
           },
           "east": {
-            "pixel_count": 13034,
-            "mean_delta": -19.9077,
-            "median_delta": -19.963,
+            "pixel_count": 2450,
+            "mean_delta": -19.4549,
+            "median_delta": -19.4011,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.7306
+            "negative_change_area_km2": 2.205
           },
           "south": {
-            "pixel_count": 14231,
-            "mean_delta": -19.1127,
-            "median_delta": -19.1777,
+            "pixel_count": 2500,
+            "mean_delta": -18.9977,
+            "median_delta": -19.1008,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 12.8079
+            "negative_change_area_km2": 2.25
           },
           "west": {
-            "pixel_count": 12530,
-            "mean_delta": -19.6221,
-            "median_delta": -19.6109,
+            "pixel_count": 2550,
+            "mean_delta": -19.6814,
+            "median_delta": -19.6613,
             "positive_change_pct": 0.0,
             "negative_change_pct": 100.0,
             "positive_change_area_km2": 0.0,
-            "negative_change_area_km2": 11.277
+            "negative_change_area_km2": 2.295
           }
         },
-        "interpretation": "Signed pixel differences by compass sector; not crater-rim displacement or expansion area."
+        "interpretation": "Signed pixel differences by compass sector within the local 3 km x 3 km window; not crater-rim displacement or expansion area."
       },
       "files": {
         "before": "2026-09-24_2026-10-26_lst_before.tif",
@@ -11825,7 +11917,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T17:23:22.294041+00:00"
+      "published_at": "2026-11-18T17:28:26.729535+00:00"
     }
   ],
   "pipeline_runs": [
@@ -12158,6 +12250,24 @@
       "scenes_published": 12,
       "processing_version": "darvaza-s1-rtc/0.1",
       "errors": []
+    },
+    {
+      "id": "landsat-environmental-20261118T173123.238049+0000",
+      "source_id": "landsat-c2-l2",
+      "started_at": "2026-11-18T17:28:26.729535+00:00",
+      "finished_at": "2026-11-18T17:31:23.238049+00:00",
+      "status": "partial",
+      "stage_reached": "raster_processing",
+      "scenes_discovered": 6,
+      "scenes_published": 5,
+      "processing_version": "landsat-environmental/0.2",
+      "errors": [
+        {
+          "stage": "raster_processing",
+          "message": "RuntimeError: No optical or thermal product passed quality screening",
+          "scene_id": "LC09_L2SP_160032_20260831_02_T1"
+        }
+      ]
     }
   ],
   "time_series": {
