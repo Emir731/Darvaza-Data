@@ -190,7 +190,7 @@ try {
     if (state.rasterScenes !== 5) failures.push(`${viewport.name}: expected five processed scene cards, found ${state.rasterScenes}`);
     if (state.rasterPreviews !== 20) failures.push(`${viewport.name}: expected twenty raster previews, found ${state.rasterPreviews}`);
     if (state.rasterLoaded !== 20) failures.push(`${viewport.name}: all 20 raster previews must load (${state.rasterLoaded}/20)`);
-    if (!state.analysisStatus.includes("EXPLORATORY RASTERS PUBLISHED")) failures.push(`${viewport.name}: analysis status still reports no raster products`);
+    if (!state.analysisStatus.includes("EXPLORATORY RASTERS PUBLISHED") && !state.analysisStatus.includes("SCIENTIFIC VALIDATION REGISTER")) failures.push(`${viewport.name}: analysis status does not show raster or scientific validation state`);
     if (expected.pairCount < 1) failures.push(`${viewport.name}: no published before/after pairs are available`);
     if (!state.changeViewerVisible || state.changeEmptyVisible) failures.push(`${viewport.name}: before/after viewer did not activate from published pairs`);
     if (state.changePairOptions !== expected.pairCount) failures.push(`${viewport.name}: expected ${expected.pairCount} date-pair options, found ${state.changePairOptions}`);
@@ -198,7 +198,9 @@ try {
     if (state.thermalImages < 1 || state.thermalImagesLoaded !== state.thermalImages) failures.push(`${viewport.name}: ST_B10 previews did not render/load (${state.thermalImagesLoaded}/${state.thermalImages})`);
     if (state.thermalImages !== 3) failures.push(`${viewport.name}: expected three recent ST_B10 preview thumbnails, found ${state.thermalImages}`);
     if (!state.thermalPanelText.includes("ST_B10") || state.thermalPanelText.includes("Loading published")) failures.push(`${viewport.name}: thermal panel is not bound to published ST_B10 data`);
-    if (!state.footprintPanelText.includes("SENTINEL-2 CATALOGUE SCENES") || state.footprintPanelText.includes("Awaiting segmentation")) failures.push(`${viewport.name}: footprint readiness panel did not render Sentinel-2 catalogue status`);
+    const footprintReady = state.footprintPanelText.includes("SENTINEL-2 CATALOGUE SCENES") || state.footprintPanelText.includes("SCENES SEGMENTED");
+    if (!footprintReady || state.footprintPanelText.includes("Awaiting segmentation")) failures.push(`${viewport.name}: crater footprint panel did not render catalogue or candidate segmentation data`);
+    if (state.footprintPanelText.includes("SCENES SEGMENTED") && !state.footprintPanelText.includes("NOT AN INDEPENDENTLY VERIFIED CRATER RIM")) failures.push(`${viewport.name}: candidate boundary is missing its independent-validation warning`);
     if (!state.changePanelText.includes("CO-REGISTERED PRODUCTS") || state.changePanelText.includes("Loading co-registered")) failures.push(`${viewport.name}: surface-change card is not bound to published date-pair products`);
     if (!state.changeCardImageLoaded) failures.push(`${viewport.name}: surface-change comparison thumbnail did not load`);
     if (state.dataStatus !== "live") failures.push(`${viewport.name}: manifest state is ${state.dataStatus}`);
