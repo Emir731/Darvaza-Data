@@ -141,6 +141,9 @@ try {
       changeEmptyVisible: !!document.querySelector("#change-empty") && !document.querySelector("#change-empty").hidden,
       changePairOptions: document.querySelectorAll("#change-pair-select option").length,
       changeImagesLoaded: ["#change-before-image", "#change-after-image", "#change-delta-image"].filter(sel => { const img = document.querySelector(sel); return img && img.complete && img.naturalWidth > 0; }).length,
+      thermalCard: document.querySelector("#analysis-thermal")?.textContent || "",
+      footprintCard: document.querySelector("#analysis-footprint")?.textContent || "",
+      changeCard: document.querySelector("#analysis-change")?.textContent || "",
     }));
     if (!state.title.includes("Darvaza Watch")) failures.push(`${viewport.name}: unexpected document title`);
     if (!state.h1) failures.push(`${viewport.name}: main heading missing`);
@@ -164,6 +167,10 @@ try {
     if (state.changePairOptions !== expected.pairCount) failures.push(`${viewport.name}: expected ${expected.pairCount} date-pair options, found ${state.changePairOptions}`);
     if (state.changeImagesLoaded !== 3) failures.push(`${viewport.name}: comparison images failed to load (${state.changeImagesLoaded}/3)`);
     if (state.dataStatus !== "live") failures.push(`${viewport.name}: manifest state is ${state.dataStatus}`);
+    if (!state.thermalCard.includes("ST_B10 scene products published")) failures.push(`${viewport.name}: thermal card did not render published ST_B10 products`);
+    if (!state.footprintCard.includes("boundary segmentation is not yet published")) failures.push(`${viewport.name}: footprint card does not clearly report segmentation state`);
+    if (!state.changeCard.includes("16 co-registered exploratory raster comparisons published")) failures.push(`${viewport.name}: surface-change card did not render the published comparison count`);
+    if (state.changeCard.includes("Awaiting co-registered comparison")) failures.push(`${viewport.name}: stale surface-change placeholder remains`);
     if (viewport.name === "mobile" && !state.mobileButtonVisible) failures.push("mobile: navigation toggle is not visible");
     if (pageErrors.length) failures.push(`${viewport.name}: runtime errors: ${pageErrors.join("; ")}`);
     if (state.changeViewerVisible && state.changeImagesLoaded === 3) {
