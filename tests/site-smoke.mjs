@@ -79,6 +79,7 @@ try {
         failures.push(`${viewport.name}: fewer than 95% of published raster previews loaded`);
       });
     });
+    const expected = await page.evaluate(async () => { const m = await (await fetch("./manifest.json", { cache: "no-store" })).json(); const processed = (m.observations || []).filter(x => x.processed_at && String(x.processing_version || "").startsWith("landsat-environmental/")); const pairAssets = (m.change_products || m.before_after_pairs || []).flatMap(p => Object.values(p.assets || {})).filter(v => typeof v === "string"); const sceneAssets = processed.reduce((n, x) => n + (x.assets || []).filter(a => a.role === "preview" || a.role === "cog").length, 0); return { observations: (m.observations || []).length, processed: processed.length, rasterAssets: sceneAssets + pairAssets.length }; });
     const state = await page.evaluate(() => ({
       title: document.title,
       h1: document.querySelector("h1")?.textContent?.trim() || "",
@@ -115,9 +116,9 @@ try {
     if (!state.globeRoot || !state.rasterRoot) failures.push(`${viewport.name}: expected observatory components missing`);
     if (!state.globeLocked) failures.push(`${viewport.name}: 3D globe controls are not locked`);
     if (Math.abs(state.globeLat - 40.25258) > 0.0001 || Math.abs(state.globeLon - 58.43933) > 0.0001) failures.push(`${viewport.name}: globe is not centered on Darvaza`);
-    if (state.catalogueCount !== 154) failures.push(`${viewport.name}: expected 154 live catalogue observations, found ${state.catalogueCount}`);
-    if (state.processedCount !== 5) failures.push(`${viewport.name}: expected five processed Landsat scenes, found ${state.processedCount}`);
-    if (state.rasterAssetCount !== 40) failures.push(`${viewport.name}: expected 40 published raster assets, found ${state.rasterAssetCount}`);
+    if (state.catalogueCount !== expected.observations) failures.push(`${viewport.name}: expected ${expected.observations} live catalogue observations, found ${state.catalogueCount}`);
+    if (state.processedCount !== expected.processed) failures.push(`${viewport.name}: expected ${expected.processed} processed Landsat scenes, found ${state.processedCount}`);
+    if (state.rasterAssetCount !== expected.rasterAssets) failures.push(`${viewport.name}: expected ${expected.rasterAssets} published raster assets, found ${state.rasterAssetCount}`);
     if (state.rasterScenes !== 5) failures.push(`${viewport.name}: expected five processed scene cards, found ${state.rasterScenes}`);
     if (state.rasterPreviews !== 20) failures.push(`${viewport.name}: expected twenty raster previews, found ${state.rasterPreviews}`);
     if (state.rasterLoaded !== 20) failures.push(`${viewport.name}: all 20 raster previews must load (${state.rasterLoaded}/20)`);
