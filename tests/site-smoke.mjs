@@ -172,6 +172,7 @@ try {
     if (state.changePairOptions !== expected.pairCount) failures.push(`${viewport.name}: expected ${expected.pairCount} date-pair options, found ${state.changePairOptions}`);
     if (state.changeImagesLoaded !== 3) failures.push(`${viewport.name}: comparison images failed to load (${state.changeImagesLoaded}/3)`);
     if (state.thermalImages < 1 || state.thermalImagesLoaded !== state.thermalImages) failures.push(`${viewport.name}: ST_B10 previews did not render/load (${state.thermalImagesLoaded}/${state.thermalImages})`);
+    if (state.thermalImages !== 3) failures.push(`${viewport.name}: expected three recent ST_B10 preview thumbnails, found ${state.thermalImages}`);
     if (!state.thermalPanelText.includes("ST_B10") || state.thermalPanelText.includes("Loading published")) failures.push(`${viewport.name}: thermal panel is not bound to published ST_B10 data`);
     if (!state.footprintPanelText.includes("SENTINEL-2 CATALOGUE SCENES") || state.footprintPanelText.includes("Awaiting segmentation")) failures.push(`${viewport.name}: footprint readiness panel did not render Sentinel-2 catalogue status`);
     if (!state.changePanelText.includes("CO-REGISTERED PRODUCTS") || state.changePanelText.includes("Loading co-registered")) failures.push(`${viewport.name}: surface-change card is not bound to published date-pair products`);
