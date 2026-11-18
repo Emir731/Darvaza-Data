@@ -20,10 +20,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Install Playwright
-        run: |
-          npm install --no-save playwright@1.56.1
-          npx playwright install --with-deps chromium
+      - name: Install Playwright package
+        timeout-minutes: 8
+        run: npm install --no-save playwright@1.56.1
+      - name: Install Chromium browser
+        timeout-minutes: 12
+        run: npx playwright install --with-deps chromium
       - name: Start local static website
         run: |
           python3 -m http.server 8000 > /tmp/darvaza-site.log 2>&1 &
