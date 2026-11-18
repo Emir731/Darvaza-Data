@@ -86,6 +86,7 @@ try {
         failures.push(`${viewport.name}: fewer than 95% of published raster previews loaded`);
       });
     });
+    await page.waitForFunction(() => ["#change-before-image", "#change-after-image", "#change-delta-image"].every(sel => { const img = document.querySelector(sel); return img && img.complete && img.naturalWidth > 0; }), null, { timeout: 30000 }).catch(() => { failures.push(`${viewport.name}: comparison raster previews did not load`); });
     const expected = await page.evaluate(async () => {
       const m = await (await fetch("./manifest.json", { cache: "no-store" })).json();
       const processed = (m.observations || []).filter(x => x.processed_at && String(x.processing_version || "").startsWith("landsat-environmental/"));
