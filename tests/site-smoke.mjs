@@ -86,6 +86,23 @@ try {
         failures.push(`${viewport.name}: fewer than 95% of published raster previews loaded`);
       });
     });
+    for (let retry = 1; retry <= 3; retry++) {
+      const missing = await page.locator(".raster-scene-card .raster-preview-link img").evaluateAll(images => images.filter(img => !img.complete || !img.naturalWidth).length);
+      if (missing === 0) break;
+      await page.evaluate(() => {
+        for (const img of document.querySelectorAll(".raster-scene-card .raster-preview-link img")) {
+          if (!img.complete || !img.naturalWidth) {
+            const url = img.currentSrc || img.src;
+            img.src = "";
+            img.src = url;
+          }
+        }
+      });
+      await page.waitForFunction(() => {
+        const images = [...document.querySelectorAll(".raster-scene-card .raster-preview-link img")];
+        return images.length === 20 && images.every(img => img.complete && img.naturalWidth > 0);
+      }, null, { timeout: 10000 }).catch(() => {});
+    }
     await page.waitForFunction(() => ["#change-before-image", "#change-after-image", "#change-delta-image"].every(sel => { const img = document.querySelector(sel); return img && img.complete && img.naturalWidth > 0; }), null, { timeout: 30000 }).catch(() => { failures.push(`${viewport.name}: comparison raster previews did not load`); });
     const expected = await page.evaluate(async () => {
       const m = await (await fetch("./manifest.json", { cache: "no-store" })).json();
