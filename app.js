@@ -149,7 +149,7 @@ function renderRasterProducts(m){
 function renderChangePairs(m){
  const root=$("change-viewer"),empty=$("change-empty"),select=$("change-pair-select");
  if(!root||!empty||!select)return;
- const pairs=((m.change_products&&m.change_products.length)?m.change_products:m.before_after_pairs)||[]
+ const pairs=(((m.change_products&&m.change_products.length)?m.change_products:m.before_after_pairs)||[])
   .filter(p=>p.assets&&p.assets.before_preview&&p.assets.after_preview&&p.assets.delta_preview)
   .sort((a,b)=>String(b.after_date||"").localeCompare(String(a.after_date||"")));
  if(!pairs.length){root.hidden=true;empty.hidden=false;return}
