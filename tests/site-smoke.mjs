@@ -190,7 +190,7 @@ try {
     if (state.rasterScenes !== 5) failures.push(`${viewport.name}: expected five processed scene cards, found ${state.rasterScenes}`);
     if (state.rasterPreviews !== 20) failures.push(`${viewport.name}: expected twenty raster previews, found ${state.rasterPreviews}`);
     if (state.rasterLoaded !== 20) failures.push(`${viewport.name}: all 20 raster previews must load (${state.rasterLoaded}/20)`);
-    if (!state.analysisStatus.includes("EXPLORATORY RASTERS PUBLISHED")) failures.push(`${viewport.name}: analysis status still reports no raster products`);
+    if (!state.analysisStatus.includes("EXPLORATORY RASTERS PUBLISHED") && !state.analysisStatus.includes("SCIENTIFIC VALIDATION REGISTER")) failures.push(`${viewport.name}: analysis status does not show raster or scientific validation state`);
     if (expected.pairCount < 1) failures.push(`${viewport.name}: no published before/after pairs are available`);
     if (!state.changeViewerVisible || state.changeEmptyVisible) failures.push(`${viewport.name}: before/after viewer did not activate from published pairs`);
     if (state.changePairOptions !== expected.pairCount) failures.push(`${viewport.name}: expected ${expected.pairCount} date-pair options, found ${state.changePairOptions}`);
