@@ -5,6 +5,7 @@ on:
     branches:
       - feature/landsat-products-ui
       - fix/live-manifest-cache
+      - feature/before-after-viewer
       - main
   workflow_dispatch:
 
