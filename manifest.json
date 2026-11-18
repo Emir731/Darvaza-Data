@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T09:15:10.550430Z",
+  "generated_at": "2026-11-18T09:16:45.877991Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -926,56 +926,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-10-26"
+          "title": "NDVI preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-10-26"
+          "title": "NDMI preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-10-26"
+          "title": "MNDWI preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-10-26"
+          "title": "Land surface temperature preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -2597,56 +2597,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-09-24"
+          "title": "NDVI preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-09-24"
+          "title": "NDMI preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-09-24"
+          "title": "MNDWI preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-09-24"
+          "title": "Land surface temperature preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -5456,56 +5456,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-07-30"
+          "title": "NDVI preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-07-30"
+          "title": "NDMI preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-07-30"
+          "title": "MNDWI preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-07-30"
+          "title": "Land surface temperature preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -7394,56 +7394,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-06-27"
+          "title": "NDVI preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-06-27"
+          "title": "NDMI preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-06-27"
+          "title": "MNDWI preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-06-27"
+          "title": "Land surface temperature preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -8880,56 +8880,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-05-27"
+          "title": "NDVI preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-05-27"
+          "title": "NDMI preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-05-27"
+          "title": "MNDWI preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-05-27"
+          "title": "Land surface temperature preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -9096,7 +9096,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9139,7 +9139,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9182,7 +9182,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9225,7 +9225,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9268,7 +9268,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9311,7 +9311,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9354,7 +9354,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9397,7 +9397,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9440,7 +9440,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9483,7 +9483,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9526,7 +9526,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9569,7 +9569,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9612,7 +9612,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9655,7 +9655,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9698,7 +9698,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9741,7 +9741,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9786,7 +9786,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9829,7 +9829,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9872,7 +9872,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9915,7 +9915,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9958,7 +9958,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10001,7 +10001,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10044,7 +10044,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10087,7 +10087,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10130,7 +10130,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10173,7 +10173,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10216,7 +10216,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10259,7 +10259,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10302,7 +10302,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10345,7 +10345,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10388,7 +10388,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10431,7 +10431,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10775,7 +10775,7 @@
     "crater_footprint": null,
     "surface_change": null,
     "scientific_validation": {
-      "generated_at": "2026-11-18T09:15:10.650371Z",
+      "generated_at": "2026-11-18T09:16:45.912569Z",
       "overall_status": "independent_validation_pending",
       "automated_qa_is_independent_validation": false,
       "products": [
@@ -10792,10 +10792,10 @@
           ],
           "notes": "Sentinel-2 candidate polygons are exploratory. The 20 m B11/SCL bands are resampled to a 10 m grid.",
           "pipeline_evidence": {
-            "candidate_scenes": 0,
+            "candidate_scenes": 1,
             "validated_boundary_available": false
           },
-          "automated_qa_status": "discovery_only",
+          "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -10812,10 +10812,10 @@
           ],
           "notes": "Candidate algorithm min/median/max is sensitivity analysis, not a confidence interval.",
           "pipeline_evidence": {
-            "candidate_scenes": 0,
+            "candidate_scenes": 1,
             "validated_area_m2": null
           },
-          "automated_qa_status": "discovery_only",
+          "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -10833,8 +10833,8 @@
           "notes": "Microsoft Planetary Computer supplies upstream RTC; local processing clips and converts linear power to dB.",
           "pipeline_evidence": {
             "catalogue_observations": 30,
-            "processed_observations": 0,
-            "raster_assets": 0
+            "processed_observations": 12,
+            "raster_assets": 36
           },
           "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
@@ -10854,8 +10854,8 @@
           "notes": "ST_B10 is land-surface temperature, not flame or crater-core temperature.",
           "pipeline_evidence": {
             "catalogue_observations": 42,
-            "processed_observations": 0,
-            "raster_assets": 0
+            "processed_observations": 5,
+            "raster_assets": 20
           },
           "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
@@ -10874,9 +10874,9 @@
           ],
           "notes": "Index differences are screening signals, not proof of physical crater growth.",
           "pipeline_evidence": {
-            "published_change_products": 0
+            "published_change_products": 16
           },
-          "automated_qa_status": "discovery_only",
+          "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -10906,7 +10906,7 @@
       "release_rule": "Do not label any product independently validated until its product-specific evidence is attached, reviewed and its validation report passes."
     },
     "crater_segmentation": {
-      "generated_at": "2026-11-18T09:12:02.209771+00:00",
+      "generated_at": "2026-11-18T09:15:05.143228+00:00",
       "status": "exploratory_candidates_not_verified",
       "source": "Sentinel-2 L2A",
       "method": "Sentinel-2 L2A spectral feature threshold ensemble; connected components constrained to a central search zone",
