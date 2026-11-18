@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T17:27:53.635324Z",
+  "generated_at": "2026-11-18T17:30:23.512753Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -12205,7 +12205,7 @@
     "crater_footprint": null,
     "surface_change": null,
     "scientific_validation": {
-      "generated_at": "2026-11-18T17:27:53.754098Z",
+      "generated_at": "2026-11-18T17:30:23.550034Z",
       "overall_status": "independent_validation_pending",
       "automated_qa_is_independent_validation": false,
       "products": [
@@ -12222,10 +12222,10 @@
           ],
           "notes": "Sentinel-2 candidate polygons are exploratory. The 20 m B11/SCL bands are resampled to a 10 m grid.",
           "pipeline_evidence": {
-            "candidate_scenes": 0,
+            "candidate_scenes": 1,
             "validated_boundary_available": false
           },
-          "automated_qa_status": "discovery_only",
+          "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -12242,10 +12242,10 @@
           ],
           "notes": "Candidate algorithm min/median/max is sensitivity analysis, not a confidence interval.",
           "pipeline_evidence": {
-            "candidate_scenes": 0,
+            "candidate_scenes": 1,
             "validated_area_m2": null
           },
-          "automated_qa_status": "discovery_only",
+          "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -12263,8 +12263,8 @@
           "notes": "Microsoft Planetary Computer supplies upstream RTC; local processing clips and converts linear power to dB.",
           "pipeline_evidence": {
             "catalogue_observations": 30,
-            "processed_observations": 0,
-            "raster_assets": 0
+            "processed_observations": 12,
+            "raster_assets": 36
           },
           "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
@@ -12284,8 +12284,8 @@
           "notes": "ST_B10 is land-surface temperature, not flame or crater-core temperature.",
           "pipeline_evidence": {
             "catalogue_observations": 42,
-            "processed_observations": 0,
-            "raster_assets": 0
+            "processed_observations": 5,
+            "raster_assets": 20
           },
           "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
@@ -12304,9 +12304,9 @@
           ],
           "notes": "Index differences are screening signals, not proof of physical crater growth.",
           "pipeline_evidence": {
-            "published_change_products": 0
+            "published_change_products": 16
           },
-          "automated_qa_status": "discovery_only",
+          "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -12336,7 +12336,7 @@
       "release_rule": "Do not label any product independently validated until its product-specific evidence is attached, reviewed and its validation report passes."
     },
     "crater_segmentation": {
-      "generated_at": "2026-11-18T17:25:20.448850+00:00",
+      "generated_at": "2026-11-18T17:28:08.940356+00:00",
       "status": "exploratory_candidates_not_verified",
       "source": "Sentinel-2 L2A",
       "method": "Sentinel-2 L2A spectral feature threshold ensemble; connected components constrained to a central search zone",
