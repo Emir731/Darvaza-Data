@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T09:02:49.657719Z",
+  "generated_at": "2026-11-18T09:05:23.480040Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -10751,7 +10751,7 @@
     "crater_footprint": null,
     "surface_change": null,
     "crater_segmentation": {
-      "generated_at": "2026-11-18T09:00:49.192656+00:00",
+      "generated_at": "2026-11-18T09:03:28.961416+00:00",
       "status": "exploratory_candidates_not_verified",
       "source": "Sentinel-2 L2A",
       "method": "Sentinel-2 L2A spectral feature threshold ensemble; connected components constrained to a central search zone",
@@ -10880,6 +10880,137 @@
         "Area min/median/max/std describe sensitivity to algorithm and thresholds only, not a confidence interval.",
         "Independent validation requires a separately acquired high-resolution reference polygon and independent annotation."
       ]
+    },
+    "scientific_validation": {
+      "generated_at": "2026-11-18T09:05:23.509865Z",
+      "overall_status": "independent_validation_pending",
+      "automated_qa_is_independent_validation": false,
+      "products": [
+        {
+          "id": "crater_boundary",
+          "title": "Crater perimeter segmentation",
+          "sources": [
+            "sentinel-2-l2a"
+          ],
+          "evidence": [
+            "High-resolution orthorectified reference imagery at <=5 m (prefer <=1 m)",
+            "Two independent expert delineations and reviewer sign-off",
+            "IoU, Dice, boundary F1 and Hausdorff-distance report"
+          ],
+          "notes": "Sentinel-2 candidate polygons are exploratory. The 20 m B11/SCL bands are resampled to a 10 m grid.",
+          "pipeline_evidence": {
+            "candidate_scenes": 1,
+            "validated_boundary_available": false
+          },
+          "automated_qa_status": "pipeline_products_available",
+          "independent_validation_status": "pending_independent_evidence",
+          "independent_validation_complete": false
+        },
+        {
+          "id": "crater_area",
+          "title": "Crater area and boundary uncertainty",
+          "sources": [
+            "sentinel-2-l2a"
+          ],
+          "evidence": [
+            "Independent reference perimeter",
+            "Reference area in a projected metric CRS",
+            "Boundary perturbation / positional-error model and area confidence interval"
+          ],
+          "notes": "Candidate algorithm min/median/max is sensitivity analysis, not a confidence interval.",
+          "pipeline_evidence": {
+            "candidate_scenes": 1,
+            "validated_area_m2": null
+          },
+          "automated_qa_status": "pipeline_products_available",
+          "independent_validation_status": "pending_independent_evidence",
+          "independent_validation_complete": false
+        },
+        {
+          "id": "sentinel1_rtc",
+          "title": "Sentinel-1 RTC backscatter",
+          "sources": [
+            "sentinel-1-rtc"
+          ],
+          "evidence": [
+            "Independent RTC processing of the same S1 GRD acquisitions or a second authoritative RTC provider",
+            "Geolocation control points and VV/VH radiometric comparison",
+            "Incidence-angle / terrain / border-noise QA with documented tolerances"
+          ],
+          "notes": "Microsoft Planetary Computer supplies upstream RTC; local processing clips and converts linear power to dB.",
+          "pipeline_evidence": {
+            "catalogue_observations": 30,
+            "processed_observations": 12,
+            "raster_assets": 36
+          },
+          "automated_qa_status": "pipeline_products_available",
+          "independent_validation_status": "pending_independent_evidence",
+          "independent_validation_complete": false
+        },
+        {
+          "id": "landsat_optical_lst",
+          "title": "Landsat optical indices and ST_B10",
+          "sources": [
+            "landsat-c2-l2"
+          ],
+          "evidence": [
+            "Independent surface-temperature reference or suitable independent thermal product",
+            "Stable-target reflectance checks and cloud/shadow QA audit",
+            "Cross-date co-registration and independent change reference"
+          ],
+          "notes": "ST_B10 is land-surface temperature, not flame or crater-core temperature.",
+          "pipeline_evidence": {
+            "catalogue_observations": 42,
+            "processed_observations": 5,
+            "raster_assets": 20
+          },
+          "automated_qa_status": "pipeline_products_available",
+          "independent_validation_status": "pending_independent_evidence",
+          "independent_validation_complete": false
+        },
+        {
+          "id": "temporal_change",
+          "title": "Before/after and spectral change products",
+          "sources": [
+            "landsat-c2-l2"
+          ],
+          "evidence": [
+            "Independent high-resolution reference for each date pair",
+            "Co-registration residuals on stable control features",
+            "Confusion / error assessment of change classes"
+          ],
+          "notes": "Index differences are screening signals, not proof of physical crater growth.",
+          "pipeline_evidence": {
+            "published_change_products": 16
+          },
+          "automated_qa_status": "pipeline_products_available",
+          "independent_validation_status": "pending_independent_evidence",
+          "independent_validation_complete": false
+        },
+        {
+          "id": "firms_hotspots",
+          "title": "FIRMS VIIRS/MODIS hotspot detections",
+          "sources": [
+            "viirs-375m",
+            "modis-thermal"
+          ],
+          "evidence": [
+            "Provider/product/time-window provenance and confidence filtering",
+            "Comparison against an independent active-fire dataset or ground observation log",
+            "Overpass, cloud, pixel-size and detection-limit assessment"
+          ],
+          "notes": "Zero detections means none were returned in the queried windows; it does not prove inactivity or a zero temperature.",
+          "pipeline_evidence": {
+            "reported_detections": 0,
+            "queried_csv_files": 0
+          },
+          "automated_qa_status": "pipeline_products_available",
+          "independent_validation_status": "pending_independent_evidence",
+          "independent_validation_complete": false
+        }
+      ],
+      "interpretation": "Automated tests, raster metadata checks, repeated CI runs and internal cross-sensor consistency do not independently validate the scientific interpretation.",
+      "release_rule": "Do not label any product independently validated until its product-specific evidence is attached, reviewed and its validation report passes."
     }
   }
 }
