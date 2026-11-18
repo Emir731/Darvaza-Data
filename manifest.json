@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T09:08:12.879066Z",
+  "generated_at": "2026-11-18T09:11:03.068717Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -10751,7 +10751,7 @@
     "crater_footprint": null,
     "surface_change": null,
     "crater_segmentation": {
-      "generated_at": "2026-11-18T09:06:02.433995+00:00",
+      "generated_at": "2026-11-18T09:08:53.115908+00:00",
       "status": "exploratory_candidates_not_verified",
       "source": "Sentinel-2 L2A",
       "method": "Sentinel-2 L2A spectral feature threshold ensemble; connected components constrained to a central search zone",
@@ -10761,7 +10761,17 @@
           "scene_id": "S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026",
           "acquired_at": "2026-09-29T07:03:21.024000+00:00",
           "candidate_count": 14,
+          "valid_pixel_pct": 100.0,
+          "candidate_quality_status": "unstable_segmentation_sensitivity_do_not_use_area",
           "candidate_area_sensitivity_m2": null,
+          "candidate_area_diagnostics": {
+            "min_m2": 400.0,
+            "median_m2": 3550.0,
+            "max_m2": 32400.0,
+            "std_m2": 9753.51,
+            "coefficient_of_variation": 2.7475,
+            "max_min_ratio": 81.0
+          },
           "area_uncertainty_status": "not_reported_unstable_segmentation",
           "reference_validation_status": "pending_external_independent_reference",
           "assets": [
@@ -10877,7 +10887,7 @@
       ]
     },
     "scientific_validation": {
-      "generated_at": "2026-11-18T09:08:12.914228Z",
+      "generated_at": "2026-11-18T09:11:03.094872Z",
       "overall_status": "independent_validation_pending",
       "automated_qa_is_independent_validation": false,
       "products": [
