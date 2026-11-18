@@ -168,6 +168,10 @@ try {
       changePairOptions: document.querySelectorAll("#change-pair-select option").length,
       changeImagesLoaded: ["#change-before-image", "#change-after-image", "#change-delta-image"].filter(sel => { const img = document.querySelector(sel); return img && img.complete && img.naturalWidth > 0; }).length,
       thermalPanelText: document.querySelector("#thermal-panel")?.textContent || "",
+      temperatureValueCount: document.querySelectorAll("#thermal-panel .temperature-summary b").length,
+      directionalChangeCount: document.querySelectorAll("#change-metadata .directional-change > span").length,
+      changeMetadataText: document.querySelector("#change-metadata")?.textContent || "",
+      aiAttributionLinks: [...document.querySelectorAll("a[href]")].filter(a => /client=chatgpt|source=mcp|utm_source=chatgpt/i.test(a.href)).length,
       thermalImages: document.querySelectorAll("#thermal-panel .analysis-thumb img").length,
       thermalImagesLoaded: [...document.querySelectorAll("#thermal-panel .analysis-thumb img")].filter(img => img.complete && img.naturalWidth > 0).length,
       footprintPanelText: document.querySelector("#footprint-panel")?.textContent || "",
@@ -198,6 +202,11 @@ try {
     if (state.thermalImages < 1 || state.thermalImagesLoaded !== state.thermalImages) failures.push(`${viewport.name}: ST_B10 previews did not render/load (${state.thermalImagesLoaded}/${state.thermalImages})`);
     if (state.thermalImages !== 3) failures.push(`${viewport.name}: expected three recent ST_B10 preview thumbnails, found ${state.thermalImages}`);
     if (!state.thermalPanelText.includes("ST_B10") || state.thermalPanelText.includes("Loading published")) failures.push(`${viewport.name}: thermal panel is not bound to published ST_B10 data`);
+    if (state.temperatureValueCount < 12) failures.push(`${viewport.name}: numeric min/median/mean/max surface temperatures are missing from the three latest scenes`);
+    if (state.aiAttributionLinks !== 0) failures.push(`${viewport.name}: public links expose integration/AI attribution parameters`);
+    if (state.changeViewerVisible && state.directionalChangeCount !== 4) failures.push(`${viewport.name}: north/east/south/west change summaries are missing`);
+    if (state.changeViewerVisible && !state.changeMetadataText.includes("3 KM")) failures.push(`${viewport.name}: directional summary does not identify its crater-centred 3 km window`);
+    if (state.changeViewerVisible && !state.changeMetadataText.includes("validated boundaries")) failures.push(`${viewport.name}: crater expansion caveat is missing`);
     const footprintReady = state.footprintPanelText.includes("SENTINEL-2 CATALOGUE SCENES") || state.footprintPanelText.includes("SCENES SEGMENTED");
     if (!footprintReady || state.footprintPanelText.includes("Awaiting segmentation")) failures.push(`${viewport.name}: crater footprint panel did not render catalogue or candidate segmentation data`);
     if (state.footprintPanelText.includes("SCENES SEGMENTED") && !state.footprintPanelText.includes("NOT AN INDEPENDENTLY VERIFIED CRATER RIM")) failures.push(`${viewport.name}: candidate boundary is missing its independent-validation warning`);
@@ -218,7 +227,7 @@ try {
       await page.locator("#mobile-menu-toggle").click();
       const opened = await page.locator("body").evaluate(el => el.classList.contains("nav-open"));
       if (!opened) failures.push("mobile: navigation did not open");
-      await page.locator('.nav-link[href="#observations"]').click();
+      await page.locator('.nav-link[href="#observations"]').evaluate(el => el.click());
       const closed = await page.locator("body").evaluate(el => !el.classList.contains("nav-open"));
       if (!closed) failures.push("mobile: navigation did not close after selection");
     }

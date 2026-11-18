@@ -167,7 +167,15 @@ function renderChangePairs(m){
   after.style.clipPath="inset(0 0 0 "+Number(divider.value)+"%)";
   $("change-before-date").textContent="BEFORE · "+pair.before_date;
   $("change-after-date").textContent="AFTER · "+pair.after_date;
-  $("change-metadata").textContent=pair.label+" · "+pair.temporal_gap_days+" DAYS · "+pair.common_valid_pixel_pct+"% COMMON VALID COVERAGE · "+pair.crs+" · "+pair.resolution_m+" M";
+  const sectors=pair.spatial_change_summary&&pair.spatial_change_summary.sectors||{};
+  const sectorNames={north:"NORTH",east:"EAST",south:"SOUTH",west:"WEST"};
+  const sectorRows=Object.entries(sectorNames).map(([key,label])=>{
+   const v=sectors[key];
+   if(!v||!v.pixel_count)return '<span>'+label+' · NO VALID PIXELS</span>';
+   const unit=pair.product==="lst"?"°C":"index";
+   return '<span>'+label+' · MEDIAN Δ '+Number(v.median_delta).toFixed(3)+' '+unit+' · + '+Number(v.positive_change_area_km2).toFixed(3)+' / − '+Number(v.negative_change_area_km2).toFixed(3)+' km²</span>';
+  }).join("");
+  $("change-metadata").innerHTML='<div>'+esc(pair.label)+' · '+esc(pair.temporal_gap_days)+' DAYS · '+esc(pair.common_valid_pixel_pct)+'% COMMON VALID COVERAGE · '+esc(pair.crs)+' · '+esc(pair.resolution_m)+' M</div>'+(sectorRows?'<div class="directional-change"><strong>SURFACE CHANGE BY DIRECTION · 3 KM × 3 KM CRATER-CENTRED WINDOW</strong>'+sectorRows+'</div>':'')+'<p class="analysis-note">Positive/negative areas count pixels with signed index or temperature differences. They do not measure crater-rim movement. A reliable expansion direction requires validated boundaries for both dates.</p>';
   deltaPanel.hidden=true;deltaToggle.setAttribute("aria-pressed","false");deltaToggle.textContent="SHOW DIFFERENCE";
  };
  select.onchange=draw;
@@ -198,10 +206,11 @@ function renderAnalysisPanels(m){
   if(!thermal.length){
    thermalRoot.innerHTML='<div class="analysis-empty"><i class="ph ph-thermometer"></i><strong>No ST_B10 raster linked</strong><p>The live manifest has no processed Landsat land-surface-temperature preview. This is a data-publication status, not a zero-temperature reading.</p></div>';
   }else{
-   thermalRoot.innerHTML='<div class="analysis-data-summary"><strong>'+fmt(thermal.length)+' SCENES WITH ST_B10</strong><span>30 m · surface temperature · exploratory</span></div><div class="analysis-thumb-grid">'+thermal.slice(0,3).map(({o,preview,cog})=>{
-    const url=assetUrl(preview.href),cogUrl=cog?assetUrl(cog.href):null;
-    return '<article class="analysis-thumb"><a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(url)+'" loading="eager" alt="Landsat ST_B10 surface temperature preview for '+esc(o.scene_id)+'"></a><div><strong>'+esc(date(o.acquired_at))+'</strong><span>'+esc(o.scene_id)+'</span>'+(cogUrl?'<a href="'+esc(cogUrl)+'" target="_blank" rel="noopener noreferrer">OPEN ST_B10 COG ↗</a>':'')+'</div></article>';
-   }).join("")+'</div><p class="analysis-note">ST_B10 is retrieved land-surface temperature, not flame or crater-core temperature. Scene-time and atmospheric conditions affect values; VIIRS/MODIS detections are not merged into this raster.</p>';
+   thermalRoot.innerHTML='<div class="analysis-data-summary"><strong>'+fmt(thermal.length)+' SCENES WITH ST_B10</strong><span>30 m · land-surface temperature · °C</span></div><div class="analysis-thumb-grid">'+thermal.slice(0,3).map(({o,preview,cog})=>{
+    const url=assetUrl(preview.href),cogUrl=cog?assetUrl(cog.href):null,stats=o.surface_temperature_c||null;
+    const values=stats?'<div class="temperature-summary"><span>MIN <b>'+Number(stats.min).toFixed(1)+' °C</b></span><span>MEDIAN <b>'+Number(stats.median).toFixed(1)+' °C</b></span><span>MEAN <b>'+Number(stats.mean).toFixed(1)+' °C</b></span><span>MAX <b>'+Number(stats.max).toFixed(1)+' °C</b></span></div><p class="temperature-range">P10–P90: '+Number(stats.p10).toFixed(1)+'–'+Number(stats.p90).toFixed(1)+' °C · '+fmt(stats.valid_pixel_count)+' valid pixels':'<p class="temperature-range">Numeric temperature summary pending next raster processing run';
+    return '<article class="analysis-thumb"><a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(url)+'" loading="eager" alt="Landsat ST_B10 surface temperature preview for '+esc(o.scene_id)+'"></a><div><strong>'+esc(date(o.acquired_at))+'</strong><span>'+esc(o.scene_id)+'</span>'+values+(cogUrl?'<a href="'+esc(cogUrl)+'" target="_blank" rel="noopener noreferrer">OPEN ST_B10 COG ↗</a>':'')+'</div></article>';
+   }).join("")+'</div><p class="analysis-note">Values summarize valid 30 m land-surface-temperature pixels across the Darvaza area of interest. They are not flame or crater-core temperatures; overpass time, clouds, atmosphere and mixed pixels affect interpretation.</p>';
   }
  }
  const footprintRoot=$("footprint-panel");
@@ -223,6 +232,24 @@ function renderAnalysisPanels(m){
     ?(validation.summary&&validation.summary.criteria_met?'Independent reference comparison completed; pre-registered metric thresholds met. Expert review and reference provenance remain essential.':'Independent reference comparison completed; one or more operational thresholds were not met.')
     :'Independent reference polygon and two-person annotation review are still missing. No validated boundary or true crater area is published.';
    footprintRoot.innerHTML='<div class="analysis-data-summary"><strong>'+fmt(scenes.length)+' SCENES SEGMENTED</strong><span>Sentinel-2 L2A · exploratory candidate polygons</span></div><div class="analysis-note"><strong>NOT AN INDEPENDENTLY VERIFIED CRATER RIM</strong><p>These are algorithmic candidates, not a confirmed crater boundary.</p></div>'+(previewUrl?'<a class="change-card-preview" href="'+esc(previewUrl)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(previewUrl)+'" loading="eager" alt="Exploratory Darvaza crater segmentation candidate consensus"></a>':'')+areaRange+'<div class="candidate-scenes"><div><span>'+esc(date(latest.acquired_at))+'</span><strong>'+esc(latest.scene_id)+'</strong><em>'+fmt(latest.candidate_count)+' candidate masks</em></div></div><p class="analysis-note">'+esc(validationText)+'</p>'+(geoUrl?'<a class="analysis-action" href="'+esc(geoUrl)+'" target="_blank" rel="noopener noreferrer">OPEN CANDIDATE BOUNDARIES GEOJSON <i class="ph ph-arrow-up-right"></i></a>':'')+'<p class="analysis-note">Area min/median/max describe sensitivity to algorithms and thresholds only. They are not a statistical confidence interval. Sentinel-2 B11/SCL inputs are natively 20 m and resampled to the 10 m output grid.</p>';
+  }else{
+   const segmentation=(m.time_series||{}).crater_segmentation;
+  if(segmentation&&Array.isArray(segmentation.candidate_scenes)&&segmentation.candidate_scenes.length){
+   const scenes=segmentation.candidate_scenes.slice().sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at));
+   const latest=scenes[0],assets=latest.assets||[];
+   const preview=assets.find(a=>String(a.href||"").endsWith("candidate-preview.png"));
+   const geo=assets.find(a=>String(a.href||"").endsWith(".geojson"));
+   const sensitivity=latest.candidate_area_sensitivity_m2||{};
+   const validation=segmentation.independent_validation||{};
+   const validated=validation.reference_validation_performed===true;
+   const previewUrl=preview?assetUrl(preview.href):null;
+   const geoUrl=geo?assetUrl(geo.href):null;
+   const areaRange=[sensitivity.min,sensitivity.median,sensitivity.max].every(Number.isFinite)
+    ?'<div class="analysis-data-summary"><strong>AREA SENSITIVITY · '+fmt(sensitivity.min)+'–'+fmt(sensitivity.max)+' m²</strong><span>Median candidate '+fmt(sensitivity.median)+' m² · '+fmt(latest.candidate_count)+' variants</span></div>':'<p class="analysis-note"><strong>AREA WITHHELD</strong> · '+(latest.candidate_quality_status==="unstable_segmentation_sensitivity_do_not_use_area"?"Candidate areas vary too widely across threshold variants; no area summary is published.":"Clear-pixel coverage is too low for an exploratory area summary.")+'</p>';
+   const validationText=validated
+    ?(validation.summary&&validation.summary.criteria_met?'Independent reference comparison completed; pre-registered metric thresholds met. Expert review and reference provenance remain essential.':'Independent reference comparison completed; one or more operational thresholds were not met.')
+    :'Independent reference polygon and two-person annotation review are still missing. No validated boundary or true crater area is published.';
+   footprintRoot.innerHTML='<div class="analysis-data-summary"><strong>'+fmt(scenes.length)+' SCENES SEGMENTED</strong><span>SENTINEL-2 CATALOGUE SCENES · L2A exploratory candidate polygons</span></div><div class="analysis-note"><strong>NOT AN INDEPENDENTLY VERIFIED CRATER RIM</strong><p>These are algorithmic candidates, not a confirmed crater boundary.</p></div>'+(previewUrl?'<a class="change-card-preview" href="'+esc(previewUrl)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(previewUrl)+'" loading="eager" alt="Exploratory Darvaza crater segmentation candidate consensus"></a>':'')+areaRange+'<div class="candidate-scenes"><div><span>'+esc(date(latest.acquired_at))+'</span><strong>'+esc(latest.scene_id)+'</strong><em>'+fmt(latest.candidate_count)+' candidate masks</em></div></div><p class="analysis-note">'+esc(validationText)+'</p>'+(geoUrl?'<a class="analysis-action" href="'+esc(geoUrl)+'" target="_blank" rel="noopener noreferrer">OPEN CANDIDATE BOUNDARIES GEOJSON <i class="ph ph-arrow-up-right"></i></a>':'')+'<p class="analysis-note">Area min/median/max describe sensitivity to algorithms and thresholds only. They are not a statistical confidence interval. Sentinel-2 B11/SCL inputs are natively 20 m and resampled to the 10 m output grid.</p>';
   }else{
    const candidates=observations.filter(o=>o.source_id==="sentinel-2-l2a"&&o.cloud_cover_pct!=null&&Number(o.cloud_cover_pct)<=30).sort((a,b)=>new Date(b.acquired_at)-new Date(a.acquired_at));
    const s2=observations.filter(o=>o.source_id==="sentinel-2-l2a");

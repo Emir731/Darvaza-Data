@@ -10,6 +10,7 @@ on:
       - feature/darvaza-comparison-v2
       - feature/analysis-panels
       - feature/crater-segmentation-ui
+      - feature/crater-segmentation-ui-v2
       - main
   workflow_dispatch:
 

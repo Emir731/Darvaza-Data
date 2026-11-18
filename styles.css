@@ -497,3 +497,14 @@ table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
 .analysis-action{display:flex;justify-content:space-between;align-items:center;padding:10px 11px;border:1px solid rgba(201,170,104,.35);border-radius:5px;color:var(--accent);font:9px var(--mono);text-decoration:none;letter-spacing:.05em}
 .analysis-action:hover{background:rgba(201,170,104,.08)}
 @media(max-width:640px){.analysis-thumb-grid{grid-template-columns:1fr 1fr}.analysis-card{min-width:0}.analysis-thumb>div{padding:7px}.candidate-scenes>div{grid-template-columns:70px minmax(0,1fr)}}
+
+
+/* Quantitative temperature and directional-change summaries */
+.temperature-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:10px 0 5px}
+.temperature-summary span{display:flex;justify-content:space-between;gap:8px;padding:7px 8px;border:1px solid var(--line,rgba(255,255,255,.1));border-radius:7px;font-size:10px;color:var(--muted,#a5ada7)}
+.temperature-summary b{color:var(--text,#f2f4ef);font:600 11px "DM Mono",monospace;white-space:nowrap}
+.temperature-range{font-size:10px;color:var(--muted,#a5ada7);line-height:1.55;margin:4px 0 8px}
+.directional-change{display:grid;gap:6px;margin:12px 0;padding:10px;border:1px solid var(--line,rgba(255,255,255,.1));border-radius:8px}
+.directional-change>strong{font-size:10px;letter-spacing:.09em;color:var(--accent,#d6a653);margin-bottom:2px}
+.directional-change>span{font:10px "DM Mono",monospace;color:var(--muted,#a5ada7);line-height:1.5}
+@media(max-width:600px){.temperature-summary{grid-template-columns:1fr 1fr}.directional-change>span{font-size:9px}}
