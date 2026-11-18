@@ -141,6 +141,12 @@ try {
       changeEmptyVisible: !!document.querySelector("#change-empty") && !document.querySelector("#change-empty").hidden,
       changePairOptions: document.querySelectorAll("#change-pair-select option").length,
       changeImagesLoaded: ["#change-before-image", "#change-after-image", "#change-delta-image"].filter(sel => { const img = document.querySelector(sel); return img && img.complete && img.naturalWidth > 0; }).length,
+      thermalPanelText: document.querySelector("#thermal-panel")?.textContent || "",
+      thermalImages: document.querySelectorAll("#thermal-panel .analysis-thumb img").length,
+      thermalImagesLoaded: [...document.querySelectorAll("#thermal-panel .analysis-thumb img")].filter(img => img.complete && img.naturalWidth > 0).length,
+      footprintPanelText: document.querySelector("#footprint-panel")?.textContent || "",
+      changePanelText: document.querySelector("#surface-change-panel")?.textContent || "",
+      changeCardImageLoaded: !!document.querySelector("#surface-change-panel img")?.complete && (document.querySelector("#surface-change-panel img")?.naturalWidth || 0) > 0,
     }));
     if (!state.title.includes("Darvaza Watch")) failures.push(`${viewport.name}: unexpected document title`);
     if (!state.h1) failures.push(`${viewport.name}: main heading missing`);
@@ -163,6 +169,11 @@ try {
     if (!state.changeViewerVisible || state.changeEmptyVisible) failures.push(`${viewport.name}: before/after viewer did not activate from published pairs`);
     if (state.changePairOptions !== expected.pairCount) failures.push(`${viewport.name}: expected ${expected.pairCount} date-pair options, found ${state.changePairOptions}`);
     if (state.changeImagesLoaded !== 3) failures.push(`${viewport.name}: comparison images failed to load (${state.changeImagesLoaded}/3)`);
+    if (state.thermalImages < 1 || state.thermalImagesLoaded !== state.thermalImages) failures.push(`${viewport.name}: ST_B10 previews did not render/load (${state.thermalImagesLoaded}/${state.thermalImages})`);
+    if (!state.thermalPanelText.includes("ST_B10") || state.thermalPanelText.includes("Loading published")) failures.push(`${viewport.name}: thermal panel is not bound to published ST_B10 data`);
+    if (!state.footprintPanelText.includes("SENTINEL-2 CATALOGUE SCENES") || state.footprintPanelText.includes("Awaiting segmentation")) failures.push(`${viewport.name}: footprint readiness panel did not render Sentinel-2 catalogue status`);
+    if (!state.changePanelText.includes("CO-REGISTERED PRODUCTS") || state.changePanelText.includes("Loading co-registered")) failures.push(`${viewport.name}: surface-change card is not bound to published date-pair products`);
+    if (!state.changeCardImageLoaded) failures.push(`${viewport.name}: surface-change comparison thumbnail did not load`);
     if (state.dataStatus !== "live") failures.push(`${viewport.name}: manifest state is ${state.dataStatus}`);
     if (viewport.name === "mobile" && !state.mobileButtonVisible) failures.push("mobile: navigation toggle is not visible");
     if (pageErrors.length) failures.push(`${viewport.name}: runtime errors: ${pageErrors.join("; ")}`);
