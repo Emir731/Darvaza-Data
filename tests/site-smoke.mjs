@@ -57,6 +57,8 @@ try {
     await page.waitForFunction(() => document.documentElement.dataset.dataStatus === "live", null, { timeout: 20000 }).catch(() => {
       failures.push(`${viewport.name}: public manifest did not load`);
     });
+    // Force the three analysis-panel thumbnails to load even when below the fold.
+    await page.evaluate(() => { for (const img of document.querySelectorAll("#thermal-panel img, #surface-change-panel img")) img.loading = "eager"; });
     // The UI intentionally lazy-loads previews; make them eager in the test so every published URL is checked.
     await page.evaluate(() => {
       for (const img of document.querySelectorAll(".raster-scene-card .raster-preview-link img")) {
