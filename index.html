@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
   
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="./styles.css?v=20261118-2">
+  <link rel="stylesheet" href="./styles.css?v=20261118-3">
 </head>
 <body>
   <div class="app-shell">
@@ -99,7 +99,7 @@
     <div class="change-metadata" id="change-metadata"></div>
   </div>
 </section>
-<div class="analysis-grid"><article class="analysis-card"><div class="analysis-card-head"><span>THERMAL ACTIVITY</span><i class="ph ph-thermometer"></i></div><div class="analysis-empty"><i class="ph ph-chart-line"></i><strong>Exploratory surface temperature available</strong><p>Landsat ST_B10 estimates land-surface temperature on a 30 m grid. It is not flame or crater-core temperature; VIIRS/MODIS hotspot detections are a separate feed.</p></div><span class="analysis-foot">LANDSAT ST_B10 · SURFACE TEMPERATURE</span></article><article class="analysis-card"><div class="analysis-card-head"><span>CRATER FOOTPRINT</span><i class="ph ph-target"></i></div><div class="analysis-empty"><i class="ph ph-ruler"></i><strong>Awaiting segmentation</strong><p>Optical scenes are catalogued, but no consistently masked crater-boundary measurements or uncertainty estimates have been produced.</p></div><span class="analysis-foot">LANDSAT / SENTINEL-2 · AREA ESTIMATE</span></article><article class="analysis-card"><div class="analysis-card-head"><span>SURFACE CHANGE</span><i class="ph ph-waves"></i></div><div class="analysis-empty"><i class="ph ph-chart-scatter"></i><strong>Awaiting co-registered comparison</strong><p>Single-scene spectral indices are available, but no co-registered multi-date comparison rasters or validated change products have been published yet.</p></div><span class="analysis-foot">LANDSAT / SENTINEL-1/2 · COMPARISON</span></article></div><div id="raster-products" class="raster-products" aria-live="polite"><div class="raster-empty"><i class="ph ph-image"></i><div><strong>Loading published raster products</strong><p>Exploratory raster previews will appear here when available in the public manifest.</p></div></div></div></section>
+<div class="analysis-grid"><article class="analysis-card" id="thermal-card"><div class="analysis-card-head"><span>THERMAL ACTIVITY</span><i class="ph ph-thermometer"></i></div><div id="thermal-panel" class="analysis-panel-content"><div class="analysis-empty"><i class="ph ph-chart-line"></i><strong>Loading published ST_B10 products</strong><p>Reading the latest Landsat surface-temperature previews and COGs from the live manifest.</p></div></div><span class="analysis-foot">LANDSAT ST_B10 · LAND-SURFACE TEMPERATURE · 30 M</span></article><article class="analysis-card" id="footprint-card"><div class="analysis-card-head"><span>CRATER FOOTPRINT</span><i class="ph ph-target"></i></div><div id="footprint-panel" class="analysis-panel-content"><div class="analysis-empty"><i class="ph ph-ruler"></i><strong>Footprint assessment not published</strong><p>A defensible boundary requires a dedicated high-resolution segmentation and uncertainty assessment. No area is inferred from coarse Landsat pixels.</p></div></div><span class="analysis-foot">SENTINEL-2 · 10 M CANDIDATE INPUT · SEGMENTATION NOT VALIDATED</span></article><article class="analysis-card" id="change-card"><div class="analysis-card-head"><span>SURFACE CHANGE</span><i class="ph ph-waves"></i></div><div id="surface-change-panel" class="analysis-panel-content"><div class="analysis-empty"><i class="ph ph-chart-scatter"></i><strong>Loading co-registered comparisons</strong><p>Reading published before/after products and shared-valid-pixel coverage.</p></div></div><span class="analysis-foot">LANDSAT · CO-REGISTERED 30 M DATE-PAIR SCREENING</span></article></div><div id="raster-products" class="raster-products" aria-live="polite"><div class="raster-empty"><i class="ph ph-image"></i><div><strong>Loading published raster products</strong><p>Exploratory raster previews will appear here when available in the public manifest.</p></div></div></div></section>
       <section class="panel sources-panel" id="sources">
         <div class="panel-heading"><div><div class="eyebrow">DATA INFRASTRUCTURE</div><h2>Source network</h2><p class="section-description">Catalogue connectivity and raster-processing readiness are reported separately; catalogue access does not mean imagery has been analysed.</p></div><span class="panel-index">04 / SOURCES</span></div>
         <div id="source-grid" class="source-grid">
@@ -153,6 +153,6 @@
   </div>
   <script src="https://unpkg.com/globe.gl@2.45.0/dist/globe.gl.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="./app.js?v=20261118-4"></script>
+  <script src="./app.js?v=20261118-5"></script>
 </body>
 </html>
