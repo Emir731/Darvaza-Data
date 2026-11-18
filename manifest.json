@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T08:13:12.653645Z",
+  "generated_at": "2026-11-18T08:16:13.072780+00:00",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -637,7 +637,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20261026_02_T1",
       "acquired_at": "2026-10-26T06:42:15.206708Z",
-      "processed_at": "2026-11-18T02:54:00.284149+00:00",
+      "processed_at": "2026-11-18T08:13:48.194599+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.17,
       "valid_pixel_pct": 95.94,
@@ -749,7 +749,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T02:54:00.284149+00:00"
+        "published_at": "2026-11-18T08:13:48.194599+00:00"
       },
       "optical_valid_pixel_pct": 95.94,
       "thermal_valid_pixel_pct": 95.94
@@ -1947,7 +1947,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_160032_20260924_02_T1",
       "acquired_at": "2026-09-24T06:42:09.785283Z",
-      "processed_at": "2026-11-18T02:54:00.284149+00:00",
+      "processed_at": "2026-11-18T08:13:48.194599+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.0,
       "valid_pixel_pct": 96.04,
@@ -2059,7 +2059,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T02:54:00.284149+00:00"
+        "published_at": "2026-11-18T08:13:48.194599+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
       "thermal_valid_pixel_pct": 96.02
@@ -4269,7 +4269,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260730_02_T1",
       "acquired_at": "2026-07-30T06:41:58.010309Z",
-      "processed_at": "2026-11-18T02:54:00.284149+00:00",
+      "processed_at": "2026-11-18T08:13:48.194599+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
       "valid_pixel_pct": 96.04,
@@ -4381,7 +4381,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T02:54:00.284149+00:00"
+        "published_at": "2026-11-18T08:13:48.194599+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
       "thermal_valid_pixel_pct": 96.02
@@ -5711,7 +5711,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC08_L2SP_161032_20260627_02_T1",
       "acquired_at": "2026-06-27T06:47:42.556031Z",
-      "processed_at": "2026-11-18T02:54:00.284149+00:00",
+      "processed_at": "2026-11-18T08:13:48.194599+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.99,
       "valid_pixel_pct": 95.61,
@@ -5823,7 +5823,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T02:54:00.284149+00:00"
+        "published_at": "2026-11-18T08:13:48.194599+00:00"
       },
       "optical_valid_pixel_pct": 95.61,
       "thermal_valid_pixel_pct": 94.31
@@ -6977,7 +6977,7 @@
       "source_id": "landsat-c2-l2",
       "scene_id": "LC09_L2SP_160032_20260527_02_T1",
       "acquired_at": "2026-05-27T06:41:29.758858Z",
-      "processed_at": "2026-11-18T02:54:00.284149+00:00",
+      "processed_at": "2026-11-18T08:13:48.194599+00:00",
       "processing_version": "landsat-environmental/0.2",
       "cloud_cover_pct": 0.01,
       "valid_pixel_pct": 96.04,
@@ -7089,7 +7089,7 @@
             "version": "2.34.2"
           }
         ],
-        "published_at": "2026-11-18T02:54:00.284149+00:00"
+        "published_at": "2026-11-18T08:13:48.194599+00:00"
       },
       "optical_valid_pixel_pct": 96.04,
       "thermal_valid_pixel_pct": 96.02
@@ -7225,7 +7225,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_ndmi",
@@ -7268,7 +7268,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_mndwi",
@@ -7311,7 +7311,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_lst",
@@ -7354,7 +7354,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndvi",
@@ -7397,7 +7397,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndmi",
@@ -7440,7 +7440,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_mndwi",
@@ -7483,7 +7483,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_lst",
@@ -7526,7 +7526,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndvi",
@@ -7569,7 +7569,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndmi",
@@ -7612,7 +7612,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_mndwi",
@@ -7655,7 +7655,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_lst",
@@ -7698,7 +7698,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndvi",
@@ -7741,7 +7741,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndmi",
@@ -7784,7 +7784,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_mndwi",
@@ -7827,7 +7827,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_lst",
@@ -7870,7 +7870,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     }
   ],
   "change_products": [
@@ -7915,7 +7915,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_ndmi",
@@ -7958,7 +7958,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_mndwi",
@@ -8001,7 +8001,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-05-27_2026-06-27_lst",
@@ -8044,7 +8044,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndvi",
@@ -8087,7 +8087,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_ndmi",
@@ -8130,7 +8130,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_mndwi",
@@ -8173,7 +8173,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-06-27_2026-07-30_lst",
@@ -8216,7 +8216,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndvi",
@@ -8259,7 +8259,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_ndmi",
@@ -8302,7 +8302,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_mndwi",
@@ -8345,7 +8345,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-07-30_2026-09-24_lst",
@@ -8388,7 +8388,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndvi",
@@ -8431,7 +8431,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_ndmi",
@@ -8474,7 +8474,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_mndwi",
@@ -8517,7 +8517,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     },
     {
       "id": "2026-09-24_2026-10-26_lst",
@@ -8560,7 +8560,7 @@
       },
       "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
       "processing_version": "landsat-co-registered-change/0.1",
-      "published_at": "2026-11-18T02:54:00.284149+00:00"
+      "published_at": "2026-11-18T08:13:48.194599+00:00"
     }
   ],
   "pipeline_runs": [
@@ -8755,6 +8755,24 @@
       "source_id": "landsat-c2-l2",
       "started_at": "2026-11-18T02:54:00.284149+00:00",
       "finished_at": "2026-11-18T02:56:52.615834+00:00",
+      "status": "partial",
+      "stage_reached": "raster_processing",
+      "scenes_discovered": 6,
+      "scenes_published": 5,
+      "processing_version": "landsat-environmental/0.2",
+      "errors": [
+        {
+          "stage": "raster_processing",
+          "message": "RuntimeError: No optical or thermal product passed quality screening",
+          "scene_id": "LC09_L2SP_160032_20260831_02_T1"
+        }
+      ]
+    },
+    {
+      "id": "landsat-environmental-20261118T081613.072780+0000",
+      "source_id": "landsat-c2-l2",
+      "started_at": "2026-11-18T08:13:48.194599+00:00",
+      "finished_at": "2026-11-18T08:16:13.072780+00:00",
       "status": "partial",
       "stage_reached": "raster_processing",
       "scenes_discovered": 6,
