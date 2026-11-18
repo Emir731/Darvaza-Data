@@ -5,6 +5,8 @@ on:
     branches:
       - feature/landsat-products-ui
       - fix/live-manifest-cache
+      - feature/before-after-viewer
+      - feature/darvaza-comparison-v2
       - main
   workflow_dispatch:
 
