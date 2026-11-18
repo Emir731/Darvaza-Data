@@ -28,6 +28,13 @@ try {
             }
           }
         }
+        for (const pair of manifest.change_products || manifest.before_after_pairs || []) {
+          for (const [key, href] of Object.entries(pair.assets || {})) {
+            if (typeof href === "string" && href.startsWith("assets/")) {
+              pair.assets[key] = "https://emir731.github.io/Darvaza-Data/" + href;
+            }
+          }
+        }
         await route.fulfill({
           status: 200,
           contentType: "application/json",
@@ -79,6 +86,14 @@ try {
         failures.push(`${viewport.name}: fewer than 95% of published raster previews loaded`);
       });
     });
+    const expected = await page.evaluate(async () => {
+      const m = await (await fetch("./manifest.json", { cache: "no-store" })).json();
+      const processed = (m.observations || []).filter(x => x.processed_at && String(x.processing_version || "").startsWith("landsat-environmental/"));
+      const pairs = m.change_products || m.before_after_pairs || [];
+      const pairAssets = pairs.flatMap(p => Object.values(p.assets || {})).filter(v => typeof v === "string");
+      const sceneAssets = processed.reduce((n, x) => n + (x.assets || []).filter(a => a.role === "preview" || a.role === "cog").length, 0);
+      return { observations: (m.observations || []).length, processed: processed.length, rasterAssets: sceneAssets + pairAssets.length, pairCount: pairs.length };
+    });
     const state = await page.evaluate(() => ({
       title: document.title,
       h1: document.querySelector("h1")?.textContent?.trim() || "",
@@ -104,6 +119,10 @@ try {
       rasterMissing: [...document.querySelectorAll(".raster-scene-card .raster-preview-link img")].filter(img => !img.complete || !img.naturalWidth).map(img => img.getAttribute("src")),
       dataStatus: document.documentElement.dataset.dataStatus || "",
       mobileButtonVisible: !!document.querySelector("#mobile-menu-toggle") && getComputedStyle(document.querySelector("#mobile-menu-toggle")).display !== "none",
+      changeViewerVisible: !!document.querySelector("#change-viewer") && !document.querySelector("#change-viewer").hidden,
+      changeEmptyVisible: !!document.querySelector("#change-empty") && !document.querySelector("#change-empty").hidden,
+      changePairOptions: document.querySelectorAll("#change-pair-select option").length,
+      changeImagesLoaded: ["#change-before-image", "#change-after-image", "#change-delta-image"].filter(sel => { const img = document.querySelector(sel); return img && img.complete && img.naturalWidth > 0; }).length,
     }));
     if (!state.title.includes("Darvaza Watch")) failures.push(`${viewport.name}: unexpected document title`);
     if (!state.h1) failures.push(`${viewport.name}: main heading missing`);
@@ -117,14 +136,25 @@ try {
     if (Math.abs(state.globeLat - 40.25258) > 0.0001 || Math.abs(state.globeLon - 58.43933) > 0.0001) failures.push(`${viewport.name}: globe is not centered on Darvaza`);
     if (state.catalogueCount !== 154) failures.push(`${viewport.name}: expected 154 live catalogue observations, found ${state.catalogueCount}`);
     if (state.processedCount !== 5) failures.push(`${viewport.name}: expected five processed Landsat scenes, found ${state.processedCount}`);
-    if (state.rasterAssetCount !== 40) failures.push(`${viewport.name}: expected 40 published raster assets, found ${state.rasterAssetCount}`);
+    if (state.rasterAssetCount !== expected.rasterAssets) failures.push(`${viewport.name}: expected ${expected.rasterAssets} published raster assets, found ${state.rasterAssetCount}`);
     if (state.rasterScenes !== 5) failures.push(`${viewport.name}: expected five processed scene cards, found ${state.rasterScenes}`);
     if (state.rasterPreviews !== 20) failures.push(`${viewport.name}: expected twenty raster previews, found ${state.rasterPreviews}`);
     if (state.rasterLoaded !== 20) failures.push(`${viewport.name}: all 20 raster previews must load (${state.rasterLoaded}/20)`);
     if (!state.analysisStatus.includes("EXPLORATORY RASTERS PUBLISHED")) failures.push(`${viewport.name}: analysis status still reports no raster products`);
+    if (expected.pairCount < 1) failures.push(`${viewport.name}: no published before/after pairs are available`);
+    if (!state.changeViewerVisible || state.changeEmptyVisible) failures.push(`${viewport.name}: before/after viewer did not activate from published pairs`);
+    if (state.changePairOptions !== expected.pairCount) failures.push(`${viewport.name}: expected ${expected.pairCount} date-pair options, found ${state.changePairOptions}`);
+    if (state.changeImagesLoaded !== 3) failures.push(`${viewport.name}: comparison images failed to load (${state.changeImagesLoaded}/3)`);
     if (state.dataStatus !== "live") failures.push(`${viewport.name}: manifest state is ${state.dataStatus}`);
     if (viewport.name === "mobile" && !state.mobileButtonVisible) failures.push("mobile: navigation toggle is not visible");
     if (pageErrors.length) failures.push(`${viewport.name}: runtime errors: ${pageErrors.join("; ")}`);
+    if (state.changeViewerVisible && state.changeImagesLoaded === 3) {
+      await page.locator("#change-divider").evaluate(el => { el.value = "35"; el.dispatchEvent(new Event("input", { bubbles: true })); });
+      const clip = await page.locator("#change-after-image").evaluate(el => el.style.clipPath);
+      if (!clip.includes("35%")) failures.push(`${viewport.name}: comparison divider did not update`);
+      await page.locator("#change-delta-toggle").click();
+      if (!(await page.locator("#change-delta-panel").isVisible())) failures.push(`${viewport.name}: difference layer did not open`);
+    }
 
     if (viewport.name === "mobile" && state.mobileButtonVisible) {
       await page.locator("#mobile-menu-toggle").click();
