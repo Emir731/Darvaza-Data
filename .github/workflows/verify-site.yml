@@ -9,6 +9,7 @@ on:
       - feature/before-after-viewer
       - feature/darvaza-comparison-v2
       - feature/analysis-panels
+      - feature/crater-segmentation-ui
       - main
   workflow_dispatch:
 
