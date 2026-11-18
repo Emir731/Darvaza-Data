@@ -218,7 +218,7 @@ function renderAnalysisPanels(m){
    const previewUrl=preview?assetUrl(preview.href):null;
    const geoUrl=geo?assetUrl(geo.href):null;
    const areaRange=[sensitivity.min,sensitivity.median,sensitivity.max].every(Number.isFinite)
-    ?'<div class="analysis-data-summary"><strong>AREA SENSITIVITY · '+fmt(sensitivity.min)+'–'+fmt(sensitivity.max)+' m²</strong><span>Median candidate '+fmt(sensitivity.median)+' m² · '+fmt(latest.candidate_count)+' variants</span></div>':'<p class="analysis-note"><strong>AREA WITHHELD</strong> · Clear-pixel coverage is too low for even an exploratory area summary.</p>';
+    ?'<div class="analysis-data-summary"><strong>AREA SENSITIVITY · '+fmt(sensitivity.min)+'–'+fmt(sensitivity.max)+' m²</strong><span>Median candidate '+fmt(sensitivity.median)+' m² · '+fmt(latest.candidate_count)+' variants</span></div>':'<p class="analysis-note"><strong>AREA WITHHELD</strong> · '+(latest.candidate_quality_status==="unstable_segmentation_sensitivity_do_not_use_area"?"Candidate areas vary too widely across threshold variants; no area summary is published.":"Clear-pixel coverage is too low for an exploratory area summary.")+'</p>';
    const validationText=validated
     ?(validation.summary&&validation.summary.criteria_met?'Independent reference comparison completed; pre-registered metric thresholds met. Expert review and reference provenance remain essential.':'Independent reference comparison completed; one or more operational thresholds were not met.')
     :'Independent reference polygon and two-person annotation review are still missing. No validated boundary or true crater area is published.';
