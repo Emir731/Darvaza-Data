@@ -184,7 +184,7 @@ try {
     if (!state.globeRoot || !state.rasterRoot) failures.push(`${viewport.name}: expected observatory components missing`);
     if (!state.globeLocked) failures.push(`${viewport.name}: 3D globe controls are not locked`);
     if (Math.abs(state.globeLat - 40.25258) > 0.0001 || Math.abs(state.globeLon - 58.43933) > 0.0001) failures.push(`${viewport.name}: globe is not centered on Darvaza`);
-    if (state.catalogueCount !== 154) failures.push(`${viewport.name}: expected 154 live catalogue observations, found ${state.catalogueCount}`);
+    if (state.catalogueCount !== expected.observations) failures.push(`${viewport.name}: expected ${expected.observations} live catalogue observations, found ${state.catalogueCount}`);
     if (state.processedCount !== 5) failures.push(`${viewport.name}: expected five processed Landsat scenes, found ${state.processedCount}`);
     if (state.rasterAssetCount !== expected.rasterAssets) failures.push(`${viewport.name}: expected ${expected.rasterAssets} published raster assets, found ${state.rasterAssetCount}`);
     if (state.rasterScenes !== 5) failures.push(`${viewport.name}: expected five processed scene cards, found ${state.rasterScenes}`);
