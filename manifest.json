@@ -63,7 +63,7 @@
       "auth_method": "Public Planetary Computer STAC with signed asset URLs",
       "repository_url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
       "status": "healthy",
-      "last_checked": "2026-11-18T09:14:27.106669+00:00",
+      "last_checked": "2026-11-18T09:18:04.174504+00:00",
       "last_successful_acquisition": "2026-11-14T02:10:57.377105Z",
       "scene_count": 12,
       "native_resolution_m": 10,
@@ -7996,7 +7996,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
       "acquired_at": "2026-11-14T02:10:57.377105Z",
-      "processed_at": "2026-11-18T09:17:18.481650Z",
+      "processed_at": "2026-11-18T09:21:00.610259Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8077,7 +8077,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:18.481673Z"
+        "published_at": "2026-11-18T09:21:00.610278Z"
       }
     },
     {
@@ -8085,7 +8085,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
       "acquired_at": "2026-11-08T14:03:45.065903Z",
-      "processed_at": "2026-11-18T09:17:18.485106Z",
+      "processed_at": "2026-11-18T09:21:00.614020Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8166,7 +8166,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:18.485114Z"
+        "published_at": "2026-11-18T09:21:00.614031Z"
       }
     },
     {
@@ -8174,7 +8174,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
       "acquired_at": "2026-10-21T02:10:58.054364Z",
-      "processed_at": "2026-11-18T09:17:18.692698Z",
+      "processed_at": "2026-11-18T09:21:00.826951Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8255,7 +8255,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:18.692722Z"
+        "published_at": "2026-11-18T09:21:00.826975Z"
       }
     },
     {
@@ -8263,7 +8263,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
       "acquired_at": "2026-10-15T14:03:45.410229Z",
-      "processed_at": "2026-11-18T09:17:18.772377Z",
+      "processed_at": "2026-11-18T09:21:00.896939Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8344,7 +8344,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:18.772408Z"
+        "published_at": "2026-11-18T09:21:00.896962Z"
       }
     },
     {
@@ -8352,7 +8352,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
       "acquired_at": "2026-09-27T02:10:58.131537Z",
-      "processed_at": "2026-11-18T09:17:18.833176Z",
+      "processed_at": "2026-11-18T09:21:00.967368Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8433,7 +8433,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:18.833199Z"
+        "published_at": "2026-11-18T09:21:00.967390Z"
       }
     },
     {
@@ -8441,7 +8441,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
       "acquired_at": "2026-09-21T14:03:45.379887Z",
-      "processed_at": "2026-11-18T09:17:18.903974Z",
+      "processed_at": "2026-11-18T09:21:01.046638Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8522,7 +8522,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:18.904000Z"
+        "published_at": "2026-11-18T09:21:01.046666Z"
       }
     },
     {
@@ -8530,7 +8530,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
       "acquired_at": "2026-08-28T14:03:44.794602Z",
-      "processed_at": "2026-11-18T09:17:18.953077Z",
+      "processed_at": "2026-11-18T09:21:01.127355Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8611,7 +8611,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:18.953098Z"
+        "published_at": "2026-11-18T09:21:01.127377Z"
       }
     },
     {
@@ -8619,7 +8619,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
       "acquired_at": "2026-08-22T02:10:56.961728Z",
-      "processed_at": "2026-11-18T09:17:19.009145Z",
+      "processed_at": "2026-11-18T09:21:01.207322Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8700,7 +8700,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:19.009166Z"
+        "published_at": "2026-11-18T09:21:01.207345Z"
       }
     },
     {
@@ -8708,7 +8708,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
       "acquired_at": "2026-07-29T02:10:55.861957Z",
-      "processed_at": "2026-11-18T09:17:19.112011Z",
+      "processed_at": "2026-11-18T09:21:01.228908Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8789,7 +8789,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:19.112030Z"
+        "published_at": "2026-11-18T09:21:01.228929Z"
       }
     },
     {
@@ -8797,7 +8797,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
       "acquired_at": "2026-07-23T14:03:43.149375Z",
-      "processed_at": "2026-11-18T09:17:19.115544Z",
+      "processed_at": "2026-11-18T09:21:01.271247Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8878,7 +8878,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:19.115552Z"
+        "published_at": "2026-11-18T09:21:01.271267Z"
       }
     },
     {
@@ -8886,7 +8886,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
       "acquired_at": "2026-06-29T14:03:41.533198Z",
-      "processed_at": "2026-11-18T09:17:19.119033Z",
+      "processed_at": "2026-11-18T09:21:01.398540Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -8967,7 +8967,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:19.119038Z"
+        "published_at": "2026-11-18T09:21:01.398563Z"
       }
     },
     {
@@ -8975,7 +8975,7 @@
       "source_id": "sentinel-1-rtc",
       "scene_id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
       "acquired_at": "2026-06-28T02:11:34.085868Z",
-      "processed_at": "2026-11-18T09:17:19.331628Z",
+      "processed_at": "2026-11-18T09:21:01.506561Z",
       "processing_version": "darvaza-s1-rtc/0.1",
       "cloud_cover_pct": null,
       "valid_pixel_pct": 96.61,
@@ -9056,7 +9056,7 @@
             "name": "planetary-computer"
           }
         ],
-        "published_at": "2026-11-18T09:17:19.331651Z"
+        "published_at": "2026-11-18T09:21:01.506582Z"
       }
     }
   ],
@@ -10710,6 +10710,18 @@
       "source_id": "sentinel-1-rtc",
       "started_at": "2026-11-18T09:14:27.106669+00:00",
       "finished_at": "2026-11-18T09:17:19.331744Z",
+      "status": "success",
+      "stage_reached": "rtc_raster_validation",
+      "scenes_discovered": 12,
+      "scenes_published": 12,
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "errors": []
+    },
+    {
+      "id": "sentinel1-rtc-2026-11-18T09:18:04.174504+00:00",
+      "source_id": "sentinel-1-rtc",
+      "started_at": "2026-11-18T09:18:04.174504+00:00",
+      "finished_at": "2026-11-18T09:21:01.506692Z",
       "status": "success",
       "stage_reached": "rtc_raster_validation",
       "scenes_discovered": 12,
