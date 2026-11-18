@@ -28,7 +28,7 @@ try {
             }
           }
         }
-        for (const pair of manifest.change_products || manifest.before_after_pairs || []) {
+        for (const pair of (manifest.change_products && manifest.change_products.length ? manifest.change_products : manifest.before_after_pairs) || []) {
           for (const [key, href] of Object.entries(pair.assets || {})) {
             if (typeof href === "string" && href.startsWith("assets/")) {
               pair.assets[key] = "https://emir731.github.io/Darvaza-Data/" + href;
@@ -90,7 +90,7 @@ try {
     const expected = await page.evaluate(async () => {
       const m = await (await fetch("./manifest.json", { cache: "no-store" })).json();
       const processed = (m.observations || []).filter(x => x.processed_at && String(x.processing_version || "").startsWith("landsat-environmental/"));
-      const pairs = m.change_products || m.before_after_pairs || [];
+      const pairs = (m.change_products && m.change_products.length ? m.change_products : m.before_after_pairs) || [];
       const pairAssets = pairs.flatMap(p => Object.values(p.assets || {})).filter(v => typeof v === "string");
       const sceneAssets = processed.reduce((n, x) => n + (x.assets || []).filter(a => a.role === "preview" || a.role === "cog").length, 0);
       return { observations: (m.observations || []).length, processed: processed.length, rasterAssets: sceneAssets + pairAssets.length, pairCount: pairs.length };
