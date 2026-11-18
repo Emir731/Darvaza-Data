@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - feature/landsat-products-ui
+      - fix/live-manifest-cache
       - main
   workflow_dispatch:
 
