@@ -462,3 +462,11 @@ table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
 .change-delta-panel p{margin:9px 0 0;color:var(--muted);font-size:10px;line-height:1.6}
 .change-metadata{margin-top:12px;color:var(--dim);font:9px var(--mono);letter-spacing:.04em}
 @media(max-width:640px){.before-after-workspace{padding:13px}.change-workspace-heading{display:block}.change-toolbar{flex-wrap:wrap}.change-toolbar label{width:100%}.change-toolbar select{flex-basis:100%}.change-toolbar button{width:100%}.change-image-stage{height:260px}.change-range-label{align-items:flex-start;flex-direction:column;gap:6px}.change-range-label input{width:100%}}
+
+/* Live analysis-card products */
+.analysis-mini-previews{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%;margin-top:10px}
+.analysis-mini-previews a{min-width:0;color:var(--muted);font:8px var(--mono);text-decoration:none}
+.analysis-mini-previews img{display:block;width:100%;height:58px;object-fit:cover;border:1px solid var(--line);border-radius:4px;background:var(--surface-2)}
+.analysis-mini-previews span{display:block;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.analysis-product-link{display:inline-block;margin-top:10px;color:var(--accent);font:8px var(--mono);letter-spacing:.06em;text-decoration:none}
+.analysis-product-link:hover{text-decoration:underline}
