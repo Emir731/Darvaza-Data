@@ -167,7 +167,15 @@ function renderChangePairs(m){
   after.style.clipPath="inset(0 0 0 "+Number(divider.value)+"%)";
   $("change-before-date").textContent="BEFORE · "+pair.before_date;
   $("change-after-date").textContent="AFTER · "+pair.after_date;
-  $("change-metadata").textContent=pair.label+" · "+pair.temporal_gap_days+" DAYS · "+pair.common_valid_pixel_pct+"% COMMON VALID COVERAGE · "+pair.crs+" · "+pair.resolution_m+" M";
+  const sectors=pair.spatial_change_summary&&pair.spatial_change_summary.sectors||{};
+  const sectorNames={north:"NORTH",east:"EAST",south:"SOUTH",west:"WEST"};
+  const sectorRows=Object.entries(sectorNames).map(([key,label])=>{
+   const v=sectors[key];
+   if(!v||!v.pixel_count)return '<span>'+label+' · NO VALID PIXELS</span>';
+   const unit=pair.product==="lst"?"°C":"index";
+   return '<span>'+label+' · MEDIAN Δ '+Number(v.median_delta).toFixed(3)+' '+unit+' · + '+Number(v.positive_change_area_km2).toFixed(3)+' / − '+Number(v.negative_change_area_km2).toFixed(3)+' km²</span>';
+  }).join("");
+  $("change-metadata").innerHTML='<div>'+esc(pair.label)+' · '+esc(pair.temporal_gap_days)+' DAYS · '+esc(pair.common_valid_pixel_pct)+'% COMMON VALID COVERAGE · '+esc(pair.crs)+' · '+esc(pair.resolution_m)+' M</div>'+(sectorRows?'<div class="directional-change"><strong>SURFACE CHANGE BY DIRECTION</strong>'+sectorRows+'</div>':'')+'<p class="analysis-note">Positive/negative areas count pixels with signed index or temperature differences. They do not measure crater-rim movement. A reliable expansion direction requires validated boundaries for both dates.</p>';
   deltaPanel.hidden=true;deltaToggle.setAttribute("aria-pressed","false");deltaToggle.textContent="SHOW DIFFERENCE";
  };
  select.onchange=draw;
@@ -198,10 +206,11 @@ function renderAnalysisPanels(m){
   if(!thermal.length){
    thermalRoot.innerHTML='<div class="analysis-empty"><i class="ph ph-thermometer"></i><strong>No ST_B10 raster linked</strong><p>The live manifest has no processed Landsat land-surface-temperature preview. This is a data-publication status, not a zero-temperature reading.</p></div>';
   }else{
-   thermalRoot.innerHTML='<div class="analysis-data-summary"><strong>'+fmt(thermal.length)+' SCENES WITH ST_B10</strong><span>30 m · surface temperature · exploratory</span></div><div class="analysis-thumb-grid">'+thermal.slice(0,3).map(({o,preview,cog})=>{
-    const url=assetUrl(preview.href),cogUrl=cog?assetUrl(cog.href):null;
-    return '<article class="analysis-thumb"><a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(url)+'" loading="eager" alt="Landsat ST_B10 surface temperature preview for '+esc(o.scene_id)+'"></a><div><strong>'+esc(date(o.acquired_at))+'</strong><span>'+esc(o.scene_id)+'</span>'+(cogUrl?'<a href="'+esc(cogUrl)+'" target="_blank" rel="noopener noreferrer">OPEN ST_B10 COG ↗</a>':'')+'</div></article>';
-   }).join("")+'</div><p class="analysis-note">ST_B10 is retrieved land-surface temperature, not flame or crater-core temperature. Scene-time and atmospheric conditions affect values; VIIRS/MODIS detections are not merged into this raster.</p>';
+   thermalRoot.innerHTML='<div class="analysis-data-summary"><strong>'+fmt(thermal.length)+' SCENES WITH ST_B10</strong><span>30 m · land-surface temperature · °C</span></div><div class="analysis-thumb-grid">'+thermal.slice(0,3).map(({o,preview,cog})=>{
+    const url=assetUrl(preview.href),cogUrl=cog?assetUrl(cog.href):null,stats=o.surface_temperature_c||null;
+    const values=stats?'<div class="temperature-summary"><span>MIN <b>'+Number(stats.min).toFixed(1)+' °C</b></span><span>MEDIAN <b>'+Number(stats.median).toFixed(1)+' °C</b></span><span>MEAN <b>'+Number(stats.mean).toFixed(1)+' °C</b></span><span>MAX <b>'+Number(stats.max).toFixed(1)+' °C</b></span></div><p class="temperature-range">P10–P90: '+Number(stats.p10).toFixed(1)+'–'+Number(stats.p90).toFixed(1)+' °C · '+fmt(stats.valid_pixel_count)+' valid pixels':'<p class="temperature-range">Numeric temperature summary pending next raster processing run';
+    return '<article class="analysis-thumb"><a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(url)+'" loading="eager" alt="Landsat ST_B10 surface temperature preview for '+esc(o.scene_id)+'"></a><div><strong>'+esc(date(o.acquired_at))+'</strong><span>'+esc(o.scene_id)+'</span>'+values+(cogUrl?'<a href="'+esc(cogUrl)+'" target="_blank" rel="noopener noreferrer">OPEN ST_B10 COG ↗</a>':'')+'</div></article>';
+   }).join("")+'</div><p class="analysis-note">Values summarize valid 30 m land-surface-temperature pixels across the Darvaza area of interest. They are not flame or crater-core temperatures; overpass time, clouds, atmosphere and mixed pixels affect interpretation.</p>';
   }
  }
  const footprintRoot=$("footprint-panel");
