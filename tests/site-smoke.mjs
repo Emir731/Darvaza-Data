@@ -14,7 +14,7 @@ try {
     const pageErrors = [];
     page.on("pageerror", error => pageErrors.push(error.message));
     if (baseUrl.startsWith("http://127.0.0.1")) {
-      await page.route("**/manifest.json", async route => {
+      await page.route("**/manifest.json*", async route => {
         const live = await page.request.get("https://emir731.github.io/Darvaza-Data/manifest.json");
         if (!live.ok()) {
           await route.fulfill({ status: live.status(), body: await live.text() });
