@@ -79,7 +79,7 @@ try {
         failures.push(`${viewport.name}: fewer than 95% of published raster previews loaded`);
       });
     });
-    const expected = await page.evaluate(async () => { const m = await (await fetch("./manifest.json", { cache: "no-store" })).json(); const processed = (m.observations || []).filter(x => x.processed_at && String(x.processing_version || "").startsWith("landsat-environmental/")); const pairAssets = (m.change_products || m.before_after_pairs || []).flatMap(p => Object.values(p.assets || {})).filter(v => typeof v === "string"); const sceneAssets = processed.reduce((n, x) => n + (x.assets || []).filter(a => a.role === "preview" || a.role === "cog").length, 0); return { observations: (m.observations || []).length, processed: processed.length, rasterAssets: sceneAssets + pairAssets.length }; });
+    const expected = await page.evaluate(async () => { const m = await (await fetch("./manifest.json", { cache: "no-store" })).json(); const processed = (m.observations || []).filter(x => x.processed_at && String(x.processing_version || "").startsWith("landsat-environmental/")); const pairAssets = ((m.change_products && m.change_products.length ? m.change_products : m.before_after_pairs) || []).flatMap(p => Object.values(p.assets || {})).filter(v => typeof v === "string"); const sceneAssets = processed.reduce((n, x) => n + (x.assets || []).filter(a => a.role === "preview" || a.role === "cog").length, 0); return { observations: (m.observations || []).length, processed: processed.length, rasterAssets: sceneAssets + pairAssets.length }; });
     const state = await page.evaluate(() => ({
       title: document.title,
       h1: document.querySelector("h1")?.textContent?.trim() || "",
