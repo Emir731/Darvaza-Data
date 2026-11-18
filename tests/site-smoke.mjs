@@ -205,6 +205,7 @@ try {
     if (state.temperatureValueCount < 12) failures.push(`${viewport.name}: numeric min/median/mean/max surface temperatures are missing from the three latest scenes`);
     if (state.aiAttributionLinks !== 0) failures.push(`${viewport.name}: public links expose integration/AI attribution parameters`);
     if (state.changeViewerVisible && state.directionalChangeCount !== 4) failures.push(`${viewport.name}: north/east/south/west change summaries are missing`);
+    if (state.changeViewerVisible && !state.changeMetadataText.includes("3 KM")) failures.push(`${viewport.name}: directional summary does not identify its crater-centred 3 km window`);
     if (state.changeViewerVisible && !state.changeMetadataText.includes("validated boundaries")) failures.push(`${viewport.name}: crater expansion caveat is missing`);
     const footprintReady = state.footprintPanelText.includes("SENTINEL-2 CATALOGUE SCENES") || state.footprintPanelText.includes("SCENES SEGMENTED");
     if (!footprintReady || state.footprintPanelText.includes("Awaiting segmentation")) failures.push(`${viewport.name}: crater footprint panel did not render catalogue or candidate segmentation data`);
