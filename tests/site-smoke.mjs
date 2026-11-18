@@ -94,6 +94,10 @@ try {
       globeLon: Number(document.querySelector("#earth-globe")?.dataset.centerLon),
       mapTilesLoaded: [...document.querySelectorAll("#crater-satellite img.leaflet-tile")].filter(tile => tile.complete && tile.naturalWidth > 0).length,
       rasterRoot: !!document.querySelector("#raster-products"),
+      catalogueCount: Number(document.querySelector("#metric-observations")?.textContent),
+      processedCount: Number(document.querySelector("#metric-processed")?.textContent),
+      rasterAssetCount: Number(document.querySelector("#metric-products")?.textContent),
+      analysisStatus: document.querySelector("#analysis-status")?.textContent || "",
       rasterScenes: document.querySelectorAll(".raster-scene-card").length,
       rasterPreviews: document.querySelectorAll(".raster-scene-card .raster-preview-link img").length,
       rasterLoaded: [...document.querySelectorAll(".raster-scene-card .raster-preview-link img")].filter(img => img.complete && img.naturalWidth > 0).length,
@@ -111,9 +115,13 @@ try {
     if (!state.globeRoot || !state.rasterRoot) failures.push(`${viewport.name}: expected observatory components missing`);
     if (!state.globeLocked) failures.push(`${viewport.name}: 3D globe controls are not locked`);
     if (Math.abs(state.globeLat - 40.25258) > 0.0001 || Math.abs(state.globeLon - 58.43933) > 0.0001) failures.push(`${viewport.name}: globe is not centered on Darvaza`);
-    if (state.rasterScenes < 5) failures.push(`${viewport.name}: expected at least five processed scene cards, found ${state.rasterScenes}`);
-    if (state.rasterPreviews < 20) failures.push(`${viewport.name}: expected at least twenty raster previews, found ${state.rasterPreviews}`);
-    if (state.rasterLoaded < Math.ceil(state.rasterPreviews * 0.95)) failures.push(`${viewport.name}: raster preview assets below 95% loaded (${state.rasterLoaded}/${state.rasterPreviews})`);
+    if (state.catalogueCount !== 154) failures.push(`${viewport.name}: expected 154 live catalogue observations, found ${state.catalogueCount}`);
+    if (state.processedCount !== 5) failures.push(`${viewport.name}: expected five processed Landsat scenes, found ${state.processedCount}`);
+    if (state.rasterAssetCount !== 40) failures.push(`${viewport.name}: expected 40 published raster assets, found ${state.rasterAssetCount}`);
+    if (state.rasterScenes !== 5) failures.push(`${viewport.name}: expected five processed scene cards, found ${state.rasterScenes}`);
+    if (state.rasterPreviews !== 20) failures.push(`${viewport.name}: expected twenty raster previews, found ${state.rasterPreviews}`);
+    if (state.rasterLoaded !== 20) failures.push(`${viewport.name}: all 20 raster previews must load (${state.rasterLoaded}/20)`);
+    if (!state.analysisStatus.includes("EXPLORATORY RASTERS PUBLISHED")) failures.push(`${viewport.name}: analysis status still reports no raster products`);
     if (state.dataStatus !== "live") failures.push(`${viewport.name}: manifest state is ${state.dataStatus}`);
     if (viewport.name === "mobile" && !state.mobileButtonVisible) failures.push("mobile: navigation toggle is not visible");
     if (pageErrors.length) failures.push(`${viewport.name}: runtime errors: ${pageErrors.join("; ")}`);
