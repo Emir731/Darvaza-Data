@@ -63,9 +63,9 @@
       "auth_method": "Public Planetary Computer STAC with signed asset URLs",
       "repository_url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
       "status": "healthy",
-      "last_checked": "2026-11-18T08:44:25.565471Z",
+      "last_checked": "2026-11-18T08:44:50.934507+00:00",
       "last_successful_acquisition": "2026-11-14T02:10:57.377105Z",
-      "scene_count": 30,
+      "scene_count": 12,
       "native_resolution_m": 10,
       "notes": "Upstream RTC product; local workflow clips and analyses VV/VH backscatter."
     },
@@ -210,50 +210,6 @@
       }
     },
     {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
-      "acquired_at": "2026-11-14T02:10:57.377105Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
       "id": "sentinel-1-grd:S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_904C_COG",
       "source_id": "sentinel-1-grd",
       "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_904C_COG",
@@ -375,50 +331,6 @@
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261111T070119_N0513_R063_T40TFK_20261111T105612"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
-      "acquired_at": "2026-11-08T14:03:45.065903Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc"
         ],
         "software": [
           {
@@ -832,56 +744,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-10-26"
+          "title": "NDVI preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-10-26"
+          "title": "NDMI preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-10-26"
+          "title": "MNDWI preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-10-26"
+          "title": "Land surface temperature preview · 2026-10-26"
         },
         {
           "id": "LC08_L2SP_160032_20261026_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20261026_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -1025,50 +937,6 @@
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261022T065929_N0513_R063_T40TFK_20261022T105309"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
-      "acquired_at": "2026-10-21T02:10:58.054364Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc"
         ],
         "software": [
           {
@@ -1333,50 +1201,6 @@
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20261017_02_T1"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
-      "acquired_at": "2026-10-15T14:03:45.410229Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc"
         ],
         "software": [
           {
@@ -2180,50 +2004,6 @@
       }
     },
     {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
-      "acquired_at": "2026-09-27T02:10:58.131537Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
       "id": "sentinel-1-grd:S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_B672_COG",
       "source_id": "sentinel-1-grd",
       "scene_id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_B672_COG",
@@ -2362,56 +2142,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-09-24"
+          "title": "NDVI preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-09-24"
+          "title": "NDMI preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-09-24"
+          "title": "MNDWI preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-09-24"
+          "title": "Land surface temperature preview · 2026-09-24"
         },
         {
           "id": "LC08_L2SP_160032_20260924_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_160032_20260924_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -2511,50 +2291,6 @@
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260922T065619_N0513_R063_T40TFK_20260922T110351"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
-      "acquired_at": "2026-09-21T14:03:45.379887Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc"
         ],
         "software": [
           {
@@ -3622,50 +3358,6 @@
       }
     },
     {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
-      "acquired_at": "2026-08-28T14:03:44.794602Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
       "id": "sentinel-1-grd:S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_ADAB_COG",
       "source_id": "sentinel-1-grd",
       "scene_id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_ADAB_COG",
@@ -3963,50 +3655,6 @@
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260822_02_T1"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
-      "acquired_at": "2026-08-22T02:10:56.961728Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc"
         ],
         "software": [
           {
@@ -5080,56 +4728,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-07-30"
+          "title": "NDVI preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-07-30"
+          "title": "NDMI preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-07-30"
+          "title": "MNDWI preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-07-30"
+          "title": "Land surface temperature preview · 2026-07-30"
         },
         {
           "id": "LC09_L2SP_160032_20260730_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260730_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -5229,50 +4877,6 @@
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260729_02_T1"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
-      "acquired_at": "2026-07-29T02:10:55.861957Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc"
         ],
         "software": [
           {
@@ -5405,50 +5009,6 @@
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260724T065619_N0512_R063_T40TFK_20260724T102301"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
-      "acquired_at": "2026-07-23T14:03:43.149375Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc"
         ],
         "software": [
           {
@@ -6516,50 +6076,6 @@
       }
     },
     {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
-      "acquired_at": "2026-06-29T14:03:41.533198Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
       "id": "sentinel-1-grd:S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_6A12_COG",
       "source_id": "sentinel-1-grd",
       "scene_id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_6A12_COG",
@@ -6692,50 +6208,6 @@
       }
     },
     {
-      "id": "sentinel-1-rtc:S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
-      "acquired_at": "2026-06-28T02:11:34.085868Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "954769a671953e5215871c762685019d10ab40ed",
-        "run_id": "44269533964",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
       "id": "sentinel-1-grd:S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_D043_COG",
       "source_id": "sentinel-1-grd",
       "scene_id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_D043_COG",
@@ -6830,56 +6302,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-06-27"
+          "title": "NDVI preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-06-27"
+          "title": "NDMI preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-06-27"
+          "title": "MNDWI preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-06-27"
+          "title": "Land surface temperature preview · 2026-06-27"
         },
         {
           "id": "LC08_L2SP_161032_20260627_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC08_L2SP_161032_20260627_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -8316,56 +7788,56 @@
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_preview.png",
           "media_type": "image/png",
-          "title": "NDVI preview \u00b7 2026-05-27"
+          "title": "NDVI preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndvi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndvi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDVI"
+          "title": "Cloud Optimized GeoTIFF · NDVI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_preview.png",
           "media_type": "image/png",
-          "title": "NDMI preview \u00b7 2026-05-27"
+          "title": "NDMI preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-ndmi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_ndmi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 NDMI"
+          "title": "Cloud Optimized GeoTIFF · NDMI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_preview.png",
           "media_type": "image/png",
-          "title": "MNDWI preview \u00b7 2026-05-27"
+          "title": "MNDWI preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-mndwi-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_mndwi_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 MNDWI"
+          "title": "Cloud Optimized GeoTIFF · MNDWI"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-lst-preview",
           "role": "preview",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_preview.png",
           "media_type": "image/png",
-          "title": "Land surface temperature preview \u00b7 2026-05-27"
+          "title": "Land surface temperature preview · 2026-05-27"
         },
         {
           "id": "LC09_L2SP_160032_20260527_02_T1-lst-cog",
           "role": "cog",
           "href": "assets/landsat-processing/LC09_L2SP_160032_20260527_02_T1_lst_cog.tif",
           "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "Cloud Optimized GeoTIFF \u00b7 Land surface temperature"
+          "title": "Cloud Optimized GeoTIFF · Land surface temperature"
         }
       ],
       "provenance": {
@@ -8518,6 +7990,1074 @@
         ],
         "published_at": null
       }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
+      "acquired_at": "2026-11-14T02:10:57.377105Z",
+      "processed_at": "2026-11-18T08:47:46.686957Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:46.686974Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
+      "acquired_at": "2026-11-08T14:03:45.065903Z",
+      "processed_at": "2026-11-18T08:47:46.767298Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:46.767312Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
+      "acquired_at": "2026-10-21T02:10:58.054364Z",
+      "processed_at": "2026-11-18T08:47:46.771344Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:46.771356Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
+      "acquired_at": "2026-10-15T14:03:45.410229Z",
+      "processed_at": "2026-11-18T08:47:46.909059Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:46.909073Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
+      "acquired_at": "2026-09-27T02:10:58.131537Z",
+      "processed_at": "2026-11-18T08:47:47.018068Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.018084Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
+      "acquired_at": "2026-09-21T14:03:45.379887Z",
+      "processed_at": "2026-11-18T08:47:47.021797Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.021814Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
+      "acquired_at": "2026-08-28T14:03:44.794602Z",
+      "processed_at": "2026-11-18T08:47:47.025460Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.025470Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
+      "acquired_at": "2026-08-22T02:10:56.961728Z",
+      "processed_at": "2026-11-18T08:47:47.246928Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.246947Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
+      "acquired_at": "2026-07-29T02:10:55.861957Z",
+      "processed_at": "2026-11-18T08:47:47.326230Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.326246Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
+      "acquired_at": "2026-07-23T14:03:43.149375Z",
+      "processed_at": "2026-11-18T08:47:47.406617Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.406634Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
+      "acquired_at": "2026-06-29T14:03:41.533198Z",
+      "processed_at": "2026-11-18T08:47:47.466735Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.466750Z"
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
+      "acquired_at": "2026-06-28T02:11:34.085868Z",
+      "processed_at": "2026-11-18T08:47:47.536875Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10.0,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": null,
+        "run_id": null,
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc"
+        ],
+        "software": [
+          {
+            "name": "rasterio"
+          },
+          {
+            "name": "numpy"
+          },
+          {
+            "name": "planetary-computer"
+          }
+        ],
+        "published_at": "2026-11-18T08:47:47.536888Z"
+      }
     }
   ],
   "before_after_pairs": [
@@ -8532,7 +9072,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8575,7 +9115,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8618,7 +9158,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8661,7 +9201,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8704,7 +9244,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8747,7 +9287,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8790,7 +9330,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8833,7 +9373,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8876,7 +9416,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8919,7 +9459,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -8962,7 +9502,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9005,7 +9545,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9048,7 +9588,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9091,7 +9631,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9134,7 +9674,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9177,7 +9717,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9222,7 +9762,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9265,7 +9805,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9308,7 +9848,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9351,7 +9891,7 @@
       "temporal_gap_days": 31,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9394,7 +9934,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9437,7 +9977,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9480,7 +10020,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9523,7 +10063,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9566,7 +10106,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9609,7 +10149,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9652,7 +10192,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9695,7 +10235,7 @@
       "temporal_gap_days": 56,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9738,7 +10278,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9781,7 +10321,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9824,7 +10364,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -9867,7 +10407,7 @@
       "temporal_gap_days": 32,
       "crs": "EPSG:32640",
       "resolution_m": 30.0,
-      "preview_focus": "Darvaza crater \u00b7 3 km \u00d7 3 km when within common footprint",
+      "preview_focus": "Darvaza crater · 3 km × 3 km when within common footprint",
       "preview_crater_center_wgs84": [
         58.43933,
         40.25258
@@ -10134,6 +10674,18 @@
           "scene_id": "LC09_L2SP_160032_20260831_02_T1"
         }
       ]
+    },
+    {
+      "id": "sentinel1-rtc-2026-11-18T08:44:50.934507+00:00",
+      "source_id": "sentinel-1-rtc",
+      "started_at": "2026-11-18T08:44:50.934507+00:00",
+      "finished_at": "2026-11-18T08:47:47.536956Z",
+      "status": "success",
+      "stage_reached": "rtc_raster_validation",
+      "scenes_discovered": 12,
+      "scenes_published": 12,
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "errors": []
     }
   ],
   "time_series": {
