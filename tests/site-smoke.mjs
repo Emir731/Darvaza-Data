@@ -59,6 +59,28 @@ try {
     });
     // Force the three analysis-panel thumbnails to load even when below the fold.
     await page.evaluate(() => { for (const img of document.querySelectorAll("#thermal-panel img, #surface-change-panel img")) img.loading = "eager"; });
+    await page.waitForFunction(() => {
+      const thermal = [...document.querySelectorAll("#thermal-panel img")];
+      const change = document.querySelector("#surface-change-panel img");
+      return thermal.length > 0 && thermal.every(img => img.complete && img.naturalWidth > 0) &&
+        change && change.complete && change.naturalWidth > 0;
+    }, null, { timeout: 30000 }).catch(async () => {
+      await page.evaluate(() => {
+        for (const img of document.querySelectorAll("#thermal-panel img, #surface-change-panel img")) {
+          if (!img.complete || !img.naturalWidth) {
+            const url = img.currentSrc || img.src;
+            img.src = "";
+            img.src = url;
+          }
+        }
+      });
+      await page.waitForFunction(() => {
+        const thermal = [...document.querySelectorAll("#thermal-panel img")];
+        const change = document.querySelector("#surface-change-panel img");
+        return thermal.length > 0 && thermal.every(img => img.complete && img.naturalWidth > 0) &&
+          change && change.complete && change.naturalWidth > 0;
+      }, null, { timeout: 20000 }).catch(() => {});
+    });
     // The UI intentionally lazy-loads previews; make them eager in the test so every published URL is checked.
     await page.evaluate(() => {
       for (const img of document.querySelectorAll(".raster-scene-card .raster-preview-link img")) {
