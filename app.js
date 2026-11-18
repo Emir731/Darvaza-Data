@@ -175,7 +175,7 @@ function renderChangePairs(m){
    const unit=pair.product==="lst"?"°C":"index";
    return '<span>'+label+' · MEDIAN Δ '+Number(v.median_delta).toFixed(3)+' '+unit+' · + '+Number(v.positive_change_area_km2).toFixed(3)+' / − '+Number(v.negative_change_area_km2).toFixed(3)+' km²</span>';
   }).join("");
-  $("change-metadata").innerHTML='<div>'+esc(pair.label)+' · '+esc(pair.temporal_gap_days)+' DAYS · '+esc(pair.common_valid_pixel_pct)+'% COMMON VALID COVERAGE · '+esc(pair.crs)+' · '+esc(pair.resolution_m)+' M</div>'+(sectorRows?'<div class="directional-change"><strong>SURFACE CHANGE BY DIRECTION</strong>'+sectorRows+'</div>':'')+'<p class="analysis-note">Positive/negative areas count pixels with signed index or temperature differences. They do not measure crater-rim movement. A reliable expansion direction requires validated boundaries for both dates.</p>';
+  $("change-metadata").innerHTML='<div>'+esc(pair.label)+' · '+esc(pair.temporal_gap_days)+' DAYS · '+esc(pair.common_valid_pixel_pct)+'% COMMON VALID COVERAGE · '+esc(pair.crs)+' · '+esc(pair.resolution_m)+' M</div>'+(sectorRows?'<div class="directional-change"><strong>SURFACE CHANGE BY DIRECTION · 3 KM × 3 KM CRATER-CENTRED WINDOW</strong>'+sectorRows+'</div>':'')+'<p class="analysis-note">Positive/negative areas count pixels with signed index or temperature differences. They do not measure crater-rim movement. A reliable expansion direction requires validated boundaries for both dates.</p>';
   deltaPanel.hidden=true;deltaToggle.setAttribute("aria-pressed","false");deltaToggle.textContent="SHOW DIFFERENCE";
  };
  select.onchange=draw;
