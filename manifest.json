@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T09:00:13.782725Z",
+  "generated_at": "2026-11-18T09:02:49.657719Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -10751,127 +10751,107 @@
     "crater_footprint": null,
     "surface_change": null,
     "crater_segmentation": {
-      "generated_at": "2026-11-18T08:57:51.161873+00:00",
+      "generated_at": "2026-11-18T09:00:49.192656+00:00",
       "status": "exploratory_candidates_not_verified",
       "source": "Sentinel-2 L2A",
       "method": "Sentinel-2 L2A spectral feature threshold ensemble; connected components constrained to a central search zone",
       "scenes_processed": 1,
       "candidate_scenes": [
         {
-          "scene_id": "S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140",
-          "acquired_at": "2026-11-01T07:00:29.024000+00:00",
-          "candidate_count": 18,
+          "scene_id": "S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026",
+          "acquired_at": "2026-09-29T07:03:21.024000+00:00",
+          "candidate_count": 14,
           "candidate_area_sensitivity_m2": {
-            "min": 3300.0,
-            "median": 8150.0,
-            "max": 11400.0,
-            "std": 2420.11
+            "min": 400.0,
+            "median": 3550.0,
+            "max": 32400.0,
+            "std": 9753.51
           },
           "area_uncertainty_status": "algorithmic_sensitivity_only_not_confidence_interval",
           "reference_validation_status": "pending_external_independent_reference",
           "assets": [
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/candidate-boundaries.geojson",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/candidate-boundaries.geojson",
               "media_type": "application/geo+json",
               "title": "candidate-boundaries.geojson"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/candidate-consensus.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/candidate-consensus.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "candidate-consensus.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/candidate-preview.png",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/candidate-preview.png",
               "media_type": "image/png",
               "title": "candidate-preview.png"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndmi_above_m05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/ndmi_below_m05.tif",
               "media_type": "image/tiff; application=geotiff",
-              "title": "ndmi_above_m05.tif"
+              "title": "ndmi_below_m05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndmi_above_p00.tif",
-              "media_type": "image/tiff; application=geotiff",
-              "title": "ndmi_above_p00.tif"
-            },
-            {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndmi_above_p05.tif",
-              "media_type": "image/tiff; application=geotiff",
-              "title": "ndmi_above_p05.tif"
-            },
-            {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndmi_below_p00.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/ndmi_below_p00.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "ndmi_below_p00.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndmi_below_p05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/ndmi_below_p05.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "ndmi_below_p05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndvi_above_m05.tif",
-              "media_type": "image/tiff; application=geotiff",
-              "title": "ndvi_above_m05.tif"
-            },
-            {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndvi_above_p00.tif",
-              "media_type": "image/tiff; application=geotiff",
-              "title": "ndvi_above_p00.tif"
-            },
-            {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndvi_above_p05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/ndvi_above_p05.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "ndvi_above_p05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/ndvi_below_p05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/ndvi_below_m05.tif",
               "media_type": "image/tiff; application=geotiff",
-              "title": "ndvi_below_p05.tif"
+              "title": "ndvi_below_m05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/nir_reflectance_above_m05.tif",
-              "media_type": "image/tiff; application=geotiff",
-              "title": "nir_reflectance_above_m05.tif"
-            },
-            {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/nir_reflectance_above_p00.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/nir_reflectance_above_p00.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "nir_reflectance_above_p00.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/nir_reflectance_above_p05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/nir_reflectance_above_p05.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "nir_reflectance_above_p05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/swir1_reflectance_above_m05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/nir_reflectance_below_m05.tif",
               "media_type": "image/tiff; application=geotiff",
-              "title": "swir1_reflectance_above_m05.tif"
+              "title": "nir_reflectance_below_m05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/swir1_reflectance_above_p00.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/nir_reflectance_below_p00.tif",
               "media_type": "image/tiff; application=geotiff",
-              "title": "swir1_reflectance_above_p00.tif"
+              "title": "nir_reflectance_below_p00.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/swir1_reflectance_above_p05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/nir_reflectance_below_p05.tif",
+              "media_type": "image/tiff; application=geotiff",
+              "title": "nir_reflectance_below_p05.tif"
+            },
+            {
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/swir1_reflectance_above_p05.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "swir1_reflectance_above_p05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/swir1_reflectance_below_m05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/swir1_reflectance_below_m05.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "swir1_reflectance_below_m05.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/swir1_reflectance_below_p00.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/swir1_reflectance_below_p00.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "swir1_reflectance_below_p00.tif"
             },
             {
-              "href": "assets/crater-segmentation/S2B_MSIL2A_20261101T070029_R063_T40TFK_20261101T235140/swir1_reflectance_below_p05.tif",
+              "href": "assets/crater-segmentation/S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026/swir1_reflectance_below_p05.tif",
               "media_type": "image/tiff; application=geotiff",
               "title": "swir1_reflectance_below_p05.tif"
             }
