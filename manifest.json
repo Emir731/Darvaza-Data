@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T08:57:19.037054Z",
+  "generated_at": "2026-11-18T09:00:13.782725Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -10751,7 +10751,7 @@
     "crater_footprint": null,
     "surface_change": null,
     "crater_segmentation": {
-      "generated_at": "2026-11-18T08:55:21.076293+00:00",
+      "generated_at": "2026-11-18T08:57:51.161873+00:00",
       "status": "exploratory_candidates_not_verified",
       "source": "Sentinel-2 L2A",
       "method": "Sentinel-2 L2A spectral feature threshold ensemble; connected components constrained to a central search zone",
