@@ -181,6 +181,12 @@ function renderChangePairs(m){
 }
 function renderAnalysisPanels(m){
  const observations=(m.observations||[]);
+ const validationMatrix=(m.time_series||{}).scientific_validation;
+ const validationStatus=$("analysis-status");
+ if(validationStatus&&validationMatrix){
+  const pending=(validationMatrix.products||[]).filter(p=>!p.independent_validation_complete).length;
+  validationStatus.innerHTML='<span class="analysis-status-dot"></span><div><strong>SCIENTIFIC VALIDATION REGISTER · '+fmt((validationMatrix.products||[]).length)+' PRODUCT FAMILIES</strong><p>'+fmt(pending)+' product families still require independent reference evidence. Automated tests and raster QA are not independent scientific validation.</p></div>';
+ }
  const processed=observations.filter(o=>o.processed_at&&String(o.processing_version||"").startsWith("landsat-environmental/"));
  const thermal=processed.map(o=>{
   const preview=(o.assets||[]).find(a=>a.role==="preview"&&(/(?:-|_)lst(?:-|_)preview/i.test(a.id||"")||/land.?surface temperature/i.test(a.title||"")));
