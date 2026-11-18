@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T09:05:23.480040Z",
+  "generated_at": "2026-11-18T09:08:12.879066Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -10751,7 +10751,7 @@
     "crater_footprint": null,
     "surface_change": null,
     "crater_segmentation": {
-      "generated_at": "2026-11-18T09:03:28.961416+00:00",
+      "generated_at": "2026-11-18T09:06:02.433995+00:00",
       "status": "exploratory_candidates_not_verified",
       "source": "Sentinel-2 L2A",
       "method": "Sentinel-2 L2A spectral feature threshold ensemble; connected components constrained to a central search zone",
@@ -10761,13 +10761,8 @@
           "scene_id": "S2A_MSIL2A_20260929T070321_R063_T40TFK_20260929T103026",
           "acquired_at": "2026-09-29T07:03:21.024000+00:00",
           "candidate_count": 14,
-          "candidate_area_sensitivity_m2": {
-            "min": 400.0,
-            "median": 3550.0,
-            "max": 32400.0,
-            "std": 9753.51
-          },
-          "area_uncertainty_status": "algorithmic_sensitivity_only_not_confidence_interval",
+          "candidate_area_sensitivity_m2": null,
+          "area_uncertainty_status": "not_reported_unstable_segmentation",
           "reference_validation_status": "pending_external_independent_reference",
           "assets": [
             {
@@ -10882,7 +10877,7 @@
       ]
     },
     "scientific_validation": {
-      "generated_at": "2026-11-18T09:05:23.509865Z",
+      "generated_at": "2026-11-18T09:08:12.914228Z",
       "overall_status": "independent_validation_pending",
       "automated_qa_is_independent_validation": false,
       "products": [
@@ -11004,7 +10999,7 @@
             "reported_detections": 0,
             "queried_csv_files": 0
           },
-          "automated_qa_status": "pipeline_products_available",
+          "automated_qa_status": "discovery_only",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         }
