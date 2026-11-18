@@ -141,8 +141,18 @@ function renderRasterProducts(m){
 function renderChangePairs(m){
  const root=$("change-viewer"),empty=$("change-empty"),select=$("change-pair-select");
  if(!root||!empty||!select)return;
- const pairs=(((m.change_products&&m.change_products.length)?m.change_products:m.before_after_pairs)||[])
-  .filter(p=>p.assets&&p.assets.before_preview&&p.assets.after_preview&&p.assets.delta_preview)
+ const source=((m.change_products&&m.change_products.length)?m.change_products:m.before_after_pairs)||[];
+ const previewAssets=p=>{
+  const a=p.assets||{},layers=p.layer_previews||a.layer_previews||{};
+  return {
+   before:a.before_preview||layers.before||null,
+   after:a.after_preview||layers.after||null,
+   delta:a.delta_preview||layers.delta||null
+  };
+ };
+ const pairs=source.map(p=>({...p,_previews:previewAssets(p)}))
+  .filter(p=>p._previews.before&&p._previews.after&&p._previews.delta&&
+   assetUrl(p._previews.before)&&assetUrl(p._previews.after)&&assetUrl(p._previews.delta))
   .sort((a,b)=>String(b.after_date||"").localeCompare(String(a.after_date||"")));
  if(!pairs.length){root.hidden=true;empty.hidden=false;return}
  empty.hidden=true;root.hidden=false;
@@ -151,9 +161,9 @@ function renderChangePairs(m){
  const draw=()=>{
   const pair=pairs[Number(select.value)||0];
   if(!pair)return;
-  before.src=assetUrl(pair.assets.before_preview);
-  after.src=assetUrl(pair.assets.after_preview);
-  delta.src=assetUrl(pair.assets.delta_preview);
+  before.src=assetUrl(pair._previews.before);
+  after.src=assetUrl(pair._previews.after);
+  delta.src=assetUrl(pair._previews.delta);
   after.style.clipPath="inset(0 0 0 "+Number(divider.value)+"%)";
   $("change-before-date").textContent="BEFORE · "+pair.before_date;
   $("change-after-date").textContent="AFTER · "+pair.after_date;

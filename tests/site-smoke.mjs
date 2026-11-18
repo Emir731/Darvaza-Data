@@ -29,9 +29,11 @@ try {
           }
         }
         for (const pair of (manifest.change_products && manifest.change_products.length ? manifest.change_products : manifest.before_after_pairs) || []) {
-          for (const [key, href] of Object.entries(pair.assets || {})) {
-            if (typeof href === "string" && href.startsWith("assets/")) {
-              pair.assets[key] = "https://emir731.github.io/Darvaza-Data/" + href;
+          for (const container of [pair.assets || {}, pair.layer_previews || {}]) {
+            for (const [key, href] of Object.entries(container)) {
+              if (typeof href === "string" && href.startsWith("assets/")) {
+                container[key] = "https://emir731.github.io/Darvaza-Data/" + href;
+              }
             }
           }
         }

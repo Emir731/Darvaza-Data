@@ -5,6 +5,7 @@ on:
     branches:
       - feature/landsat-products-ui
       - fix/live-manifest-cache
+      - fix/change-explorer-assets
       - feature/before-after-viewer
       - feature/darvaza-comparison-v2
       - feature/analysis-panels
