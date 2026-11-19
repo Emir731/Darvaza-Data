@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-18T17:50:56.667818+00:00",
+  "generated_at": "2026-11-19T14:28:36.448272Z",
   "is_sample": false,
   "aoi": {
     "id": "darvaza-crater",
@@ -31,7 +31,7 @@
       "auth_method": "Public STAC catalogue; scene downloads may require provider access",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-18T17:46:46.657653Z",
+      "last_checked": "2026-11-19T14:28:00.861004Z",
       "last_successful_acquisition": "2026-11-03T06:42:17.945372Z",
       "scene_count": 42,
       "native_resolution_m": 30
@@ -47,9 +47,9 @@
       "auth_method": "Copernicus Data Space STAC catalogue; product download may require OAuth2",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-18T17:46:47.648853Z",
+      "last_checked": "2026-11-19T14:28:01.850276Z",
       "last_successful_acquisition": "2026-11-14T02:10:44.877881Z",
-      "scene_count": 30,
+      "scene_count": 29,
       "native_resolution_m": 10
     },
     {
@@ -63,9 +63,9 @@
       "auth_method": "Public Planetary Computer STAC with signed asset URLs",
       "repository_url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
       "status": "healthy",
-      "last_checked": "2026-11-18T17:47:02.248467+00:00",
+      "last_checked": "2026-11-19T14:28:02.831527Z",
       "last_successful_acquisition": "2026-11-14T02:10:57.377105Z",
-      "scene_count": 12,
+      "scene_count": 29,
       "native_resolution_m": 10,
       "notes": "Upstream RTC product; local workflow clips and analyses VV/VH backscatter."
     },
@@ -80,7 +80,7 @@
       "auth_method": "Copernicus Data Space STAC catalogue; product download may require OAuth2",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-18T17:46:48.803645Z",
+      "last_checked": "2026-11-19T14:28:03.119775Z",
       "last_successful_acquisition": "2026-11-18T06:51:49.024000Z",
       "scene_count": 81,
       "native_resolution_m": 10
@@ -96,7 +96,7 @@
       "auth_method": "NASA FIRMS MAP_KEY (optional hotspot feed)",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-18T17:46:51.465632Z",
+      "last_checked": "2026-11-19T14:28:05.091398Z",
       "last_successful_acquisition": null,
       "scene_count": 0,
       "native_resolution_m": 375,
@@ -113,7 +113,7 @@
       "auth_method": "NASA FIRMS MAP_KEY (optional hotspot feed)",
       "repository_url": null,
       "status": "healthy",
-      "last_checked": "2026-11-18T17:46:51.465632Z",
+      "last_checked": "2026-11-19T14:28:05.091398Z",
       "last_successful_acquisition": null,
       "scene_count": 0,
       "native_resolution_m": 1000,
@@ -151,7 +151,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261118T065149_N0513_R020_T40TFK_20261118T091248"
@@ -195,7 +195,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261116T070141_N0513_R063_T40TFK_20261116T102454"
@@ -239,7 +239,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261115T065311_N0513_R020_T40TFK_20261115T101305"
@@ -251,6 +251,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
+      "acquired_at": "2026-11-14T02:10:57.377105Z",
+      "processed_at": "2026-11-18T17:50:08.976394Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:08.976414Z"
       }
     },
     {
@@ -283,7 +374,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_904C_COG"
@@ -327,7 +418,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261113T065121_N0513_R020_T40TFK_20261113T101603"
@@ -371,7 +462,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261111T070119_N0513_R063_T40TFK_20261111T105612"
@@ -383,6 +474,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
+      "acquired_at": "2026-11-08T14:03:45.065903Z",
+      "processed_at": "2026-11-18T17:50:09.085358Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.085380Z"
       }
     },
     {
@@ -415,7 +597,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_3D1F_COG"
@@ -459,7 +641,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20261103_02_T1"
@@ -503,7 +685,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20261102_02_T1"
@@ -547,7 +729,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_rtc"
@@ -591,7 +773,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261102T021045_20261102T021110_005282_00A0C3_7720_COG"
@@ -635,7 +817,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261101T070029_N0513_R063_T40TFK_20261101T235140"
@@ -679,7 +861,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261029T065009_N0513_R020_T40TFK_20261029T122802"
@@ -723,7 +905,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261026T065311_N0513_R020_T40TFK_20261026T101103"
@@ -843,7 +1025,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC08_L2SP_160032_20261026_02_T1"
@@ -901,7 +1083,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20261025_02_T1"
@@ -945,7 +1127,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261024T064931_N0513_R020_T40TFK_20261024T101157"
@@ -989,7 +1171,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261022T065929_N0513_R063_T40TFK_20261022T105309"
@@ -1001,6 +1183,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
+      "acquired_at": "2026-10-21T02:10:58.054364Z",
+      "processed_at": "2026-11-18T17:50:09.089076Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.089085Z"
       }
     },
     {
@@ -1033,7 +1306,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_8D29_COG"
@@ -1077,7 +1350,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261019T070311_N0513_R063_T40TFK_20261019T103003"
@@ -1121,7 +1394,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261019T064909_N0513_R020_T40TFK_20261019T091334"
@@ -1165,7 +1438,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20261018_02_T1"
@@ -1209,7 +1482,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261017T065901_N0513_R063_T40TFK_20261017T102507"
@@ -1253,7 +1526,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20261017_02_T1"
@@ -1265,6 +1538,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
+      "acquired_at": "2026-10-15T14:03:45.410229Z",
+      "processed_at": "2026-11-18T17:50:09.092696Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.092704Z"
       }
     },
     {
@@ -1297,7 +1661,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_C288_COG"
@@ -1341,7 +1705,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261014T064831_N0513_R020_T40TFK_20261014T103303"
@@ -1385,7 +1749,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261012T065819_N0513_R063_T40TFK_20261012T110756"
@@ -1429,7 +1793,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20261010_02_T1"
@@ -1473,7 +1837,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20261009_02_T1"
@@ -1517,7 +1881,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261009T064759_N0513_R020_T40TFK_20261009T104607"
@@ -1561,7 +1925,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261009T021045_20261009T021110_004932_0094B6_rtc"
@@ -1605,7 +1969,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261009T021045_20261009T021110_004932_0094B6_B90B_COG"
@@ -1649,7 +2013,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20261006T065321_N0513_R020_T40TFK_20261006T101404"
@@ -1693,7 +2057,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20261004T064721_N0513_R020_T40TFK_20261004T111111"
@@ -1737,7 +2101,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261003T140332_20261003T140357_004852_0091E7_rtc"
@@ -1781,7 +2145,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20261003T140332_20261003T140357_004852_0091E7_9270_COG"
@@ -1825,7 +2189,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20261002T065719_N0513_R063_T40TFK_20261002T111547"
@@ -1869,7 +2233,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20261002_02_T1"
@@ -1913,7 +2277,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20261001_02_T1"
@@ -1957,7 +2321,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260929T070321_N0513_R063_T40TFK_20260929T103026"
@@ -2001,7 +2365,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260929T064629_N0513_R020_T40TFK_20260929T104806"
@@ -2045,7 +2409,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260927T065641_N0513_R063_T40TFK_20260927T121710"
@@ -2057,6 +2421,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
+      "acquired_at": "2026-09-27T02:10:58.131537Z",
+      "processed_at": "2026-11-18T17:50:09.305405Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.305426Z"
       }
     },
     {
@@ -2089,7 +2544,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_B672_COG"
@@ -2133,7 +2588,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260924T064621_N0513_R020_T40TFK_20260924T111508"
@@ -2253,7 +2708,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260924_02_T1"
@@ -2311,7 +2766,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260923_02_T1"
@@ -2355,7 +2810,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260922T065619_N0513_R063_T40TFK_20260922T110351"
@@ -2367,6 +2822,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
+      "acquired_at": "2026-09-21T14:03:45.379887Z",
+      "processed_at": "2026-11-18T17:50:09.309111Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.309120Z"
       }
     },
     {
@@ -2399,7 +2945,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_0704_COG"
@@ -2443,7 +2989,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260919T064619_N0512_R020_T40TFK_20260919T104621"
@@ -2487,7 +3033,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260917T065621_N0512_R063_T40TFK_20260917T121802"
@@ -2531,7 +3077,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260916T065321_N0512_R020_T40TFK_20260916T102207"
@@ -2575,7 +3121,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260916_02_T1"
@@ -2619,7 +3165,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260915_02_T1"
@@ -2663,7 +3209,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260915T021045_20260915T021110_004582_008887_rtc"
@@ -2707,7 +3253,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260915T021045_20260915T021110_004582_008887_5D5C_COG"
@@ -2751,7 +3297,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260914T064621_N0512_R020_T40TFK_20260914T111315"
@@ -2795,7 +3341,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260912T065619_N0512_R063_T40TFK_20260912T105456"
@@ -2839,7 +3385,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260909T140332_20260909T140357_004502_0085CE_rtc"
@@ -2883,7 +3429,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260909T140332_20260909T140357_004502_0085CE_7246_COG"
@@ -2927,7 +3473,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260909T070321_N0512_R063_T40TFK_20260909T102513"
@@ -2971,7 +3517,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260909T064619_N0512_R020_T40TFK_20260909T091307"
@@ -3015,7 +3561,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260908_02_T1"
@@ -3059,7 +3605,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260907T065621_N0512_R063_T40TFK_20260907T121721"
@@ -3103,7 +3649,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260907_02_T1"
@@ -3147,7 +3693,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260904T064621_N0512_R020_T40TFK_20260904T115810"
@@ -3191,7 +3737,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260903T021044_20260903T021109_004407_00827C_rtc"
@@ -3235,7 +3781,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260903T021044_20260903T021109_004407_00827C_F1DC_COG"
@@ -3279,7 +3825,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260902T065619_N0512_R063_T40TFK_20260902T110715"
@@ -3323,7 +3869,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260831_02_T1"
@@ -3367,7 +3913,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260830_02_T1"
@@ -3411,7 +3957,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260830T064619_N0512_R020_T40TFK_20260830T101828"
@@ -3423,6 +3969,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
+      "acquired_at": "2026-08-28T14:03:44.794602Z",
+      "processed_at": "2026-11-18T17:50:09.312777Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.312785Z"
       }
     },
     {
@@ -3455,7 +4092,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_ADAB_COG"
@@ -3499,7 +4136,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260828T065621_N0512_R063_T40TFK_20260828T121314"
@@ -3543,7 +4180,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260827T065321_N0512_R020_T40TFK_20260827T120805"
@@ -3587,7 +4224,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260825T064621_N0512_R020_T40TFK_20260825T115811"
@@ -3631,7 +4268,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260823T065619_N0512_R063_T40TFK_20260823T105748"
@@ -3675,7 +4312,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260823_02_T1"
@@ -3719,7 +4356,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260822_02_T1"
@@ -3731,6 +4368,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
+      "acquired_at": "2026-08-22T02:10:56.961728Z",
+      "processed_at": "2026-11-18T17:50:09.555334Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.555357Z"
       }
     },
     {
@@ -3763,7 +4491,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_5192_COG"
@@ -3807,7 +4535,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260820T070321_N0512_R063_T40TFK_20260820T122211"
@@ -3851,7 +4579,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260820T064619_N0512_R020_T40TFK_20260820T103927"
@@ -3895,7 +4623,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260818T065621_N0512_R063_T40TFK_20260818T120810"
@@ -3939,7 +4667,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260816T140331_20260816T140356_004152_007989_rtc"
@@ -3983,7 +4711,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260816T140331_20260816T140356_004152_007989_3F07_COG"
@@ -4027,7 +4755,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260815T064621_N0512_R020_T40TFK_20260815T111308"
@@ -4071,7 +4799,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260815_02_T1"
@@ -4115,7 +4843,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260814_02_T1"
@@ -4159,7 +4887,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260813T065619_N0512_R063_T40TFK_20260813T105532"
@@ -4203,7 +4931,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260810T064619_N0512_R020_T40TFK_20260810T101826"
@@ -4247,7 +4975,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260810T021044_20260810T021109_004057_00763F_rtc"
@@ -4291,7 +5019,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260810T021044_20260810T021109_004057_00763F_0B0C_COG"
@@ -4335,7 +5063,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260808T065621_N0512_R063_T40TFK_20260808T121319"
@@ -4379,7 +5107,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260807T065321_N0512_R020_T40TFK_20260807T120617"
@@ -4423,7 +5151,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260807_02_T1"
@@ -4467,7 +5195,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260806_02_T1"
@@ -4511,7 +5239,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260805T064621_N0512_R020_T40TFK_20260805T115315"
@@ -4555,7 +5283,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260804T140331_20260804T140356_003977_007383_rtc"
@@ -4599,7 +5327,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260804T140331_20260804T140356_003977_007383_5C37_COG"
@@ -4643,7 +5371,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260803T065619_N0512_R063_T40TFK_20260803T105654"
@@ -4687,7 +5415,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260731T070321_N0512_R063_T40TFK_20260731T121810"
@@ -4731,7 +5459,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260731T064629_N0512_R020_T40TFK_20260731T104009"
@@ -4851,7 +5579,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260730_02_T1"
@@ -4909,7 +5637,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260729T065621_N0512_R063_T40TFK_20260729T123254"
@@ -4953,7 +5681,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260729_02_T1"
@@ -4965,6 +5693,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
+      "acquired_at": "2026-07-29T02:10:55.861957Z",
+      "processed_at": "2026-11-18T17:50:09.983528Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:09.983553Z"
       }
     },
     {
@@ -4997,7 +5816,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_27A4_COG"
@@ -5041,7 +5860,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260726T064631_N0512_R020_T40TFK_20260726T115609"
@@ -5085,7 +5904,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260724T065619_N0512_R063_T40TFK_20260724T102301"
@@ -5097,6 +5916,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
+      "acquired_at": "2026-07-23T14:03:43.149375Z",
+      "processed_at": "2026-11-18T17:50:10.210187Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:10.210208Z"
       }
     },
     {
@@ -5129,7 +6039,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_3BCD_COG"
@@ -5173,7 +6083,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260722_02_T1"
@@ -5217,7 +6127,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260721_02_T1"
@@ -5261,7 +6171,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260719T065621_N0512_R063_T40TFK_20260719T121212"
@@ -5305,7 +6215,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260718T065321_N0512_R020_T40TFK_20260718T101758"
@@ -5349,7 +6259,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260717T021042_20260717T021107_003707_006A28_rtc"
@@ -5393,7 +6303,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260717T021042_20260717T021107_003707_006A28_5543_COG"
@@ -5437,7 +6347,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260716T064621_N0512_R020_T40TFK_20260716T115112"
@@ -5481,7 +6391,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260714T065619_N0512_R063_T40TFK_20260714T102330"
@@ -5525,7 +6435,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260714_02_T1"
@@ -5569,7 +6479,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260713_02_T1"
@@ -5613,7 +6523,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260711T140329_20260711T140354_003627_006763_rtc"
@@ -5657,7 +6567,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260711T140329_20260711T140354_003627_006763_090E_COG"
@@ -5701,7 +6611,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260711T064619_N0512_R020_T40TFK_20260711T104126"
@@ -5745,7 +6655,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260709T065621_N0512_R063_T40TFK_20260709T121514"
@@ -5789,7 +6699,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260708T065321_N0512_R020_T40TFK_20260708T101104"
@@ -5833,7 +6743,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260706T064621_N0512_R020_T40TFK_20260706T115722"
@@ -5877,7 +6787,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260706_02_T1"
@@ -5921,7 +6831,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260705_02_T1"
@@ -5965,7 +6875,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260705T021041_20260705T021106_003532_006437_rtc"
@@ -6009,7 +6919,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260705T021041_20260705T021106_003532_006437_9F40_COG"
@@ -6053,7 +6963,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260704T065619_N0512_R063_T40TFK_20260704T105318"
@@ -6097,7 +7007,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260701T070321_N0512_R063_T40TFK_20260701T102716"
@@ -6141,7 +7051,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260701T064619_N0512_R020_T40TFK_20260701T104133"
@@ -6153,6 +7063,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
+      "acquired_at": "2026-06-29T14:03:41.533198Z",
+      "processed_at": "2026-11-18T17:50:10.453150Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:10.453171Z"
       }
     },
     {
@@ -6185,7 +7186,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_6A12_COG"
@@ -6229,7 +7230,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260629T065621_N0512_R063_T40TFK_20260629T120609"
@@ -6273,7 +7274,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260628_02_T1"
@@ -6285,6 +7286,97 @@
           }
         ],
         "published_at": null
+      }
+    },
+    {
+      "id": "sentinel-1-rtc:S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
+      "source_id": "sentinel-1-rtc",
+      "scene_id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
+      "acquired_at": "2026-06-28T02:11:34.085868Z",
+      "processed_at": "2026-11-18T17:50:10.593927Z",
+      "processing_version": "darvaza-s1-rtc/0.1",
+      "cloud_cover_pct": null,
+      "valid_pixel_pct": 96.61,
+      "crs": "EPSG:32640",
+      "resolution_m": 10,
+      "quality_flags": [
+        {
+          "code": "UPSTREAM_RTC",
+          "severity": "info",
+          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
+        },
+        {
+          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
+          "severity": "warning",
+          "message": "Not independently validated; not a crater boundary or temperature measurement."
+        }
+      ],
+      "assets": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-rendered_preview",
+          "role": "thumbnail",
+          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
+          "media_type": "image/png",
+          "title": "Catalogue thumbnail (rendered_preview)"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vv_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vv_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vv_db cog"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vv_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vv_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vv_db preview"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_db cog"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_db preview"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_vv_ratio_db-cog",
+          "role": "cog",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_vv_ratio_db.tif",
+          "media_type": "image/tiff; application=geotiff",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_vv_ratio_db-preview",
+          "role": "preview",
+          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_vv_ratio_db.png",
+          "media_type": "image/png",
+          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
+        }
+      ],
+      "provenance": {
+        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
+        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
+        "run_id": "44543963477",
+        "processing_version": "darvaza-s1-rtc/0.1",
+        "input_scene_ids": [
+          "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc"
+        ],
+        "software": [
+          {
+            "name": "requests",
+            "version": "2.34.2"
+          }
+        ],
+        "published_at": "2026-11-18T17:50:10.593975Z"
       }
     },
     {
@@ -6317,7 +7409,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_D043_COG"
@@ -6437,7 +7529,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260627_02_T1"
@@ -6495,7 +7587,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260626T064621_N0512_R020_T40TFK_20260626T112015"
@@ -6539,7 +7631,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260624T065619_N0512_R063_T40TFK_20260624T105220"
@@ -6583,7 +7675,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260622T140409_20260622T140434_065083_083414_rtc"
@@ -6627,7 +7719,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260622T140409_20260622T140434_065083_083414_A5ED_COG"
@@ -6671,7 +7763,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260621T064619_N0512_R020_T40TFK_20260621T104118"
@@ -6715,7 +7807,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260620_02_T1"
@@ -6759,7 +7851,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260619T065621_N0512_R063_T40TFK_20260619T121510"
@@ -6803,7 +7895,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260619_02_T1"
@@ -6847,7 +7939,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260618T065321_N0512_R020_T40TFK_20260618T121104"
@@ -6891,7 +7983,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260616T064621_N0512_R020_T40TFK_20260616T111116"
@@ -6935,7 +8027,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260616T021122_20260616T021147_064988_0830B7_rtc"
@@ -6979,7 +8071,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260616T021122_20260616T021147_064988_0830B7_A6D7_COG"
@@ -7023,7 +8115,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260614T065619_N0512_R063_T40TFK_20260614T105546"
@@ -7067,7 +8159,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260612_02_T1"
@@ -7111,7 +8203,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260611T070321_N0512_R063_T40TFK_20260611T103619"
@@ -7155,7 +8247,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260611_02_T1"
@@ -7199,7 +8291,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260611T064619_N0512_R020_T40TFK_20260611T104324"
@@ -7243,7 +8335,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260610T140409_20260610T140434_064908_082DED_rtc"
@@ -7287,7 +8379,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260610T140409_20260610T140434_064908_082DED_2916_COG"
@@ -7331,7 +8423,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260609T065621_N0512_R063_T40TFK_20260609T145128"
@@ -7375,7 +8467,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260606T064621_N0512_R020_T40TFK_20260606T115910"
@@ -7419,7 +8511,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260604T065619_N0512_R063_T40TFK_20260604T105400"
@@ -7463,7 +8555,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_160032_20260604_02_T1"
@@ -7507,7 +8599,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260604T021123_20260604T021148_064813_082AA5_rtc"
@@ -7551,7 +8643,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260604T021123_20260604T021148_064813_082AA5_C91E_COG"
@@ -7595,7 +8687,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC09_L2SP_161032_20260603_02_T1"
@@ -7639,7 +8731,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2B_MSIL2A_20260601T064619_N0512_R020_T40TFK_20260601T101901"
@@ -7683,7 +8775,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260529T140410_20260529T140435_064733_0827CC_rtc"
@@ -7727,7 +8819,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S1A_IW_GRDH_1SDV_20260529T140410_20260529T140435_064733_0827CC_C3EC_COG"
@@ -7771,7 +8863,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2A_MSIL2A_20260529T065321_N0512_R020_T40TFK_20260529T101809"
@@ -7815,7 +8907,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "S2C_MSIL2A_20260527T064621_N0512_R020_T40TFK_20260527T115611"
@@ -7935,7 +9027,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "landsat-environmental/0.2",
         "input_scene_ids": [
           "LC09_L2SP_160032_20260527_02_T1"
@@ -7993,7 +9085,7 @@
       "provenance": {
         "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
         "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
+        "run_id": "44543963477",
         "processing_version": "catalogue-discovery/0.1",
         "input_scene_ids": [
           "LC08_L2SP_161032_20260526_02_T1"
@@ -8005,1162 +9097,6 @@
           }
         ],
         "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_rtc",
-      "acquired_at": "2026-05-23T02:11:36.165349Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:32640",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_rtc-rendered_preview",
-          "role": "thumbnail",
-          "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=sentinel-1-rtc&item=S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_rtc&assets=vv&assets=vh&tile_format=png&expression=0.03%20%2B%20log%20(10e-4%20-%20log%20(0.05%20%2F%20(0.02%20%2B%202%20*%20vv)));0.05%20%2B%20exp%20(0.25%20*%20(log%20(0.01%20%2B%202%20*%20vv)%20%2B%20log%20(0.02%20%2B%205%20*%20vh)));1%20-%20log%20(0.05%20%2F%20(0.045%20-%200.9%20*%20vv))&asset_as_band=True&rescale=0,.8000&rescale=0,1.000&rescale=0,1.000&format=png",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (rendered_preview)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_rtc"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-grd:S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_EB8E_COG",
-      "source_id": "sentinel-1-grd",
-      "scene_id": "S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_EB8E_COG",
-      "acquired_at": "2026-05-23T02:11:23.666203Z",
-      "processed_at": null,
-      "processing_version": "catalogue-discovery/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": null,
-      "crs": "EPSG:4326",
-      "resolution_m": 10,
-      "quality_flags": [
-        {
-          "code": "DISCOVERY_ONLY",
-          "severity": "info",
-          "message": "Catalogue metadata only; no local download, quality mask, or raster processing has been completed."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_EB8E_COG-thumbnail",
-          "role": "thumbnail",
-          "href": "https://datahub.creodias.eu/odata/v1/Assets(2694831b-c0a9-4353-b960-204d0157b93a)/$value",
-          "media_type": "image/png",
-          "title": "Catalogue thumbnail (thumbnail)"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": "c7d5204d08abc0a4798f9859c8f834df0cfa3060",
-        "run_id": "44362358162",
-        "processing_version": "catalogue-discovery/0.1",
-        "input_scene_ids": [
-          "S1A_IW_GRDH_1SDV_20260523T021123_20260523T021148_064638_08247E_EB8E_COG"
-        ],
-        "software": [
-          {
-            "name": "requests",
-            "version": "2.34.2"
-          }
-        ],
-        "published_at": null
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc",
-      "acquired_at": "2026-11-14T02:10:57.377105Z",
-      "processed_at": "2026-11-18T17:50:08.976394Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261114T021044_20261114T021109_005457_00A6BC_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:08.976414Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc",
-      "acquired_at": "2026-11-08T14:03:45.065903Z",
-      "processed_at": "2026-11-18T17:50:09.085358Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261108T140332_20261108T140357_005377_00A406_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.085380Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc",
-      "acquired_at": "2026-10-21T02:10:58.054364Z",
-      "processed_at": "2026-11-18T17:50:09.089076Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261021T021045_20261021T021110_005107_009ABD_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.089085Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc",
-      "acquired_at": "2026-10-15T14:03:45.410229Z",
-      "processed_at": "2026-11-18T17:50:09.092696Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20261015T140332_20261015T140357_005027_009803_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.092704Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc",
-      "acquired_at": "2026-09-27T02:10:58.131537Z",
-      "processed_at": "2026-11-18T17:50:09.305405Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260927T021045_20260927T021110_004757_008E90_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.305426Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc",
-      "acquired_at": "2026-09-21T14:03:45.379887Z",
-      "processed_at": "2026-11-18T17:50:09.309111Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260921T140332_20260921T140357_004677_008BCE_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.309120Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc",
-      "acquired_at": "2026-08-28T14:03:44.794602Z",
-      "processed_at": "2026-11-18T17:50:09.312777Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260828T140332_20260828T140357_004327_007FAD_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.312785Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc",
-      "acquired_at": "2026-08-22T02:10:56.961728Z",
-      "processed_at": "2026-11-18T17:50:09.555334Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260822T021044_20260822T021109_004232_007C58_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.555357Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc",
-      "acquired_at": "2026-07-29T02:10:55.861957Z",
-      "processed_at": "2026-11-18T17:50:09.983528Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260729T021043_20260729T021108_003882_007024_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:09.983553Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc",
-      "acquired_at": "2026-07-23T14:03:43.149375Z",
-      "processed_at": "2026-11-18T17:50:10.210187Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260723T140330_20260723T140355_003802_006D66_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:10.210208Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc",
-      "acquired_at": "2026-06-29T14:03:41.533198Z",
-      "processed_at": "2026-11-18T17:50:10.453150Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1D_IW_GRDH_1SDV_20260629T140329_20260629T140354_003452_00617D_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:10.453171Z"
-      }
-    },
-    {
-      "id": "sentinel-1-rtc:S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
-      "source_id": "sentinel-1-rtc",
-      "scene_id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc",
-      "acquired_at": "2026-06-28T02:11:34.085868Z",
-      "processed_at": "2026-11-18T17:50:10.593927Z",
-      "processing_version": "darvaza-s1-rtc/0.1",
-      "cloud_cover_pct": null,
-      "valid_pixel_pct": 96.61,
-      "crs": "EPSG:32640",
-      "resolution_m": 10.0,
-      "quality_flags": [
-        {
-          "code": "UPSTREAM_RTC",
-          "severity": "info",
-          "message": "Input is an upstream radiometric terrain-corrected RTC product; local processing clips and derives backscatter summaries."
-        },
-        {
-          "code": "EXPLORATORY_NOT_INDEPENDENTLY_VALIDATED",
-          "severity": "warning",
-          "message": "Not independently validated; not a crater boundary or temperature measurement."
-        }
-      ],
-      "assets": [
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vv_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vv_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vv_db cog"
-        },
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vv_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vv_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vv_db preview"
-        },
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_db cog"
-        },
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_db preview"
-        },
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_vv_ratio_db-cog",
-          "role": "cog",
-          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_vv_ratio_db.tif",
-          "media_type": "image/tiff; application=geotiff",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db cog"
-        },
-        {
-          "id": "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc-vh_vv_ratio_db-preview",
-          "role": "preview",
-          "href": "assets/sentinel1-rtc/S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc/vh_vv_ratio_db.png",
-          "media_type": "image/png",
-          "title": "Sentinel-1 RTC vh_vv_ratio_db preview"
-        }
-      ],
-      "provenance": {
-        "pipeline_repository": "https://github.com/Emir731/Darvaza-Pipeline",
-        "commit_sha": null,
-        "run_id": null,
-        "processing_version": "darvaza-s1-rtc/0.1",
-        "input_scene_ids": [
-          "S1A_IW_GRDH_1SDV_20260628T021121_20260628T021146_065163_0836E0_rtc"
-        ],
-        "software": [
-          {
-            "name": "rasterio"
-          },
-          {
-            "name": "numpy"
-          },
-          {
-            "name": "planetary-computer"
-          }
-        ],
-        "published_at": "2026-11-18T17:50:10.593975Z"
       }
     }
   ],
@@ -11922,10 +11858,10 @@
   ],
   "pipeline_runs": [
     {
-      "id": "landsat-c2-l2-20261118T174646Z",
+      "id": "landsat-c2-l2-20261119T142800Z",
       "source_id": "landsat-c2-l2",
-      "started_at": "2026-11-18T17:46:46.657653Z",
-      "finished_at": "2026-11-18T17:46:47.648833Z",
+      "started_at": "2026-11-19T14:28:00.861004Z",
+      "finished_at": "2026-11-19T14:28:01.850259Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 42,
@@ -11934,34 +11870,34 @@
       "errors": []
     },
     {
-      "id": "sentinel-1-grd-20261118T174647Z",
+      "id": "sentinel-1-grd-20261119T142801Z",
       "source_id": "sentinel-1-grd",
-      "started_at": "2026-11-18T17:46:47.648853Z",
-      "finished_at": "2026-11-18T17:46:48.490060Z",
+      "started_at": "2026-11-19T14:28:01.850276Z",
+      "finished_at": "2026-11-19T14:28:02.831514Z",
       "status": "success",
       "stage_reached": "discovery",
-      "scenes_discovered": 30,
+      "scenes_discovered": 29,
       "scenes_published": 0,
       "processing_version": "catalogue-discovery/0.1",
       "errors": []
     },
     {
-      "id": "sentinel-1-rtc-20261118T174648Z",
+      "id": "sentinel-1-rtc-20261119T142802Z",
       "source_id": "sentinel-1-rtc",
-      "started_at": "2026-11-18T17:46:48.490074Z",
-      "finished_at": "2026-11-18T17:46:48.803631Z",
+      "started_at": "2026-11-19T14:28:02.831527Z",
+      "finished_at": "2026-11-19T14:28:03.119763Z",
       "status": "success",
       "stage_reached": "discovery",
-      "scenes_discovered": 30,
+      "scenes_discovered": 29,
       "scenes_published": 0,
       "processing_version": "catalogue-discovery/0.1",
       "errors": []
     },
     {
-      "id": "sentinel-2-l2a-20261118T174648Z",
+      "id": "sentinel-2-l2a-20261119T142803Z",
       "source_id": "sentinel-2-l2a",
-      "started_at": "2026-11-18T17:46:48.803645Z",
-      "finished_at": "2026-11-18T17:46:51.465616Z",
+      "started_at": "2026-11-19T14:28:03.119775Z",
+      "finished_at": "2026-11-19T14:28:05.091382Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 81,
@@ -11970,10 +11906,10 @@
       "errors": []
     },
     {
-      "id": "viirs-375m-firms-20261118T174651Z",
+      "id": "viirs-375m-firms-20261119T142805Z",
       "source_id": "viirs-375m",
-      "started_at": "2026-11-18T17:46:51.465632Z",
-      "finished_at": "2026-11-18T17:46:59.612629Z",
+      "started_at": "2026-11-19T14:28:05.091398Z",
+      "finished_at": "2026-11-19T14:28:36.448171Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 0,
@@ -11982,10 +11918,10 @@
       "errors": []
     },
     {
-      "id": "modis-thermal-firms-20261118T174651Z",
+      "id": "modis-thermal-firms-20261119T142805Z",
       "source_id": "modis-thermal",
-      "started_at": "2026-11-18T17:46:51.465632Z",
-      "finished_at": "2026-11-18T17:46:59.612651Z",
+      "started_at": "2026-11-19T14:28:05.091398Z",
+      "finished_at": "2026-11-19T14:28:36.448203Z",
       "status": "success",
       "stage_reached": "discovery",
       "scenes_discovered": 0,
@@ -12405,7 +12341,7 @@
     "crater_footprint": null,
     "surface_change": null,
     "scientific_validation": {
-      "generated_at": "2026-11-18T17:48:59.849480Z",
+      "generated_at": "2026-11-19T14:28:36.585332Z",
       "overall_status": "independent_validation_pending",
       "automated_qa_is_independent_validation": false,
       "products": [
@@ -12422,10 +12358,10 @@
           ],
           "notes": "Sentinel-2 candidate polygons are exploratory. The 20 m B11/SCL bands are resampled to a 10 m grid.",
           "pipeline_evidence": {
-            "candidate_scenes": 1,
+            "candidate_scenes": 0,
             "validated_boundary_available": false
           },
-          "automated_qa_status": "pipeline_products_available",
+          "automated_qa_status": "discovery_only",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -12442,10 +12378,10 @@
           ],
           "notes": "Candidate algorithm min/median/max is sensitivity analysis, not a confidence interval.",
           "pipeline_evidence": {
-            "candidate_scenes": 1,
+            "candidate_scenes": 0,
             "validated_area_m2": null
           },
-          "automated_qa_status": "pipeline_products_available",
+          "automated_qa_status": "discovery_only",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
@@ -12462,9 +12398,9 @@
           ],
           "notes": "Microsoft Planetary Computer supplies upstream RTC; local processing clips and converts linear power to dB.",
           "pipeline_evidence": {
-            "catalogue_observations": 30,
-            "processed_observations": 12,
-            "raster_assets": 36
+            "catalogue_observations": 29,
+            "processed_observations": 0,
+            "raster_assets": 0
           },
           "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
@@ -12484,8 +12420,8 @@
           "notes": "ST_B10 is land-surface temperature, not flame or crater-core temperature.",
           "pipeline_evidence": {
             "catalogue_observations": 42,
-            "processed_observations": 5,
-            "raster_assets": 20
+            "processed_observations": 0,
+            "raster_assets": 0
           },
           "automated_qa_status": "pipeline_products_available",
           "independent_validation_status": "pending_independent_evidence",
@@ -12504,9 +12440,9 @@
           ],
           "notes": "Index differences are screening signals, not proof of physical crater growth.",
           "pipeline_evidence": {
-            "published_change_products": 16
+            "published_change_products": 0
           },
-          "automated_qa_status": "pipeline_products_available",
+          "automated_qa_status": "discovery_only",
           "independent_validation_status": "pending_independent_evidence",
           "independent_validation_complete": false
         },
